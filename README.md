@@ -1,4 +1,4 @@
-# biblebox4kidscom
+# biblebox4kids.com
 
 ## Build & development
 
