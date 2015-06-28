@@ -1,0 +1,85 @@
+<!doctype html>
+<html class="no-js">
+  <head>
+    <meta charset="utf-8">
+    <title>biblebox4kids - Spend valuable time with your child exploring the bible.</title>
+    <meta name="description" content="">
+    <meta name="viewport" id="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <!-- build:css(.) styles/index.css -->
+    <!-- bower:css -->
+    <!-- endbower -->
+    <!-- endbuild -->
+
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,300,800' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="styles/main.css" type="text/css">
+    <link rel="stylesheet" href="styles/ribbon.css" type="text/css">
+    <!-- endbuild -->
+  </head>
+
+  <body ng-app="biblebox4kidscomApp">
+    <!--[if lt IE 7]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+    <nav id="nav" class="navbar navbar-fixed-top" role="navigation"  data-spy="affix" data-offset-top="200">
+      <div class="container">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="/"><img src="images/logo.png"  class="logo"/></a>
+      </div>
+    </nav>
+
+    <div class="row">
+      <div class="corner-ribbon top-right sticky blue">Coming soon!</div>
+    </div>
+
+    <div class="ng-view main"></div>
+
+    <nav id="footer" class="navbar navbar-fixed-bottom" role="navigation"  data-spy="affix" data-offset-top="1000">
+      <div class="container text-center">
+        <a href="mailto:info@biblebox4kids.com"><i class="social-icons-bottom fa fa-envelope-square fa-2x"></i></a>
+        <a href="http://www.facebook.com/biblebox4kids/"><i class="social-icons-bottom fa fa-facebook-square fa-2x"></i></a>
+        <a href="http://www.pinterest.com/biblebox4kids"><i class="social-icons-bottom fa fa-pinterest-square fa-2x"></i></a>
+      </div>
+    </nav>
+
+    <!-- Start of bibleboxforkids Zendesk Widget script -->
+    <script>/*<![CDATA[*/window.zEmbed||function(e,t){var n,o,d,i,s,a=[],r=document.createElement("iframe");window.zEmbed=function(){a.push(arguments)},window.zE=window.zE||window.zEmbed,r.src="javascript:false",r.title="",r.role="presentation",(r.frameElement||r).style.cssText="display: none",d=document.getElementsByTagName("script"),d=d[d.length-1],d.parentNode.insertBefore(r,d),i=r.contentWindow,s=i.document;try{o=s}catch(c){n=document.domain,r.src='javascript:var d=document.open();d.domain="'+n+'";void(0);',o=s}o.open()._l=function(){var o=this.createElement("script");n&&(this.domain=n),o.id="js-iframe-async",o.src=e,this.t=+new Date,this.zendeskHost=t,this.zEQueue=a,this.body.appendChild(o)},o.write('<body onload="document._l();">'),o.close()}("//assets.zendesk.com/embeddable_framework/main.js","bibleboxforkids.zendesk.com");/*]]>*/</script>
+    <!-- End of bibleboxforkids Zendesk Widget script -->
+
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
+    <script>
+       !function(A,n,g,u,l,a,r){A.GoogleAnalyticsObject=l,A[l]=A[l]||function(){
+       (A[l].q=A[l].q||[]).push(arguments)},A[l].l=+new Date,a=n.createElement(g),
+       r=n.getElementsByTagName(g)[0],a.src=u,r.parentNode.insertBefore(a,r)
+       }(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+       ga('create', 'UA-63840548-1', 'auto');
+       ga('send', 'pageview');
+    </script>
+
+    <!-- build:js(.) scripts/vendor.js -->
+    <!-- bower:js -->
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="bower_components/angular-animate/angular-animate.js"></script>
+    <script src="bower_components/angular-cookies/angular-cookies.js"></script>
+    <script src="bower_components/angular-resource/angular-resource.js"></script>
+    <script src="bower_components/angular-route/angular-route.js"></script>
+    <script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
+    <script src="bower_components/angular-touch/angular-touch.js"></script>
+    <script src="bower_components/angular-scroll/angular-scroll.js"></script>
+    <!-- endbower -->
+    <!-- endbuild -->
+
+    <!-- build:js({.tmp,app}) scripts/scripts.js -->
+    <script src="scripts/app.js"></script>
+    <script src="scripts/controllers/main.js"></script>
+    <script src="scripts/controllers/thanks.js"></script>
+    <!-- endbuild -->
+</body>
+</html>
