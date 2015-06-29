@@ -118,36 +118,42 @@ img {
   background-size: cover;
   -o-background-size: cover;
   position: relative;
-	max-height: 800px;
 }
 
 /* #### Mobile Phones Portrait #### */
 @media screen and (max-device-width: 480px) and (orientation: portrait){
   .topheader-main {
+    background: url(../images/headerbg-290.jpg);
     width: 100%;
     height: 100%;
-    background: url(../images/headerbg-290.jpg) no-repeat center center;
+    background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
-    background-size: cover;
     -o-background-size: cover;
   	position: relative;
-  	max-height: 800px;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+
+  .topheader h1 {
+      margin-top: -100px;
+      font-size: 20px;
   }
 }
 
 /* #### Tablets Portrait or Landscape #### */
 @media screen and (min-device-width: 768px) and (max-device-width: 1024px){
   .topheader-main {
+    background: url(../images/headerbg-970.jpg);
     width: 100%;
     height: 100%;
-    background: url(../images/headerbg-970.jpg) no-repeat center center fixed;
+    background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
-    background-size: cover;
     -o-background-size: cover;
   	position: relative;
-  	max-height: 800px;
+    background-repeat: no-repeat;
+    background-position: center center;
   }
 }
 
@@ -156,14 +162,12 @@ img {
   .topheader-main {
     width: 100%;
     height: 100%;
-    //background: url(../images/headerbg-2560.jpg) no-repeat center center fixed;
     background: url(../images/headerbg-2560.jpg) no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
   	position: relative;
-  	max-height: 800px;
   }
 }
 
@@ -171,59 +175,63 @@ img {
 /* TOPHEADER-THANKS
 /*********************************************************/
 .topheader-thanks {
-  width: 100%;
-  height: 100%;
-  background: url(../images/thanksbg.jpg) no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  background-size: cover;
-  -o-background-size: cover;
-	position: relative;
-	max-height: 800px;
+    background: url(../images/thanksbg-970.jpg);
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+  	position: relative;
+    background-repeat: no-repeat;
+    background-position: center center;
 }
 
 /* #### Mobile Phones Portrait #### */
 @media screen and (max-device-width: 480px) and (orientation: portrait){
   .topheader-thanks {
+    background: url(../images/thanksbg-290.jpg);
     width: 100%;
     height: 100%;
-    background: url(../images/thanksbg-290.jpg) no-repeat center center fixed;
+    background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
-    background-size: cover;
     -o-background-size: cover;
   	position: relative;
-  	max-height: 800px;
+    background-repeat: no-repeat;
+    background-position: center center;
   }
 }
 
 /* #### Tablets Portrait or Landscape #### */
 @media screen and (min-device-width: 768px) and (max-device-width: 1024px){
   .topheader-thanks {
+    background: url(../images/thanksbg-970.jpg);
     width: 100%;
     height: 100%;
-    background: url(../images/thanksbg-970.jpg) no-repeat center center fixed;
+    background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
-    background-size: cover;
     -o-background-size: cover;
   	position: relative;
-  	max-height: 800px;
+    background-repeat: no-repeat;
+    background-position: center center;
   }
 }
 
 /* #### Desktops #### */
 @media screen and (min-device-width: 1024px){
   .topheader-thanks {
+    background: url(../images/thanksbg-2560.jpg);
     width: 100%;
     height: 100%;
-    background: url(../images/thanksbg-2560.jpg) no-repeat center center fixed;
+    background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
-    background-size: cover;
     -o-background-size: cover;
   	position: relative;
-  	max-height: 800px;
+    background-repeat: no-repeat;
+    background-position: center center;
   }
 }
 
@@ -237,6 +245,15 @@ img {
 
 .social-icons-top:hover {
 	 color :rgba(66, 66, 66, 1);
+}
+
+.social-icons-thanks {
+	 color :white;
+   padding: 10px;
+}
+
+.social-icons-thanks:hover {
+	 color: #1799C0;
 }
 
 .social-icons-bottom {
@@ -815,28 +832,44 @@ nav ul li a:hover {
 	background: url("../images/subscribebg-970.jpg") no-repeat fixed center top rgba(0, 0, 0, 0);
 	padding-top: 100px;
 	padding-bottom: 600px;
+  position: relative;
+  background-repeat: no-repeat;
+  background-position: center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
-  background-size: cover;
   -o-background-size: cover;
-	position: relative;
+  background-size: cover;
 }
 
 /* #### Mobile Phones Portrait #### */
 @media screen and (max-device-width: 480px) and (orientation: portrait){
 	#subscribe {
-		background: url("../images/subscribebg-290.jpg") no-repeat fixed center top rgba(0, 0, 0, 0);
+	  padding-top: 5px;
+	  padding-bottom: 120px;
+		background: url("../images/subscribebg-290.jpg");
+  	position: relative;
+    background-repeat: no-repeat;
+    background-position: center center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
 	}
+
+  #subscribe h1 {
+      font-size: 20px;
+  }
 }
 
 /* #### Tablets Portrait or Landscape #### */
 @media screen and (min-device-width: 768px) and (max-device-width: 1024px){
 	#subscribe {
-		background: url("../images/subscribebg-970.jpg") no-repeat fixed center top  rgba(0, 0, 0, 0);
+	  padding-top: 90px;
+	  padding-bottom: 600px;
+		background: url("../images/subscribebg-970.jpg");
+  	position: relative;
+    background-repeat: no-repeat;
+    background-position: center center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -847,7 +880,11 @@ nav ul li a:hover {
 /* #### Desktops #### */
 @media screen and (min-device-width: 1024px){
 	#subscribe {
-		background: url("../images/subscribebg-2560.jpg") no-repeat fixed center top rgba(0, 0, 0, 0);
+	  background: url("../images/subscribebg-2560.jpg") fixed;
+	  padding-top: 100px;
+	  padding-bottom: 600px;
+    background-repeat: no-repeat;
+    background-position: center center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
