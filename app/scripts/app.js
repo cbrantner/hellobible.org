@@ -27,6 +27,10 @@ angular
         templateUrl: 'views/thanks.html',
         controller: 'ThanksCtrl'
       })
+      .when('/privacy', {
+        templateUrl: 'views/privacy.html',
+        controller: 'PrivacyCtrl'
+      })
       .otherwise({
         redirectTo: '/'
       });
