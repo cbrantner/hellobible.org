@@ -1,9 +1,33 @@
 sudo: false
 language: node_js
 node_js:
-  - 'iojs'
-  - '0.12'
-  - '0.10'
+- iojs
+- '0.12'
+- '0.10'
 before_script:
-  - 'npm install -g bower grunt-cli'
-  - 'bower install'
+- npm install -g bower grunt-cli
+- bower install
+script:
+- grunt
+deploy:
+  provider: s3-beta
+  access_key_id: AKIAJP4TR4W3N7KFB6WA
+  secret_access_key:
+    secure: qbMoXRrchpaYx+U1YjbR69uYj5eKmRFr2s1Pd7SVkK/v1EUd1gAO/DVmagrT1WLYXKaog6vS1wRyANPsDhve6AeaBBJVNqkCDRtQWIeEpOmshtC66tsODMbfDfp45NxlpN7WDBsSmQJLQhvhFRh1UUqRPUDZDfll/ILaQjluoTq53Sn+HvS6maYtyVLf3lKQtYqx76OCWIJlHj50Q9krySMDqPdr6r8rNUiyfTUmRfvXPbGp//hLKBOdwl4MkQsTS4NziGC1P54V7uvssX60GjfTrgL5YcZn6YFg7O4d9VA0bmESnbrrWybobYirjdfa0ds/JZ91XTDkdQ0nSQEdB0a2fSH6a5ToHqZr+ekW+tOqHvjOkAWLm7ELfpv2ZJaKzZg1Tp9T8okE9lvKAjBnYODY4bKP49W0DVYzoxbGBL2PVJHEChzpHcfEoPkk4kKUI87Xg3e9V/Q1k4tZhmxQ+DJOcV1aZw2N1VJ/cHAmetxaXqNNFsM5E7pP9IlxMoPO6ETchA9AeASOr6qrE9UumEmeQFORcxi2xkbYzt+0MM/alwJOAQ76jTaq1yuD78KQ9b5VmJ2CSWC8ua/Oo1yc9pfBs/KoEc++Qxi5Xkv6Qchw2BO0zsrs5ZNimhPE4qVimg4mHHFPRAfwpsz8l5hM241NF7zEk7ODbs97G/11pG8=
+  bucket: beta.biblebox4kids.com
+  local-dir: dist
+  acl: public_read
+  on:
+    repo: cbrantner/biblebox4kids.com
+    branch: beta
+deploy:
+  provider: s3-prod
+  access_key_id: AKIAJP4TR4W3N7KFB6WA
+  secret_access_key:
+    secure: qbMoXRrchpaYx+U1YjbR69uYj5eKmRFr2s1Pd7SVkK/v1EUd1gAO/DVmagrT1WLYXKaog6vS1wRyANPsDhve6AeaBBJVNqkCDRtQWIeEpOmshtC66tsODMbfDfp45NxlpN7WDBsSmQJLQhvhFRh1UUqRPUDZDfll/ILaQjluoTq53Sn+HvS6maYtyVLf3lKQtYqx76OCWIJlHj50Q9krySMDqPdr6r8rNUiyfTUmRfvXPbGp//hLKBOdwl4MkQsTS4NziGC1P54V7uvssX60GjfTrgL5YcZn6YFg7O4d9VA0bmESnbrrWybobYirjdfa0ds/JZ91XTDkdQ0nSQEdB0a2fSH6a5ToHqZr+ekW+tOqHvjOkAWLm7ELfpv2ZJaKzZg1Tp9T8okE9lvKAjBnYODY4bKP49W0DVYzoxbGBL2PVJHEChzpHcfEoPkk4kKUI87Xg3e9V/Q1k4tZhmxQ+DJOcV1aZw2N1VJ/cHAmetxaXqNNFsM5E7pP9IlxMoPO6ETchA9AeASOr6qrE9UumEmeQFORcxi2xkbYzt+0MM/alwJOAQ76jTaq1yuD78KQ9b5VmJ2CSWC8ua/Oo1yc9pfBs/KoEc++Qxi5Xkv6Qchw2BO0zsrs5ZNimhPE4qVimg4mHHFPRAfwpsz8l5hM241NF7zEk7ODbs97G/11pG8=
+  bucket: www.biblebox4kids.com
+  local-dir: dist
+  acl: public_read
+  on:
+    repo: cbrantner/biblebox4kids.com
+    branch: master

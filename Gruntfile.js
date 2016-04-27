@@ -21,6 +21,8 @@ module.exports = function (grunt) {
     dist: 'dist'
   };
 
+  grunt.loadNpmTasks('grunt-aws-s3');
+
   // Define the configuration for all the tasks
   grunt.initConfig({
 
