@@ -15,6 +15,7 @@ deploy:
   bucket: beta.biblebox4kids.com
   local_dir: dist
   acl: public_read
+  skip_cleanup: true
   on:
     repo: cbrantner/biblebox4kids.com
     branch: beta
@@ -25,6 +26,7 @@ deploy:
   bucket: www.biblebox4kids.com
   local_dir: dist
   acl: public_read
+  skip_cleanup: true
   on:
     repo: cbrantner/biblebox4kids.com
     branch: master
