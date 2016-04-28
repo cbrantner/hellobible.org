@@ -1,4 +1,4 @@
-.corner-ribbon{
+.corner-ribbon {
   z-index: 9999;
   width: 200px;
   background: #FF0099;
@@ -13,11 +13,11 @@
   -webkit-transform: rotate(-45deg);
 }
 
-.corner-ribbon.sticky{
+.corner-ribbon.sticky {
   position: fixed;
 }
 
-.corner-ribbon.top-right{
+.corner-ribbon.top-right {
   top: 25px;
   right: -50px;
   left: auto;
