@@ -1,7 +1,12 @@
 {
   "name": "biblebox4kidscom",
   "version": "0.1.0",
-  "dependencies": {},
+  "dependencies": {
+    "jasmine": "^2.4.1",
+    "karma": "^0.13.22",
+    "phantomjs": "^2.1.7",
+    "phantomjs-prebuilt": "^2.1.7"
+  },
   "repository": {},
   "devDependencies": {
     "grunt": "^0.4.5",
