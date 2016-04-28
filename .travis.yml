@@ -18,7 +18,6 @@ deploy:
   on:
     repo: cbrantner/biblebox4kids.com
     branch: beta
-  endpoint: beta.biblebox4kids.com.s3-website-us-west-2.amazonaws.com
 - provider: s3
   access_key_id: AKIAJP4TR4W3N7KFB6WA
   secret_access_key:
@@ -29,4 +28,3 @@ deploy:
   on:
     repo: cbrantner/biblebox4kids.com
     branch: master
-  endpoint: www.biblebox4kids.com.s3-website-us-west-2.amazonaws.com
