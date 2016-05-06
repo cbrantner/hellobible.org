@@ -3,10 +3,10 @@ language: node_js
 node_js:
 - '0.12'
 before_script:
-- npm install -g bower grunt-cli
+- npm install -g bower gulp
 - bower install
 script:
-- grunt
+- gulp build
 deploy:
 - provider: s3
   access_key_id: AKIAJP4TR4W3N7KFB6WA
