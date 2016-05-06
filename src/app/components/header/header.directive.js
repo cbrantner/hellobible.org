@@ -20,7 +20,7 @@
     return directive;
 
     /** @ngInject */
-    function HeaderController($scope, $location, $resource, $anchorScroll, toastr) {
+    function HeaderController($scope, $location, $resource, $anchorScroll, $log, toastr) {
 
       $scope.scrollTo = function scrollTo(id) {
         $location.hash(id);
@@ -71,7 +71,7 @@
 
           function (error) {
             $scope.responseMessage = 'Sorry! An unknown error occured.';
-            console.log('MailChimp Error: %o' + error);
+            $log.error('MailChimp Error: ' + error);
           }
         );
 
