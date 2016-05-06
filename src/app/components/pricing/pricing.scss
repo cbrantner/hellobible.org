@@ -1,0 +1,106 @@
+#pricing h1 {
+  font-size: 26px;
+  color: #424242;
+  font-weight: 400;
+}
+
+#pricing h1:after {
+  content: "";
+  display: block;
+  height: 4px;
+  width: 80px;
+  background: #00a8d6;
+  margin: 0 auto;
+  margin-top: 10px;
+}
+
+.price-table {
+  border: 1px solid #424242;
+  border-radius: 4px;
+  margin: 0 auto 30px;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  transition: all 0.3s ease-in-out 0s;
+  width: 100%;
+}
+
+.table-title {
+  padding: 20px;
+  margin: 0;
+  position: relative;
+}
+
+.table-title h3 {
+  color: #424242;
+  margin: 0;
+}
+
+.table-icon {
+  padding: 10px 20px 20px 20px;
+  text-align: center;
+}
+
+.table-icon .fa {
+  font-size: 48px;
+}
+
+.table-price {
+  background: #00a8d6;
+  color: #fff;
+  padding: 20px;
+  font-size: 34px;
+  font-weight: 700;
+  transition: all 0.5s ease;
+}
+
+.table-price span.period {
+  font-size: 14px;
+  padding-left: 5px;
+}
+
+.table-list {
+  padding: 20px;
+}
+
+.table-list ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.table-list ul li {
+  font-weight: 400;
+  color: #424242;
+  padding-bottom: 15px;
+}
+
+.table-btn {
+  padding: 0 20px 20px 20px;
+}
+
+.table-btn a.btn-primary:hover {
+  background: #FF0099;
+}
+
+.price-table:hover .table-price {
+  background: #FF0099;
+  color: #fff;
+}
+
+.best-chose {
+  width: 100%;
+  height: 30px;
+  color: #fff;
+  background: #FF0099;
+  -ms-transform: rotate(45deg); /* IE 9 */
+  -webkit-transform: rotate(45deg); /* Chrome, Safari, Opera */
+  transform: rotate(45deg);
+  position: absolute;
+  top: 0;
+  left: 40%;
+  right: 0;
+  bottom: 0;
+  text-align: center;
+  padding: 0;
+}

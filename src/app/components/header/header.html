@@ -1,0 +1,29 @@
+<div class="topheader topheader-main">
+  <div class="container">
+    <div class="row margin-t-90">
+      <div class="col-md-12 margin-t-120">
+        <h1 class="text-right text-uppercase">A fun way for kids to explore the bible.</h1>
+        <h4 class="text-right">Get 1 box each month including a great bible story,<br>creative craft projects and ideas to
+          study &amp; pray.</h4>
+        <div class="col-md-6 col-md-offset-6">
+          <div class="row margin-t-60"> <!--ng-controller="MainCtrl">-->
+            <div class="subscribe-inputs">
+              <form name="MailchimpSubscriptionForm" required>
+                  <input type="email" name="email" ng-model="mailchimp.email" placeholder="Email me when it's ready" required ng-model-options="{ debounce: 500 }">
+                  <input type="submit" ng-disabled="MailchimpSubscriptionForm.$invalid" name="subscribe" ng-click="addSubscription(mailchimp)" value="Notify me!">
+              </form>
+            </div>
+            <div ng-messages="MailchimpSubscriptionForm.email.$error" class="mailchimp-messages">
+              <div ng-message="email">Please enter a valid email address.</div>
+            </div>
+          </div> <!-- row -->
+        </div> <!-- col-md-8-->
+      </div> <!-- col-md-12 -->
+    </div> <!-- row -->
+  </div> <!-- container -->
+
+  <a ng-click="scrollTo('pricing')" href="">
+    <div class="arrow-down animated three bounce"></div>
+  </a>
+  </div> <!-- container -->
+</div> <!-- topheader -->
