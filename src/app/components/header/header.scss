@@ -20,7 +20,6 @@
   color: white;
 }
 
-
 .topheader-main {
   background: url(/assets/images/danny-box.svg) no-repeat fixed;
   -webkit-background-size: cover;
@@ -41,7 +40,7 @@
     background-position: 10% bottom;
   }
 
-  .topheader h1 {
+.topheader h1 {
     margin-top: -70px;
     font-size: 20px;
   }
@@ -72,52 +71,4 @@
   }
 }
 
-#subscribe h1 {
-  color: black;
-}
 
-.subscribe-inputs input[type="email"] {
-  background: #fff;
-  padding: 8px;
-  border: 0 none;
-  width: 65%;
-  -webkit-border-top-left-radius: 4px;
-  -webkit-border-bottom-left-radius: 4px;
-  -moz-border-radius-topleft: 4px;
-  -moz-border-radius-bottomleft: 4px;
-  border-top-left-radius: 4px;
-  border-bottom-left-radius: 4px;
-}
-
-.subscribe-inputs input[type="submit"] {
-  background: #FF0099;
-  color: #fff;
-  padding: 8px;
-  border: 0 none;
-  margin-left: -5px;
-  width: 35%;
-  -webkit-border-top-right-radius: 4px;
-  -webkit-border-bottom-right-radius: 4px;
-  -moz-border-radius-topright: 4px;
-  -moz-border-radius-bottomright: 4px;
-  border-top-right-radius: 4px;
-  border-bottom-right-radius: 4px;
-}
-
-.subscribe-inputs input[type="submit"]:hover, #subscribe input[type="submit"]:active {
-  background: #7F7F7F;
-}
-
-.subscribe-inputs {
-  background: rgba(66, 66, 66, 0.8);
-  width: 100%;
-  padding: 4px;
-  -webkit-border-radius: 4px;
-  -moz-border-radius: 4px;
-  border-radius: 4px;
-}
-
-.mailchimp-messages {
-  background-color: #00a8d6;
-  color: white;
-}

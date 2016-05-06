@@ -66,17 +66,14 @@
   color: #FEC15D;
 }
 
-/**********************************/
-/* SLOGAN
-/**********************************/
-.slogan {
-  background: none repeat scroll 0 0 #00a8d6;
-}
-
 
 /*********************************************************/
 /* SOCIAL ICONS
 /*********************************************************/
+.social {
+  background: none repeat scroll 0 0 #00a8d6;
+}
+
 .social-icons-top {
   color: white;
   padding: 10px;
@@ -356,6 +353,10 @@ ul li .timeline-image {
   background-size: cover;
 }
 
+#subscribe h1 {
+  color: black;
+}
+
 /* #### Mobile Phones Portrait #### */
 @media screen and (max-device-width: 480px) and (orientation: portrait) {
   #subscribe {
@@ -405,4 +406,20 @@ ul li .timeline-image {
     -o-background-size: cover;
     background-size: cover;
   }
+}
+
+/*********************************************************/
+/* VERSE
+/*********************************************************/
+.verse {
+  background: none repeat scroll 0 0 #00a8d6;
+  padding: 20px;
+  margin-bottom: 50px;
+  margin-top: 50px;
+}
+
+.verse p {
+  color: #424242;
+  font-size: 20px;
+  font-weight: 400;
 }

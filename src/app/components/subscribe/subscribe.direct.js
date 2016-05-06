@@ -3,16 +3,16 @@
 
   angular
     .module('biblebox4kids')
-    .directive('acmeHeader', acmeHeader);
+    .directive('acmeSubscribe', acmeSubscribe);
 
   /** @ngInject */
-  function acmeHeader() {
+  function acmeSubscribe() {
     var directive = {
       restrict: 'E',
-      templateUrl: 'app/components/header/header.html',
+      templateUrl: 'app/components/subscribe/subscribe.html',
       scope: {
       },
-      controller: HeaderController,
+      controller: SubscribeController,
       controllerAs: 'vm',
       bindToController: true
     };
@@ -20,12 +20,7 @@
     return directive;
 
     /** @ngInject */
-    function HeaderController($scope, $location, $resource, $anchorScroll, $log, toastr) {
-
-      $scope.scrollTo = function scrollTo(id) {
-        $location.hash(id);
-        $anchorScroll();
-      }
+    function SubscribeController($scope, $location, $resource, $anchorScroll, $log, toastr) {
 
       $scope.addSubscription = function(mailchimp) {
 
