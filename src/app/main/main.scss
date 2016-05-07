@@ -1,0 +1,338 @@
+/*********************************************************/
+/* INFORMATIONS
+/*********************************************************/
+#informations {
+  background: none repeat scroll 0 0 white;
+  padding: 15px;
+}
+
+#informations h1 {
+  color: $BBDarkGrey;
+}
+
+#informations h1:after {
+  content: "";
+  display: block;
+  height: 4px;
+  width: 80px;
+  background: $BBBlue;
+  margin: 0 auto;
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+
+#informations h4 {
+  color: $BBDarkGrey;
+}
+
+#informations p {
+  font-size: 14px;
+  font-weight: 300;
+  color: $BBDarkGrey;
+}
+
+#informations .logo-read {
+  display: block;
+  width: 100px;
+  height: 100px;
+  border-radius: 100px;
+  border: 3px solid $BBBlue;
+  margin: 0 auto;
+  font-size: 50px;
+  text-align: center;
+  color: $BBBlue;
+}
+
+#informations .logo-create {
+  display: block;
+  width: 100px;
+  height: 100px;
+  border-radius: 100px;
+  border: 3px solid $BBGreen;
+  margin: 0 auto;
+  font-size: 50px;
+  text-align: center;
+  color: $BBGreen;
+}
+
+#informations .logo-pray {
+  display: block;
+  width: 100px;
+  height: 100px;
+  border-radius: 100px;
+  border: 3px solid $BBYellow;
+  margin: 0 auto;
+  font-size: 50px;
+  text-align: center;
+  color: $BBYellow;
+}
+
+#informations .text-read {
+  color: $BBBlue;
+}
+
+#informations .text-create {
+  color: $BBGreen;
+}
+
+#informations .text-pray {
+  color: $BBYellow;
+}
+
+/*********************************************************/
+/* SOCIAL ICONS
+/*********************************************************/
+.social {
+  background: none repeat scroll 0 0 $BBBlue;
+}
+
+.social-icons-top {
+  color: white;
+  padding: 10px;
+}
+
+.social-icons-top:hover {
+  color: $BBBlue;
+  background-color: white;
+}
+
+.social-icons-bottom {
+  color: white;
+}
+
+.social-icons-bottom:hover {
+  color: $BBBlue;
+
+}
+
+/*********************************************************/
+/* ABOUT
+/*********************************************************/
+#about-timeline {
+  padding: 20px 20px 0 20px;
+  position: relative;
+}
+
+#about-timeline h1, #about-timeline h2, #about-timeline h3, #about-timeline h4, #about-timeline p {
+  color: $BBDarkGrey;
+}
+
+#about-timeline h1:after {
+  content: "";
+  display: block;
+  height: 4px;
+  width: 80px;
+  background: $BBBlue;
+  margin: 0 auto;
+  margin-top: 10px;
+}
+
+// vertical line
+#about-timeline:before {
+  content: "";
+  background: $BBLightGrey;
+  width: 2px;
+  height: 400px;
+  display: block;
+  position: absolute;
+  top: 160px;
+  left: 50%;
+  margin-left: -1px;
+}
+
+ul li .timeline-image {
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  margin-left: -60px;
+  clear: both;
+}
+
+// size of picture
+#about-timeline ul li img {
+  border-radius: 100%;
+  width: 120px;
+  height: 120px;
+  border: 6px solid $BBLightGrey;
+}
+
+#about-timeline .timeline-end {
+  background: $BBBlue;
+  color: #fff;
+  font-weight: 700;
+  border-radius: 100%;
+  width: 120px;
+  height: 120px;
+  padding: 215px 10px 0 10px;
+  text-align: center;
+  border: 6px solid $BBLightGrey;
+}
+
+#about-timeline ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#about-timeline ul li {
+  position: relative;
+  margin-bottom: 10px;
+  min-height: 160px;
+}
+
+#about-timeline .timeline-left {
+  float: left;
+  width: 41%;
+  text-align: right;
+}
+
+#about-timeline .timeline-right {
+  float: right;
+  width: 41%;
+  text-align: left;
+}
+
+@media (max-width: 768px) {
+  #about-timeline:before {
+    content: "";
+    display: none;
+  }
+
+  #about-timeline .timeline-left {
+    float: none;
+    width: 90%;
+    text-align: left;
+    padding-left: 90px;
+  }
+
+  #about-timeline .timeline-right {
+    float: none;
+    width: 90%;
+    text-align: left;
+    padding-left: 90px;
+  }
+
+  ul li .timeline-image {
+    position: absolute;
+    top: 40px;
+    left: 10%;
+    margin-left: -54px;
+    clear: both;
+  }
+
+  #about-timeline ul li img {
+    border-radius: 100%;
+    width: 60px;
+    height: 60px;
+    border: 6px solid $BBLightGrey;
+  }
+
+  #about-timeline .timeline-end {
+    background: $BBBlue;
+    color: #fff;
+    font-weight: 700;
+    border-radius: 100%;
+    width: 60px;
+    height: 60px;
+    padding: 8px 0 0 0;
+    text-align: center;
+    font-size: 8px;
+    border: 6px solid $BBLightGrey;
+  }
+
+  #toggle {
+    display: block;
+  }
+}
+
+/*********************************************************/
+/* SUBSCRIBE
+/*********************************************************/
+#subscribe {
+  background: url("/assets/images/headerbg-970.jpg") no-repeat fixed center top rgba(0, 0, 0, 0);
+  padding-top: 100px;
+  padding-bottom: 600px;
+  position: relative;
+  background-repeat: no-repeat;
+  background-position: center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+#subscribe h1 {
+  color: $BBDarkGrey;
+}
+
+/* #### Mobile Phones Portrait #### */
+@media screen and (max-device-width: 480px) and (orientation: portrait) {
+  #subscribe {
+    padding-top: 5px;
+    padding-bottom: 120px;
+    background: url("/assets/images/headerbg-290.jpg");
+    position: relative;
+    background-repeat: no-repeat;
+    background-position: center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+
+  #subscribe h1 {
+    font-size: 20px;
+  }
+}
+
+/* #### Tablets Portrait or Landscape #### */
+@media screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  #subscribe {
+    padding-top: 90px;
+    padding-bottom: 600px;
+    background: url("/assets/images/headerbg-970.jpg");
+    position: relative;
+    background-repeat: no-repeat;
+    background-position: center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+}
+
+/* #### Desktops #### */
+@media screen and (min-device-width: 1024px) {
+  #subscribe {
+    background: url("/assets/images/headerbg-2560.jpg") fixed;
+    padding-top: 100px;
+    padding-bottom: 600px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+}
+
+/*********************************************************/
+/* VERSE
+/*********************************************************/
+.verse {
+  background: none repeat scroll 0 0 $BBBlue;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+.verse p {
+  color: white;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.verse cite {
+  color: white;
+  font-size: 18px;
+  font-weight: 400;
+}
