@@ -127,11 +127,12 @@
   margin-top: 10px;
 }
 
+// vertical line
 #about-timeline:before {
   content: "";
   background: $BBLightGrey;
   width: 2px;
-  height: 500px;
+  height: 400px;
   display: block;
   position: absolute;
   top: 160px;
@@ -147,6 +148,7 @@ ul li .timeline-image {
   clear: both;
 }
 
+// size of picture
 #about-timeline ul li img {
   border-radius: 100%;
   width: 120px;
@@ -161,7 +163,7 @@ ul li .timeline-image {
   border-radius: 100%;
   width: 120px;
   height: 120px;
-  padding: 25px 10px 0 10px;
+  padding: 215px 10px 0 10px;
   text-align: center;
   border: 6px solid $BBLightGrey;
 }
@@ -175,7 +177,7 @@ ul li .timeline-image {
 #about-timeline ul li {
   position: relative;
   margin-bottom: 10px;
-  min-height: 220px;
+  min-height: 160px;
 }
 
 #about-timeline .timeline-left {
