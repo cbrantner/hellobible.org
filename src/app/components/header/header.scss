@@ -21,7 +21,7 @@
 }
 
 .topheader-main {
-  background: url(/assets/images/danny-box.svg) no-repeat fixed;
+  background: url(#{$LogoPath}) no-repeat fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
@@ -30,30 +30,90 @@
 }
 
 /* #### Mobile Phones Portrait #### */
-@media screen and (max-device-width: 480px) and (orientation: portrait) {
+// @media screen and (max-device-width: 480px) and (orientation: portrait) {
+
+@include iphone5 {
   .topheader-main {
-    background: url(/assets/images/danny-box.svg);  
+    background: url(#{$LogoPath});  
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: 40%;
+    background-position: 10% bottom;
+    background-color: $BBBlue;
+
+  }
+
+.topheader h1 {
+    margin-top: -90px;
+    font-size: 20px;
+  }
+}
+
+@include iphone6 {
+  .topheader-main {
+    background: url(#{$LogoPath});  
     width: 100%;
     height: 100%;
     background-repeat: no-repeat;
     background-size: 50%;
     background-position: 10% bottom;
+    background-color: $BBBlue;
+
   }
 
 .topheader h1 {
-    margin-top: -70px;
+    margin-top: -90px;
+    font-size: 20px;
+  }
+}
+
+@include iphone6-plus {
+  .topheader-main {
+    background: url(#{$LogoPath});  
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: 50%;
+    background-position: 10% bottom;
+    background-color: $BBBlue;
+
+  }
+
+.topheader h1 {
+    margin-top: -90px;
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-device-width: 480px) and (orientation: portrait) {
+  .topheader-main {
+    background: url(#{$LogoPath});  
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: 40%;
+    background-position: 10% bottom;
+    background-color: $BBBlue;
+
+  }
+
+.topheader h1 {
+    margin-top: -90px;
     font-size: 20px;
   }
 }
 
 /* #### Tablets Portrait or Landscape #### */
-@media screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+// @media screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+@include ipad {
   .topheader-main {
-    background: url(/assets/images/danny-box.svg);
+    background: url(#{$LogoPath});
     width: 100%;
     height: 100%;
     background-repeat: no-repeat;
-    background-size: 50%;
+    background-size: 30%;
+    background-color: $BBBlue;
     background-position: 10% bottom;
   }
 }
@@ -63,10 +123,10 @@
   .topheader-main {
     width: 100%;
     height: 100%;
-    background: url(/assets/images/danny-box.svg) no-repeat fixed;
+    background: url(#{$LogoPath}) no-repeat fixed;
     background-size: 30%;
     background-position: 10% bottom;
-    background-color: #00a8d6;
+    background-color: $BBBlue;
     position: relative;
   }
 }

@@ -1,5 +1,5 @@
 #nav {
-  background-color: #00A8D6;
+  background-color: $BBBlue;
 }
 
 nav ul {
@@ -27,21 +27,20 @@ nav ul li a:link, nav ul li a:visited {
 
 nav ul li a:hover {
   color: #fff;
-  border-bottom: 1px solid #00a8d6;
+  border-bottom: 1px solid $BBBlue;
 }
-
 
 .corner-ribbon {
   z-index: 9999;
   width: 200px;
-  background: #FF0099;
+  background: $BBPink;
   position: absolute;
   top: 25px;
   left: -50px;
   text-align: center;
   line-height: 50px;
   letter-spacing: 1px;
-  color: #f0f0f0;
+  color: white;
   transform: rotate(-45deg);
   -webkit-transform: rotate(-45deg);
 }

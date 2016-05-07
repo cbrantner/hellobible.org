@@ -1,6 +1,6 @@
 #pricing h1 {
   font-size: 26px;
-  color: #424242;
+  color: $BBDarkGrey;
   font-weight: 400;
 }
 
@@ -9,13 +9,13 @@
   display: block;
   height: 4px;
   width: 80px;
-  background: #00a8d6;
+  background: $BBBlue;
   margin: 0 auto;
   margin-top: 10px;
 }
 
 .price-table {
-  border: 1px solid #424242;
+  border: 1px solid $BBDarkGrey;
   border-radius: 4px;
   margin: 0 auto 30px;
   overflow: hidden;
@@ -32,7 +32,7 @@
 }
 
 .table-title h3 {
-  color: #424242;
+  color: $BBDarkGrey;
   margin: 0;
 }
 
@@ -46,7 +46,7 @@
 }
 
 .table-price {
-  background: #00a8d6;
+  background: $BBBlue;
   color: #fff;
   padding: 20px;
   font-size: 34px;
@@ -71,7 +71,7 @@
 
 .table-list ul li {
   font-weight: 400;
-  color: #424242;
+  color: $BBDarkGrey;
   padding-bottom: 15px;
 }
 
@@ -80,11 +80,11 @@
 }
 
 .table-btn a.btn-primary:hover {
-  background: #FF0099;
+  background: $BBPink;
 }
 
 .price-table:hover .table-price {
-  background: #FF0099;
+  background: $BBPink;
   color: #fff;
 }
 
@@ -92,7 +92,7 @@
   width: 100%;
   height: 30px;
   color: #fff;
-  background: #FF0099;
+  background: $BBPink;
   -ms-transform: rotate(45deg); /* IE 9 */
   -webkit-transform: rotate(45deg); /* Chrome, Safari, Opera */
   transform: rotate(45deg);

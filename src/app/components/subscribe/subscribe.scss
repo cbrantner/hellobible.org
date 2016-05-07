@@ -16,7 +16,7 @@
 }
 
 .subscribe-inputs input[type="submit"] {
-  background: #FF0099;
+  background: $BBPink;
   color: #fff;
   padding: 8px;
   border: 0 none;
@@ -41,6 +41,17 @@
 }
 
 .subscribe-message {
-  background-color: #00a8d6;
+  background-color: $BBBlue;
   color: white;
+}
+
+/*********************************************************/
+/* TOASTR
+/*********************************************************/
+.toast-info {
+   background-color: $BBPink;
+}
+
+.toast-error {
+  background-color: #E43A2A;
 }

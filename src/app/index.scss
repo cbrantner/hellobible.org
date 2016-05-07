@@ -6,6 +6,7 @@ $navbar-inverse-link-color: #5AADBB;
 $icon-font-path: "../../bower_components/bootstrap-sass/assets/fonts/bootstrap/";
 $fa-font-path: "../../bower_components/font-awesome/fonts";
 @import "../../bower_components/font-awesome/scss/font-awesome.scss";
+@import "../../bower_components/sass-mediaqueries/media-queries.scss";
 
 /**
  *  Do not remove the comments below. It's the markers used by wiredep to inject
@@ -13,6 +14,26 @@ $fa-font-path: "../../bower_components/font-awesome/fonts";
  */
 // bower:scss
 // endbower
+
+
+
+/*********************************************************/
+// VARIABLES
+/*********************************************************/
+$BBBlue : #00a8d6;
+$BBPink : #FF0099;
+$BBGreen : #06B135;
+$BBYellow : #FEC15D;
+$BBLightGrey : #DEDEDE;
+$BBDarkGrey : #424242;
+
+
+$LogoPath : "/assets/images/danny-box.svg";
+
+
+/*********************************************************/
+// GENERAL SITE
+/*********************************************************/
 
 .browsehappy {
   margin: 0.2em 0;
@@ -28,8 +49,6 @@ $fa-font-path: "../../bower_components/font-awesome/fonts";
     width: 50px;
   }
 }
-
-
 
 html,
 body {
@@ -87,7 +106,7 @@ img {
 }
 
 .social-icons-bottom:hover {
-  color: #FF0099;
+  color: $BBPink;
 
 }
 

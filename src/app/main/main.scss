@@ -21,11 +21,11 @@
   width: 100px;
   height: 100px;
   border-radius: 100px;
-  border: 3px solid #00a8d6;
+  border: 3px solid $BBBlue;
   margin: 0 auto;
   font-size: 50px;
   text-align: center;
-  color: #00a8d6;
+  color: $BBBlue;
 }
 
 #informations .logo-create {
@@ -33,11 +33,11 @@
   width: 100px;
   height: 100px;
   border-radius: 100px;
-  border: 3px solid #06B135;
+  border: 3px solid $BBGreen;
   margin: 0 auto;
   font-size: 50px;
   text-align: center;
-  color: #06B135;
+  color: $BBGreen;
 }
 
 #informations .logo-pray {
@@ -45,30 +45,30 @@
   width: 100px;
   height: 100px;
   border-radius: 100px;
-  border: 3px solid #FEC15D;
+  border: 3px solid $BBYellow;
   margin: 0 auto;
   font-size: 50px;
   text-align: center;
-  color: #FEC15D;
+  color: $BBYellow;
 }
 
 #informations .text-read {
-  color: #00a8d6;
+  color: $BBBlue;
 }
 
 #informations .text-create {
-  color: #06B135;
+  color: $BBGreen;
 }
 
 #informations .text-pray {
-  color: #FEC15D;
+  color: $BBYellow;
 }
 
 /*********************************************************/
 /* SOCIAL ICONS
 /*********************************************************/
 .social {
-  background: none repeat scroll 0 0 #00a8d6;
+  background: none repeat scroll 0 0 $BBBlue;
 }
 
 .social-icons-top {
@@ -77,17 +77,8 @@
 }
 
 .social-icons-top:hover {
-  color: #FF0099;
+  color: $BBBlue;
   background-color: white;
-}
-
-.social-icons-thanks {
-  color: white;
-  padding: 10px;
-}
-
-.social-icons-thanks:hover {
-  color: #1799C0;
 }
 
 .social-icons-bottom {
@@ -95,7 +86,7 @@
 }
 
 .social-icons-bottom:hover {
-  color: #FF0099;
+  color: $BBBlue;
 
 }
 
@@ -108,7 +99,7 @@
 }
 
 #about-timeline h1, #about-timeline h2, #about-timeline h3, #about-timeline h4, #about-timeline p {
-  color: rgba(66, 66, 66, 1);
+  color: black;
 }
 
 #about-timeline h1:after {
@@ -116,14 +107,14 @@
   display: block;
   height: 4px;
   width: 80px;
-  background: #00a8d6;
+  background: $BBBlue;
   margin: 0 auto;
   margin-top: 10px;
 }
 
 #about-timeline:before {
   content: "";
-  background: #dedede;
+  background: $BBLightGrey;
   width: 2px;
   height: 500px;
   display: block;
@@ -145,11 +136,11 @@ ul li .timeline-image {
   border-radius: 100%;
   width: 120px;
   height: 120px;
-  border: 6px solid #dedede;
+  border: 6px solid $BBLightGrey;
 }
 
 #about-timeline .timeline-end {
-  background: #00a8d6;
+  background: $BBBlue;
   color: #fff;
   font-weight: 700;
   border-radius: 100%;
@@ -157,7 +148,7 @@ ul li .timeline-image {
   height: 120px;
   padding: 25px 10px 0 10px;
   text-align: center;
-  border: 6px solid #dedede;
+  border: 6px solid $BBLightGrey;
 }
 
 #about-timeline ul {
@@ -216,11 +207,11 @@ ul li .timeline-image {
     border-radius: 100%;
     width: 60px;
     height: 60px;
-    border: 6px solid #dedede;
+    border: 6px solid $BBLightGrey;
   }
 
   #about-timeline .timeline-end {
-    background: #00a8d6;
+    background: $BBBlue;
     color: #fff;
     font-weight: 700;
     border-radius: 100%;
@@ -229,109 +220,12 @@ ul li .timeline-image {
     padding: 8px 0 0 0;
     text-align: center;
     font-size: 8px;
-    border: 6px solid #dedede;
+    border: 6px solid $BBLightGrey;
   }
 
   #toggle {
     display: block;
   }
-}
-
-/*********************************************************/
-/* CONTACT
-/*********************************************************/
-#contact {
-  background: none repeat scroll 0 0 #fff;
-  padding-bottom: 120px;
-
-}
-
-#contact h1 {
-  font-size: 26px;
-  color: #424242;
-  font-weight: 400;
-}
-
-#contact h1:after {
-  content: "";
-  display: block;
-  height: 4px;
-  width: 80px;
-  background: #00a8d6;
-  margin: 0 auto;
-  margin-top: 10px;
-}
-
-#contact input[type="text"], #contact input[type="email"] {
-  background: #fff;
-  padding: 8px;
-  border: 1px solid #dedede;
-  width: 100%;
-  -webkit-border-radius: 4px;
-  -moz-border-radius: 4px;
-  border-radius: 4px;
-  margin-bottom: 10px;
-}
-
-#contact input[type="text"]:hover, #contact input[type="email"]:hover, #contact textarea:hover {
-  border: 1px solid #00a8d6;
-}
-
-#contact textarea {
-  background: #fff;
-  padding: 8px;
-  border: 1px solid #dedede;
-  width: 100%;
-  -webkit-border-radius: 4px;
-  -moz-border-radius: 4px;
-  border-radius: 4px;
-  margin-bottom: 10px;
-  margin-top: 10px;
-}
-
-#contact input[type="submit"] {
-  background: #00a8d6;
-  color: #fff;
-  padding: 8px;
-  border: 1px solid #00a8d6;
-  width: 100%;
-  -webkit-border-radius: 4px;
-  -moz-border-radius: 4px;
-  border-radius: 4px;
-  margin-top: 10px;
-  transition: all 0.5s ease;
-}
-
-#contact input[type="submit"]:hover, #contact input[type="submit"]:active {
-  background: #fff;
-  border: 1px solid #00a8d6;
-  color: #00a8d6;
-}
-
-#contact h3 {
-  color: #424242;
-  margin-top: 15px;
-  margin-bottom: 30px;
-  font-weight: 400;
-}
-
-.contactbg {
-  background: #fafafa;
-  padding: 20px;
-  border: 1px solid #dedede;
-}
-
-#contact h4 {
-  color: #424242;
-  font-size: 26px;
-}
-
-#contact p {
-  color: #424242;
-}
-
-#contact .col-md-10 h3 {
-  margin: 0;
 }
 
 /*********************************************************/
@@ -409,14 +303,13 @@ ul li .timeline-image {
 /* VERSE
 /*********************************************************/
 .verse {
-  background: none repeat scroll 0 0 #00a8d6;
+  background: none repeat scroll 0 0 $BBBlue;
   padding: 20px;
-  margin-bottom: 50px;
-  margin-top: 50px;
+  margin-top: 20px;
 }
 
 .verse p {
-  color: #424242;
+  color: $BBDarkGrey;
   font-size: 20px;
   font-weight: 400;
 }
