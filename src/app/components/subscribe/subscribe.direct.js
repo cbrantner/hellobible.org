@@ -33,6 +33,8 @@
           c : 'JSON_CALLBACK'
         };
 
+        // nudgespot.identify(mailchimp.email);
+
         var actions = {
           'save': {
             method: 'jsonp'
