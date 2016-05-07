@@ -6,14 +6,29 @@
   padding: 15px;
 }
 
+#informations h1 {
+  color: $BBDarkGrey;
+}
+
+#informations h1:after {
+  content: "";
+  display: block;
+  height: 4px;
+  width: 80px;
+  background: $BBBlue;
+  margin: 0 auto;
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+
 #informations h4 {
-  color: black;
+  color: $BBDarkGrey;
 }
 
 #informations p {
   font-size: 14px;
   font-weight: 300;
-  color: black;
+  color: $BBDarkGrey;
 }
 
 #informations .logo-read {
@@ -99,7 +114,7 @@
 }
 
 #about-timeline h1, #about-timeline h2, #about-timeline h3, #about-timeline h4, #about-timeline p {
-  color: black;
+  color: $BBDarkGrey;
 }
 
 #about-timeline h1:after {
@@ -119,14 +134,14 @@
   height: 500px;
   display: block;
   position: absolute;
-  top: 140px;
+  top: 160px;
   left: 50%;
   margin-left: -1px;
 }
 
 ul li .timeline-image {
   position: absolute;
-  top: 40px;
+  top: 20px;
   left: 50%;
   margin-left: -60px;
   clear: both;
@@ -245,7 +260,7 @@ ul li .timeline-image {
 }
 
 #subscribe h1 {
-  color: black;
+  color: $BBDarkGrey;
 }
 
 /* #### Mobile Phones Portrait #### */
@@ -309,7 +324,13 @@ ul li .timeline-image {
 }
 
 .verse p {
-  color: $BBDarkGrey;
+  color: white;
   font-size: 20px;
+  font-weight: 400;
+}
+
+.verse cite {
+  color: white;
+  font-size: 18px;
   font-weight: 400;
 }
