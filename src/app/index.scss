@@ -4,7 +4,7 @@
  */
 $navbar-inverse-link-color: #5AADBB;
 $icon-font-path: "../../bower_components/bootstrap-sass/assets/fonts/bootstrap/";
-$fa-font-path: "../../bower_components/font-awesome/fonts";
+$fa-font-path: "../../bower_components/font-awesome/fonts/";
 @import "../../bower_components/font-awesome/scss/font-awesome.scss";
 @import "../../bower_components/sass-mediaqueries/media-queries.scss";
 
@@ -136,6 +136,8 @@ img {
 .w100 {
   width: 100%;
 }
+
+@media screen and (-webkit-min-device-pixel-ratio:0) { @font-face { font-family:'FontAwesome'; src: url('fonts/fontawesome-webfont.svg?v=4.5.0#fontawesomeregular') format('svg'); } }
 
 /**
  *  Do not remove the comments below. It's the markers used by gulp-inject to inject
