@@ -1,11 +1,11 @@
-  <div class="row margin-t-60"> <!--ng-controller="MainCtrl">-->
-    <div class="subscribe-inputs">
-      <form name="MailchimpSubscriptionForm" required>
-        <input type="email" name="email" ng-model="mailchimp.email" placeholder="Email me when it's ready" required ng-model-options="{ debounce: 500 }">
-        <input type="submit" ng-disabled="MailchimpSubscriptionForm.$invalid" name="subscribe" ng-click="addSubscription(mailchimp)" value="Notify me!">
-      </form>
-    </div>
-    <div ng-messages="MailchimpSubscriptionForm.email.$error" class="subscribe-message">
-      <div ng-message="email">Please enter a valid email address.</div>
-    </div>
+<div>
+  <div class="subscribe-inputs">
+    <form name="MailchimpSubscriptionForm" required>
+      <input type="email" name="email" ng-model="mailchimp.email" placeholder="Email me when it's ready" required ng-model-options="{ debounce: 500 }">
+      <input type="submit" ng-disabled="MailchimpSubscriptionForm.$invalid" name="subscribe" ng-click="addSubscription(mailchimp)" value="Notify me!">
+    </form>
   </div>
+  <div ng-messages="MailchimpSubscriptionForm.email.$error" class="subscribe-message">
+    <div ng-message="email">Please enter a valid email address.</div>
+  </div>
+</div>
