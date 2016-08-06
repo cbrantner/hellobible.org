@@ -1,7 +1,14 @@
 #footer {
   visibility: visible;
-  padding-bottom: 12px;
-  padding-top: 12px;
+  padding-bottom: 5px;
   margin-top: 0px;
   background-color: $BBDarkGrey;
+}
+
+#footer img {
+  height: 115px;
+}
+
+.social-icons-bottom {
+  color: white;
 }

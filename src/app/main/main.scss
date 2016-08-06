@@ -41,6 +41,7 @@
   font-size: 50px;
   text-align: center;
   color: $BBBlue;
+  line-height: 1.9;
 }
 
 #informations .logo-create {
@@ -53,6 +54,7 @@
   font-size: 50px;
   text-align: center;
   color: $BBGreen;
+  line-height: 1.9;
 }
 
 #informations .logo-pray {
@@ -65,6 +67,7 @@
   font-size: 50px;
   text-align: center;
   color: $BBYellow;
+  line-height: 1.9;
 }
 
 #informations .text-read {
@@ -88,21 +91,13 @@
 
 .social-icons-top {
   color: white;
-  padding: 10px;
+  padding:2px;
+  vertical-align: bottom;
 }
 
-.social-icons-top:hover {
-  color: $BBBlue;
-  background-color: white;
-}
-
-.social-icons-bottom {
-  color: white;
-}
-
-.social-icons-bottom:hover {
-  color: $BBBlue;
-
+.social img {
+  height: 115px;
+  padding-right: 2px;
 }
 
 /*********************************************************/
@@ -266,7 +261,7 @@ ul li .timeline-image {
 }
 
 /* #### Mobile Phones Portrait #### */
-@media screen and (max-device-width: 480px) and (orientation: portrait) {
+@media screen and (max-device-width: 767px) {
   #subscribe {
     padding-top: 5px;
     padding-bottom: 120px;
@@ -304,7 +299,7 @@ ul li .timeline-image {
 /* #### Desktops #### */
 @media screen and (min-device-width: 1024px) {
   #subscribe {
-    background: url("/assets/images/subscribebg-2560.jpg") fixed;
+    background: url("/assets/images/subscribebg-2560.jpg");
     padding-top: 100px;
     padding-bottom: 600px;
     background-repeat: no-repeat;
@@ -321,24 +316,21 @@ ul li .timeline-image {
 /*********************************************************/
 .verse {
   background: none repeat scroll 0 0 $BBBlue;
-  padding: 20px;
-  margin-top: 20px;
-}
-
-.verse p {
   color: white;
-  font-size: 20px;
-  font-weight: 400;
 }
 
 .verse cite {
-  color: white;
   font-size: 18px;
   font-weight: 400;
 }
 
 .verse img {
-  height: 140px;
+  height: 110px;
+}
+
+.verse blockquote{
+  padding-top: 25px;
+  border-width: 0;
 }
 
 /*********************************************************/
