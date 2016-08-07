@@ -13,7 +13,7 @@
     // Set options third-party lib
     toastrConfig.allowHtml = true;
     toastrConfig.timeOut = 10000;
-    toastrConfig.positionClass = 'toast-bottom-right';
+    toastrConfig.positionClass = 'toast-top-left';
     toastrConfig.preventDuplicates = true;
     toastrConfig.progressBar = false;
     toastrConfig.closeButton = true;
