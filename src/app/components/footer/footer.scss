@@ -1,7 +1,18 @@
 #footer {
   visibility: visible;
-  padding-bottom: 12px;
-  padding-top: 12px;
-  margin-top: 0px;
+  padding-top: 50px;
   background-color: $BBDarkGrey;
+}
+
+#footer img {
+  height: 31px;
+  vertical-align: bottom;
+  margin-bottom: 3px;
+  margin-right: 1px;
+}
+
+.social-icons-bottom {
+  color: white;
+  vertical-align: bottom;
+  padding-bottom: 5px;
 }
