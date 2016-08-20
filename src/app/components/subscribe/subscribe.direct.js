@@ -24,7 +24,7 @@
 
       $scope.addSubscription = function(mailchimp) {
 
-        var url = '//biblebox4kids.us11.list-manage.com/subscribe/post-json';
+        var url = '//hellobible.us11.list-manage.com/subscribe/post-json';
 
         var params = {
           u : '241bb925118b3a87d221f6dca',
