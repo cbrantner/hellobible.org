@@ -2,7 +2,7 @@
   'use strict';
 
   angular
-    .module('biblebox4kids')
+    .module('hellobible')
     .directive('acmeHeader', acmeHeader);
 
   /** @ngInject */

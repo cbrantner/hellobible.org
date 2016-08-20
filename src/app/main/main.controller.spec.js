@@ -6,7 +6,7 @@
     //var $timeout;
     //var toastr;
 
-    beforeEach(module('biblebox4kids'));
+    beforeEach(module('hellobible'));
     beforeEach(inject(function(_$controller_, _$timeout_, _toastr_) {
       spyOn(_toastr_, 'info').and.callThrough();
 

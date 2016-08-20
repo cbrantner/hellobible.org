@@ -3,7 +3,7 @@
   'use strict';
 
   angular
-    .module('biblebox4kids')
+    .module('hellobible')
     .constant('malarkey', malarkey)
     .constant('moment', moment);
 
