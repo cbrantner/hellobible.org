@@ -2,6 +2,7 @@
   visibility: visible;
   padding-top: 50px;
   background-color: $BBDarkGrey;
+  color: white;
 }
 
 #footer img {
@@ -9,6 +10,25 @@
   vertical-align: bottom;
   margin-bottom: 3px;
   margin-right: 4px;
+}
+
+#footer ul {
+ list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+#footer .subscribe-inputs {
+  color:black;
+}
+
+#footer li {
+display: block;
+    padding: 0;
+}
+
+.copyright {
+  margin-top: 20px;
 }
 
 .social-icons-bottom {

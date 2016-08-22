@@ -21,7 +21,12 @@
     return directive;
 
     /** @ngInject */
-    function FooterController() {
+    function FooterController($scope, $location, $anchorScroll) {
+      var vm = this;
+      vm.gotoLoc = function(loc) {
+        $location.hash(loc);
+        $anchorScroll();
+      };
   
     }
   }
