@@ -14,7 +14,7 @@
           
       },
       controller: FooterController,
-      controllerAs: 'vm',
+      controllerAs: 'footerCtrl',
       bindToController: true
     };
 
@@ -25,6 +25,7 @@
       var vm = this;
       vm.gotoLoc = function(loc) {
         $location.hash(loc);
+        $anchorScroll.yOffset = 30;
         $anchorScroll();
       };
   
