@@ -14,14 +14,20 @@
           
       },
       controller: FooterController,
-      controllerAs: 'vm',
+      controllerAs: 'footerCtrl',
       bindToController: true
     };
 
     return directive;
 
     /** @ngInject */
-    function FooterController() {
+    function FooterController($scope, $location, $anchorScroll) {
+      var vm = this;
+      vm.gotoLoc = function(loc) {
+        $location.hash(loc);
+        $anchorScroll.yOffset = 30;
+        $anchorScroll();
+      };
   
     }
   }

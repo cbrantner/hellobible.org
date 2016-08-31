@@ -6,7 +6,12 @@
     .controller('MainController', MainController);
 
   /** @ngInject */
-  function MainController() {
+  function MainController($scope, $location, $anchorScroll) {
+    var vm = this;
+    vm.gotoLoc = function(loc) {
+      $location.hash(loc);
+      $anchorScroll();
+    };
 
   }
 })();
