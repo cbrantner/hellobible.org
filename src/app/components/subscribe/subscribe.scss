@@ -10,7 +10,7 @@
 
 .subscribe-inputs input[type="email"] {
   background: white;
-  padding: 8px;
+  padding: 9px;
   border: 0 none;
   width: 65%;
   -webkit-border-top-left-radius: 4px;
@@ -21,11 +21,15 @@
   border-bottom-left-radius: 4px;
 }
 
-.subscribe-inputs input[type="submit"] {
+// don't show light grey border when field is focused/active
+.subscribe-inputs input[type="email"]:focus {
+  outline: none;
+}
+
+.subscribe-inputs button[type="submit"] {
   background: $BBPink;
   color: #fff;
-  padding: 8px;
-  border: 0 none;
+  padding: 10px;
   margin-left: -5px;
   width: 35%;
   -webkit-border-top-right-radius: 4px;
@@ -36,18 +40,31 @@
   border-bottom-right-radius: 4px;
 }
 
-// bold font during hover
-.subscribe-inputs input[type="submit"]:hover {
-  font-weight: bold;
+// if disabled (i.e. no valid email), don't change the button
+.subscribe-inputs button[type="submit"]:disabled {
+  opacity: 1;
+  background: $BBPink;
 }
 
-// error message on bad email
+// if disabled (i.e. no valid email) and hovering over it, don't change the button
+.subscribe-inputs button[type="submit"]:disabled:hover {
+  background: $BBPink;
+}
+
+// if hovering over it (and not disabled), make the button blue
+.subscribe-inputs button[type="submit"]:hover {
+  background: $BBBlue;
+}
+
+/*********************************************************/
+/* Error messages on invalid input
+/*********************************************************/
 .subscribe-message {
   color: $BBPink;
 }
 
 /*********************************************************/
-/* TOASTR
+/* TOASTR notifications
 /*********************************************************/
 .toast-info {
   background-color: $BBPink;
