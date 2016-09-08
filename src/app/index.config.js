@@ -6,7 +6,7 @@
     .config(config);
 
   /** @ngInject */
-  function config($logProvider, toastrConfig) {
+  function config($logProvider, toastrConfig, laddaProvider) {
     // Enable log
     $logProvider.debugEnabled(true);
 
@@ -17,6 +17,12 @@
     toastrConfig.preventDuplicates = true;
     toastrConfig.progressBar = false;
     toastrConfig.closeButton = true;
+
+    laddaProvider.setOption({
+      style: 'slide-right',
+      spinnerSize: 40,
+      spinnerColor: '#ffffff'
+    });
   }
 
 })();
