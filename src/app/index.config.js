@@ -10,14 +10,15 @@
     // Enable log
     $logProvider.debugEnabled(true);
 
-    // Set options third-party lib
+    // Set options for toaster notifications
     toastrConfig.allowHtml = true;
     toastrConfig.timeOut = 10000;
     toastrConfig.positionClass = 'toast-top-left';
-    toastrConfig.preventDuplicates = true;
+    toastrConfig.preventDuplicates = false;
     toastrConfig.progressBar = false;
     toastrConfig.closeButton = true;
 
+    // Spinning wheel for subscribe button
     laddaProvider.setOption({
       style: 'slide-right',
       spinnerSize: 40,

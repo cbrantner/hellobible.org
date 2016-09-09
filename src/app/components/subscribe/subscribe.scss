@@ -67,9 +67,11 @@
 /* TOASTR notifications
 /*********************************************************/
 .toast-info {
+  z-index: 9999;
   background-color: $BBPink;
 }
 
 .toast-error {
+  z-index: 9999;
   background-color: #E43A2A;
 }
