@@ -51,6 +51,26 @@
 }
 
 .subscribe-mobile {
-  width: 80%;
   margin: auto;
+  text-align: center;
+}
+
+.btn-primary {
+  background: $BBPink;
+  color: #ffffff;
+}
+
+.btn-secondary {
+  background: $BBBlue;
+  color: #ffffff;
+}
+
+.btn-primary:hover {
+  background: $BBDarkPink;
+  color: #ffffff;
+}
+
+.btn-secondary:hover {
+  background: $BBDarkBlue;
+  color: #ffffff;
 }

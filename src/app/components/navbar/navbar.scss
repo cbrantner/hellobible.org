@@ -2,22 +2,32 @@
   background-color: $BBBlue;
 }
 
+.navbar-brand {
+  margin-top: -15px;
+}
+
+
 nav ul {
   margin: 0;
   padding: 0;
   margin-top: 36px;
   list-style: none;
   font-size: 18px;
+  padding-right: 140px;
 }
 
-.navbar-brand {
-  margin-top: -15px;
+#menuButton {
+  padding-right: 120px;
+}
+
+.fa-bars {
+  color: white;
+  font-size: 32px;
 }
 
 nav ul li {
   display: inline;
   position: relative;
-  padding-left: 20px;
 }
 
 nav ul li a {
@@ -26,12 +36,10 @@ nav ul li a {
 
 nav ul li a:link, nav ul li a:visited {
   text-decoration: none;
-
 }
 
 nav ul li a:hover {
   color: #fff;
-  border-bottom: 1px solid $BBBlue;
 }
 
 .corner-ribbon {

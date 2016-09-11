@@ -13,7 +13,7 @@
       scope: {
       },
       controller: HeaderController,
-      controllerAs: 'vm',
+      controllerAs: 'headerCtrl',
       bindToController: true
     };
 
@@ -21,6 +21,13 @@
 
     /** @ngInject */
     function HeaderController($scope, $location, $resource, $anchorScroll, $log, toastr) {
+
+      var vm = this;
+      vm.gotoLoc = function(loc) {
+        $location.hash(loc);
+        $anchorScroll.yOffset = 30;
+        $anchorScroll();
+      };
 
       $scope.scrollTo = function scrollTo(id) {
         $location.hash(id);
