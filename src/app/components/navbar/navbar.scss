@@ -6,7 +6,6 @@
   margin-top: -15px;
 }
 
-
 nav ul {
   margin: 0;
   padding: 0;
@@ -16,30 +15,24 @@ nav ul {
   padding-right: 140px;
 }
 
-#menuButton {
-  padding-right: 120px;
-}
-
+// size of collasped menu icon
 .fa-bars {
   color: white;
   font-size: 32px;
 }
 
-nav ul li {
-  display: inline;
-  position: relative;
-}
-
-nav ul li a {
-  color: #fff;
-}
-
-nav ul li a:link, nav ul li a:visited {
-  text-decoration: none;
+.navbar .navbar-nav > li > a:hover {
+  color: #ffffff;
+  background-color: $BBDarkBlue;
 }
 
 nav ul li a:hover {
-  color: #fff;
+  color: $BBBlue;
+}
+
+// make sure collapsed menu icon isn't hidden behind corner-ribbon
+#menuButton {
+  padding-right: 120px;
 }
 
 .corner-ribbon {
