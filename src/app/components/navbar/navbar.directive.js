@@ -21,14 +21,9 @@
     return directive;
 
     /** @ngInject */
-    function NavbarController($scope, $location, $anchorScroll) {
+    function NavbarController($scope) {
       $scope.navbarCollapsed = true;
-      var vm = this;
-      vm.gotoLoc = function(loc) {
-        $location.hash(loc);
-        $anchorScroll.yOffset = 30;
-        $anchorScroll();
-      };
+
     }
   }
 
