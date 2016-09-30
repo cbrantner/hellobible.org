@@ -1,19 +1,12 @@
-.insideheader {
-  margin-top: 50px;
-  background: url("/assets/images/insidebg-2560.jpg");
-  width: 100%;
-  padding-bottom: 500px;
-  background-repeat: no-repeat;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+.inside {
+  padding-top: 50px;
 }
-#insidecontent h1 {
+
+.inside h1 {
   color: $BBDarkGrey;
 }
 
-#insidecontent h1:after {
+.inside h1:after {
   content: "";
   display: block;
   height: 4px;
@@ -24,16 +17,49 @@
   margin-bottom: 30px;
 }
 
+.inside {
+	font-size: 18px;
+}
 
-.insidefooter {
-  margin-top: 50px;
-  background: url("/assets/images/insidefooter-2560.jpg");
-  width: 100%;
-  height: 100%;
-  padding-bottom: 500px;
-  background-repeat: no-repeat;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+.inside .text-read {
+  color: $BBBlue;
+	font-weight: bold;
+}
+
+.inside .text-create {
+  color: $BBGreen;
+	font-weight: bold;
+}
+
+.inside .text-pray {
+  color: $BBYellow;
+	font-weight: bold;
+}
+
+.inside ul li {
+	padding-bottom: 25px;
+}
+
+.inside .logo-read {
+	font-size: 50px;
+  border-radius: 100px;
+  padding: 10px;
+  color: $BBBlue;
+  border: 3px solid $BBBlue;
+}
+
+.inside .logo-create {
+	font-size: 50px;
+  border-radius: 100px;
+  padding: 10px;
+  color: $BBGreen;
+  border: 3px solid $BBGreen;
+}
+
+.inside .logo-pray {
+	font-size: 50px;
+  border-radius: 100px;
+  padding: 10px;
+  color: $BBYellow;
+  border: 3px solid $BBYellow;
 }

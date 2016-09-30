@@ -55,33 +55,3 @@
   text-align: center;
 }
 
-.btn {
-   -webkit-transition-duration: 0.4s; /* Safari */
-    transition-duration: 0.4s;
-}
-
-.btn-primary {
-  background: $BBPink;
-  color: #ffffff;
-  border: 2px solid $BBPink;
-
-}
-
-.btn-secondary {
-  background: transparent;
-  color: #ffffff;
-  border: 2px solid $BBBlue;
-}
-
-.btn-primary:hover {
-  background: $BBDarkPink;
-  color: #ffffff;
-  border: 2px solid $BBDarkPink;
-}
-
-.btn-secondary:hover {
-  background: $BBBlue;
-  color: #ffffff;
-  border: 2px solid $BBBlue;
-
-}
