@@ -12,7 +12,6 @@ nav ul {
   margin-top: 36px;
   list-style: none;
   font-size: 18px;
-  padding-right: 140px;
 }
 
 // size of collasped menu icon
@@ -29,36 +28,3 @@ nav ul {
 nav ul li a:hover {
   color: $BBBlue;
 }
-
-// make sure collapsed menu icon isn't hidden behind corner-ribbon
-#menuButton {
-  padding-right: 120px;
-}
-
-.corner-ribbon {
-  z-index: 9999;
-  width: 200px;
-  background: $BBPink;
-  position: absolute;
-  top: 25px;
-  left: -50px;
-  text-align: center;
-  line-height: 50px;
-  letter-spacing: 1px;
-  color: white;
-  transform: rotate(-45deg);
-  -webkit-transform: rotate(-45deg);
-}
-
-.corner-ribbon.sticky {
-  position: fixed;
-}
-
-.corner-ribbon.top-right {
-  top: 25px;
-  right: -50px;
-  left: auto;
-  transform: rotate(45deg);
-  -webkit-transform: rotate(45deg);
-}
-

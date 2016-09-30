@@ -1,8 +1,8 @@
 <div>
   <div class="subscribe-inputs">
     <form name="MailchimpSubscriptionForm" required>
-      <input type="email" name="email" ng-model="mailchimp.email" placeholder="Email address" required ng-model-options="{ debounce: 200 }" tabindex="1">
-      <button type="submit" ng-disabled="MailchimpSubscriptionForm.$invalid" name="subscribe" ng-click="addSubscription(mailchimp)" tabindex="2" ladda="submitting" class="btn btn-primary ladda-button">
+      <input type="email" name="email" ng-model="mailchimp.email" placeholder="Email address" required ng-model-options="{ debounce: 400 }" tabindex="1">
+      <button type="submit" ng-disabled="MailchimpSubscriptionForm.$invalid" name="subscribe" ng-click="addSubscription(mailchimp)" tabindex="2" ladda="submitting" class="btn ladda-button">
         Sign up
       </button>
     </form>

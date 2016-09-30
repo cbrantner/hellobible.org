@@ -9,17 +9,17 @@
   function routerConfig($stateProvider, $urlRouterProvider, $locationProvider) {
     $stateProvider
       .state('home', {
-        url: '/home',
+        url: '/',
         templateUrl: 'app/main/main.html',
         controller: 'MainController',
         controllerAs: 'main'
       })
 
-      .state('anchor', {
-        url: '/home/:location/',
-        templateUrl: 'app/main/main.html',
-        controller: 'MainController',
-        controllerAs: 'main'
+      .state('inside', {
+        url: '/inside-a-box',
+        templateUrl: 'app/inside/inside.html',
+        controller: 'InsideController',
+        controllerAs: 'inside'
       })
 
       .state('privacy', {
@@ -28,7 +28,7 @@
         controller: 'PrivacyController',
         controllerAs: 'privacy'
       });
-      $urlRouterProvider.otherwise('/home');
+      $urlRouterProvider.otherwise('/');
       $locationProvider.html5Mode(true);
   }
 })();
