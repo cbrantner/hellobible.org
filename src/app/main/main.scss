@@ -21,65 +21,51 @@
   margin-bottom: 30px;
 }
 
-#information h4 {
-  color: $BBDarkGrey;
-}
-
-#information p {
-  font-size: 14px;
-  font-weight: 300;
-  color: $BBDarkGrey;
-}
-
-#information .logo-read {
-  display: block;
-  width: 100px;
-  height: 100px;
-  border-radius: 100px;
-  border: 3px solid $BBBlue;
-  margin: 0 auto;
-  font-size: 50px;
-  text-align: center;
-  color: $BBBlue;
-  line-height: 1.9;
-}
-
-#information .logo-create {
-  display: block;
-  width: 100px;
-  height: 100px;
-  border-radius: 100px;
-  border: 3px solid $BBGreen;
-  margin: 0 auto;
-  font-size: 50px;
-  text-align: center;
-  color: $BBGreen;
-  line-height: 1.9;
-}
-
-#information .logo-pray {
-  display: block;
-  width: 100px;
-  height: 100px;
-  border-radius: 100px;
-  border: 3px solid $BBYellow;
-  margin: 0 auto;
-  font-size: 50px;
-  text-align: center;
-  color: $BBYellow;
-  line-height: 1.9;
+#information {
+	font-size: 18px;
 }
 
 #information .text-read {
   color: $BBBlue;
+	font-weight: bold;
 }
 
 #information .text-create {
   color: $BBGreen;
+	font-weight: bold;
 }
 
 #information .text-pray {
   color: $BBYellow;
+	font-weight: bold;
+}
+
+#information ul li {
+	padding-bottom: 25px;
+}
+
+#information .logo-read {
+	font-size: 50px;
+  border-radius: 100px;
+  padding: 10px;
+  color: $BBBlue;
+  border: 3px solid $BBBlue;
+}
+
+#information .logo-create {
+	font-size: 50px;
+  border-radius: 100px;
+  padding: 10px;
+  color: $BBGreen;
+  border: 3px solid $BBGreen;
+}
+
+#information .logo-pray {
+	font-size: 50px;
+  border-radius: 100px;
+  padding: 10px;
+  color: $BBYellow;
+  border: 3px solid $BBYellow;
 }
 
 /*********************************************************/
