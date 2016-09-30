@@ -6,7 +6,7 @@
     .controller('MainController', MainController);
 
   /** @ngInject */
-  function MainController($scope, $log, $stateParams) {
+  function MainController() {
 
   }
 })();
