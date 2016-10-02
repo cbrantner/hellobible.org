@@ -14,15 +14,16 @@
           creationDate: '='
       },
       controller: NavbarController,
-      controllerAs: 'vm',
+      controllerAs: 'navbarCtrl',
       bindToController: true
     };
 
     return directive;
 
     /** @ngInject */
-    function NavbarController() {
-  
+    function NavbarController($scope) {
+      $scope.navbarCollapsed = true;
+
     }
   }
 

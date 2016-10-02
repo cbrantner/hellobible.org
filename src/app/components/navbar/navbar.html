@@ -1,10 +1,16 @@
 <nav id="nav" class="navbar navbar-fixed-top" role="navigation">
-  <div class="container">
+  <div class="container-fluid">
     <div class="navbar-header">
-      <a class="navbar-brand" href="#/"><img src="/assets/images/logo.png" width="75px"/></a>
+      <button type="button" class="navbar-toggle" ng-click="navbarCollapsed = !navbarCollapsed" id="menuButton">
+        <i class="fa fa-bars menuBars"></i>
+      </button>
+      <a class="navbar-brand" href="/"><img src="/assets/images/logo.png" width="75px"/></a>
     </div>
+    <div class="collapse navbar-collapse" uib-collapse="navbarCollapsed">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="https://hellobible.zendesk.com/hc/en-us/categories/203708008-FAQ">FAQ</a></li>
+        <li><a ui-sref="home({ '#' : 'subscribeid'})" du-smooth-scroll>Sign up</a></li>
+      </ul>
+    </div>
+  </div>
 </nav>
-
-<div class="row">
-  <div class="corner-ribbon top-right sticky blue">Coming soon!</div>
-</div>

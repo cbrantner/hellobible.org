@@ -1,16 +1,16 @@
 /*********************************************************/
 /* INFORMATIONS
 /*********************************************************/
-#informations {
+#information {
   background: none repeat scroll 0 0 white;
   padding: 15px;
 }
 
-#informations h1 {
+#information h1 {
   color: $BBDarkGrey;
 }
 
-#informations h1:after {
+#information h1:after {
   content: "";
   display: block;
   height: 4px;
@@ -21,98 +21,67 @@
   margin-bottom: 30px;
 }
 
-#informations h4 {
-  color: $BBDarkGrey;
+#information {
+	font-size: 18px;
 }
 
-#informations p {
-  font-size: 14px;
-  font-weight: 300;
-  color: $BBDarkGrey;
+#information .text-read {
+  color: $BBBlue;
+	font-weight: bold;
 }
 
-#informations .logo-read {
-  display: block;
-  width: 100px;
-  height: 100px;
+#information .text-create {
+  color: $BBGreen;
+	font-weight: bold;
+}
+
+#information .text-pray {
+  color: $BBYellow;
+	font-weight: bold;
+}
+
+#information ul li {
+	padding-bottom: 25px;
+}
+
+#information .logo-read {
+	font-size: 50px;
   border-radius: 100px;
+  padding: 10px;
+  color: $BBBlue;
   border: 3px solid $BBBlue;
-  margin: 0 auto;
-  font-size: 50px;
-  text-align: center;
-  color: $BBBlue;
-  line-height: 1.9;
 }
 
-#informations .logo-create {
-  display: block;
-  width: 100px;
-  height: 100px;
+#information .logo-create {
+	font-size: 50px;
   border-radius: 100px;
+  padding: 10px;
+  color: $BBGreen;
   border: 3px solid $BBGreen;
-  margin: 0 auto;
-  font-size: 50px;
-  text-align: center;
-  color: $BBGreen;
-  line-height: 1.9;
 }
 
-#informations .logo-pray {
-  display: block;
-  width: 100px;
-  height: 100px;
+#information .logo-pray {
+	font-size: 50px;
   border-radius: 100px;
+  padding: 10px;
+  color: $BBYellow;
   border: 3px solid $BBYellow;
-  margin: 0 auto;
-  font-size: 50px;
-  text-align: center;
-  color: $BBYellow;
-  line-height: 1.9;
 }
 
-#informations .text-read {
-  color: $BBBlue;
-}
-
-#informations .text-create {
-  color: $BBGreen;
-}
-
-#informations .text-pray {
-  color: $BBYellow;
-}
-
-/*********************************************************/
-/* SOCIAL ICONS
-/*********************************************************/
-.social {
-  background: none repeat scroll 0 0 $BBBlue;
-}
-
-.social-icons-top {
-  color: white;
-  padding:2px;
-  vertical-align: bottom;
-}
-
-.social img {
-  height: 115px;
-  padding-right: 2px;
-}
 
 /*********************************************************/
 /* ABOUT
 /*********************************************************/
-#about {
+#how {
   padding: 20px 20px 0 20px;
   position: relative;
 }
 
-#about h1, #about h2, #about h3, #about h4, #about p {
+#how h1, #how h2, #how h3, #how h4, #how p {
   color: $BBDarkGrey;
 }
 
-#about h1:after {
+#how h1:after {
   content: "";
   display: block;
   height: 4px;
@@ -123,7 +92,7 @@
 }
 
 // vertical line
-#about:before {
+#how:before {
   content: "";
   background: $BBLightGrey;
   width: 2px;
@@ -144,14 +113,14 @@ ul li .timeline-image {
 }
 
 // size of picture
-#about ul li img {
+#how ul li img {
   border-radius: 100%;
   width: 120px;
   height: 120px;
   border: 6px solid $BBLightGrey;
 }
 
-#about .timeline-end {
+#how .timeline-end {
   background: $BBBlue;
   color: #fff;
   font-weight: 700;
@@ -163,44 +132,44 @@ ul li .timeline-image {
   border: 6px solid $BBLightGrey;
 }
 
-#about ul {
+#how ul {
   list-style: none;
   padding: 0;
   margin: 0;
 }
 
-#about ul li {
+#how ul li {
   position: relative;
   margin-bottom: 10px;
   min-height: 160px;
 }
 
-#about .timeline-left {
+#how .timeline-left {
   float: left;
   width: 41%;
   text-align: right;
 }
 
-#about .timeline-right {
+#how .timeline-right {
   float: right;
   width: 41%;
   text-align: left;
 }
 
 @media (max-width: 768px) {
-  #about:before {
+  #how:before {
     content: "";
     display: none;
   }
 
-  #about .timeline-left {
+  #how .timeline-left {
     float: none;
     width: 90%;
     text-align: left;
     padding-left: 90px;
   }
 
-  #about .timeline-right {
+  #how .timeline-right {
     float: none;
     width: 90%;
     text-align: left;
@@ -215,14 +184,14 @@ ul li .timeline-image {
     clear: both;
   }
 
-  #about ul li img {
+  #how ul li img {
     border-radius: 100%;
     width: 60px;
     height: 60px;
     border: 6px solid $BBLightGrey;
   }
 
-  #about .timeline-end {
+  #how .timeline-end {
     background: $BBBlue;
     color: #fff;
     font-weight: 700;
@@ -243,26 +212,67 @@ ul li .timeline-image {
 /*********************************************************/
 /* SUBSCRIBE
 /*********************************************************/
-#subscribe {
-  background: url("/assets/images/subscribebg-970.jpg") no-repeat fixed center top rgba(0, 0, 0, 0);
-  padding-top: 100px;
-  padding-bottom: 600px;
-  position: relative;
-  background-repeat: no-repeat;
-  background-position: center center;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}
-
-#subscribe h1 {
+#subscribeid h1 {
   color: $BBDarkGrey;
 }
 
-/* #### Mobile Phones Portrait #### */
-@media screen and (max-device-width: 767px) {
-  #subscribe {
+#subscribeid h3 {
+  color: $BBDarkGrey;
+}
+
+/* #### Desktops #### */
+@media (min-width: 992px) {
+  #subscribeid {
+    background: url("/assets/images/subscribebg-2560.jpg") no-repeat fixed center top/cover rgba(0, 0, 0, 0);
+    padding-top: 200px;
+	  padding-bottom: 200px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+
+  #subscribeid .well {
+    filter: alpha(opacity=85);
+    opacity: 0.85;
+    -moz-opacity: 0.85;
+    -khtml-opacity: 0.85;
+    padding-top: 90px;
+    padding-bottom: 90px;
+    margin-left: 50%;
+    margin-right: 10px;
+  }
+}
+
+/* #### Tablets Portrait or Landscape #### */
+@media (min-width: 768px) and (max-width: 991px) {
+  #subscribeid {
+    padding-top: 90px;
+    padding-bottom: 600px;
+    background: url("/assets/images/subscribebg-970.jpg") no-repeat fixed center top/cover rgba(0, 0, 0, 0);
+    background-repeat: no-repeat;
+    background-position: center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+
+  #subscribeid .well {
+    filter: alpha(opacity=85);
+    opacity: 0.85;
+    -moz-opacity: 0.85;
+    -khtml-opacity: 0.85;
+    padding-top: 90px;
+    padding-bottom: 90px;
+  }
+}
+
+/* Landscape phones and portrait tablets */
+@media (max-width: 480px), (max-width: 767px) {
+  #subscribeid {
     padding-top: 5px;
     padding-bottom: 120px;
     background: url("/assets/images/subscribebg-290.jpg");
@@ -275,41 +285,22 @@ ul li .timeline-image {
     background-size: cover;
   }
 
-  #subscribe h1 {
-    font-size: 20px;
+  #subscribeid h1 {
+    font-size: 24px;
   }
-}
 
-/* #### Tablets Portrait or Landscape #### */
-@media screen and (min-device-width: 768px) and (max-device-width: 1024px) {
-  #subscribe {
+  #subscribeid .well-xs {
+    filter: alpha(opacity=85);
+    opacity: 0.85;
+    -moz-opacity: 0.85;
+    -khtml-opacity: 0.85;
     padding-top: 90px;
-    padding-bottom: 600px;
-    background: url("/assets/images/subscribebg-970.jpg");
-    position: relative;
-    background-repeat: no-repeat;
-    background-position: center center;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+    padding-bottom: 90px;
+    margin-left: 10px;
+    margin-right: 10px;
   }
 }
 
-/* #### Desktops #### */
-@media screen and (min-device-width: 1024px) {
-  #subscribe {
-    background: url("/assets/images/subscribebg-2560.jpg");
-    padding-top: 100px;
-    padding-bottom: 600px;
-    background-repeat: no-repeat;
-    background-position: center center;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-  }
-}
 
 /*********************************************************/
 /* VERSE

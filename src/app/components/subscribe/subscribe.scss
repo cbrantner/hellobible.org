@@ -48,7 +48,7 @@
 
 // if disabled (i.e. no valid email) and hovering over it, don't change the button
 .subscribe-inputs button[type="submit"]:disabled:hover {
-  background: $BBPink;
+  background: $BBDarkPink;
 }
 
 // if hovering over it (and not disabled), make the button blue
@@ -60,7 +60,7 @@
 /* Error messages on invalid input
 /*********************************************************/
 .subscribe-message {
-  color: $BBPink;
+  color: $BBDarkPink;
 }
 
 /*********************************************************/

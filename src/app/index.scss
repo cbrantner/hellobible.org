@@ -21,7 +21,9 @@ $fa-font-path: "../../bower_components/font-awesome/fonts/";
 // VARIABLES
 /*********************************************************/
 $BBBlue : #00a8d6;
+$BBDarkBlue : #1492B9;
 $BBPink : #FF0099;
+$BBDarkPink : #E3158A;
 $BBGreen : #06B135;
 $BBYellow : #FEC15D;
 $BBLightGrey : #DEDEDE;
@@ -73,6 +75,8 @@ a, button {
 
 a:hover, a:focus {
   color: #fff;
+  text-decoration: none;
+  cursor: pointer;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -123,6 +127,46 @@ img {
 }
 
 @media screen and (-webkit-min-device-pixel-ratio:0) { @font-face { font-family:'FontAwesome'; src: url('fonts/fontawesome-webfont.svg?v=4.5.0#fontawesomeregular') format('svg'); } }
+
+/*********************************************************/
+/* BUTTONS
+/*********************************************************/
+.btn {
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+}
+
+.btn-primary {
+  background: $BBPink;
+  color: #ffffff;
+  border: 2px solid $BBPink;
+}
+
+.btn-secondary {
+  background: transparent;
+	color: #ffffff;
+  border: 2px solid $BBBlue;
+}
+
+.btn-primary:hover {
+  background: $BBDarkPink;
+  color: #ffffff;
+  border: 2px solid $BBDarkPink;
+}
+
+.btn-secondary:hover {
+  background: $BBBlue;
+  color: #ffffff;
+  border: 2px solid $BBBlue;
+}
+
+.inverse-button {
+  color: $BBDarkGrey;
+}
+
+.inverse-button:hover {
+  color: $BBDarkGrey;
+}
 
 /**
  *  Do not remove the comments below. It's the markers used by gulp-inject to inject

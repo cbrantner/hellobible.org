@@ -14,8 +14,8 @@
 
 #footer ul {
  list-style-type: none;
-    margin: 0;
-    padding: 0;
+ margin: 0;
+ padding: 0;
 }
 
 #footer .subscribe-inputs {
@@ -24,7 +24,7 @@
 
 #footer li {
 display: block;
-    padding: 0;
+  padding: 0;
 }
 
 .copyright {
@@ -35,4 +35,10 @@ display: block;
   color: white;
   vertical-align: bottom;
   padding-bottom: 5px;
+}
+
+#footer .link-active {
+  color: $BBPink;
+	pointer-events: none;
+  cursor: default;
 }

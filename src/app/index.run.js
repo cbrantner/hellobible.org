@@ -6,9 +6,10 @@
     .run(runBlock);
 
   /** @ngInject */
-  function runBlock($log) {
-
-    $log.debug('runBlock end');
+  function runBlock($rootScope, $document, SCROLL_DURATION) {
+		$rootScope.toTheTop = function() {
+      $document.scrollTopAnimated(10, SCROLL_DURATION)
+    }
   }
 
 })();

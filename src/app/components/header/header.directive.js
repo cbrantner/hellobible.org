@@ -13,19 +13,14 @@
       scope: {
       },
       controller: HeaderController,
-      controllerAs: 'vm',
+      controllerAs: 'headerCtrl',
       bindToController: true
     };
 
     return directive;
 
     /** @ngInject */
-    function HeaderController($scope, $location, $resource, $anchorScroll, $log, toastr) {
-
-      $scope.scrollTo = function scrollTo(id) {
-        $location.hash(id);
-        $anchorScroll();
-      }
+    function HeaderController($scope, $location, $resource, $log, toastr) {
 
       $scope.addSubscription = function(mailchimp) {
 

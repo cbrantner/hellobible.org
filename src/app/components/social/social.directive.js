@@ -3,28 +3,29 @@
 
   angular
     .module('hellobible')
-    .directive('acmeFooter', acmeFooter);
+    .directive('acmeSocial', acmeSocial);
 
   /** @ngInject */
-  function acmeFooter() {
+  function acmeSocial() {
     var directive = {
       restrict: 'E',
-      templateUrl: 'app/components/footer/footer.html',
+      templateUrl: 'app/components/social/social.html',
       scope: {
           
       },
-      controller: FooterController,
-      controllerAs: 'footerCtrl',
+      controller: SocialController,
+      controllerAs: 'socialCtrl',
       bindToController: true
     };
 
     return directive;
 
     /** @ngInject */
-    function FooterController() {
+    function SocialController() {
 
   
     }
   }
 
 })();
+
