@@ -3,7 +3,9 @@
 
   angular
     .module('hellobible')
-    .config(config);
+    .config(config)
+		.value('duScrollOffset', 30)
+		.value('duScrollDuration', 500);
 
   /** @ngInject */
   function config($logProvider, toastrConfig, laddaProvider) {
@@ -24,6 +26,6 @@
       spinnerSize: 40,
       spinnerColor: '#ffffff'
     });
-  }
 
+  }
 })();

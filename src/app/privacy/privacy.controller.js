@@ -6,8 +6,8 @@
     .controller('PrivacyController', PrivacyController);
 
   /** @ngInject */
-  function PrivacyController() {
-
+  function PrivacyController($rootScope) {
+		$rootScope.toTheTop();
   }
 })();
 

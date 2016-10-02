@@ -129,41 +129,22 @@ img {
 @media screen and (-webkit-min-device-pixel-ratio:0) { @font-face { font-family:'FontAwesome'; src: url('fonts/fontawesome-webfont.svg?v=4.5.0#fontawesomeregular') format('svg'); } }
 
 /*********************************************************/
-/* SOCIAL ICONS
-/*********************************************************/
-.social {
-  background: none repeat scroll 0 0 $BBBlue;
-}
-
-.social-icons-top {
-  color: white;
-  padding:2px;
-  vertical-align: bottom;
-}
-
-.social img {
-  height: 115px;
-  padding-right: 2px;
-}
-
-/*********************************************************/
 /* BUTTONS
 /*********************************************************/
 .btn {
-   -webkit-transition-duration: 0.4s; /* Safari */
-    transition-duration: 0.4s;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
 }
 
 .btn-primary {
   background: $BBPink;
   color: #ffffff;
   border: 2px solid $BBPink;
-
 }
 
 .btn-secondary {
   background: transparent;
-  color: #ffffff;
+	color: #ffffff;
   border: 2px solid $BBBlue;
 }
 
@@ -177,7 +158,14 @@ img {
   background: $BBBlue;
   color: #ffffff;
   border: 2px solid $BBBlue;
+}
 
+.inverse-button {
+  color: $BBDarkGrey;
+}
+
+.inverse-button:hover {
+  color: $BBDarkGrey;
 }
 
 /**

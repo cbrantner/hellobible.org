@@ -28,6 +28,7 @@
         controller: 'PrivacyController',
         controllerAs: 'privacy'
       });
+
       $urlRouterProvider.otherwise('/');
       $locationProvider.html5Mode(true);
   }

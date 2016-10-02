@@ -212,7 +212,7 @@ ul li .timeline-image {
 /*********************************************************/
 /* SUBSCRIBE
 /*********************************************************/
-#subscribe {
+#subscribeid {
   background: url("/assets/images/subscribebg-970.jpg") no-repeat fixed center top rgba(0, 0, 0, 0);
   padding-top: 100px;
   padding-bottom: 600px;
@@ -225,13 +225,13 @@ ul li .timeline-image {
   background-size: cover;
 }
 
-#subscribe h1 {
+#subscribeid h1 {
   color: $BBDarkGrey;
 }
 
 /* #### Mobile Phones Portrait #### */
 @media screen and (max-device-width: 767px) {
-  #subscribe {
+  #subscribeid {
     padding-top: 5px;
     padding-bottom: 120px;
     background: url("/assets/images/subscribebg-290.jpg");
@@ -244,14 +244,14 @@ ul li .timeline-image {
     background-size: cover;
   }
 
-  #subscribe h1 {
+  #subscribeid h1 {
     font-size: 20px;
   }
 }
 
 /* #### Tablets Portrait or Landscape #### */
 @media screen and (min-device-width: 768px) and (max-device-width: 1024px) {
-  #subscribe {
+  #subscribeid {
     padding-top: 90px;
     padding-bottom: 600px;
     background: url("/assets/images/subscribebg-970.jpg");
@@ -267,10 +267,10 @@ ul li .timeline-image {
 
 /* #### Desktops #### */
 @media screen and (min-device-width: 1024px) {
-  #subscribe {
+  #subscribeid {
     background: url("/assets/images/subscribebg-2560.jpg");
-    padding-top: 100px;
-    padding-bottom: 600px;
+    padding-top: 50px;
+    padding-bottom: 450px;
     background-repeat: no-repeat;
     background-position: center center;
     -webkit-background-size: cover;

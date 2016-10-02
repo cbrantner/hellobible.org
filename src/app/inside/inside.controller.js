@@ -6,8 +6,8 @@
     .controller('InsideController', InsideController);
 
   /** @ngInject */
-  function InsideController() {
-
+  function InsideController($rootScope) {
+    $rootScope.toTheTop();
   }
 })();
 

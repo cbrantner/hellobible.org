@@ -36,3 +36,9 @@ display: block;
   vertical-align: bottom;
   padding-bottom: 5px;
 }
+
+#footer .link-active {
+  color: $BBPink;
+	pointer-events: none;
+  cursor: default;
+}
