@@ -212,25 +212,66 @@ ul li .timeline-image {
 /*********************************************************/
 /* SUBSCRIBE
 /*********************************************************/
-#subscribeid {
-  background: url("/assets/images/subscribebg-970.jpg") no-repeat fixed center top rgba(0, 0, 0, 0);
-  padding-top: 100px;
-  padding-bottom: 600px;
-  position: relative;
-  background-repeat: no-repeat;
-  background-position: center center;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}
-
 #subscribeid h1 {
   color: $BBDarkGrey;
 }
 
-/* #### Mobile Phones Portrait #### */
-@media screen and (max-device-width: 767px) {
+#subscribeid h3 {
+  color: $BBDarkGrey;
+}
+
+/* #### Desktops #### */
+@media (min-width: 992px)
+  #subscribeid {
+    background: url("/assets/images/subscribebg-2560.jpg") no-repeat fixed center top/cover rgba(0, 0, 0, 0);
+    padding-top: 200px;
+	  padding-bottom: 200px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+
+  #subscribeid .well {
+    filter: alpha(opacity=85);
+    opacity: 0.85;
+    -moz-opacity: 0.85;
+    -khtml-opacity: 0.85;
+    padding-top: 90px;
+    padding-bottom: 90px;
+    margin-left: 50%;
+    margin-right: 10px;
+  }
+}
+
+/* #### Tablets Portrait or Landscape #### */
+@media (min-width: 768px) and (max-width: 991px) {
+  #subscribeid {
+    padding-top: 90px;
+    padding-bottom: 600px;
+    background: url("/assets/images/subscribebg-970.jpg") no-repeat fixed center top/cover rgba(0, 0, 0, 0);
+    background-repeat: no-repeat;
+    background-position: center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+
+  #subscribeid .well {
+    filter: alpha(opacity=85);
+    opacity: 0.85;
+    -moz-opacity: 0.85;
+    -khtml-opacity: 0.85;
+    padding-top: 90px;
+    padding-bottom: 90px;
+  }
+}
+
+/* Landscape phones and portrait tablets */
+@media (max-width: 480px), (max-width: 767px) {
   #subscribeid {
     padding-top: 5px;
     padding-bottom: 120px;
@@ -245,40 +286,21 @@ ul li .timeline-image {
   }
 
   #subscribeid h1 {
-    font-size: 20px;
+    font-size: 24px;
   }
-}
 
-/* #### Tablets Portrait or Landscape #### */
-@media screen and (min-device-width: 768px) and (max-device-width: 1024px) {
-  #subscribeid {
+  #subscribeid .well-xs {
+    filter: alpha(opacity=85);
+    opacity: 0.85;
+    -moz-opacity: 0.85;
+    -khtml-opacity: 0.85;
     padding-top: 90px;
-    padding-bottom: 600px;
-    background: url("/assets/images/subscribebg-970.jpg");
-    position: relative;
-    background-repeat: no-repeat;
-    background-position: center center;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+    padding-bottom: 90px;
+    margin-left: 10px;
+    margin-right: 10px;
   }
 }
 
-/* #### Desktops #### */
-@media screen and (min-device-width: 1024px) {
-  #subscribeid {
-    background: url("/assets/images/subscribebg-2560.jpg");
-    padding-top: 50px;
-    padding-bottom: 450px;
-    background-repeat: no-repeat;
-    background-position: center center;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-  }
-}
 
 /*********************************************************/
 /* VERSE

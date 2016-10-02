@@ -1,9 +1,9 @@
-.inside {
-  padding-top: 50px;
-}
-
 .inside h1 {
   color: $BBDarkGrey;
+}
+
+.inside {
+  margin-bottom: 200px;
 }
 
 .inside h1:after {
@@ -15,10 +15,6 @@
   margin: 0 auto;
   margin-top: 10px;
   margin-bottom: 30px;
-}
-
-.inside {
-	font-size: 18px;
 }
 
 .inside .text-read {
