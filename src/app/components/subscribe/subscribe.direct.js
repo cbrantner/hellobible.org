@@ -20,7 +20,7 @@
     return directive;
 
     /** @ngInject */
-    function SubscribeController($scope, $location, $resource, $anchorScroll, $log, toastr) {
+    function SubscribeController($scope, $location, $resource, $anchorScroll, $log, toastr, $window) {
 
       $scope.addSubscription = function(mailchimp) {
 
@@ -62,6 +62,9 @@
             toastr.error(responseMessage);
           } else if (response.result === 'success') {
             toastr.info(response.msg);
+            
+            // track as lead on facebook
+            $window.fbq('track', 'Lead');
           }
           mailchimp.email = '';          
           // disable spinner
