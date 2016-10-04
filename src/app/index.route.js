@@ -23,10 +23,10 @@
         controller: 'InsideController',
         controllerAs: 'inside',
         onEnter: function() {
+            // facebook
             $window.fbq('track', "ViewContent");
-        },
-        onExit: function() {
-            $window.fbq('track', "ViewContent");
+            // pinterest
+            $window.pintrk('track', 'pagevisit');
         }
       })
 

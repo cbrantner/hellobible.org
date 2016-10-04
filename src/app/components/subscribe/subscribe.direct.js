@@ -65,6 +65,8 @@
             
             // track as lead on facebook
             $window.fbq('track', 'Lead');
+            // track as lead on pinterest
+            $window.pintrk('track', 'lead');
           }
           mailchimp.email = '';          
           // disable spinner
