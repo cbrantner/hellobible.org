@@ -6,7 +6,9 @@
     .config(routerConfig);
 
   /** @ngInject */
-  function routerConfig($stateProvider, $urlRouterProvider, $locationProvider) {
+  function routerConfig($stateProvider, $urlRouterProvider, $locationProvider, $windowProvider) {
+    var $window = $windowProvider.$get();
+
     $stateProvider
       .state('home', {
         url: '/',
@@ -19,7 +21,13 @@
         url: '/inside-a-box',
         templateUrl: 'app/inside/inside.html',
         controller: 'InsideController',
-        controllerAs: 'inside'
+        controllerAs: 'inside',
+        onEnter: function() {
+            $window.fbq('track', "ViewContent");
+        },
+        onExit: function() {
+            $window.fbq('track', "ViewContent");
+        }
       })
 
       .state('privacy', {
