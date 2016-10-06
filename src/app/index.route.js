@@ -14,7 +14,10 @@
         url: '/',
         templateUrl: 'app/main/main.html',
         controller: 'MainController',
-        controllerAs: 'main'
+        controllerAs: 'main',
+        data : {
+          title: 'A Fun Way for Kids to Explore the Bible'
+        }
       })
 
       .state('inside', {
@@ -27,6 +30,9 @@
             $window.fbq('track', "ViewContent");
             // pinterest
             $window.pintrk('track', 'pagevisit');
+        },
+        data : {
+          title: 'Sample Boxes'
         }
       })
 
@@ -34,7 +40,10 @@
         url: '/privacy',
         templateUrl: 'app/privacy/privacy.html',
         controller: 'PrivacyController',
-        controllerAs: 'privacy'
+        controllerAs: 'privacy',
+        data : {
+          title: 'Privacy Policy'
+        }
       });
 
       $urlRouterProvider.otherwise('/');
