@@ -53,6 +53,11 @@ html,
 body {
   width: 100%;
   height: 100%;
+
+  // clip right edges on iphone if it overflows
+  // but bring back touch scrolling
+  overflow-x: hidden;
+  -webkit-overflow-scrolling: touch;
 }
 
 body {
