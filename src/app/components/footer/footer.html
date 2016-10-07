@@ -1,6 +1,6 @@
 <nav id="footer" class="navbar">
-  <div class="row">
-    <div class="col-md-2 col-md-offset-3">
+  <div class="row visible-md links">
+    <div class="col-md-2 col-md-offset-2">
       <ul>
         <li><a ui-sref="home" ui-sref-active="link-active" du-smooth-scroll>Home</a></li>
         <li><a ui-sref="inside" ui-sref-active="link-active" du-smooth-scroll>Sample Boxes</a></li>
@@ -12,18 +12,35 @@
         <li><a ui-sref="privacy" ui-sref-active="link-active">Privacy</a></li>
       </ul>
     </div>
-    <div class="col-md-4 hidden-xs">
+    <div class="col-md-4">
       <acme-subscribe></acme-subscribe>
     </div>
-  </div> <!-- row -->
-  <div class="row">
- </div>
- <div class="row copyright">
-   <div class="container col-md-4 col-md-offset-3">
+  </div>
+  <div class="row col-md-offset-2 copyright visible-md">
       <a href="https://hellobible.zendesk.com/hc/en-us/requests/new"><i class="social-icons-bottom fa fa-envelope-square fa-2x"></i></a>
       <a href="http://www.facebook.com/hellobible.org/"><i class="social-icons-bottom fa fa-facebook-square fa-2x"></i></a>
       <a href="http://www.pinterest.com/hellobible"><i class="social-icons-bottom fa fa-pinterest-square fa-2x"></i></a><br/>
-     &copy; 2016 hellobible, LLC.
+      &copy; 2016 hellobible, LLC.
    </div>
  </div>
+
+ <div class="row hidden-md">
+   
+   <div class="row links">
+      <a ui-sref="home" ui-sref-active="link-active" du-smooth-scroll>Home</a> &bull;
+      <a ui-sref="inside" ui-sref-active="link-active" du-smooth-scroll>Sample Boxes</a>
+   </div>
+   <div class="row links">
+      <a href="https://hellobible.zendesk.com/hc/en-us">Support</a> &bull;
+      <a ui-sref="privacy" ui-sref-active="link-active">Privacy</a>
+   </div>
+
+   <div class="row copyright">
+      <a href="https://hellobible.zendesk.com/hc/en-us/requests/new"><i class="social-icons-bottom fa fa-envelope-square fa-2x"></i></a>
+      <a href="http://www.facebook.com/hellobible.org/"><i class="social-icons-bottom fa fa-facebook-square fa-2x"></i></a>
+      <a href="http://www.pinterest.com/hellobible"><i class="social-icons-bottom fa fa-pinterest-square fa-2x"></i></a><br/>
+      &copy; 2016 hellobible, LLC.
+   </div>
+ </div>
+
 </nav>
