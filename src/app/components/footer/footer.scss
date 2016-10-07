@@ -13,9 +13,9 @@
 }
 
 #footer ul {
- list-style-type: none;
- margin: 0;
- padding: 0;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
 #footer .subscribe-inputs {
@@ -23,12 +23,23 @@
 }
 
 #footer li {
-display: block;
+  display: block;
   padding: 0;
 }
 
 .copyright {
   margin-top: 20px;
+}
+
+@media (max-width: 991px) {
+  .copyright {
+    margin-top: 20px;
+    text-align: center;
+  }
+
+  #footer .links {
+    text-align: center;
+  }
 }
 
 .social-icons-bottom {

@@ -40,8 +40,11 @@
 	font-weight: bold;
 }
 
-#information ul li {
-	padding-bottom: 25px;
+// be more generous on bigger screens
+@media (min-width: 991px) {
+  #information ul li {
+	  padding-bottom: 25px;
+  }
 }
 
 #information .logo-read {
@@ -68,6 +71,13 @@
   border: 3px solid $BBYellow;
 }
 
+// center the buttons on small devices
+@media (max-width: 991px) {
+  #information .buttons {
+    text-align: center;
+    padding-bottom: 20px;
+  }
+}
 
 /*********************************************************/
 /* ABOUT
@@ -223,7 +233,9 @@ ul li .timeline-image {
 /* #### Desktops #### */
 @media (min-width: 992px) {
   #subscribeid {
-    background: url("/assets/images/subscribebg-2560.jpg") no-repeat fixed center top/cover rgba(0, 0, 0, 0);
+    // wish we could use fixed here. that would make a much nicer effect button
+    // the image will look bad on iOS
+    background: url("/assets/images/subscribebg-2560.jpg") no-repeat center top/cover rgba(0, 0, 0, 0);
     padding-top: 200px;
 	  padding-bottom: 200px;
     background-repeat: no-repeat;
@@ -231,7 +243,7 @@ ul li .timeline-image {
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
-    background-size: cover;
+    
   }
 
   #subscribeid .well {
@@ -251,7 +263,7 @@ ul li .timeline-image {
   #subscribeid {
     padding-top: 90px;
     padding-bottom: 600px;
-    background: url("/assets/images/subscribebg-970.jpg") no-repeat fixed center top/cover rgba(0, 0, 0, 0);
+    background: url("/assets/images/subscribebg-970.jpg");
     background-repeat: no-repeat;
     background-position: center center;
     -webkit-background-size: cover;
