@@ -40,8 +40,11 @@
 	font-weight: bold;
 }
 
-#information ul li {
-	padding-bottom: 25px;
+// be more generous on bigger screens
+@media (min-width: 991px) {
+  #information ul li {
+	  padding-bottom: 25px;
+  }
 }
 
 #information .logo-read {
@@ -68,6 +71,13 @@
   border: 3px solid $BBYellow;
 }
 
+// center the buttons on small devices
+@media (max-width: 991px) {
+  #information .buttons {
+    text-align: center;
+    padding-bottom: 20px;
+  }
+}
 
 /*********************************************************/
 /* ABOUT
