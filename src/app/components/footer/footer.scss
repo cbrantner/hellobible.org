@@ -1,15 +1,8 @@
 #footer {
   visibility: visible;
-  padding-top: 50px;
+  padding-top: 30px;
   background-color: $BBDarkGrey;
   color: white;
-}
-
-#footer img {
-  height: 31px;
-  vertical-align: bottom;
-  margin-bottom: 3px;
-  margin-right: 4px;
 }
 
 #footer ul {
@@ -33,7 +26,6 @@
 
 @media (max-width: 991px) {
   .copyright {
-    margin-top: 20px;
     text-align: center;
   }
 
@@ -42,14 +34,22 @@
   }
 }
 
+#footer .links a:hover {
+  color: $BBPink;
+}
+
 .social-icons-bottom {
   color: white;
   vertical-align: bottom;
   padding-bottom: 5px;
 }
 
+.social-icons-bottom:hover {
+  color: $BBDarkPink;
+}
+
 #footer .link-active {
-  color: $BBPink;
+  color: $BBDarkPink;
 	pointer-events: none;
   cursor: default;
 }
