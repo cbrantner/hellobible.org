@@ -2,10 +2,14 @@
   background: none repeat scroll 0 0 $BBBlue;
 }
 
-.social-icons-top {
+.social-icons {
   color: white;
   padding:2px;
   vertical-align: bottom;
+}
+
+.social-icons:hover {
+  color: $BBDarkPink;
 }
 
 .social img {

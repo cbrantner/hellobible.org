@@ -20,10 +20,20 @@
   padding: 0;
 }
 
-.copyright {
-  margin-top: 20px;
+
+// hover-highlight for the links in the footer
+#footer .links a:hover {
+  color: $BBPink;
 }
 
+// highligh the link in the footer corresponding to the currently active page
+#footer .link-active {
+  color: $BBDarkPink;
+	pointer-events: none;
+  cursor: default;
+}
+
+// center text in footer on small screens
 @media (max-width: 991px) {
   .copyright {
     text-align: center;
@@ -32,24 +42,4 @@
   #footer .links {
     text-align: center;
   }
-}
-
-#footer .links a:hover {
-  color: $BBPink;
-}
-
-.social-icons-bottom {
-  color: white;
-  vertical-align: bottom;
-  padding-bottom: 5px;
-}
-
-.social-icons-bottom:hover {
-  color: $BBDarkPink;
-}
-
-#footer .link-active {
-  color: $BBDarkPink;
-	pointer-events: none;
-  cursor: default;
 }
