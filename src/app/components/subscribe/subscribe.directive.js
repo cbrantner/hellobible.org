@@ -13,7 +13,7 @@
       scope: {
       },
       controller: SubscribeController,
-      controllerAs: 'vm',
+      controllerAs: 'subscribeCtrl',
       bindToController: true
     };
 

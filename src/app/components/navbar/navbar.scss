@@ -2,34 +2,19 @@
   background-color: $BBBlue;
 }
 
-.navbar-brand {
-  margin-top: -15px;
-  padding-left: 50px;
-}
-
-.navbar-right {
-  padding-right: 50px;
-}
-
 nav ul {
   margin: 0;
   padding: 0;
-  margin-top: 36px;
   list-style: none;
-  font-size: 18px;
+}
+
+.navbar .navbar-nav > li > a:hover {
+  color: white;
+  background-color: $BBDarkBlue;
 }
 
 // size of collasped menu icon
 .fa-bars {
   color: white;
-  font-size: 32px;
-}
-
-.navbar .navbar-nav > li > a:hover {
-  color: #ffffff;
-  background-color: $BBDarkBlue;
-}
-
-nav ul li a:hover {
-  color: $BBBlue;
+  font-size: 24px;
 }

@@ -11,7 +11,7 @@
 		$rootScope.toTheTop = function() {
       $document.scrollTopAnimated(10, SCROLL_DURATION)
     }
-    $rootScope.$on('$stateChangeSuccess', function(event, toState, toParams, fromState, fromParams) {
+    var destroy = $rootScope.$on('$stateChangeSuccess', function(event, toState, toParams, fromState, fromParams) {
       $rootScope.title = toState.data.title;
     });
   }
