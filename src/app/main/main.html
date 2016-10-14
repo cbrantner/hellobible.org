@@ -33,13 +33,13 @@
 
 <div id="information">
   <div class="container">
+
     <h1 class="text-center text-uppercase">What's Inside</h1>
 
     <div class="row">
-
       <div class="col-md-6">
 
-        <ul class="media-list">
+        <ul class="image media-list">
           <li class="media">
             <i class="pull-left media-object logo-read fa fa-book"></i>
             <div class="media-body"><h4 class="media-heading text-read text-uppercase">Read</h4> an age-appropriate Bible storybook.</div>
@@ -58,14 +58,17 @@
           <a ui-sref="home({ '#' : 'subscribeid'})" du-smooth-scroll><button type="button" class="btn btn-lg btn-primary" aria-haspopup="true" aria-expanded="false">Sign up</button></a>
           <a class="inverse-button" ui-sref="inside" du-smooth-scroll><button type="button" class="inverse-button btn btn-lg btn-secondary" aria-haspopup="true" aria-expanded="false">Sample Boxes</button></a>
         </div>
-			</div>
+
+			</div> <!-- col-md-6 -->
 
       <div class="col-md-6">
         <img src="assets/images/noah-example-box-640.png"/>
       </div>
+ 
+    </div> <!-- row -->
 
-    </div>
-  </div>
+  </div> <!-- container -->
+ 
 </div>
 
 <acme-social></acme-social>
@@ -129,7 +132,7 @@
 </div>
 <!-- Subscribe End -->
 
-<acme-testimonials></acme-testimonials>
+<!--<acme-testimonials></acme-testimonials>-->
 
 <!-- Verse -->
 <div class="verse">
@@ -145,7 +148,7 @@
 </div>
 <!-- Verse End -->
 
-<acme-team></acme-team>
+<!--<acme-team></acme-team>-->
 
 
 <acme-footer></acme-footer>
