@@ -2,6 +2,6 @@
   'use strict';
 
   angular
-    .module('hellobible', ['ngAnimate', 'ngCookies', 'ngTouch', 'ngSanitize', 'ngMessages', 'ngAria', 'ngResource', 'ui.router', 'ui.bootstrap', 'toastr', 'angular-ladda', 'duScroll', 'angular-carousel']);
+    .module('hellobible', ['ngAnimate', 'ngCookies', 'ngTouch', 'ngSanitize', 'ngMessages', 'ngAria', 'ngResource', 'ui.router', 'ui.bootstrap', 'toastr', 'angular-ladda', 'duScroll']);
 
 })();

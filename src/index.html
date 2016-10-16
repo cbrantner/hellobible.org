@@ -8,6 +8,7 @@
     <link rel=icon href="/favicon-16.png" sizes="16x16" type="image/png">
     <link rel=icon href="/favicon.ico" sizes="32x32 48x48" type="image/vnd.microsoft.icon">
     <link rel=icon href="/favicon.icns" sizes="128x128 512x512 8192x8192 32768x32768">
+
     <base href="/">
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 
@@ -21,6 +22,9 @@
     <!-- inject:css -->
     <!-- css files will be automatically insert here -->
     <!-- endinject -->
+
+    <link rel="stylesheet" href="../bower_components/owl/owl-carousel/owl.carousel.css" />
+    <link rel="stylesheet" href="../bower_components/owl/owl-carousel/owl.theme.css" />
     <!-- endbuild -->
   </head>
   <body>
@@ -60,6 +64,8 @@
     })(window,document,'script','dataLayer','GTM-WSJ9RS');</script>
     <!-- End Google Tag Manager -->
 
+
+
     <!-- build:js(src) scripts/vendor.js -->
     <!-- bower:js -->
     <!-- run `gulp inject` to automatically populate bower script dependencies -->
@@ -74,6 +80,10 @@
     <!-- inject:partials -->
     <!-- angular templates will be automatically converted in js and inserted here -->
     <!-- endinject -->
+
+    <!-- owl doesn't contain a proper bower.json. Hence, we inject manually. -->
+    <script src="../bower_components/owl/owl-carousel/owl.carousel.js"></script>
+
     <!-- endbuild -->
 
   </body>
