@@ -6,8 +6,7 @@
     .config(routerConfig);
 
   /** @ngInject */
-  function routerConfig($stateProvider, $urlRouterProvider, $locationProvider, $windowProvider) {
-    var $window = $windowProvider.$get();
+  function routerConfig($stateProvider, $urlRouterProvider, $locationProvider) {
 
     $stateProvider
       .state('home', {
@@ -17,22 +16,6 @@
         controllerAs: 'main',
         data : {
           title: 'A Fun Way for Kids to Explore the Bible'
-        }
-      })
-
-      .state('inside', {
-        url: '/inside-a-box',
-        templateUrl: 'app/inside/inside.html',
-        controller: 'InsideController',
-        controllerAs: 'inside',
-        onEnter: function() {
-            // facebook
-            $window.fbq('track', "ViewContent");
-            // pinterest
-            $window.pintrk('track', 'pagevisit');
-        },
-        data : {
-          title: 'Sample Boxes'
         }
       })
 
