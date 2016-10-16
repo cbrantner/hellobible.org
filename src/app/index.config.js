@@ -31,7 +31,8 @@
     lightbox.option({
       'resizeDuration': 300,
       'showImageNumberLabel' : false,
-      'alwaysShowNavOnTouchDevices' : true
+      'alwaysShowNavOnTouchDevices' : true,
+      'wrapAround' : true
     })
 
   }
