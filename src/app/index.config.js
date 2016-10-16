@@ -8,7 +8,7 @@
 		.value('duScrollDuration', 500);
 
   /** @ngInject */
-  function config($logProvider, toastrConfig, laddaProvider) {
+  function config($logProvider, toastrConfig, laddaProvider, $windowProvider) {
     // Enable log
     $logProvider.debugEnabled(true);
 
@@ -28,7 +28,7 @@
     });
 
     // lightbox is used for showing big images in carousel
-    lightbox.option({
+    $windowProvider.$get().lightbox.option({
       'resizeDuration': 300,
       'showImageNumberLabel' : false,
       'alwaysShowNavOnTouchDevices' : true,

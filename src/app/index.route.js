@@ -18,7 +18,6 @@
           title: 'A Fun Way for Kids to Explore the Bible'
         }
       })
-
       .state('privacy', {
         url: '/privacy',
         templateUrl: 'app/privacy/privacy.html',
