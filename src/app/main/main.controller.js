@@ -8,15 +8,15 @@
   /** @ngInject */
   function MainController() {
 
-    angular.element('#portfolio-carousel').owlCarousel(
+    angular.element('#portfolio').owlCarousel(
       {
-        autoplay: true,
+        autoPlay: true,
         autoplaySpeed: 1000,
         items: 2,
         margin: 2,
         loop: true,
         stagePadding: 70,
-        responsive: {
+        /*responsive: {
           0: {
             items: 1
           },
@@ -26,7 +26,7 @@
           1000: {
             items: 2
           }
-        }
+        }*/
 
       });
   }
