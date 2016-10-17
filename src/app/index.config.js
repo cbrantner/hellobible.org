@@ -28,12 +28,13 @@
     });
 
     // lightbox is used for showing big images in carousel
+    /*
     $windowProvider.$get().lightbox.option({
       'resizeDuration': 300,
       'showImageNumberLabel' : false,
       'alwaysShowNavOnTouchDevices' : true,
       'wrapAround' : true
-    })
+    })*/
 
   }
 })();
