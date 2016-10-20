@@ -8,7 +8,7 @@
 		.value('duScrollDuration', 500);
 
   /** @ngInject */
-  function config($logProvider, toastrConfig, laddaProvider) {
+  function config($logProvider, toastrConfig, laddaProvider, $windowProvider) {
     // Enable log
     $logProvider.debugEnabled(true);
 
@@ -25,6 +25,14 @@
       style: 'slide-right',
       spinnerSize: 40,
       spinnerColor: '#ffffff'
+    });
+
+    // lightbox is used for showing big images in carousel
+    $windowProvider.$get().lightbox.option({
+      'resizeDuration': 300,
+      'showImageNumberLabel' : false,
+      'alwaysShowNavOnTouchDevices' : true,
+      'wrapAround' : true
     });
 
   }

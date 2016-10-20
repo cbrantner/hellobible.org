@@ -1,0 +1,65 @@
+#testimonials {
+  padding-bottom: 20px;
+}
+
+#testimonials h1 {
+  padding: 20px 20px 0 20px;
+  position: relative;
+  color: $BBDarkGrey;
+}
+
+#testimonials h2,  #testimonials h3, #testimonials h4, #testimonials p {
+  color: $BBDarkGrey;
+}
+
+#testimonials h1:after {
+  content: "";
+  display: block;
+  height: 4px;
+  width: 80px;
+  background: $BBBlue;
+  margin: 0 auto;
+  margin-top: 10px;
+}
+
+
+.testimonial-circle {
+	display: block;
+	width: 80px;
+	height: 80px;
+	border-radius: 100px;
+	border: 3px solid $BBDarkGrey;
+	overflow: hidden;
+}
+
+.testimonial-circle {
+	margin-bottom: 15px;
+}
+
+.testimonial-group {
+	border: 1px solid $BBDarkGrey;
+	padding: 10px;
+	font-size: 12px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	transition: all 0.5s ease;
+}
+
+.testimonial-group:hover {
+	border: 1px solid $BBDarkGrey;
+	padding: 10px;
+	font-size: 12px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	background: #00a8d6;
+}
+
+#testimonials h4 {
+	font-size: 18px;
+}
+
+.text-small {
+	font-weight: 400;
+}
