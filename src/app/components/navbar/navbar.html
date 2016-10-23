@@ -16,3 +16,27 @@
     </div>
   </div>
 </nav>
+<div id="notificationbar">
+  <span class="glyphicon glyphicon-remove" aria-hidden="true" id="close-button-notificationbar"></span>
+  <div id="notificationText">
+    <a ui-sref="home({ '#' : 'subscribeid'})" du-smooth-scroll="" href="/#subscribeid" id="signUpLink">Click here</a> to sign up and get 10% off your first box.
+  </div>
+</div>
+
+
+<script>
+  var notificationbar = document.getElementById("notificationbar"),
+    header = document.getElementById("nav"),
+    h = window.getComputedStyle(header).getPropertyValue("height");
+
+  notificationbar.style.marginTop=h;
+
+  $( "#close-button-notificationbar" ).click(function() {
+    $( "#notificationbar" ).fadeOut( "slow" );
+  });
+
+  $( "#signUpLink" ).click(function() {
+    $( "#notificationbar" ).fadeOut( "slow" );
+  });
+
+</script>
