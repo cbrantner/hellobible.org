@@ -16,35 +16,27 @@ nav ul {
 // size of collasped menu icon
 .fa-bars {
   color: white;
-  font-size: 24px;
+  font-size: 18px;
 }
 
-@media (min-width: 768px) {
-  .navbar-nav > li > a {
-    padding-top: 15px;
-    padding-bottom: 10px;
-  }
-}
-
-#notificationbar {
+.notificationBar {
   display: block;
   position: fixed;
   background: $BBDarkPink;
   width: 100%;
-  opacity: 0.8;
+  opacity: 0.9;
   text-align: center;
   color: #ffffff;
   z-index: 100;
 }
 
-#notificationText {
-  padding-right: 10%;
-  padding-left: 10%;
-  padding-top: 10px;
-  padding-bottom: 10px;
+.notificationBar.ng-hide-add-active,
+.notificationBar.ng-hide-remove-active {
+  animation: 0.7s fadeOutUp;
+
 }
 
-#close-button-notificationbar {
+#notificationBarClose {
   margin-top: 13px;
   margin-right: 15px;
   float: right;
@@ -52,6 +44,11 @@ nav ul {
   color: #ffffff;
 }
 
-#signUpLink {
-  text-decoration: underline;
+.notificationBar .text {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.notificationBar .text > a {
+   text-decoration: underline;
 }

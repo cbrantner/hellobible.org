@@ -18,14 +18,14 @@
     return directive;
 
     /** @ngInject */
-    function NavbarController($scope) {
+    function NavbarController($scope, $location) {
+
       $scope.navbarCollapsed = true;
+      $scope.showNotificationBar = true;
+      $scope.$location = $location;
 
     }
   }
 
-  $( document ).ready(function() {
-    
-  });
 
 })();
