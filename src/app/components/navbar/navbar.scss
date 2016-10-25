@@ -33,15 +33,15 @@ nav ul {
 .notificationBar.ng-hide-add-active,
 .notificationBar.ng-hide-remove-active {
   animation: 0.7s fadeOutUp;
-
 }
 
-#notificationBarClose {
+.notificationBar .close {
   margin-top: 13px;
   margin-right: 15px;
   float: right;
   cursor: pointer;
   color: #ffffff;
+  opacity: 1;
 }
 
 .notificationBar .text {
@@ -50,5 +50,5 @@ nav ul {
 }
 
 .notificationBar .text > a {
-   text-decoration: underline;
+  text-decoration: underline;
 }
