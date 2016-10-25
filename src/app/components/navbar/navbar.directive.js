@@ -18,12 +18,9 @@
     return directive;
 
     /** @ngInject */
-    function NavbarController($scope, $location) {
-
+    function NavbarController($scope) {
       $scope.navbarCollapsed = true;
       $scope.showNotificationBar = true;
-      $scope.$location = $location;
-
     }
   }
 
