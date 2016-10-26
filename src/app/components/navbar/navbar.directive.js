@@ -20,8 +20,9 @@
     /** @ngInject */
     function NavbarController($scope) {
       $scope.navbarCollapsed = true;
-
+      $scope.showNotificationBar = true;
     }
   }
+
 
 })();
