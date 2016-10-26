@@ -22,18 +22,12 @@
   margin-top: 10px;
 }
 
-
-.testimonial-circle {
-	display: block;
-	width: 80px;
-	height: 80px;
-	border-radius: 100px;
-	border: 3px solid $BBDarkGrey;
-	overflow: hidden;
+#testimonials .media-object {
+	width : 80px;
 }
 
-.testimonial-circle {
-	margin-bottom: 15px;
+#testimonials .media {
+	margin-bottom: 20px;
 }
 
 .testimonial-group {
@@ -54,10 +48,11 @@
 	-moz-border-radius: 3px;
 	border-radius: 3px;
 	background: #00a8d6;
+	color: white;
 }
 
 #testimonials h4 {
-	font-size: 18px;
+	font-size: 14px;
 }
 
 .text-small {

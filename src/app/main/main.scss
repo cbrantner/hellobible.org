@@ -52,6 +52,20 @@
   text-align: center;
 }
 
+.arrow-down {
+  animation-duration: 1s;
+  animation-iteration-count: 3;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  margin-left:-20px;
+  width: 40px;
+  height: 40px;
+  margin-bottom: 60px;
+  background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAxNi4wLjAsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+DQo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IiB3aWR0aD0iNTEycHgiIGhlaWdodD0iNTEycHgiIHZpZXdCb3g9IjAgMCA1MTIgNTEyIiBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCA1MTIgNTEyIiB4bWw6c3BhY2U9InByZXNlcnZlIj4NCjxwYXRoIGZpbGw9IiNGRkZGRkYiIGQ9Ik0yOTMuNzUxLDQ1NS44NjhjLTIwLjE4MSwyMC4xNzktNTMuMTY1LDE5LjkxMy03My42NzMtMC41OTVsMCwwYy0yMC41MDgtMjAuNTA4LTIwLjc3My01My40OTMtMC41OTQtNzMuNjcyICBsMTg5Ljk5OS0xOTBjMjAuMTc4LTIwLjE3OCw1My4xNjQtMTkuOTEzLDczLjY3MiwwLjU5NWwwLDBjMjAuNTA4LDIwLjUwOSwyMC43NzIsNTMuNDkyLDAuNTk1LDczLjY3MUwyOTMuNzUxLDQ1NS44Njh6Ii8+DQo8cGF0aCBmaWxsPSIjRkZGRkZGIiBkPSJNMjIwLjI0OSw0NTUuODY4YzIwLjE4LDIwLjE3OSw1My4xNjQsMTkuOTEzLDczLjY3Mi0wLjU5NWwwLDBjMjAuNTA5LTIwLjUwOCwyMC43NzQtNTMuNDkzLDAuNTk2LTczLjY3MiAgbC0xOTAtMTkwYy0yMC4xNzgtMjAuMTc4LTUzLjE2NC0xOS45MTMtNzMuNjcxLDAuNTk1bDAsMGMtMjAuNTA4LDIwLjUwOS0yMC43NzIsNTMuNDkyLTAuNTk1LDczLjY3MUwyMjAuMjQ5LDQ1NS44Njh6Ii8+DQo8L3N2Zz4=);
+  background-size: contain;
+}
+
 /*********************************************************/
 /* INFORMATIONS
 /*********************************************************/
@@ -75,8 +89,9 @@
   margin-bottom: 30px;
 }
 
-#information {
-	font-size: 14px;
+#information p {
+  line-height: 1.1;
+  color: $BBDarkGrey;
 }
 
 #information .text-read {
@@ -182,7 +197,6 @@ $slick-opacity-not-active: 0.25 !default;
   font-size: 15px;
 }
 
-
 /*********************************************************/
 /* ABOUT
 /*********************************************************/
@@ -195,6 +209,15 @@ $slick-opacity-not-active: 0.25 !default;
   color: $BBDarkGrey;
 }
 
+#how h3 {
+  font-size: 13pt;
+  line-height: 1.0;
+}
+
+#how p {
+  line-height: 1.1;
+}
+
 #how h1:after {
   content: "";
   display: block;
@@ -203,124 +226,6 @@ $slick-opacity-not-active: 0.25 !default;
   background: $BBBlue;
   margin: 0 auto;
   margin-top: 10px;
-}
-
-// vertical line
-#how:before {
-  content: "";
-  background: $BBLightGrey;
-  width: 2px;
-  height: 400px;
-  display: block;
-  position: absolute;
-  top: 160px;
-  left: 50%;
-  margin-left: -1px;
-}
-
-ul li .timeline-image {
-  position: absolute;
-  top: 20px;
-  left: 50%;
-  margin-left: -60px;
-  clear: both;
-}
-
-// size of picture
-#how ul li img {
-  border-radius: 100%;
-  width: 120px;
-  height: 120px;
-  border: 6px solid $BBLightGrey;
-}
-
-#how .timeline-end {
-  background: $BBBlue;
-  color: #fff;
-  font-weight: 700;
-  border-radius: 100%;
-  width: 120px;
-  height: 120px;
-  padding: 215px 10px 0 10px;
-  text-align: center;
-  border: 6px solid $BBLightGrey;
-}
-
-#how ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-#how ul li {
-  position: relative;
-  margin-bottom: 10px;
-  min-height: 160px;
-}
-
-#how .timeline-left {
-  float: left;
-  width: 41%;
-  text-align: right;
-}
-
-#how .timeline-right {
-  float: right;
-  width: 41%;
-  text-align: left;
-}
-
-@media (max-width: 768px) {
-  #how:before {
-    content: "";
-    display: none;
-  }
-
-  #how .timeline-left {
-    float: none;
-    width: 90%;
-    text-align: left;
-    padding-left: 90px;
-  }
-
-  #how .timeline-right {
-    float: none;
-    width: 90%;
-    text-align: left;
-    padding-left: 90px;
-  }
-
-  ul li .timeline-image {
-    position: absolute;
-    top: 40px;
-    left: 10%;
-    margin-left: -54px;
-    clear: both;
-  }
-
-  #how ul li img {
-    border-radius: 100%;
-    width: 60px;
-    height: 60px;
-    border: 6px solid $BBLightGrey;
-  }
-
-  #how .timeline-end {
-    background: $BBBlue;
-    color: #fff;
-    font-weight: 700;
-    border-radius: 100%;
-    width: 60px;
-    height: 60px;
-    padding: 8px 0 0 0;
-    text-align: center;
-    font-size: 8px;
-    border: 6px solid $BBLightGrey;
-  }
-
-  #toggle {
-    display: block;
-  }
 }
 
 /*********************************************************/
