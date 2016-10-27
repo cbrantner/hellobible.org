@@ -1,5 +1,12 @@
 <acme-navbar></acme-navbar>
 
+<div class="notificationBar" ng-show="showNotificationBar" ng-animate=" 'animate' ">
+  <a ng-click="showNotificationBar = false"><i class="close glyphicon glyphicon-remove"></i></a>
+  <div class="text">
+    <a ng-click="showNotificationBar = false" ui-sref="home({'#' : 'subscribeid'})" du-smooth-scroll>Sign up</a>, be the first to know once we launch and get 10% off your first box.
+  </div>
+</div>
+
 <div class="topheader hidden-xs">
 	<div class="container">
 		<div class="row margin-t-120">

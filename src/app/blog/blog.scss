@@ -1,0 +1,13 @@
+#blog {
+  width: 80%;
+  color: black;
+}
+
+#blog h1, #blog h2, #blog h3, #blog h4, #blog h5, #blog h6 {
+  color: $BBDarkGrey;
+}
+
+#blog p, #blog a {
+  color: $BBDarkGrey;
+  text-align: justify;
+}

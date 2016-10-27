@@ -3,8 +3,9 @@ language: node_js
 node_js:
 - '0.12'
 before_script:
-- npm install -g bower gulp
+- npm install -g bower gulp hexo
 - bower install
+- cd blog && npm install
 script:
 - gulp build
 deploy:

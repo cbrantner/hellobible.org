@@ -26,7 +26,26 @@
         data : {
           title: 'Privacy Policy'
         }
+      })
+      .state('blogIndex', {
+        url: '/blog',
+        templateUrl: 'app/blog/blog.html',
+        controller: 'BlogController',
+        controllerAs: 'blog',
+        data : {
+          title: 'Blog'
+        }
+      })
+      .state('blog', {
+        url: '/blog/*path', // catch all
+        templateUrl: 'app/blog/blog.html',
+        controller: 'BlogController',
+        controllerAs: 'blog',
+        data : {
+          title: 'Blog'
+        }
       });
+
 
       $urlRouterProvider.otherwise('/');
       $locationProvider.html5Mode(true);
