@@ -26,6 +26,15 @@
         data : {
           title: 'Privacy Policy'
         }
+      })
+      .state('about', {
+        url: '/about',
+        templateUrl: 'app/about/about.html',
+        controller: 'AboutController',
+        controllerAs: 'about',
+        data : {
+          title: 'Meet the Founders'
+        }
       });
 
       $urlRouterProvider.otherwise('/');
