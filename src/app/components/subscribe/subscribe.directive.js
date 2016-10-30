@@ -20,7 +20,7 @@
     return directive;
 
     /** @ngInject */
-    function SubscribeController($scope, $location, $resource, $anchorScroll, $log, toastr, $window) {
+    function SubscribeController($scope, $location, $resource, $anchorScroll, $log, toastr, $window, Analytics) {
 
       $scope.addSubscription = function(mailchimp) {
 
@@ -56,6 +56,7 @@
                 errorMessageParts.shift(); // Remove the error number
               }
               responseMessage = errorMessageParts.join(' ');
+              Analytics.trackException(responseMessage, true);
             } else {
               responseMessage = 'Sorry! An unknown error occured.';
             }
@@ -67,14 +68,16 @@
             $window.fbq('track', 'Lead');
             // track as lead on pinterest
             $window.pintrk('track', 'lead');
+            Analytics.trackEvent('newsletter', 'submit', 'signup');
           }
-          mailchimp.email = '';          
+          mailchimp.email = '';
           // disable spinner
           $scope.submitting = false;
         },
         // error
         function () {
           var responseMessage = 'Sorry! An unknown error occured.';
+          Analytics.trackException("Unknown Mailchimp error", true);
           toastr.error(responseMessage);
           mailchimp.email = '';          
           // disable spinner

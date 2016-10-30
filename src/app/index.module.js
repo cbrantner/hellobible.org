@@ -3,6 +3,6 @@
 
   angular
     .module('hellobible',
-    ['ngAnimate', 'ngCookies', 'ngTouch', 'ngSanitize', 'ngMessages', 'ngAria', 'ngResource', 'ui.router', 'ui.bootstrap', 'toastr', 'angular-ladda', 'duScroll', 'slickCarousel']);
+    ['ngAnimate', 'ngCookies', 'ngTouch', 'ngSanitize', 'ngMessages', 'ngAria', 'ngResource', 'ui.router', 'ui.bootstrap', 'toastr', 'angular-ladda', 'duScroll', 'slickCarousel', 'angular-google-analytics']);
 
 })();
