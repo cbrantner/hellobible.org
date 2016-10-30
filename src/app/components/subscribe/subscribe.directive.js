@@ -55,11 +55,12 @@
               if (errorMessageParts.length > 1) {
                 errorMessageParts.shift(); // Remove the error number
               }
-              responseMessage = errorMessageParts.join(' ');
-              Analytics.trackException(responseMessage, true);
+              responseMessage = errorMessageParts.join(' ');  
             } else {
               responseMessage = 'Sorry! An unknown error occured.';
             }
+            // track google analytics error
+            Analytics.trackException(responseMessage, true);
             toastr.error(responseMessage);
           } else if (response.result === 'success') {
             toastr.info(response.msg);
@@ -68,6 +69,7 @@
             $window.fbq('track', 'Lead');
             // track as lead on pinterest
             $window.pintrk('track', 'lead');
+            // track google analytics event
             Analytics.trackEvent('newsletter', 'submit', 'signup');
           }
           mailchimp.email = '';
@@ -77,6 +79,7 @@
         // error
         function () {
           var responseMessage = 'Sorry! An unknown error occured.';
+          // track google analytics error
           Analytics.trackException("Unknown Mailchimp error", true);
           toastr.error(responseMessage);
           mailchimp.email = '';          
