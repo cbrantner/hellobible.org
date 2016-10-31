@@ -274,10 +274,20 @@ $slick-opacity-not-active: 0.25 !default;
 /*********************************************************/
 #subscribeid h1 {
   color: $BBDarkGrey;
+  text-align: center;
 }
 
 #subscribeid h3 {
   color: $BBDarkGrey;
+  text-align: center;
+}
+
+
+#subscribeid .well {
+  filter: alpha(opacity=85);
+  opacity: 0.85;
+  -moz-opacity: 0.85;
+  -khtml-opacity: 0.85;
 }
 
 /* #### Desktops #### */
@@ -287,32 +297,20 @@ $slick-opacity-not-active: 0.25 !default;
     // the image will look bad on iOS
     background: url("/assets/images/subscribebg-2560.jpg") no-repeat center top/cover rgba(0, 0, 0, 0);
     padding-top: 200px;
-	  padding-bottom: 200px;
+	  padding-bottom: 400px;
     background-repeat: no-repeat;
     background-position: center center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
-
-  }
-
-  #subscribeid .well {
-    filter: alpha(opacity=85);
-    opacity: 0.85;
-    -moz-opacity: 0.85;
-    -khtml-opacity: 0.85;
-    padding-top: 90px;
-    padding-bottom: 90px;
-    margin-left: 50%;
-    margin-right: 10px;
   }
 }
 
 /* #### Tablets Portrait or Landscape #### */
 @media (min-width: 768px) and (max-width: 991px) {
   #subscribeid {
-    padding-top: 90px;
-    padding-bottom: 600px;
+    padding-top: 200px;
+    padding-bottom: 200px;
     background: url("/assets/images/subscribebg-970.jpg");
     background-repeat: no-repeat;
     background-position: center center;
@@ -321,23 +319,14 @@ $slick-opacity-not-active: 0.25 !default;
     -o-background-size: cover;
     background-size: cover;
   }
-
-  #subscribeid .well {
-    filter: alpha(opacity=85);
-    opacity: 0.85;
-    -moz-opacity: 0.85;
-    -khtml-opacity: 0.85;
-    padding-top: 90px;
-    padding-bottom: 90px;
-  }
 }
 
 /* Landscape phones and portrait tablets */
 @media (max-width: 480px), (max-width: 767px) {
   #subscribeid {
-    padding-top: 5px;
+    padding-top: 120px;
     padding-bottom: 120px;
-    background: url("/assets/images/subscribebg-290.jpg");
+    background: url("/assets/images/subscribebg-970.jpg");
     position: relative;
     background-repeat: no-repeat;
     background-position: center center;
@@ -351,16 +340,7 @@ $slick-opacity-not-active: 0.25 !default;
     font-size: 24px;
   }
 
-  #subscribeid .well-xs {
-    filter: alpha(opacity=85);
-    opacity: 0.85;
-    -moz-opacity: 0.85;
-    -khtml-opacity: 0.85;
-    padding-top: 90px;
-    padding-bottom: 90px;
-    margin-left: 10px;
-    margin-right: 10px;
-  }
+
 }
 
 
