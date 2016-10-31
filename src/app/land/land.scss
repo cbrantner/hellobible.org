@@ -29,12 +29,12 @@
   text-align: center;
 }
 
-.landingpage-mobile-logo  {
-  position: absolute;
-  left: 0px;
-  top: 0px;
-  z-index: 999;
-  width: 120px;
+.landingpage h1 {
+  font-size: 52pt;
+}
+
+.landingpage h3 {
+  text-transform: uppercase;
 }
 
 .landingpage-mobile h1 {
@@ -46,4 +46,9 @@
 .landingpage-mobile h2, .landingpage-mobile h3 {
   color: $BBDarkGrey;
   text-align: center;
+}
+
+.landingpage-mobile h3 {
+  text-transform: uppercase;
+  font-size: 16pt;
 }

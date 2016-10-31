@@ -18,6 +18,15 @@
           title: 'A Fun Way for Kids to Explore the Bible'
         }
       })
+      .state('offer', {
+        url: '/launch',
+        templateUrl: 'app/land/land.html',
+        controller: 'LandController',
+        controllerAs: 'land',
+        data : {
+          title: 'A Fun Way for Kids to Explore the Bible'
+        }
+      })
       .state('home', {
         url: '/home',
         templateUrl: 'app/main/main.html',
