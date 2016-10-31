@@ -3,7 +3,7 @@
 <div class="notificationBar" ng-show="showNotificationBar" ng-animate=" 'animate' ">
   <a ng-click="showNotificationBar = false"><i class="close glyphicon glyphicon-remove"></i></a>
   <div class="text">
-    <a ng-click="showNotificationBar = false" ui-sref="home({'#' : 'subscribeid'})" du-smooth-scroll>Sign up</a>, be the first to know once we launch and get 10% off your first box.
+    <a ng-click="showNotificationBar = false" ui-sref="home({'#' : 'subscribeid'})" du-smooth-scroll>Sign up</a> and get 10% off your first box.
   </div>
 </div>
 
@@ -11,7 +11,7 @@
 	<div class="container">
 		<div class="row margin-t-120">
 			<div class="col-sm-6 col-sm-offset-6">
-				<h1>A fun way for kids to explore the bible.</h1>
+				<h1>A fun way for kids to explore the Bible.</h1>
 				<h2>Get 1 box each month including a great Bible story, creative craft projects and ideas to share & pray.</h2>
 				<h3>Designed for children ages 5-8.</h3>
 				<a ui-sref="home({ '#' : 'subscribeid'})" du-smooth-scroll><button type="button" class="btn btn-lg btn-primary" aria-haspopup="true" aria-expanded="false">Sign up</button></a>
@@ -30,7 +30,7 @@
 			<img src="/assets/images/headerbg-970.jpg" />
 		</div>
 		<div class="row">
-			<h1>A fun way for kids to explore the bible.</h1>
+			<h1>A fun way for kids to explore the Bible.</h1>
 			<h2>Get 1 box each month including a great Bible story, creative craft projects and ideas to share & pray.</h2>
 			<h2>Designed for children ages 5-8.</h2>
 			<div class="row margin-t-30 subscribe-mobile">
@@ -39,6 +39,7 @@
 		</div>
 	</div>
 </div>
+
 
 <div id="information">
 	<div class="container">
@@ -155,15 +156,17 @@
 
 <!--<acme-pricing></acme-pricing>-->
 
+<div id="content">
+
 <!-- Subscribe -->
 <div id="subscribeid">
-	<div class="well hidden-xs">
-		<h1>Sign up and get 10% off your first box.</h1>
+	<div class="well hidden-xs col-md-6 col-md-offset-3">
+		<h1>Sign up to our newsletter.</h1>
 		<h3>Be notified once we launch.</h3>
 		<acme-subscribe></acme-subscribe>
 	</div>
-	<div class="well-xs visible-xs-block">
-		<h1>Sign up and get 10% off your first box.</h1>
+	<div class="well visible-xs-block">
+		<h1>Sign up to our newsletter.</h1>
 		<h3>Be notified once we launch.</h3>
 		<acme-subscribe></acme-subscribe>
 	</div>
@@ -186,7 +189,5 @@
 </div>
 <!-- Verse End -->
 
-<!--<acme-team></acme-team>-->
-
-
 <acme-footer></acme-footer>
+
