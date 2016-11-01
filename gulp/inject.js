@@ -3,6 +3,9 @@
 var path = require('path');
 var gulp = require('gulp');
 var conf = require('./conf');
+var addStream = require('add-stream');
+var gulpNgConfig = require('gulp-ng-config');
+
 
 var $ = require('gulp-load-plugins')();
 
@@ -15,7 +18,26 @@ gulp.task('inject-reload', ['inject'], function() {
   browserSync.reload();
 });
 
-gulp.task('inject', ['scripts', 'styles'], function () {
+var travisBranch;
+if (process.env.TRAVIS_PULL_REQUEST) {
+	travisBranch = process.env.TRAVIS_PULL_REQUEST_BRANCH.length == 0? "development": process.env.TRAVIS_PULL_REQUEST_BRANCH;
+  console.log(travisBranch+ ': using configuration by pull request branch');
+} else if (process.env.TRAVIS_BRANCH) {
+  console.log(process.env.TRAVIS_BRANCH + ': using configuration by travis branch');
+	travisBranch = process.env.TRAVIS_BRANCH;
+} else {
+	travisBranch = 'development';
+}
+
+gulp.task('make-config', [], function() {
+  return gulp.src('./hellobible-config.json')
+    .pipe(gulpNgConfig('hellobible.config', {
+      environment: travisBranch
+    }))
+    .pipe(gulp.dest(path.join(conf.paths.src, '/app/')));
+});
+
+gulp.task('inject', ['make-config', 'scripts', 'styles'], function () {
   var injectStyles = gulp.src([
     path.join(conf.paths.tmp, '/serve/app/**/*.css'),
     path.join('!' + conf.paths.tmp, '/serve/app/vendor.css')

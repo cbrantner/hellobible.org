@@ -20,7 +20,7 @@
     return directive;
 
     /** @ngInject */
-    function SubscribeController($scope, $location, $resource, $anchorScroll, $log, toastr, $window, Analytics) {
+    function SubscribeController($scope, $location, $resource, $anchorScroll, $log, toastr, $window, Analytics, hbTracking) {
 
       $scope.addSubscription = function(mailchimp) {
 
@@ -59,18 +59,22 @@
             } else {
               responseMessage = 'Sorry! An unknown error occured.';
             }
-            // track google analytics error
-            Analytics.trackException(responseMessage, true);
+            if (hbTracking) {
+              // track google analytics error
+              Analytics.trackException(responseMessage, true);
+            }
             toastr.error(responseMessage);
           } else if (response.result === 'success') {
             toastr.info(response.msg);
             
-            // track as lead on facebook
-            $window.fbq('track', 'Lead');
-            // track as lead on pinterest
-            $window.pintrk('track', 'lead');
-            // track google analytics event
-            Analytics.trackEvent('newsletter', 'submit', 'signup');
+            if (hbTracking) {
+              // track as lead on facebook
+              $window.fbq('track', 'Lead');
+              // track as lead on pinterest
+              $window.pintrk('track', 'lead');
+              // track google analytics event
+              Analytics.trackEvent('newsletter', 'submit', 'signup');
+            }
           }
           mailchimp.email = '';
           // disable spinner
@@ -79,8 +83,10 @@
         // error
         function () {
           var responseMessage = 'Sorry! An unknown error occured.';
-          // track google analytics error
-          Analytics.trackException("Unknown Mailchimp error", true);
+          if (hbTracking) {
+            // track google analytics error
+            Analytics.trackException("Unknown Mailchimp error", true);
+          }
           toastr.error(responseMessage);
           mailchimp.email = '';          
           // disable spinner
