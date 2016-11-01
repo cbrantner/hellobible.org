@@ -20,8 +20,8 @@ gulp.task('inject-reload', ['inject'], function() {
 
 var travisBranch;
 if (process.env.TRAVIS_PULL_REQUEST) {
-  console.log(process.env.TRAVIS_PULL_REQUEST_BRANCH + ': using configuration by pull request branch');
-	travisBranch = process.env.TRAVIS_PULL_REQUEST_BRANCH;
+	travisBranch = process.env.TRAVIS_PULL_REQUEST_BRANCH.length == 0? "development": process.env.TRAVIS_PULL_REQUEST_BRANCH;
+  console.log(travisBranch+ ': using configuration by pull request branch');
 } else if (process.env.TRAVIS_BRANCH) {
   console.log(process.env.TRAVIS_BRANCH + ': using configuration by travis branch');
 	travisBranch = process.env.TRAVIS_BRANCH;
