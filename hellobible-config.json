@@ -1,0 +1,14 @@
+{
+	"production": {
+    "hbDebug": false,
+    "hbTracking": true
+  },
+	"beta": {
+    "hbDebug": false,
+    "hbTracking": false
+  },
+  "development": {
+    "hbDebug" : true,
+    "hbTracking": false
+  }
+}
