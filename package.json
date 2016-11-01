@@ -1,7 +1,9 @@
 {
   "name": "hellobible",
   "version": "0.0.0",
-  "dependencies": {},
+  "dependencies": {
+    "add-stream": "^1.0.0"
+  },
   "scripts": {
     "test": "gulp test"
   },
