@@ -22,13 +22,14 @@ var travisBranch;
 console.log(process.env.TRAVIS_PULL_REQUEST+ ': TRAVIS_PULL_REQUEST');
 console.log(process.env.TRAVIS_PULL_REQUEST_BRANCH + ': TRAVIS_PULL_REQUEST_BRANCH');
 console.log(process.env.TRAVIS_BRANCH + ': TRAVIS_BRANCH');
-if (process.env.TRAVIS_PULL_REQUEST) {
+if (process.env.TRAVIS_PULL_REQUEST && process.env.TRAVIS_PULL_REQUEST != 'false') {
 	travisBranch = process.env.TRAVIS_PULL_REQUEST_BRANCH.length == 0? "development": process.env.TRAVIS_PULL_REQUEST_BRANCH;
   console.log(travisBranch+ ': using configuration by pull request branch');
 } else if (process.env.TRAVIS_BRANCH) {
   console.log(process.env.TRAVIS_BRANCH + ': using configuration by travis branch');
 	travisBranch = process.env.TRAVIS_BRANCH;
 } else {
+  console.log('development: using fallback configuration');
 	travisBranch = 'development';
 }
 
