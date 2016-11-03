@@ -9,9 +9,7 @@
   function acmePricing() {
     var directive = {
       restrict: 'E',
-      templateUrl: '/app/components/pricing/pricing.html',
-      scope: {
-      },
+      templateUrl: 'app/components/pricing/pricing.html',
       controller: PricingController,
       controllerAs: 'pricingCtrl',
       bindToController: true
