@@ -6,8 +6,8 @@
       <input type="checkbox" ng-model="checkBoxValue" ng-true-Value="'gift'" ng-false-Value="'default'" id="gift-check" />
       Gift it option  <span class="fa fa-gift fa-2x"></span><!-- gift option changes all titles, absolute prices, 3months best value for gift,  -->
     </div>
+
     <div class="row">
-      
       <div class="col-md-3" ng-repeat="item in options[checkBoxValue]">
         <div class="price-table">
           <div class="best-chose" ng-show="item.bestValue">Most popular</div>
@@ -33,6 +33,7 @@
         </div>
       </div>
     </div>
+
     <div class="row">
         All subscriptions renew automatically. <b>Cancel anytime</b>. <!-- Gift subscriptions do not renew -->
     </div>
