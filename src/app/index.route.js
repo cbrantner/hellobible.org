@@ -9,15 +9,6 @@
   function routerConfig($stateProvider, $urlRouterProvider, $locationProvider) {
 
     $stateProvider
-      .state('land', {
-        url: '/',
-        templateUrl: 'app/land/land.html',
-        controller: 'LandController',
-        controllerAs: 'land',
-        data : {
-          title: 'A Fun Way for Kids to Explore the Bible'
-        }
-      })
       .state('offer', {
         url: '/launch',
         templateUrl: 'app/land/land.html',
@@ -28,7 +19,7 @@
         }
       })
       .state('home', {
-        url: '/home',
+        url: '/',
         templateUrl: 'app/main/main.html',
         controller: 'MainController',
         controllerAs: 'main',
