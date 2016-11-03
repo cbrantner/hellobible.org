@@ -31,25 +31,25 @@
             name : "One Month Gift",
             price : "$29.90",
             save : null,
-            bestValue : true
+            bestValue : "Most popular"
           },
           {
             name : "3 Months Gift",
             price : "$75.00",
             save : "$15",
-            bestValue : false
+            bestValue : null
           },
           {
             name : "6 Months Gift",
             price : "$143",
             save : "$36",
-            bestValue : false
+            bestValue : null
           },
           {
             name : "12 Months Gift",
             price : "$274",
             save : "$84",
-            bestValue : false
+            bestValue : null
           }
         ],
         default: [
@@ -57,24 +57,24 @@
             name : "Monthly",
             price : "$24.90",
             save : null,
-            bestValue : true
+            bestValue : "Best value"
           },
           {
             name : "3 Months",
             price : "$24.90",
             save : null,
-            bestValue : false
+            bestValue : null
           },
           {
             name : "6 Months",
             price : "$23.90",
             save : null,
-            bestValue : false
+            bestValue : null
           },
           {
             name : "12 Months",
             price : "$22.90",
-            bestValue : false
+            bestValue : null
           }
         ]
       }
