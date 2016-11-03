@@ -41,7 +41,7 @@ deploy:
     bucket: alpha.hellobible.org
     endpoint: alpha.hellobible.org.s3-website-us-west-1.amazonaws.com
     local-dir: dist
-    region: us-east-1
+    region: us-west-1
     acl: public_read
     skip_cleanup: true
     on:
