@@ -6,9 +6,11 @@
     .controller('FaqController', FaqController);
 
   /** @ngInject */
-  function FaqController($scope) {
+  function FaqController() {
 
-    $scope.menuStatus = [
+    var vm = this;
+
+    vm.menuStatus = [
       { isOpen : true     },
       { isOpen : false    },
       { isOpen : false    },

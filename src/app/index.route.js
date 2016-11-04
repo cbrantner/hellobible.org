@@ -10,21 +10,12 @@
 
     $stateProvider
       .state('faq', {
-        url: '/',
+        url: '/faq',
         templateUrl: 'app/faq/faq.html',
         controller: 'FaqController',
         controllerAs: 'land',
         data : {
           title: 'FAQ'
-        }
-      })
-      .state('land', {
-        url: '/',
-        templateUrl: 'app/land/land.html',
-        controller: 'LandController',
-        controllerAs: 'land',
-        data : {
-          title: 'A Fun Way for Kids to Explore the Bible'
         }
       })
       .state('offer', {
