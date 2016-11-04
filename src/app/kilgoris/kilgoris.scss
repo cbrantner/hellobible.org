@@ -1,0 +1,73 @@
+.kilgoris {
+  width: 100%;
+  height: 100%;
+}
+
+.kilgoris h1, .kilgoris h2, .kilgoris h3 {
+  color: $BBDarkGrey;
+  text-align: center;
+}
+
+.kilgoris h1 {
+  font-size: 26pt;
+}
+
+.kilgoris h2 {
+  font-size: 20pt;
+}
+
+.kilgoris h3 {
+  font-size: 14pt;
+}
+
+.kilgoris .logo {
+  height: 100px;
+  text-align: center;
+}
+
+.kilgoris .btn-secondary { 
+  background: transparent;
+	color: $BBBlue;
+  border: 2px solid $BBBlue;
+}
+
+
+.kilgoris .btn-secondary:hover {
+  background: $BBBlue;
+  color: #ffffff;
+  border: 2px solid $BBBlue;
+}
+
+
+.kilgoris-mobile h1, .kilgoris-mobile h2, .kilgoris-mobile h3 {
+  color: $BBDarkGrey;
+  text-align: center;
+}
+
+.kilgoris-mobile h1 {
+  font-size: 22pt;
+}
+
+.kilgoris-mobile h2 {
+  font-size: 18pt;
+}
+
+.kilgoris-mobile h3 {
+  font-size: 14pt;
+}
+
+.kilgoris-mobile .logo {
+  height: 60px;
+}
+
+.kilgoris-mobile .btn-secondary { 
+  background: transparent;
+	color: $BBBlue;
+  border: 2px solid $BBBlue;
+}
+
+.kilgoris-mobile .btn-secondary:hover {
+  background: $BBBlue;
+  color: #ffffff;
+  border: 2px solid $BBBlue;
+}
