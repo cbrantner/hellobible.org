@@ -18,6 +18,15 @@
           title: 'A Fun Way for Kids to Explore the Bible'
         }
       })
+      .state('kilgoris', {
+        url: '/kilgoris',
+        templateUrl: 'app/kilgoris/kilgoris.html',
+        controller: 'KilgorisController',
+        controllerAs: 'kilgoris',
+        data : {
+          title: 'A Fun Way for Kids to Explore the Bible'
+        }
+      })
       .state('home', {
         url: '/',
         templateUrl: 'app/main/main.html',
