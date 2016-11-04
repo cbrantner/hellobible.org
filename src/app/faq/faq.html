@@ -1,0 +1,71 @@
+<acme-navbar></acme-navbar>
+
+<div ng-controller="FaqController">
+
+  <uib-accordion close-others="true">
+
+    <div uib-accordion-group class="panel-default" is-open='menuStatus[0].isOpen'>
+      <uib-accordion-heading>
+        What is HelloBible? <i class="pull-right glyphicon" ng-class="{'glyphicon-chevron-down': menuStatus[0].isOpen , 'glyphicon-chevron-right': !menuStatus[0].isOpen }"></i>
+      </uib-accordion-heading>
+      HelloBible is a monthly christian subscription box. Kids explore a Bible story at home including a book, crafts and ideas to share and pray. HelloBible takes you on a journey through the Bible in a fun & creative way! It is an awesome opportunity to spend valuable family time.
+    </div>
+
+    <div uib-accordion-group class="panel-default" is-open='menuStatus[1].isOpen'>
+      <uib-accordion-heading>
+        What’s included in my box? <i class="pull-right glyphicon" ng-class="{'glyphicon-chevron-down': menuStatus[1].isOpen , 'glyphicon-chevron-right': !menuStatus[1].isOpen }"></i>
+      </uib-accordion-heading>
+      HelloBible takes children on a journey through the Bible. Each box is designed by experts and is based on a specific Bible story. It comes with an age-appropriate Bible storybook, two creative craft projects and various ideas to share and pray. All materials and instructions are included.
+    </div>
+
+    <div uib-accordion-group class="panel-default" is-open='menuStatus[2].isOpen'>
+      <uib-accordion-heading>
+        What is the suggested age range for a box? <i class="pull-right glyphicon" ng-class="{'glyphicon-chevron-down': menuStatus[2].isOpen , 'glyphicon-chevron-right': !menuStatus[2].isOpen }"></i>
+      </uib-accordion-heading>
+      HelloBible is designed for kids ages 5-8.
+    </div>
+
+    <div uib-accordion-group class="panel-default" is-open='menuStatus[3].isOpen'>
+      <uib-accordion-heading>
+        When will I be able to order? <i class="pull-right glyphicon" ng-class="{'glyphicon-chevron-down': menuStatus[3].isOpen , 'glyphicon-chevron-right': !menuStatus[3].isOpen }"></i>
+      </uib-accordion-heading>
+      Very soon. Meanwhile, please sign up to our email list to get the latest news, discounts and be the first to know when we launch.
+    </div>
+
+    <div uib-accordion-group class="panel-default" is-open='menuStatus[4].isOpen'>
+      <uib-accordion-heading>
+        Does HelloBible align with my beliefs? <i class="pull-right glyphicon" ng-class="{'glyphicon-chevron-down': menuStatus[4].isOpen , 'glyphicon-chevron-right': !menuStatus[4].isOpen }"></i>
+      </uib-accordion-heading>
+      Our content is Bible based. We focus on Scripture and we share suggestions on how to teach Bible Stories to children. We hope that those ideas and suggestions apply to a broad range of christian families.
+      If you have any questions please do not hesitate to contact us.
+    </div>
+
+    <div uib-accordion-group class="panel-default" is-open='menuStatus[5].isOpen'>
+      <uib-accordion-heading>
+        Who is Danny the Donkey? <i class="pull-right glyphicon" ng-class="{'glyphicon-chevron-down': menuStatus[5].isOpen , 'glyphicon-chevron-right': !menuStatus[5].isOpen }"></i>
+      </uib-accordion-heading>
+      Danny the Donkey is our little helper who takes the kids on their journey through the Bible. He welcomes, explains the crafts and knows a lot of great Bible Verses.
+
+      Donkeys are humble and often serving behind the scenes. In the Bible donkeys are constantly mentioned and considered reliable helpers to the humans. The New Testament tells us that Jesus entered Jerusalem on a donkey while the crowd worshipped him. Why did Jesus ride on an unimportant donkey instead of a mighty horse in such an important occasion? This shows that Jesus is a humble king, nobody needs to be perfect in order to serve Jesus.
+
+      Let's all be reminded by Danny the Donkey, that we are important to Jesus and that he wants to use us.
+    </div>
+
+    <div uib-accordion-group class="panel-default" is-open='menuStatus[6].isOpen'>
+      <uib-accordion-heading>
+        How can I support HelloBible? <i class="pull-right glyphicon" ng-class="{'glyphicon-chevron-down': menuStatus[6].isOpen , 'glyphicon-chevron-right': !menuStatus[6].isOpen }"></i>
+      </uib-accordion-heading>
+      You like HelloBible? There are many ways to support us.
+      <ul>
+        <li>Pray for us!</li>
+        <li>Tell your family and friends about HelloBible.</li>
+        <li>Visit us on Facebook</li>
+        <li>Visit us on Pinterest</li>
+        <li>Contact us for feedback at info@hellobible.org. We would love to hear about your ideas and proposals.</li>
+      </ul>
+    </div>
+
+  </uib-accordion>
+</div>
+
+<acme-footer></acme-footer>
