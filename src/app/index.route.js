@@ -9,13 +9,13 @@
   function routerConfig($stateProvider, $urlRouterProvider, $locationProvider) {
 
     $stateProvider
-      .state('land', {
-        url: '/',
-        templateUrl: 'app/land/land.html',
-        controller: 'LandController',
+      .state('faq', {
+        url: '/faq',
+        templateUrl: 'app/faq/faq.html',
+        controller: 'FaqController',
         controllerAs: 'land',
         data : {
-          title: 'A Fun Way for Kids to Explore the Bible'
+          title: 'FAQ'
         }
       })
       .state('offer', {
@@ -27,8 +27,17 @@
           title: 'A Fun Way for Kids to Explore the Bible'
         }
       })
+      .state('kilgoris', {
+        url: '/kilgoris',
+        templateUrl: 'app/kilgoris/kilgoris.html',
+        controller: 'KilgorisController',
+        controllerAs: 'kilgoris',
+        data : {
+          title: 'A Fun Way for Kids to Explore the Bible'
+        }
+      })
       .state('home', {
-        url: '/home',
+        url: '/',
         templateUrl: 'app/main/main.html',
         controller: 'MainController',
         controllerAs: 'main',

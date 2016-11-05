@@ -1,40 +1,51 @@
 #footer {
+
   visibility: visible;
   padding-top: 30px;
+  padding-bottom: 30px;
   background-color: $BBDarkGrey;
   color: white;
-}
 
-#footer ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
 
-#footer .subscribe-inputs {
-  color:black;
-}
+  li {
+    display: block;
+    padding: 0;
+  }
 
-#footer li {
-  display: block;
-  padding: 0;
-}
+  .subscribe-inputs {
+    color:black;
+  }
 
+  // hover-highlight for the links in the footer
+  .links a:hover {
+    color: $BBPink;
+  }
 
-// hover-highlight for the links in the footer
-#footer .links a:hover {
-  color: $BBPink;
-}
+  // highligh the link in the footer corresponding to the currently active page
+  .link-active {
+    color: $BBDarkPink;
+    pointer-events: none;
+    cursor: default;
+  }
 
-// highligh the link in the footer corresponding to the currently active page
-#footer .link-active {
-  color: $BBDarkPink;
-	pointer-events: none;
-  cursor: default;
+  .row.visible-lg.visible-md.links {
+    margin-right: 0px;
+  }
+
+  .copyright {
+    margin-right: 0px;
+  }
+
 }
 
 // center text in footer on small screens
 @media (max-width: 991px) {
+
   .copyright {
     text-align: center;
   }
@@ -42,4 +53,6 @@
   #footer .links {
     text-align: center;
   }
+
 }
+
