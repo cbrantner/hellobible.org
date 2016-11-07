@@ -5,10 +5,10 @@
     .module('hellobible')
     .controller('MainController', MainController)
     .controller('PortfolioController', PortfolioController)
-    .controller('SignupModalCtrl', SignupModalCtrl);
+    .controller('SignupModalController', SignupModalController);
 
   /** @ngInject */
-  function SignupModalCtrl($uibModalInstance, items) {
+  function SignupModalController($uibModalInstance) {
     var vm = this;
 
     vm.ok = function () {
@@ -18,11 +18,11 @@
     vm.cancel = function () {
       $uibModalInstance.dismiss('cancel');
     };
-  };
+  }
 
 
   /** @ngInject */
-  function MainController($scope, hbTracking, $uibModal) {
+  function MainController($scope, $uibModal, Analytics, hbTracking) {
 
     $scope.signup = function (name, size) {
 
@@ -38,7 +38,7 @@
       var modalInstance = $uibModal.open({
         animation: true,
         templateUrl: 'signupModal.html',
-        controller: 'SignupModalCtrl',
+        controller: 'SignupModalController',
         controllerAs: 'vm',
         size: size,
         resolve: {

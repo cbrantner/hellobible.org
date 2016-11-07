@@ -4,10 +4,10 @@
   angular
     .module('hellobible')
     .directive('acmePricing', acmePricing)
-    .controller('SubscribeModalCtrl', SubscribeModalCtrl);
+    .controller('SubscribeModalController', SubscribeModalController);
 
   /** @ngInject */
-  function SubscribeModalCtrl($uibModalInstance, items) {
+  function SubscribeModalController($uibModalInstance) {
     var vm = this;
 
     vm.ok = function () {
@@ -17,7 +17,7 @@
     vm.cancel = function () {
       $uibModalInstance.dismiss('cancel');
     };
-  };
+  }
 
 
   /** @ngInject */
@@ -37,7 +37,7 @@
     /** @ngInject */
     function PricingController($scope, $uibModal, $log, Analytics, hbTracking) {
 
-      var vm = this;
+      //var vm = this;
 
       $scope.join = function (name, size) {
 
@@ -51,7 +51,7 @@
         var modalInstance = $uibModal.open({
           animation: true,
           templateUrl: 'subscribeModal.html',
-          controller: 'SubscribeModalCtrl',
+          controller: 'SubscribeModalController',
           controllerAs: 'vm',
           size: size,
           resolve: {
