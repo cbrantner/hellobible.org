@@ -27,7 +27,7 @@
 }
 
 .subscribe-inputs button[type="submit"] {
-  background: $BBPink;
+  background: $BBOrange;
   color: #fff;
   padding: 10px;
   margin-left: -5px;
@@ -43,24 +43,24 @@
 // if disabled (i.e. no valid email), don't change the button
 .subscribe-inputs button[type="submit"]:disabled {
   opacity: 1;
-  background: $BBPink;
+  background: $BBOrange;
 }
 
 // if disabled (i.e. no valid email) and hovering over it, don't change the button
 .subscribe-inputs button[type="submit"]:disabled:hover {
-  background: $BBDarkPink;
+  background: $BBDarkOrange;
 }
 
 // if hovering over it (and not disabled), make the button blue
 .subscribe-inputs button[type="submit"]:hover {
-  background: $BBBlue;
+  background: $BBDarkOrange;
 }
 
 /*********************************************************/
 /* Error messages on invalid input
 /*********************************************************/
 .subscribe-message {
-  color: $BBDarkPink;
+  color: $BBOrange;
 }
 
 /*********************************************************/
