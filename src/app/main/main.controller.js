@@ -4,10 +4,56 @@
   angular
     .module('hellobible')
     .controller('MainController', MainController)
-    .controller('PortfolioController', PortfolioController);
+    .controller('PortfolioController', PortfolioController)
+    .controller('SignupModalCtrl', SignupModalCtrl);
 
   /** @ngInject */
-  function MainController() {
+  function SignupModalCtrl($uibModalInstance, items) {
+    var vm = this;
+
+    vm.ok = function () {
+      $uibModalInstance.close();
+    };
+
+    vm.cancel = function () {
+      $uibModalInstance.dismiss('cancel');
+    };
+  };
+
+
+  /** @ngInject */
+  function MainController($scope, hbTracking, $uibModal) {
+
+    $scope.signup = function (name, size) {
+
+      // $log.debug(name + ': cart clicked')
+
+      if (hbTracking) {
+        // track google analytics event
+        Analytics.trackEvent('newsletter', 'click', name);
+      }
+
+      $scope.showNotificationBar = false;
+
+      var modalInstance = $uibModal.open({
+        animation: true,
+        templateUrl: 'signupModal.html',
+        controller: 'SignupModalCtrl',
+        controllerAs: 'vm',
+        size: size,
+        resolve: {
+          items: function () {
+            return name;
+          }
+        }
+      });
+
+      modalInstance.result.then(function () {
+        // ok clicked
+      }, function () {
+        // cancel clicked
+      });
+    };
   }
 
   /** @ngInject */

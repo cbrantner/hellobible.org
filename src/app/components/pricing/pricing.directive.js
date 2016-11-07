@@ -92,14 +92,14 @@
                   logo: "tag glyphicon glyphicon-tag"
                 },
                 {
-                  text: "$2 go to children in Kenya",
+                  text: "10% go to children in Kenya",
                   logo: "heart fa fa-heart"
                 }
               ]
             },
             {
               name: "6 Months Gift",
-              price: "$23.90 / box",
+              price: "$23.90/box",
               donation: "$12",
               image: "/assets/images/pricing/six-months.png",
               bullets: [
@@ -112,14 +112,14 @@
                   logo: "tag glyphicon glyphicon-tag"
                 },
                 {
-                  text: "$12 go to children in Kenya",
+                  text: "10% go to children in Kenya",
                   logo: "heart fa fa-heart"
                 }
               ]
             },
             {
               name: "12 Months Gift",
-              price: "$21.90 / box",
+              price: "$21.90/box",
               donation: "$24",
               image: "/assets/images/pricing/twelve-months.png",
               bullets: [
@@ -128,7 +128,7 @@
                   logo: "gift glyphicon glyphicon-gift"
                 },
                 {
-                  text: "Gift an additional special gift with the first box. One awesome children Bible to explore even more!",
+                  text: "Your giftee also receives an awesome children's Bible to explore even more!",
                   logo: "book fa fa-book"
                 },
                 {
@@ -136,7 +136,7 @@
                   logo: "tag glyphicon glyphicon-tag"
                 },
                 {
-                  text: "$24 go to children in Kenya",
+                  text: "10% go to children in Kenya",
                   logo: "heart fa fa-heart"
                 }
               ]
@@ -151,13 +151,13 @@
           plans: [
             {
               name: "Monthly",
-              price: "$24.90 / box",
+              price: "$24.90/box",
               donation: "$2",
               total: "$262",
               image: "/assets/images/pricing/one-month.png",
               bullets: [
                 {
-                  text: "Enjoy HelloBible every month. Enjoy a great Bible story, creative craft projects and ideas to share & pray.",
+                  text: "Enjoy HelloBible every month. Get a great Bible story, creative craft projects and ideas to share & pray.",
                   logo: "gift glyphicon glyphicon-gift"
                 },
                 {
@@ -165,14 +165,14 @@
                   logo: "tag glyphicon glyphicon-tag"
                 },
                 {
-                  text: "$2 go to children in Kenya",
+                  text: "10% go to children in Kenya",
                   logo: "heart fa fa-heart"
                 }
               ]
             },
             {
               name: "6 Months",
-              price: "$23.90 / box",
+              price: "$23.90/box",
               donation: "$12",
               image: "/assets/images/pricing/six-months.png",
               bullets: [
@@ -185,14 +185,14 @@
                   logo: "tag glyphicon glyphicon-tag"
                 },
                 {
-                  text: "$12 go to children in Kenya",
+                  text: "10% go to children in Kenya",
                   logo: "heart fa fa-heart"
                 }
               ]
             },
             {
               name: "12 Months",
-              price: "$21.90 / box",
+              price: "$21.90/box",
               donation: "$24",
               image: "/assets/images/pricing/twelve-months.png",
               bullets: [
@@ -209,7 +209,7 @@
                   logo: "tag glyphicon glyphicon-tag"
                 },
                 {
-                  text: "$24 go to children in Kenya",
+                  text: "10% go to children in Kenya",
                   logo: "heart fa fa-heart"
                 }
               ]

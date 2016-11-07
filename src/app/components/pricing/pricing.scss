@@ -1,11 +1,7 @@
 #pricing {
-  h1, h2, h3, p {
+  p {
     color: $BBDarkGrey;
     text-align: center;
-  }
-
-  h3 {
-    font-size: 14pt;
   }
 
   h1:after {
@@ -41,6 +37,15 @@
 
   }
 
+  .captionHighlight {
+    background-color: $BBBlue;
+
+    h2, p {
+      color: white;
+    }
+
+  }
+
   .media-body {
     line-height: 1.1;
   }
@@ -58,7 +63,7 @@
   }
 
   .giftChoose {
-    font-size: 20pt;
+    color: $BBBlue;
   }
 
   input[type="checkbox"] {

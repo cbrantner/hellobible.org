@@ -23,12 +23,12 @@
 
   // hover-highlight for the links in the footer
   .links a:hover {
-    color: $BBPink;
+    color: $BBDarkOrange;
   }
 
   // highligh the link in the footer corresponding to the currently active page
   .link-active {
-    color: $BBDarkPink;
+    color: $BBDarkOrange;
     pointer-events: none;
     cursor: default;
   }
