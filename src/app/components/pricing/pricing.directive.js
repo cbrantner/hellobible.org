@@ -84,7 +84,7 @@
               image: "/assets/images/pricing/one-month.png",
               bullets: [
                 {
-                  text: "Gift one month of HelloBible, creative craft projects and ideas to share & pray.",
+                  text: "Gift one month of HelloBible, Get a great Bible story, creative craft projects and ideas to share & pray.",
                   logo: "gift glyphicon glyphicon-gift"
                 },
                 {
@@ -197,7 +197,7 @@
               image: "/assets/images/pricing/twelve-months.png",
               bullets: [
                 {
-                  text: "Enjoy one year of HelloBible. Get a great Bible story, creative craft projects and ideas to share &amp; pray.",
+                  text: "Enjoy one year of HelloBible. Get a great Bible story, creative craft projects and ideas to share & pray.",
                   logo: "gift glyphicon glyphicon-gift"
                 },
                 {
