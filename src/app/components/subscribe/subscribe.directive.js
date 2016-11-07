@@ -11,6 +11,7 @@
       restrict: 'E',
       templateUrl: 'app/components/subscribe/subscribe.html',
       scope: {
+        //invokedFrom: '@invoked'
       },
       controller: SubscribeController,
       controllerAs: 'subscribeCtrl',
