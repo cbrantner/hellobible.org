@@ -9,6 +9,7 @@
 
   /** @ngInject */
   function SignupModalController($uibModalInstance) {
+    
     var vm = this;
 
     vm.ok = function () {
@@ -22,18 +23,20 @@
 
 
   /** @ngInject */
-  function MainController($scope, $uibModal, Analytics, hbTracking) {
+  function MainController($uibModal, Analytics, hbTracking) {
 
-    $scope.signup = function (name, size) {
+    var vm = this;
+
+    vm.signup = function (name, size) {
 
       // $log.debug(name + ': cart clicked')
 
       if (hbTracking) {
         // track google analytics event
-        Analytics.trackEvent('newsletter', 'click', name);
+        Analytics.trackEvent('newsletter', 'openModal', name);
       }
 
-      $scope.showNotificationBar = false;
+      vm.showNotificationBar = false;
 
       var modalInstance = $uibModal.open({
         animation: true,
@@ -59,6 +62,7 @@
   /** @ngInject */
   function PortfolioController() {
     var vm = this;
+
     vm.slickConfig = {
       dots: true,
       autoplay: true,
