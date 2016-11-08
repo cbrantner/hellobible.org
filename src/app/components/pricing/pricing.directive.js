@@ -45,7 +45,7 @@
 
         if (hbTracking) {
           // track google analytics event
-          Analytics.trackEvent('cart', 'clicked', name);
+          Analytics.trackEvent('cart', 'openCart', name);
         }
 
         var modalInstance = $uibModal.open({
