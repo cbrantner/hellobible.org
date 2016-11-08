@@ -4,7 +4,7 @@
 .notificationBar {
   display: block;
   position: fixed;
-  background: $BBDarkPink;
+  background: $BBOrange;
   width: 100%;
   opacity: 0.9;
   text-align: center;
@@ -55,36 +55,19 @@
 }
 
 .topheader h1 {
-  font-size: 28px;
   color: $BBBlue;
   text-align: left;
-  text-transform: uppercase;
 }
 
-.topheader h2 {
-  font-size: 22px;
+.topheader h2, .topheader h3 {
   color: white;
   text-align: left;
 }
 
-.topheader h3 {
-  font-size: 18px;
-  color: white;
-  text-align: left;
-}
 
 /* #### Top Header Small Devices #### */
 .topheader-mobile h1 {
-  font-size: 22px;
   color: $BBBlue;
-  text-align: center;
-  text-transform: uppercase;
-}
-
-.topheader-mobile h2 {
-  font-size: 14px;
-  color: $BBDarkGrey;
-  text-align: center;
 }
 
 .subscribe-mobile {
@@ -114,9 +97,6 @@
   padding: 15px;
 }
 
-#information h1 {
-  color: $BBDarkGrey;
-}
 
 #information h1:after {
   content: "";
@@ -129,24 +109,22 @@
   margin-bottom: 30px;
 }
 
-#information p {
-  line-height: 1.1;
-  color: $BBDarkGrey;
-}
-
 #information .text-read {
   color: $BBBlue;
 	font-weight: bold;
+  text-transform: uppercase;
 }
 
 #information .text-create {
   color: $BBGreen;
 	font-weight: bold;
+  text-transform: uppercase;
 }
 
 #information .text-pray {
   color: $BBYellow;
 	font-weight: bold;
+  text-transform: uppercase;
 }
 
 #information .logo-read {
@@ -245,14 +223,10 @@ $slick-opacity-not-active: 0.25 !default;
   position: relative;
 }
 
-#how h1, #how h2, #how h3, #how h4, #how p {
-  color: $BBDarkGrey;
-}
-
-#how h3 {
-  font-size: 10.5pt;
+#how h2 {
   line-height: 1.0;
   text-transform: uppercase;
+  text-align: left;
 }
 
 #how p {
@@ -270,101 +244,6 @@ $slick-opacity-not-active: 0.25 !default;
 }
 
 /*********************************************************/
-/* SUBSCRIBE
-/*********************************************************/
-#subscribeid h1 {
-  color: $BBDarkGrey;
-}
-
-#subscribeid h3 {
-  color: $BBDarkGrey;
-}
-
-/* #### Desktops #### */
-@media (min-width: 992px) {
-  #subscribeid {
-    // wish we could use fixed here. that would make a much nicer effect button
-    // the image will look bad on iOS
-    background: url("/assets/images/subscribebg-2560.jpg") no-repeat center top/cover rgba(0, 0, 0, 0);
-    padding-top: 200px;
-	  padding-bottom: 200px;
-    background-repeat: no-repeat;
-    background-position: center center;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-
-  }
-
-  #subscribeid .well {
-    filter: alpha(opacity=85);
-    opacity: 0.85;
-    -moz-opacity: 0.85;
-    -khtml-opacity: 0.85;
-    padding-top: 90px;
-    padding-bottom: 90px;
-    margin-left: 50%;
-    margin-right: 10px;
-  }
-}
-
-/* #### Tablets Portrait or Landscape #### */
-@media (min-width: 768px) and (max-width: 991px) {
-  #subscribeid {
-    padding-top: 90px;
-    padding-bottom: 600px;
-    background: url("/assets/images/subscribebg-970.jpg");
-    background-repeat: no-repeat;
-    background-position: center center;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-  }
-
-  #subscribeid .well {
-    filter: alpha(opacity=85);
-    opacity: 0.85;
-    -moz-opacity: 0.85;
-    -khtml-opacity: 0.85;
-    padding-top: 90px;
-    padding-bottom: 90px;
-  }
-}
-
-/* Landscape phones and portrait tablets */
-@media (max-width: 480px), (max-width: 767px) {
-  #subscribeid {
-    padding-top: 5px;
-    padding-bottom: 120px;
-    background: url("/assets/images/subscribebg-290.jpg");
-    position: relative;
-    background-repeat: no-repeat;
-    background-position: center center;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-  }
-
-  #subscribeid h1 {
-    font-size: 24px;
-  }
-
-  #subscribeid .well-xs {
-    filter: alpha(opacity=85);
-    opacity: 0.85;
-    -moz-opacity: 0.85;
-    -khtml-opacity: 0.85;
-    padding-top: 90px;
-    padding-bottom: 90px;
-    margin-left: 10px;
-    margin-right: 10px;
-  }
-}
-
-
-/*********************************************************/
 /* VERSE
 /*********************************************************/
 .verse {
@@ -373,17 +252,19 @@ $slick-opacity-not-active: 0.25 !default;
 }
 
 .verse cite {
-  font-size: 18px;
+  font-size: 14px;
   font-weight: 400;
 }
 
 .verse img {
-  height: 115px;
+  padding-top: 15px;
+  height: 110px;
 }
 
 .verse blockquote{
   padding-top: 25px;
   border-width: 0;
+  font-size: 14px;
 }
 
 /*********************************************************/

@@ -8,7 +8,7 @@
 		.value('duScrollDuration', 500);
 
   /** @ngInject */
-  function config($logProvider, toastrConfig, laddaProvider, $windowProvider) {
+  function config($logProvider, toastrConfig, laddaProvider, $windowProvider, AnalyticsProvider, hbTracking) {
     // Enable log
     $logProvider.debugEnabled(true);
 
@@ -35,5 +35,14 @@
       'wrapAround' : true
     });
 
+    if (hbTracking) {
+      AnalyticsProvider.useAnalytics(true);
+      AnalyticsProvider.setAccount('UA-82839547-1');
+      // Change the default page event name.
+      // using ui-router, which fires $stateChangeSuccess instead of $routeChangeSuccess.
+      AnalyticsProvider.setPageEvent('$stateChangeSuccess');
+    } else {
+      AnalyticsProvider.useAnalytics(false);
+    }
   }
 })();

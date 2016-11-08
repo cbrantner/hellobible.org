@@ -1,80 +1,77 @@
 <div id="pricing">
   <div class="container">
-    <h1 class="text-center text-uppercase">Subscriptions</h1>
+    <h1 class="text-center text-uppercase">Join Our Community</h1>
 
-    <div class="row margin-t-30">
-      <div class="col-md-4">
-        <div class="price-table">
-          <div class="table-title">
-            <h3>One Box</h3>
+    <div class="row header">
+      <h2><span class="fa fa-heart"></span> {{options[checkBoxValue].subtitle}}</h2>
+
+    </div>
+
+    <div class="col-md-12">
+      <h2><input type="checkbox" ng-model="checkBoxValue" ng-true-Value="'gift'" ng-false-Value="'default'" type="checkbox" id="giftCheck"
+        name="giftCheck">
+      <label for="giftCheck"><span class="giftChoose"><i class="fa fa-gift"></i>&nbsp;This is a gift.</span></label></h2>
+    </div>
+
+    <script type="text/ng-template" id="subscribeModal.html">
+        <div class="modal-header">
+            <button type="button" class="close" ng-click="vm.cancel()">&times;</button>
+            <img src="/assets/images/ogp.png"/>
+        </div>
+        <div class="modal-body" id="modal-body">
+          <p>We are currently finalizing our online shop and <b>will be ready to take your orders soon</b>.</p>
+
+          <p>In the meantime, please sign up to our newsletter.
+          We will notify you once we launch and you will get <b>10% off your first box</b>.</p>
+
+          <acme-subscribe></acme-subscribe>
+        </div>
+    </script>
+
+
+    <div class="pricing-mobile visible-xs-block">
+      <uib-accordion close-others="true">
+        <div uib-accordion-group class="panel-default" ng-repeat="plan in options[checkBoxValue].plans">
+          <uib-accordion-heading>
+            <p class="accordion-heading-title">{{plan.name}}</p>
+            <p class="accordion-heading-subtitle">{{plan.price}} + <i class="fa fa-truck fa-flip-horizontal"></i></p>
+          </uib-accordion-heading>
+          <div class="media" ng-repeat="item in plan.bullets">
+            <i class="pull-left media-object {{item.logo}}"></i>
+            <div class="media-body">{{item.text}}</div>
           </div>
-
-          <div class="table-price">
-            <span>$23<span class="period">/month</span></span>
-          </div>
-
-          <div class="table-list">
-            <ul>
-              <li>One time box</li>
-              <li>Free Shipping</li>
-              <li>$1 donation per box</li>
-            </ul>
-          </div>
-
-          <div class="table-btn">
-            <a href="#" class="btn btn-primary">BUY NOW</a>
+          <div class="col-xs-4 col-xs-offset-4 margin-t-30">
+            <a href="#"><button ng-click="join(plan.name)" type="button" class="btn btn-lg btn-primary">{{options[checkBoxValue].action}}</button></a>
           </div>
         </div>
-      </div>
+      </uib-accordion>
+    </div>
 
-      <div class="col-md-4">
-        <div class="price-table">
-          <div class="table-title">
-            <div class="best-chose"></div>
-            <h3>3 Months</h3>
-          </div>
-
-          <div class="table-price">
-            <span>$23<span class="period">/month</span></span>
-          </div>
-
-          <div class="table-list">
-            <ul>
-              <li>1 box/month for 3 months</li>
-              <li>Free Shipping</li>
-              <li>$1 donation per box</li>
-            </ul>
-          </div>
-
-          <div class="table-btn">
-            <a href="#" class="btn btn-primary">BUY NOW</a>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-md-4">
-        <div class="price-table">
-          <div class="table-title">
-            <h3>6 Months</h3>
-          </div>
-
-          <div class="table-price">
-            <span>$21<span class="period">/month</span></span>
-          </div>
-
-          <div class="table-list">
-            <ul>
-              <li>1 box/month for 6 months</li>
-              <li>Free Shipping</li>
-              <li>$1 donation per box</li>
-            </ul>
-          </div>
-
-          <div class="table-btn">
-            <a href="#" class="btn btn-primary">BUY NOW</a>
+    <div class="row hidden-xs">
+      <div class="col-sm-4 col-md-4" ng-repeat="plan in options[checkBoxValue].plans">
+        <div class="thumbnail">
+          <img ng-src="{{plan.image}}" width="250px" />
+          <div class="caption">
+            <div class="captionHighlight">
+              <h2>{{plan.name}}</h2>
+              <p>{{plan.price}} + <i class="fa fa-truck fa-flip-horizontal"></i></p>
+            </div>
+            <div class="media" ng-repeat="item in plan.bullets">
+              <i class="pull-left media-object {{item.logo}}"></i>
+              <div class="media-body">{{item.text}}</div>
+            </div>
+            <p class="margin-t-30"><a ng-click="join(plan.name)" href="#"><button type="button" class="btn btn-md btn-primary">{{options[checkBoxValue].action}}</button></a></p>
           </div>
         </div>
       </div>
     </div>
+
+    <div class="footer">
+      <div class="col-xs-12">
+        {{options[checkBoxValue].cancel}}
+      </div>
+
+    </div>
+
   </div>
 </div>

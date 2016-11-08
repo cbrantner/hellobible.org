@@ -1,0 +1,18 @@
+{
+	"master": {
+    "hbDebug": false,
+    "hbTracking": true
+  },
+	"beta": {
+    "hbDebug": false,
+    "hbTracking": false
+  },
+	"alpha": {
+    "hbDebug": false,
+    "hbTracking": false
+  },
+  "development": {
+    "hbDebug" : true,
+    "hbTracking": false
+  }
+}

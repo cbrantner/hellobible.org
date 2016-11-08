@@ -3,10 +3,6 @@
 	position: relative;
 }
 
-#about-founders h1 {
-  	color: $BBDarkGrey;
-}
-
 #about-founders h1:after {
 	content: "";
 	display: block;
@@ -18,39 +14,25 @@
   margin-bottom: 30px;
 }
 
-#about-founders h2 {
-	color: $BBDarkGrey;
-  line-height: 0.6;
-  text-align: center;
-  margin-bottom: -10px;
-  margin-top: -3px;
-}
-
-#about-founders h3, #about-founders h4, #about-founders p {
+#about-founders p {
 	color: $BBDarkGrey;
   line-height: 0.9;
   text-align: center;
 }
 
-#about-founders h2 {
-  font-size: 16pt;
-}
-
 #about-founders h3 {
-  font-size: 10pt;
   margin-top: 18pt;
+	line-height: 0.9;
+  text-align: center;
 }
 
-#about-founders h4 {
-  font-size: 8pt;
-  margin-bottom: -5px;
-
+#about-timeline h2 {
+	text-align: left;
 }
 
-#about-timeline h1, #about-timeline h2, #about-timeline h3, #about-timeline h4, #about-timeline p {
+#about-timeline p {
 	color: $BBDarkGrey;
 }
-
 
 #about-timeline:before {
 	content: "";
@@ -90,6 +72,10 @@ ul li .timeline-image {
     min-height: 220px;
 }
 
+#about-timeline .timeline-left h2 {
+	text-align: right;
+}
+
 #about-timeline .timeline-left {
 	float: left;
 	width: 45%;
@@ -113,6 +99,10 @@ ul li .timeline-image {
 	width: 100%;
 	text-align: left;
 	padding-left: 80px;
+}
+
+#about-timeline .timeline-left h2 {
+	text-align: left;
 }
 
 #about-timeline .timeline-right {
