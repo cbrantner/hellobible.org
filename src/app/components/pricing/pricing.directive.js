@@ -73,8 +73,8 @@
       $scope.options = {
         gift: {
           name: "Select my gift",
-          subtitle: "Give a gift that gives.",
-          cancel: "Gift plans do not renew.",
+          subtitle: "Give a gift that provides education for children in Kenya.",
+          cancel: "Gift subscriptions do not renew.",
           action: "Select",
           plans: [
             {
@@ -145,8 +145,8 @@
         },
         default: {
           name: "Choose my plan",
-          subtitle: "Each box provides education.",
-          cancel: "All plans renew automatically. You may cancel anytime.",
+          subtitle: "Each box provides education for children in Kenya.",
+          cancel: "All subscriptions renew automatically. You may cancel anytime.",
           action: "Join",
           plans: [
             {
