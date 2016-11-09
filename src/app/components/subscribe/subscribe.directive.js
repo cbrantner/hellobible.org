@@ -74,7 +74,7 @@
               // track as lead on pinterest
               $window.pintrk('track', 'lead');
               // track google analytics event
-              Analytics.trackEvent('newsletter', 'submit', 'signup');
+              Analytics.trackEvent('newsletter', 'signup', mailchimp.email);
             }
           }
           mailchimp.email = '';

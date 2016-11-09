@@ -13,21 +13,21 @@
 	</div>
 </script>
 
-<div class="notificationBar" ng-show="showNotificationBar" ng-animate=" 'animate' ">
+<div class="notificationBar" ng-show="showNotificationBar" ng-animate=" 'animate' " ng-controller="MainController as mainCtrl">
 	<a ng-click="showNotificationBar = false"><i class="close glyphicon glyphicon-remove"></i></a>
 	<div class="text">
-		<a ng-click="signup('notificationBar')">Sign up</a> and get 10% off your first box.
+		<a ng-click="mainCtrl.signup('notificationBar')">Sign up</a> and get 10% off your first box.
 	</div>
 </div>
 
-<div class="topheader hidden-xs">
+<div class="topheader hidden-xs" ng-controller="MainController as headerCtrl">
 	<div class="container">
 		<div class="row margin-t-120">
 			<div class="col-sm-6 col-sm-offset-6">
 				<h1>A fun way for kids to explore the Bible.</h1>
 				<h2>Get 1 box each month including a great Bible story, creative craft projects and ideas to share & pray.</h2>
 				<h3>Designed for children ages 5-8.</h3>
-				<button type="button" class="btn btn-lg btn-primary" aria-haspopup="true" aria-expanded="false" ng-click="signup('header')">Sign up</button>
+				<button type="button" class="btn btn-lg btn-primary" aria-haspopup="true" aria-expanded="false" ng-click="headerCtrl.signup('header')">Sign up</button>
 			</div>
 		</div>
 	</div>
@@ -37,7 +37,7 @@
 	</a>
 </div>
 
-<div class="topheader-mobile visible-xs-block">
+<div class="topheader-mobile visible-xs-block" ng-controller="MainController as headerMobileCtrl">
 	<div class="container">
 		<div class="row margin-t-40">
 			<img src="/assets/images/headerbg-970.jpg" />
@@ -47,14 +47,14 @@
 			<h2>Get 1 box each month including a great Bible story, creative craft projects and ideas to share & pray.</h2>
 			<h2>Designed for children ages 5-8.</h2>
 			<div class="row margin-t-30 subscribe-mobile">
-				<button type="button" class="btn btn-lg btn-primary" aria-haspopup="true" aria-expanded="false" ng-click="signup('header')">Sign up</button>
+				<button type="button" class="btn btn-lg btn-primary" aria-haspopup="true" aria-expanded="false" ng-click="headerMobileCtrl.signup('header')">Sign up</button>
 			</div>
 		</div>
 	</div>
 </div>
 
 
-<div id="information">
+<div id="information" ng-controller="MainController as informationCtrl" >
 	<div class="container">
 		<h1 class="text-center text-uppercase">What's Inside</h1>
 		<div class="row">
@@ -83,14 +83,14 @@
 					</li>
 				</ul>
 				<div class="buttons">
-					<button type="button" class="btn btn-lg btn-primary" aria-haspopup="true" aria-expanded="false" ng-click="signup('information')">Sign up</button>
+					<button type="button" class="btn btn-lg btn-primary" aria-haspopup="true" aria-expanded="false" ng-click="informationCtrl.signup('information')">Sign up</button>
 				</div>
 			</div>
 			<div class="col-xs-12 col-sm-6 col-md-6"><img src="assets/images/noah-box-content.png"></div>
 		</div>
 
-		<div class="row" id="portfolio" ng-controller="PortfolioController as vm">
-			<slick settings="vm.slickConfig">
+		<div class="row" id="portfolio" ng-controller="PortfolioController as portfolioCtrl">
+			<slick settings="portfolioCtrl.slickConfig">
 				<div class="item">
 					<a href="assets/images/caroussel/instructions-noah-l.jpg" data-lightbox="group-1" data-title="Book, instructions and ideas to share &amp; pray.">
 						<img src="assets/images/caroussel/instructions-noah-s.jpg" />
