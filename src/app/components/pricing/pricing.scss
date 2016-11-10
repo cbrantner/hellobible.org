@@ -90,6 +90,11 @@
 
 }
 
+.pricing-mobile span:focus {
+  outline: none;
+  border: 0;
+}
+
 .modal-body p {
    color: $BBDarkGrey;
 }

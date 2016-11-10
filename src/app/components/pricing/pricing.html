@@ -30,12 +30,14 @@
 
 
     <div class="pricing-mobile visible-xs-block">
-      <uib-accordion close-others="oneAtATime">
+      <uib-accordion close-others="true">
         <div uib-accordion-group is-open="status.open" class="panel-default" ng-repeat="plan in options[checkBoxValue].plans">
           <uib-accordion-heading>
-            <i class="accordion-heading-arrow pull-right fa" ng-class="{'fa-chevron-down': !status.open, 'fa-chevron-up': status.open}"></i>
-            <p class="accordion-heading-title">{{plan.name}}</p>
-            <p class="accordion-heading-subtitle">{{plan.price}} + <i class="fa fa-truck fa-flip-horizontal"></i></p>
+            <span ng-click="opened(plan.name, $index)">
+              <i class="accordion-heading-arrow pull-right fa" ng-class="{'fa-chevron-down': !status.open, 'fa-chevron-up': status.open}"></i>
+              <p class="accordion-heading-title">{{plan.name}}</p>
+              <p class="accordion-heading-subtitle">{{plan.price}} + <i class="fa fa-truck fa-flip-horizontal"></i></p>
+            </span>
           </uib-accordion-heading>
           <div class="media" ng-repeat="item in plan.bullets">
             <i class="pull-left media-object {{item.logo}}"></i>
