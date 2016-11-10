@@ -39,6 +39,12 @@
 
       //var vm = this;
 
+      $scope.opened = function (plan, $index) {
+        if (hbTracking) {
+          Analytics.trackEvent('cart', 'openGroup', plan);
+        }
+      }
+
       $scope.join = function (name, size) {
 
         // $log.debug(name + ': cart clicked')
