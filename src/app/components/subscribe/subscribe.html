@@ -1,13 +1,18 @@
 <div>
-  <div class="subscribe-inputs">
+  <div ng-hide="response" class="subscribe-inputs">
     <form name="MailchimpSubscriptionForm" required>
-      <input type="email" name="email" ng-model="mailchimp.email" placeholder="Email address" required ng-model-options="{ debounce: 400 }" tabindex="1">
-      <button type="submit" ng-disabled="MailchimpSubscriptionForm.$invalid" name="subscribe" ng-click="addSubscription(mailchimp)" tabindex="2" ladda="submitting" class="btn ladda-button">
+      <input type="email" name="email" ng-model="mailchimp.email" placeholder="Email address" required ng-model-options="{ debounce: 400 }"
+        tabindex="1">
+      <button type="submit" ng-disabled="MailchimpSubscriptionForm.$invalid" name="subscribe" ng-click="addSubscription(mailchimp)"
+        tabindex="2" ladda="submitting" class="btn ladda-button">
         Sign up
       </button>
     </form>
   </div>
   <div ng-messages="MailchimpSubscriptionForm.email.$error" class="subscribe-message">
     <div ng-message="email">Please enter a valid email address.</div>
+  </div>
+  <div ng-show="response" class="subscribe-message">
+    Thanks! To confirm your email address, <b>please click the link we just sent you</b>.
   </div>
 </div>
