@@ -39,7 +39,7 @@
 
       //var vm = this;
 
-      $scope.opened = function (plan, $index) {
+      $scope.opened = function (plan) {
         if (hbTracking) {
           Analytics.trackEvent('cart', 'openGroup', plan);
         }
