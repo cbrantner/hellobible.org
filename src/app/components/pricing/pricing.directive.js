@@ -77,6 +77,7 @@
       $scope.checkBoxValue = "default";
 
       $scope.options = {
+        snipcartUrl : "/",
         gift: {
           name: "Select my gift",
           subtitle: "Give a gift that provides education for children in Kenya.",
@@ -84,6 +85,10 @@
           action: "Select",
           plans: [
             {
+              snipcartId : "1",
+              snipcartName : "1 Month Gift",
+              snipcartPrice : "29.90",
+              snipcartDescription : "1 Month Gift",
               name: "1 Month Gift",
               price: "$29.90",
               donation: "$2",
@@ -104,6 +109,10 @@
               ]
             },
             {
+              snipcartId : "2",
+              snipcartName : "6 Months Gift",
+              snipcartPrice : "143",
+              snipcartDescription : "6 Months Gift",
               name: "6 Months Gift",
               price: "$23.90/box",
               donation: "$12",
@@ -124,6 +133,10 @@
               ]
             },
             {
+              snipcartId : "3",
+              snipcartName : "12 Months Gift",
+              snipcartPrice : "262",
+              snipcartDescription : "12 Months Gift",
               name: "12 Months Gift",
               price: "$21.90/box",
               donation: "$24",
@@ -156,6 +169,10 @@
           action: "Join",
           plans: [
             {
+              snipcartId : "4",
+              snipcartName : "Monthly Subscription",
+              snipcartPrice : "24.90",
+              snipcartDescription : "Monthly Subscription",
               name: "Monthly",
               price: "$24.90/box",
               donation: "$2",
@@ -177,6 +194,10 @@
               ]
             },
             {
+              snipcartId : "5",
+              snipcartName : "6 Months Subscription",
+              snipcartPrice : "143",
+              snipcartDescription : "6 Months Subscription",
               name: "6 Months",
               price: "$23.90/box",
               donation: "$12",
@@ -197,6 +218,10 @@
               ]
             },
             {
+              snipcartId : "6",
+              snipcartName : "12 Months Subscription",
+              snipcartPrice : "262",
+              snipcartDescription : "12 Months Subscription",
               name: "12 Months",
               price: "$21.90/box",
               donation: "$24",

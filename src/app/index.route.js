@@ -75,5 +75,13 @@
 
       $urlRouterProvider.otherwise('/');
       $locationProvider.html5Mode(true);
+      $urlRouterProvider.rule(function ($injector, $location) {
+        var path = $location.path();
+        var match = path.match(/(.*)!\/{0,1}$/);
+
+        if (match) {
+          return match[1];
+        }
+      });
   }
 })();
