@@ -15,11 +15,18 @@ a.accordion-toggle {
   margin-bottom: 30px;
 }
 
+.panel-group .panel + .panel {
+  margin-top: 10px;
+}
+
 .panel-title {
   padding-top: 6px;
   padding-bottom: 6px;
 }
 
-.panel-group .panel + .panel {
-  margin-top: 10px;
+@media (max-width: 768px) {
+  .panel-title {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
 }
