@@ -1,0 +1,25 @@
+a.accordion-toggle {
+
+  &:hover {
+    color: $BBDarkOrange;
+  }
+
+  &:focus {
+    color: $BBDarkOrange;
+  }
+
+}
+
+.__faq-accordion {
+  margin-top: 40px;
+  margin-bottom: 30px;
+}
+
+.panel-title {
+  padding-top: 6px;
+  padding-bottom: 6px;
+}
+
+.panel-group .panel + .panel {
+  margin-top: 10px;
+}
