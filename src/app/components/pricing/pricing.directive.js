@@ -77,12 +77,11 @@
       $scope.checkBoxValue = "default";
 
       $scope.options = {
-        "storeUrl" : "",
         gift: {
           name: "Select my gift",
           subtitle: "Give a gift that provides education for children in Kenya.",
           cancel: "Gift subscriptions do not renew.",
-          action: "Select",
+          action: "Gift It",
           plans: [
             {
               name: "1 Month Gift",
@@ -158,7 +157,7 @@
           name: "Choose my plan",
           subtitle: "Each box provides education for children in Kenya.",
           cancel: "All subscriptions renew automatically. You may cancel anytime.",
-          action: "Join",
+          action: "Get It",
           plans: [
             {
               name: "Monthly",
@@ -208,7 +207,7 @@
               price: "$21.90/box",
               donation: "$24",
               image: "/assets/images/pricing/twelve-months.png",
-              productUrl: "https://hellobible.cratejoy.com/subscribe/536459466_HelloBible+Box/536459470_12-month-prepay",
+              productUrl: "https://hellobible.cratejoy.com/subscribe/536459466_HelloBible+Box/536459471_12-month-prepay",
               bullets: [
                 {
                   text: "Enjoy one year of HelloBible. Get a great Bible story, creative craft projects and ideas to share & pray.",

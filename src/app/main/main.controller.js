@@ -33,7 +33,7 @@
 
       if (hbTracking) {
         // track google analytics event
-        Analytics.trackEvent('newsletter', 'openModal', name);
+        Analytics.trackEvent('get', 'openModal', name);
       }
 
       vm.showNotificationBar = false;

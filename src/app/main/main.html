@@ -15,7 +15,7 @@
 <div class="notificationBar" ng-show="showNotificationBar" ng-animate=" 'animate' " ng-controller="MainController as mainCtrl">
 	<a ng-click="showNotificationBar = false"><i class="close glyphicon glyphicon-remove"></i></a>
 	<div class="text">
-		<a ng-click="mainCtrl.signup('notificationBar')">Sign up</a> to WIN a 6 month subscription to HelloBible!
+		<i class="fa fa-star"></i>&nbsp;<a ui-sref="home({'#' : 'pricing'})" ng-click="showNotificationBar = false" du-smooth-scroll>Order now</a> to receive your first box before Christmas!&nbsp;<i class="fa fa-star"></i>
 	</div>
 </div>
 
@@ -26,7 +26,7 @@
 				<h1>A fun way for kids to explore the Bible.</h1>
 				<h2>Get 1 box each month including a great Bible story, creative craft projects and ideas to share & pray.</h2>
 				<h3>Designed for children ages 5-8.</h3>
-				<button type="button" class="btn btn-lg btn-primary" aria-haspopup="true" aria-expanded="false" ng-click="headerCtrl.signup('header')">Sign up</button>
+				<a ui-sref="home({'#' : 'pricing'})" du-smooth-scroll><button type="button" class="btn btn-lg btn-primary">Get It</button></a>
 			</div>
 		</div>
 	</div>
@@ -46,7 +46,7 @@
 			<h2>Get 1 box each month including a great Bible story, creative craft projects and ideas to share & pray.</h2>
 			<h2>Designed for children ages 5-8.</h2>
 			<div class="row margin-t-30 subscribe-mobile">
-				<button type="button" class="btn btn-lg btn-primary" aria-haspopup="true" aria-expanded="false" ng-click="headerMobileCtrl.signup('header')">Sign up</button>
+				<a ui-sref="home({'#' : 'pricing'})"  du-smooth-scroll><button type="button" class="btn btn-lg btn-primary" aria-haspopup="true" aria-expanded="false">Sign up</button></a>
 			</div>
 		</div>
 	</div>
@@ -82,7 +82,7 @@
 					</li>
 				</ul>
 				<div class="buttons">
-					<button type="button" class="btn btn-lg btn-primary" aria-haspopup="true" aria-expanded="false" ng-click="informationCtrl.signup('information')">Sign up</button>
+					<a ui-sref="home({'#' : 'pricing'})"  du-smooth-scroll><button type="button" class="btn btn-lg btn-primary" aria-haspopup="true" aria-expanded="false">Get It</button></a>
 				</div>
 			</div>
 			<div class="col-xs-12 col-sm-6 col-md-6"><img src="assets/images/noah-box-content.png"></div>
