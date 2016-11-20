@@ -1,25 +1,25 @@
-#privacy {
+#terms {
   width: 80%;
 }
 
-#privacy h1, #privacy h2 {
+#terms h1, #terms h2 {
   text-align: left;
 }
 
-#privacy h2 {
+#terms h2 {
   color: $BBDarkGrey;
 }
 
-#privacy p {
+#terms p {
   color: $BBDarkGrey;
   text-align: justify;
 }
 
-#privacy a {
+#terms a {
   color: $BBBlue;
 }
 
-#privacy a:hover, #privacy a:focus {
+#terms a:hover, a:focus {
   color: $BBDarkBlue;
   cursor: pointer;
 }

@@ -63,6 +63,15 @@
           title: 'Privacy Policy'
         }
       })
+      .state('terms', {
+        url: '/terms',
+        templateUrl: 'app/terms/terms.html',
+        controller: 'TermsController',
+        controllerAs: 'terms',
+        data : {
+          title: 'Terms & Conditions'
+        }
+      })
       .state('about', {
         url: '/about',
         templateUrl: 'app/about/about.html',
