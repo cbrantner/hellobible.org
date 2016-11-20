@@ -1,18 +1,24 @@
 <acme-navbar></acme-navbar>
 
-<div ng-controller="FaqController as faqCtrl" class="__faq-accordion row">
-  <uib-accordion close-others="true" class="col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2">
 
-    <div uib-accordion-group is-open="isopen" class="panel-default __faq-accordion-item" ng-repeat="item in faqCtrl.faq">
-      <div ng-repeat="x in item.content">
+<div ng-controller="FaqController as faqCtrl" class="__faq-accordion row faq">
+
+  <div id="{{category.id}}" ng-repeat="category in faqCtrl.faq">
+    <h1>{{category.name}}</h1>
+
+    <uib-accordion close-others="true" class="col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2">
+
+      <div uib-accordion-group is-open="isopen" class="panel-default __faq-accordion-item" ng-repeat="item in category.items">
         <uib-accordion-heading ng-click="isopen=!isopen">
-          {{x.title}} <i class="pull-right glyphicon" ng-class="{'glyphicon-chevron-down': isopen, 'glyphicon-chevron-right': !isopen}"></i>
+          <span ng-class="{'opened' : isopen}">{{item.title}} <i class="pull-right glyphicon" ng-class="{'glyphicon-chevron-down': isopen, 'glyphicon-chevron-right': !isopen}"></i></span>
         </uib-accordion-heading>
-        {{x.answer}}
+        <p ng-repeat="paragraph in item.answer" ng-bind-html="paragraph">
+          {{paragraph}}
+        </p>
       </div>
-    </div>
 
-  </uib-accordion>
+    </uib-accordion>
+  </div>
 </div>
 
 <acme-footer></acme-footer>
