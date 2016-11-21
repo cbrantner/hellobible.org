@@ -88,7 +88,7 @@
               price: "$29.90",
               donation: "$2",
               image: "/assets/images/pricing/one-month.png",
-              productUrl: "https://hellobible.cratejoy.com/buy/SQ3558161?gift=true",
+              productUrl: "https://hellobible.cratejoy.com/buy/SQ3558161?gift=True",
               bullets: [
                 {
                   text: "Gift one month of HelloBible. Get a great Bible story, creative craft projects and ideas to share & pray.",
@@ -110,7 +110,7 @@
               donation: "$12",
               image: "/assets/images/pricing/six-months.png",
               productId: "536459466_HelloBible+Box",
-              productUrl: "https://hellobible.cratejoy.com/subscribe/536459466_HelloBible+Box/536459470_6-month-prepay?gift=true",
+              productUrl: "https://hellobible.cratejoy.com/subscribe/536459466_HelloBible+Box/536459470_6-month-prepay?gift=True",
               bullets: [
                 {
                   text: "Gift 6 months of HelloBible. Get a great Bible story, creative craft projects and ideas to share & pray.",
@@ -131,7 +131,7 @@
               price: "$21.90/box",
               donation: "$24",
               image: "/assets/images/pricing/twelve-months.png",
-              productUrl: "https://hellobible.cratejoy.com/subscribe/536459466_HelloBible+Box/536459471_12-month-prepay?gift=true",
+              productUrl: "https://hellobible.cratejoy.com/subscribe/536459466_HelloBible+Box/536459471_12-month-prepay?gift=True",
               bullets: [
                 {
                   text: "Gift one year of HelloBible. Get a great Bible story, creative craft projects and ideas to share & pray.",
