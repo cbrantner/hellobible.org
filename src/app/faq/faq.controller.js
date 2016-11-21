@@ -63,7 +63,7 @@
           },
           {
             title: "What happens at the end of my subscription?",
-            answer: ["Non-gift subscriptions will automatically renew at the end of the subscription period. That's great because you will never miss a box! We will send you a reminder email one day before the automatic renewal. If you do not cancel your after receiving the reminder email, it will renew for the same number of months as the term that was originally purchased."]
+            answer: ["Non-gift subscriptions will automatically renew at the end of the subscription period. That's great because you will never miss a box! We will send you a reminder email one day before the automatic renewal. If you do not cancel after receiving the reminder email, it will renew for the same number of months as the term that was originally purchased."]
           },
           {
             title: "Can I give HelloBible as a gift?",
