@@ -23,7 +23,7 @@
 
 
   /** @ngInject */
-  function MainController($uibModal, Analytics, hbTracking) {
+  function MainController($location, $anchorScroll, $uibModal, Analytics, hbTracking) {
 
     var vm = this;
 
@@ -33,7 +33,7 @@
 
       if (hbTracking) {
         // track google analytics event
-        Analytics.trackEvent('get', 'openModal', name);
+        Analytics.trackEvent('newsletter', 'openModal', name);
       }
 
       vm.showNotificationBar = false;
