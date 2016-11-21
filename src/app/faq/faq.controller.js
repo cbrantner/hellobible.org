@@ -6,7 +6,7 @@
     .controller('FaqController', FaqController);
 
   /** @ngInject */
-  function FaqController() {
+  function FaqController($scope, Analytics, hbTracking) {
 
     var vm = this;
 
@@ -112,7 +112,14 @@
             answer: ['You can update your shipping address at any time from your <a href="http://hellobible.cratejoy.com/customer/login">Account page</a>. Shipping addresses must be updated one day before the renewal date which generally is the 24th of each month in order to take effect for that month.']
           }
         ]
-      }]
-      ;
+      }];
+
+    vm.trackClickedFaqQuestion = function (question) {
+      if (hbTracking) {
+        Analytics.trackEvent('faq', 'open', question);
+      }
+    }
+
   }
+
 })();
