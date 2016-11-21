@@ -6,7 +6,7 @@
     .controller('FaqController', FaqController);
 
   /** @ngInject */
-  function FaqController($scope, Analytics, hbTracking) {
+  function FaqController(Analytics, hbTracking) {
 
     var vm = this;
 
