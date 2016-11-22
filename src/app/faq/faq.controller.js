@@ -71,7 +71,7 @@
           },
           {
             title: "Do you accept returns?",
-            answer: ["Unfortunately, we do not accept returns. If any materials in your box are missing or damaged please contact us at info@hellobible.org. We will be happy to replace those."]
+            answer: ["Our HelloBible boxes are not returnable. However, if any materials in your box are missing or damaged please contact us at info@hellobible.org. We will be happy to replace those."]
           },
           {
             title: "What if there is a problem with my order?",
