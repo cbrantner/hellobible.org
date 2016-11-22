@@ -12,11 +12,6 @@
   z-index: 100;
 }
 
-.notificationBar.ng-hide-add-active,
-.notificationBar.ng-hide-remove-active {
-  animation: 0.7s fadeOutUp;
-}
-
 .notificationBar .close {
   margin-top: 13px;
   margin-right: 15px;

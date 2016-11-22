@@ -63,6 +63,28 @@
           title: 'Privacy Policy'
         }
       })
+      .state('terms', {
+        url: '/terms',
+        templateUrl: 'app/terms/terms.html',
+        controller: 'TermsController',
+        controllerAs: 'terms',
+        data : {
+          title: 'Terms & Conditions'
+        }
+      })
+      .state('join', {
+        url: '/join',
+        templateUrl: 'app/main/main.html',
+        controller: 'MainController',
+        controllerAs: 'main',
+        data : {
+          title: 'A Fun Way for Kids to Explore the Bible'
+        },
+        onEnter: function($location, $anchorScroll) {
+          $location.hash('pricing');
+          $anchorScroll();
+        }
+      })
       .state('about', {
         url: '/about',
         templateUrl: 'app/about/about.html',
