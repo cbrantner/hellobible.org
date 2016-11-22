@@ -35,7 +35,7 @@
 
 
     /** @ngInject */
-    function PricingController($scope, $uibModal, $log, Analytics, hbTracking) {
+    function PricingController($scope, $uibModal, $log, $window, Analytics, hbTracking) {
 
       //var vm = this;
 
@@ -43,6 +43,16 @@
         if (hbTracking) {
           Analytics.trackEvent('cart', 'openGroup', plan);
         }
+      }
+
+      $scope.addToCart = function(url, product) {
+
+        if (hbTracking) {
+          Analytics.trackEvent('cart', 'add', product);
+        }
+
+        // redirect
+        $window.location.href = url;
       }
 
       $scope.join = function (name, size) {

@@ -44,7 +44,7 @@
             <div class="media-body">{{item.text}}</div>
           </div>
           <div class="col-xs-4 col-xs-offset-4 margin-t-30">
-            <a href="{{plan.productUrl}}"><button type="button" class="btn btn-lg btn-primary">{{options[checkBoxValue].action}}</button></a>
+            <a ng-click="addToCart(plan.productUrl, plan.name)"><button type="button" class="btn btn-lg btn-primary">{{options[checkBoxValue].action}}</button></a>
           </div>
         </div>
       </uib-accordion>
@@ -63,7 +63,7 @@
               <i class="pull-left media-object {{item.logo}}"></i>
               <div class="media-body">{{item.text}}</div>
             </div>
-            <p class="margin-t-30"><a href="{{plan.productUrl}}"><button type="button" class="btn btn-md btn-primary">{{options[checkBoxValue].action}}</button></a></p>
+            <p class="margin-t-30"><a ng-click="addToCart(plan.productUrl, plan.name)"><button type="button" class="btn btn-md btn-primary">{{options[checkBoxValue].action}}</button></a></p>
           </div>
         </div>
       </div>
