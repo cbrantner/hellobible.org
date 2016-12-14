@@ -6,18 +6,18 @@
 		<img src="/assets/images/ogp.png"/>
 	</div>
 	<div class="modal-body" id="modal-body">
-		<h2>Sign up to our newsletter.</h2>
-		<p>We will notify you once we launch and you will have a chance to <b>WIN a 6 month subscription to HelloBible</b>.</p>
+		<h1>Sign up to our newsletter.</h1>
+		<p>You will get exlusive <b>offers</b> and <b>updates</b> on HelloBible.</p>
 		<acme-subscribe></acme-subscribe>
 	</div>
 </script>
 
-<!--<div class="notificationBar" ng-show="showNotificationBar" ng-controller="MainController as mainCtrl">
+<div class="notificationBar" ng-show="showNotificationBar" ng-controller="MainController as mainCtrl">
 	<a ng-click="showNotificationBar = false"><i class="close glyphicon glyphicon-remove"></i></a>
 	<div class="text">
-		<i class="fa fa-star"></i>&nbsp;<a ui-sref="home({'#' : 'pricing'})" ng-click="showNotificationBar = false" du-smooth-scroll>Order now</a> and get 40% off your Christmas box with code CHRISTMAS40&nbsp;<i class="fa fa-tree"></i>
+		<a ng-click="mainCtrl.signup('notificationBar')">Sign up</a> to our newsletter to get exclusive offers &amp; updates.
 	</div>
-</div>-->
+</div>
 
 <div class="topheader hidden-xs" ng-controller="MainController as headerCtrl">
 	<div class="container">
@@ -155,8 +155,7 @@
 				<img class="img-rounded" src="/assets/images/how-image4-s.jpg" alt="" />
 				<div class="caption">
 					<h2>The Kilgoris Project</h2>
-					<p>The donation helps to educate and feed children in Kenya.</p>
-					<!--<p><a href="#" class="btn btn-primary" role="button">Learn more</a></p>-->
+					<p>The donation helps to educate and feed children in Kenya. <a ui-sref="kilgoris">Learn more.</a></p>
 				</div>
 			</div>
 		</div>
