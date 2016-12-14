@@ -5,8 +5,6 @@ var gulp = require('gulp');
 var conf = require('./conf');
 var addStream = require('add-stream');
 var gulpNgConfig = require('gulp-ng-config');
-var debug = require('gulp-debug-streams');
-
 
 var $ = require('gulp-load-plugins')();
 
