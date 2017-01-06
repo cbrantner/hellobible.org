@@ -21,12 +21,13 @@
     return directive;
 
     /** @ngInject */
-    function SubscribeController($scope, $location, $resource, $anchorScroll, $log, toastr, $window, Analytics, hbTracking) {
+    function SubscribeController($scope, $location, $resource, $timeout, $anchorScroll, $log, toastr, $window, Analytics, hbTracking) {
 
       $scope.addSubscription = function(mailchimp) {
 
       // show spinner while in this function
       $scope.submitting = true;
+      $scope.response = false;
 
       var url = '//hellobible.us11.list-manage.com/subscribe/post-json';
 
@@ -66,7 +67,10 @@
             }
             toastr.error(responseMessage);
           } else if (response.result === 'success') {
-            toastr.info(response.msg);
+            $scope.response = true;
+            $timeout(function() {
+              $scope.response = false;
+            }, 10000);
             
             if (hbTracking) {
               // track as lead on facebook
@@ -74,7 +78,7 @@
               // track as lead on pinterest
               $window.pintrk('track', 'lead');
               // track google analytics event
-              Analytics.trackEvent('newsletter', 'submit', 'signup');
+              Analytics.trackEvent('newsletter', 'signup', mailchimp.email);
             }
           }
           mailchimp.email = '';

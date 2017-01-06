@@ -7,10 +7,13 @@
     .run(runBlock);
 
   /** @ngInject */
-  function runBlock($rootScope, $document, SCROLL_DURATION) {
+  function runBlock($rootScope, $document, SCROLL_DURATION, hbTracking) {
 		$rootScope.toTheTop = function() {
       $document.scrollTopAnimated(10, SCROLL_DURATION)
     }
+
+    $rootScope.hbTracking = hbTracking;
+
     var destroy = $rootScope.$on('$stateChangeSuccess', function(event, toState, toParams, fromState, fromParams) {
       $rootScope.title = toState.data.title;
     });

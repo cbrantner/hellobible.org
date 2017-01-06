@@ -35,9 +35,25 @@
 
 
     /** @ngInject */
-    function PricingController($scope, $uibModal, $log, Analytics, hbTracking) {
+    function PricingController($scope, $uibModal, $log, $window, Analytics, hbTracking) {
 
       //var vm = this;
+
+      $scope.opened = function (plan) {
+        if (hbTracking) {
+          Analytics.trackEvent('cart', 'openGroup', plan);
+        }
+      }
+
+      $scope.addToCart = function(url, product) {
+
+        if (hbTracking) {
+          Analytics.trackEvent('cart', 'add', product);
+        }
+
+        // redirect
+        $window.location.href = url;
+      }
 
       $scope.join = function (name, size) {
 
@@ -73,15 +89,16 @@
       $scope.options = {
         gift: {
           name: "Select my gift",
-          subtitle: "Give a gift that gives.",
-          cancel: "Gift plans do not renew.",
-          action: "Select",
+          subtitle: "Give a gift that provides education for children in Kenya.",
+          cancel: "Gift subscriptions do not renew.",
+          action: "Gift It",
           plans: [
             {
               name: "1 Month Gift",
               price: "$29.90",
               donation: "$2",
               image: "/assets/images/pricing/one-month.png",
+              productUrl: "https://hellobible.cratejoy.com/buy/SQ3558161?gift=True",
               bullets: [
                 {
                   text: "Gift one month of HelloBible. Get a great Bible story, creative craft projects and ideas to share & pray.",
@@ -102,6 +119,8 @@
               price: "$23.90/box",
               donation: "$12",
               image: "/assets/images/pricing/six-months.png",
+              productId: "536459466_HelloBible+Box",
+              productUrl: "https://hellobible.cratejoy.com/subscribe/536459466_HelloBible+Box/536459470_6-month-prepay?gift=True",
               bullets: [
                 {
                   text: "Gift 6 months of HelloBible. Get a great Bible story, creative craft projects and ideas to share & pray.",
@@ -122,6 +141,7 @@
               price: "$21.90/box",
               donation: "$24",
               image: "/assets/images/pricing/twelve-months.png",
+              productUrl: "https://hellobible.cratejoy.com/subscribe/536459466_HelloBible+Box/536459471_12-month-prepay?gift=True",
               bullets: [
                 {
                   text: "Gift one year of HelloBible. Get a great Bible story, creative craft projects and ideas to share & pray.",
@@ -145,15 +165,16 @@
         },
         default: {
           name: "Choose my plan",
-          subtitle: "Each box provides education.",
-          cancel: "All plans renew automatically. You may cancel anytime.",
-          action: "Join",
+          subtitle: "Each box provides education for children in Kenya.",
+          cancel: "All subscriptions renew automatically. You may cancel anytime.",
+          action: "Get It",
           plans: [
             {
               name: "Monthly",
               price: "$24.90/box",
               donation: "$2",
               total: "$262",
+              productUrl: "https://hellobible.cratejoy.com/subscribe/536459466_HelloBible+Box/536459468_month-to-month",
               image: "/assets/images/pricing/one-month.png",
               bullets: [
                 {
@@ -175,6 +196,7 @@
               price: "$23.90/box",
               donation: "$12",
               image: "/assets/images/pricing/six-months.png",
+              productUrl: "https://hellobible.cratejoy.com/subscribe/536459466_HelloBible+Box/536459470_6-month-prepay",
               bullets: [
                 {
                   text: "Enjoy 6 months of HelloBible. Get a great Bible story, creative craft projects and ideas to share & pray.",
@@ -195,6 +217,7 @@
               price: "$21.90/box",
               donation: "$24",
               image: "/assets/images/pricing/twelve-months.png",
+              productUrl: "https://hellobible.cratejoy.com/subscribe/536459466_HelloBible+Box/536459471_12-month-prepay",
               bullets: [
                 {
                   text: "Enjoy one year of HelloBible. Get a great Bible story, creative craft projects and ideas to share & pray.",

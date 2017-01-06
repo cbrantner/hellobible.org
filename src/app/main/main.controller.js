@@ -23,7 +23,7 @@
 
 
   /** @ngInject */
-  function MainController($uibModal, Analytics, hbTracking) {
+  function MainController($location, $anchorScroll, $uibModal, Analytics, hbTracking) {
 
     var vm = this;
 

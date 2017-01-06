@@ -35,6 +35,8 @@
       'wrapAround' : true
     });
 
+    $windowProvider.$get().hbTracking = hbTracking;
+
     if (hbTracking) {
       AnalyticsProvider.useAnalytics(true);
       AnalyticsProvider.setAccount('UA-82839547-1');
