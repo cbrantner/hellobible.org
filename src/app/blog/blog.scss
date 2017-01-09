@@ -195,8 +195,9 @@
 }
 
 .archive-year-wrap {
-  border-bottom: 1px solid #eee;
+  border-bottom: 3px solid $BBDarkGrey; 
   font-size: 2em;
+  margin-bottom: 10px;
 }
 
 .archive-article-date {

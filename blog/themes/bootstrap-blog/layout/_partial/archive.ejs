@@ -14,19 +14,19 @@
     <% var year = post.date.year(); %>
     <% if (last != year){ %>
       <% if (last != null){ %>
-        </div></section>
+        </ul></section>
       <% } %>
       <% last = year; %>
       <section class="archives-wrap">
         <div class="archive-year-wrap">
           <a href="<%- url_for(config.archive_dir + '/' + year) %>" class="archive-year"><%= year %></a>
         </div>
-        <div class="archives">
+        <ul class="media-list">
     <% } %>
     <%- partial('archive-post', {post: post, even: i % 2 == 0}) %>
   <% }) %>
   <% if (page.posts.length){ %>
-    </div></section>
+    </ul></section>
   <% } %>
 <% } %>
 <% if (page.total > 1){ %>

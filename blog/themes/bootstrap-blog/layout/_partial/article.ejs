@@ -27,7 +27,8 @@
       <%- partial('post/date', {class_name: 'article-date', date_format: null}) %>
       <% if (post.author){ %><div class="article-author"><%= post.author %></div><% } %>
       <%- partial('post/category') %>
-    </div>
+      <div class="fb-like" data-href="<%= post._id %>" data-layout="button" data-action="like" data-size="small" data-show-faces="true" data-share="true"></div>
+    </div> <!-- article-meta -->
     <div class="article-inner">
 
       <div class="article-entry" itemprop="articleBody">
@@ -39,19 +40,10 @@
       <% } %>
 
       <footer class="article-footer">
-        <a data-url="<%- post.permalink %>" data-id="<%= post._id %>" class="article-share-link">
-          <i class="fa fa-share"></i> Share
-        </a>
-        <% if (post.comments && config.disqus_shortname){ %>
-          <a href="<%- post.permalink %>#disqus_thread" class="article-comment-link">
-            <i class="fa fa-comment"></i> Comments
-          </a>
-        <% } %>
-        <%- partial('post/tag') %>
       </footer>
     </div>
-    <% if (!index){ %>
+    <!--<% if (!index){ %>
       <%- partial('post/nav') %>
-    <% } %>
+    <% } %>-->
   </article>
 <% } %>
