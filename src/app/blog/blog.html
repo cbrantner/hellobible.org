@@ -1,14 +1,9 @@
 <acme-navbar></acme-navbar>
 
-<div class="blogheader">
-    <div class="container">
-		<div class="row margin-t-60">
-			<div class="col-sm-6 col-sm-offset-1">
-				<h1>The HelloBible Blog</h1>
-			</div>
-		</div>
-	</div>
+<div id="blogheader">
+  <h1>Blog</h1>
 </div>
+
 <div ng-controller="BlogController as vm" class="container-fluid" id="blog" ng-bind-html="vm.duHtmlData">{{ vm.duHtmlData }}</div>
 
 <acme-footer></acme-footer>

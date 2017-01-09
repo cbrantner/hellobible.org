@@ -8,6 +8,7 @@
 
   /** @ngInject */
   function KilgorisController() {
+
   }
   
 })();

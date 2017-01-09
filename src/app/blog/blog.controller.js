@@ -11,13 +11,13 @@
 
     var vm = this;
 
-    var url = 'http://localhost:3000/assets/blogdata/';
+    var url = '/assets/blogdata/';
     if ($stateParams.path) {
       url += $stateParams.path;
     } else {
       url += "/index.html";
     }
-     $http.get(url).
+    $http.get(url).
       success(function(data, status) {
         vm.duHtmlData = data;
         vm.duStatus = status;

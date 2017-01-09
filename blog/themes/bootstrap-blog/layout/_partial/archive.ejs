@@ -1,6 +1,12 @@
 <% if (pagination == 2){ %>
   <% page.posts.each(function(post){ %>
+    <% if (index) { %>
+      <ul class="media-list">
+    <% } %>
     <%- partial('article', {post: post, index: true}) %>
+    <% if (index) { %>
+      </ul>
+    <% } %>
   <% }) %>
 <% } else { %>
   <% var last; %>
