@@ -12,16 +12,16 @@ For kids in rural Kenya, clean water goes hand-in-hand with learning. Without cl
 At schools run by The Kilgoris Project in rural Kenya, wells and rain-water collection systems help ensure students and teachers have access to clean water. Access to clean water also helps keep TKP's seven school clean and safe. Teachers, staff and students are trained on proper hand-washing and food and water handling to help decrease the spread of illness and disease in the community. Learn more: http://www.kilgoris.org/clean-water-nutrition/
 
 <div class="row">
-    <div class="col-sm-6 col-md-4">
-        <div class="thumbnail">
-            <img src="/assets/images/blog/blog0117-1.jpg"/>
-        </div>
+  <div class="col-sm-6 col-md-4">
+    <div class="thumbnail">
+        <img src="/assets/images/blog/blog0117-1.jpg"/>
     </div>
-    <div class="col-sm-6 col-md-4">
-        <div class="thumbnail">
-            <img src="/assets/images/blog/blog0117-2.jpg"/>
-        </div>
+  </div>
+  <div class="col-sm-6 col-md-4">
+    <div class="thumbnail">
+        <img src="/assets/images/blog/blog0117-2.jpg"/>
     </div>
+  </div>
 </div>
 
 

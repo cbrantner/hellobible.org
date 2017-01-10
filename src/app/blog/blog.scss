@@ -125,6 +125,12 @@
 
 /* Articles */
 
+.article-header h1 {
+  text-transform: none;
+  border-bottom: 1px solid $BBBlue; 
+  margin-bottom: 10px;
+}
+
 .article-entry {
   overflow: hidden; /* fixes problems on small width devices */
 }
@@ -210,5 +216,3 @@
   text-transform: none;
   text-align: left;
 }
-
-
