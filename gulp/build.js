@@ -93,7 +93,7 @@ gulp.task('blogdata', function () {
     .pipe(debug())
     .pipe(fileFilter)
     .pipe(debug())
-    .pipe(gulp.dest(path.join(conf.paths.dist, '/blogdata/')));
+    .pipe(gulp.dest(path.join(conf.paths.dist, '/assets/blogdata/')));
 });
 
 gulp.task('other', function () {
