@@ -11,9 +11,9 @@
 
     var vm = this;
 
-    var url = '/assets/blogdata/';
+    var url = '/assets/blogdata';
     if ($stateParams.path) {
-      url += $stateParams.path;
+      url += "/" + $stateParams.path;
     } else {
       url += "/index.html";
     }
