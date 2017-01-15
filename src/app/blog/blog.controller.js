@@ -6,16 +6,20 @@
     .controller('BlogController', BlogController);
 
   /** @ngInject */
-  function BlogController($rootScope, $http, $stateParams, $log) {
+  function BlogController($rootScope, $http, $stateParams, $location, $log) {
     $rootScope.toTheTop();
 
     var vm = this;
 
-    var url = '/assets/blogdata';
+    var url = '/assets/blogdata/';
+
     if ($stateParams.path) {
-      url += "/" + $stateParams.path;
+      url += $stateParams.path;
     }
     url += "/index.html";
+    url = url.replace(/\/\//g, '/');
+    
+
     $log.debug('url ' + url);
     $http.get(url).
       success(function(data, status) {
