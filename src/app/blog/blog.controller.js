@@ -14,9 +14,8 @@
     var url = '/assets/blogdata';
     if ($stateParams.path) {
       url += "/" + $stateParams.path;
-    } else {
-      url += "/index.html";
     }
+    url += "/index.html";
     $log.debug('url ' + url);
     $http.get(url).
       success(function(data, status) {
