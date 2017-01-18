@@ -5,15 +5,13 @@ date: 2016/12/10 20:00:00
 featured_image: /assets/images/blog/blog1216-3.jpg
 ---
 
-This month, we're introducing you to a few of the very first graduates of Intimigom Primary School--a Kilgoris Project school.
-This fall, 22 Intimigom students wore red graduation robes and celebratory tinsel for their graduation ceremony.
+This month, we're introducing you to a few of the very first graduates of Intimigom Primary School--a Kilgoris Project school. This fall, 22 Intimigom students wore red graduation robes and celebratory tinsel for their graduation ceremony.
 
 <!-- more -->
 
-Many are the first in their family to graduate primary school (8th grade) and are setting an example for their younger
-brothers and sisters.
+Many are the first in their family to graduate primary school (8th grade) and are setting an example for their younger brothers and sisters.
 
-<div class="row">
+<div ss="row">
     <div class="col-sm-6 col-md-4">
         <div class="thumbnail">
             <img src="/assets/images/blog/blog1216-3.jpg"/>

@@ -12,13 +12,19 @@
 #blog h1, #blog h2, #blog h3, #blog h4, #blog h5, #blog h6 {
   color: $BBDarkGrey;
   text-align: left;
+  text-transform: none;
 }
 
 #blog .media {
   margin-bottom: 50px;
 }
 
-#blog p, #blog a {
+#blog a {
+  color: $BBBlue;
+  text-align: justify;
+}
+
+#blog p {
   color: $BBDarkGrey;
   text-align: justify;
 }

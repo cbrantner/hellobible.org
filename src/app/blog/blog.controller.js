@@ -5,8 +5,9 @@
     .module('hellobible')
     .controller('BlogController', BlogController);
 
+
   /** @ngInject */
-  function BlogController($rootScope, $http, $stateParams, $location, $log) {
+  function BlogController($document, $rootScope, $http, $stateParams, $location, $log) {
     $rootScope.toTheTop();
 
     var vm = this;
@@ -19,18 +20,17 @@
     url += "/index.html";
     url = url.replace(/\/\//g, '/');
     
-
-    $log.debug('url ' + url);
     $http.get(url).
       success(function(data, status) {
         vm.duHtmlData = data;
         vm.duStatus = status;
-        $log.debug('success retrieving data');
+
+
       }).
       error(function(data, status) {
         vm.duData = "not found";
         vm.duStatus = status;
-        $log.debug('error retrieving data');
+        $log.debug(url + ': error retrieving data');
       });
   }
 })();
