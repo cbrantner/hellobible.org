@@ -7,7 +7,7 @@
 
 
   /** @ngInject */
-  function BlogController($document, $rootScope, $http, $stateParams, $location, $log) {
+  function BlogController($rootScope, $http, $stateParams, $location, $log) {
     $rootScope.toTheTop();
 
     var vm = this;
