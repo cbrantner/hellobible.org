@@ -17,7 +17,7 @@
         items: [
           {
             title: "What is HelloBible?",
-            answer: ["HelloBible is a monthly christian subscription box for kids ages 5-8. It is a fun way to explore the Bible. Each box includes a Bible storybook, crafts and ideas to share and pray. HelloBible is an awesome opportunity to spend valuable family time."]
+            answer: ["HelloBible is a monthly christian subscription box for young kids ages 4 and older. It is a fun way to explore the Bible. Each box includes a Bible storybook, crafts and ideas to share and pray. HelloBible is an awesome opportunity to spend valuable family time."]
           },
           {
             title: "What’s included in my box?",
@@ -25,7 +25,7 @@
           },
           {
             title: "What is the suggested age range for a box?",
-            answer: ["HelloBible is designed for kids ages 5-8."]
+            answer: ["HelloBible is designed for young kids ages 4 and older."]
           },
           {
             title: "Does HelloBible align with my beliefs?",
