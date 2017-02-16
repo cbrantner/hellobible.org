@@ -11,32 +11,24 @@ This month, we're introducing you to a few of the very first graduates of Intimi
 
 Many are the first in their family to graduate primary school (8th grade) and are setting an example for their younger brothers and sisters.
 
-<div ss="row">
-    <div class="col-sm-6 col-md-4">
-        <div class="thumbnail">
-            <img src="/assets/images/blog/blog1216-3.jpg"/>
-            <div class="caption">
-                <p>John (right) with his father, who is also a cook at TKP’s Intimigom campus. John’s favorite subjects
-                    are math and social studies and he hopes to study history at university.</p>
-            </div>
-        </div>
-    </div>
-    <div class="col-sm-6 col-md-4">
-        <div class="thumbnail">
-            <img src="/assets/images/blog/blog1216-2.jpg"/>
-            <div class="caption">
-                <p>Graduates, teachers, students and parents celebrate together.</p>
-            </div>
-        </div>
-    </div>
-    <div class="col-sm-6 col-md-4">
-        <div class="thumbnail">
-            <img src="/assets/images/blog/blog1216-1.jpg"/>
-            <div class="caption">
-                <p>Graduates Cynthia and Soila with the aunt celebrating graduation.</p>
-            </div>
-        </div>
-    </div>
+<div class="thumbnail">
+  <img src="/assets/images/blog/blog1216-3.jpg"/>
+  <div class="caption">
+    <p>John (right) with his father, who is also a cook at TKP’s Intimigom campus. John’s favorite subjects
+            are math and social studies and he hopes to study history at university.</p>
+  </div>
+</div>
+<div class="thumbnail">
+  <img src="/assets/images/blog/blog1216-2.jpg"/>
+  <div class="caption">
+    <p>Graduates, teachers, students and parents celebrate together.</p>
+  </div>
+</div>
+<div class="thumbnail">
+  <img src="/assets/images/blog/blog1216-1.jpg"/>
+  <div class="caption">
+    <p>Graduates Cynthia and Soila with the aunt celebrating graduation.</p>
+  </div>
 </div>
 
 [Learn more](http://www.kilgoris.org/impact-stories/2016/11/14/congratulations-intimigom-primary-graduates) about these students.
