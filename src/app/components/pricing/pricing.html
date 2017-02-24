@@ -1,74 +1,62 @@
 <div id="pricing">
   <div class="container">
-    <h1 class="text-center text-uppercase">Join Our Community</h1>
-
-    <div class="row header">
-      <h2><span class="fa fa-heart"></span> {{options[checkBoxValue].subtitle}}</h2>
-
-    </div>
-
-    <script type="text/ng-template" id="subscribeModal.html">
-        <div class="modal-header">
-            <button type="button" class="close" ng-click="vm.cancel()">&times;</button>
-            <img src="/assets/images/ogp.png"/>
-        </div>
-        <div class="modal-body" id="modal-body">
-          <p>We are currently finalizing our online shop and <b>will be ready to take your orders soon</b>.</p>
-
-          <p>In the meantime, please sign up to our newsletter.
-          We will notify you once we launch and you will have a chance to <b>WIN a 6 month subscription to HelloBible</b>.</p>
-
-          <acme-subscribe></acme-subscribe>
-        </div>
-    </script>
-
-
-    <div class="pricing-mobile visible-xs-block">
-      <uib-accordion close-others="true">
-        <div uib-accordion-group is-open="status.open" class="panel-default" ng-repeat="plan in options[checkBoxValue].plans">
+    <h1 class="text-center text-uppercase">Shop Now</h1>
+    <div class="row info-mobile visible-xs-block">
+      <uib-accordion close-others="true" ng-repeat="option in options">
+        <div uib-accordion-group is-open="status.open">
           <uib-accordion-heading>
-            <span ng-click="opened(plan.name, $index)">
-              <i class="accordion-heading-arrow pull-right fa" ng-class="{'fa-chevron-down': !status.open, 'fa-chevron-up': status.open}"></i>
-              <p class="accordion-heading-title">{{plan.name}}</p>
-              <p class="accordion-heading-subtitle">{{plan.price}} + <i class="fa fa-truck fa-flip-horizontal"></i></p>
-            </span>
+            <i class="accordion-heading-arrow pull-right fa" ng-class="{'fa-chevron-down': !status.open, 'fa-chevron-up': status.open}"></i>
+            <img class="accordion-heading-title" src="/assets/images/pricing/{{option.titleImage}}" />
+            <span class="accordion-heading-subtitle">{{option.name}}</span>
           </uib-accordion-heading>
-          <div class="media" ng-repeat="item in plan.bullets">
-            <i class="pull-left media-object {{item.logo}}"></i>
-            <div class="media-body">{{item.text}}</div>
-          </div>
-          <div class="col-xs-4 col-xs-offset-4 margin-t-30">
-            <a ng-click="addToCart(plan.productUrl, plan.name)"><button type="button" class="btn btn-lg btn-primary">{{options[checkBoxValue].action}}</button></a>
+          <div class="list-group">
+            <a href="{{plan.productUrl}}" class="list-group-item" ng-repeat="plan in option.plans">
+              <button type="button" class="btn btn-md btn-primary pull-right" aria-haspopup="true" aria-expanded="false">Add to Cart</button>
+              <h4 class="list-group-item-heading">{{plan.name}}</h4>
+              <p class="list-group-item-text">{{plan.price}} + <span class="fa fa-truck fa-flip-horizontal"></span></p>
+              <p class="list-group-item-text"><span class="heart fa fa-heart"></span> Includes {{plan.donation}} for kids in Kenya</p>
+            </a>
           </div>
         </div>
       </uib-accordion>
     </div>
-
     <div class="row hidden-xs">
-      <div class="col-sm-4 col-md-4" ng-repeat="plan in options[checkBoxValue].plans">
-        <div class="thumbnail">
-          <img ng-src="{{plan.image}}" width="250px" />
-          <div class="caption">
-            <div class="captionHighlight">
-              <h2>{{plan.name}}</h2>
-              <p>{{plan.price}} + <i class="fa fa-truck fa-flip-horizontal"></i></p>
+      <div ng-repeat="option in options" class="col-sm-5 col-md-4" ng-class="{'col-md-offset-2 col-sm-offset-1': $first}">
+        <a ng-click="showInfo(option.id)">
+          <div class="thumbnail" ng-class="{'active' : (option.id === info)}">
+            <img src="/assets/images/pricing/{{option.titleImage}}" />
+            <div class="caption">
+              <h2>Choose {{option.name}}</h2>
             </div>
+            <div class="captionHighlight">
+              <i class="fa fa-2x" ng-class="{'fa-chevron-down': (info !== option.id), 'fa-chevron-up': (info === option.id)}"></i>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+    <div class="row hidden-xs">
+      <h1 ng-show="info">{{infoObject.name}}</h1>
+      <div class="col-sm-4 col-md-4" ng-repeat="plan in infoObject.plans">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h1>{{plan.name}}</h1>
+          </div>
+          <div class="panel-body">
+            <h2>{{plan.price}} + <i class="fa fa-truck fa-flip-horizontal"></i></h2>
+            <p class="margin-t-30"><a ng-click="addToCart(plan.productUrl, plan.name)"><button type="button" class="btn btn-lg btn-primary">Add to Cart</button></a></p>
             <div class="media" ng-repeat="item in plan.bullets">
               <i class="pull-left media-object {{item.logo}}"></i>
               <div class="media-body">{{item.text}}</div>
             </div>
-            <p class="margin-t-30"><a ng-click="addToCart(plan.productUrl, plan.name)"><button type="button" class="btn btn-md btn-primary">{{options[checkBoxValue].action}}</button></a></p>
           </div>
         </div>
       </div>
-    </div>
-
-    <div class="footer">
-      <div class="col-xs-12">
-        {{options[checkBoxValue].cancel}}
+      <div class="footer hidden-xs" ng-show="info">
+        <div class="col-xs-12">
+          All subscriptions renew automatically. You may cancel anytime.
+        </div>
       </div>
-
     </div>
-
   </div>
 </div>

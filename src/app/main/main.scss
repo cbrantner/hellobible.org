@@ -50,7 +50,8 @@
 }
 
 .topheader h1 {
-  color: $BBBlue;
+  color: $BBOrange;
+  text-transform: none;
   text-align: left;
 }
 
@@ -62,7 +63,12 @@
 
 /* #### Top Header Small Devices #### */
 .topheader-mobile h1 {
-  color: $BBBlue;
+  color: $BBOrange;
+  text-transform: none;
+}
+
+.topheader-mobile h3 {
+  text-align: center;
 }
 
 .subscribe-mobile {
@@ -90,73 +96,67 @@
 #information {
   background: none repeat scroll 0 0 white;
   padding: 15px;
-}
 
-
-#information h1:after {
-  content: "";
-  display: block;
-  height: 4px;
-  width: 80px;
-  background: $BBBlue;
-  margin: 0 auto;
-  margin-top: 10px;
-  margin-bottom: 30px;
-}
-
-#information .text-read {
-  color: $BBBlue;
-	font-weight: bold;
-  text-transform: uppercase;
-}
-
-#information .text-create {
-  color: $BBGreen;
-	font-weight: bold;
-  text-transform: uppercase;
-}
-
-#information .text-pray {
-  color: $BBYellow;
-	font-weight: bold;
-  text-transform: uppercase;
-}
-
-#information .logo-read {
-	font-size: 36px;
-  border-radius: 100px;
-  padding: 10px;
-  color: $BBBlue;
-  border: 3px solid $BBBlue;
-}
-
-#information .logo-create {
-	font-size: 36px;
-  border-radius: 100px;
-  padding: 10px;
-  color: $BBGreen;
-  border: 3px solid $BBGreen;
-}
-
-#information .logo-pray {
-	font-size: 36px;
-  border-radius: 100px;
-  padding: 10px;
-  color: $BBYellow;
-  border: 3px solid $BBYellow;
-}
-
-// center the buttons on small devices
-@media (max-width: 991px) {
-  #information .buttons {
-    text-align: center;
-    padding-bottom: 20px;
+  a {
+    color: black;
   }
+
+  .accordion-heading-title  {
+    width : 100px;
+  }
+
+  .accordion-heading-subtitle {
+    font-size: 16px;
+    margin-left: 10px;
+  }
+
+  .accordion-toggle:focus {
+    outline: none;
+  }
+
+  .active {
+    background-color: #F5F5F5;
+  }
+
+  .thumbnail:hover {
+    background: $BBLightGrey;
+  }
+
+  .captionHighlight {
+    text-align: center;
+  }
+
+  h1:after {
+    content: "";
+    display: block;
+    height: 4px;
+    width: 80px;
+    background: $BBBlue;
+    margin: 0 auto;
+    margin-top: 10px;
+    margin-bottom: 30px;
+  }
+
+  .text-read {
+    color: $BBBlue;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+
+  .text-create {
+    color: $BBGreen;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+
+  .text-pray {
+    color: $BBYellow;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+
 }
 
-#portfolio {
-  padding-top: 20px;
-}
 
 // Default Variables
 
@@ -168,43 +168,17 @@
 $slick-font-path: "./fonts/" !default;
 $slick-font-family: "slick" !default;
 $slick-loader-path: "./" !default;
-$slick-arrow-color: white !default;
-$slick-dot-color: black !default;
-$slick-dot-color-active: $slick-dot-color !default;
+//$slick-arrow-color: white !default;
+//$slick-dot-color: black !default;
+//$slick-dot-color-active: $slick-dot-color !default;
 $slick-prev-character: "\2190" !default;
 $slick-next-character: "\2192" !default;
-$slick-dot-character: "\2022" !default;
-$slick-dot-size: 40px !default;
-$slick-opacity-default: 0.75 !default;
-$slick-opacity-on-hover: 1 !default;
-$slick-opacity-not-active: 0.25 !default;
+//$slick-dot-character: "\2022" !default;
+//$slick-dot-size: 40px !default;
+//$slick-opacity-default: 0.75 !default;
+//$slick-opacity-on-hover: 1 !default;
+//$slick-opacity-not-active: 0.25 !default;
 
-@function slick-image-url($url) {
-    @if function-exists(image-url) {
-        @return image-url($url);
-    }
-    @else {
-        @return url($slick-loader-path + $url);
-    }
-}
-
-@function slick-font-url($url) {
-    @if function-exists(font-url) {
-        @return font-url($url);
-    }
-    @else {
-        @return url($slick-font-path + $url);
-    }
-}
-
-/* the slides */
-.slick-slide {
-    margin: 0 3px;
-}
-/* the parent */
-.slick-list {
-    margin: 0 -3px;
-}
 
 .slick-dots li button:before {
   font-size: 15px;

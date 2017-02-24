@@ -4,7 +4,6 @@
   angular
     .module('hellobible')
     .controller('MainController', MainController)
-    .controller('PortfolioController', PortfolioController)
     .controller('SignupModalController', SignupModalController);
 
   /** @ngInject */
@@ -26,6 +25,72 @@
   function MainController($location, $anchorScroll, $uibModal, Analytics, hbTracking) {
 
     var vm = this;
+
+    vm.info = undefined;
+    vm.infoObject = undefined;
+
+    vm.options = [
+      {
+        id : "envelope",
+        name : "Basic Pack",
+        titleImage : "/assets/images/info/envelope.png",
+        carousel : [
+          {
+            image : "envelope-content",
+            title : "Crafts, instructions and ideas to share &amp; pray."
+          },
+          {
+            image : "read",
+            title : "Read a wonderful Bible story together."
+          },
+          {
+            image : "play",
+            title : "Play an awesome matching game. Help Noah to bring two of all the animals into the Ark."
+          }
+        ],
+        title : "HelloBible Basic Pack",
+        text : '<p><b>A fun activity to explore a Bible Story each month</b>.</p>' +
+							'<p><span class="text-read">Read</span> an age-appropriate Bible Story Book and <span class="text-create">create</span> a wonderful craft to enlarge upon the Bible story.' +
+								'<span class="text-pray">Share and pray</span> together.' +
+							'</p>'
+      }, {
+        id : "premium",
+        name : "Premium Box",
+        titleImage : "/assets/images/how-image1-s.jpg",
+        carousel : [
+          {
+            image : "premium-content",
+            title : "Crafts, instructions and ideas to share &amp; pray."
+          },
+          {
+            image : "craft",
+            title : "Build Noah's Ark."
+          },
+          {
+            image : "bubble",
+            title : "Have fun with giant rainbow bubbles."
+          }
+        ],
+        title : "HelloBible Premium Box",
+        text : '<p><b>A fun curriculum for the entire month</b>.</p>' +
+							'<p><span class="text-read">Read</span> an age-appropriate Bible Story Book and <span class="text-create">create</span> two wonderful crafts to dig deep into the Bible story. Enjoy high quality family time by <span class="text-pray">sharing and praying</span> ' +
+              'together.' +
+							'</p>'
+      }
+    ];
+
+    vm.slickConfig = {
+      dots: true,
+      autoplay: true,
+      autoplaySpeed: 2500,
+      //arrows: true,
+      //infinite: true,
+      slidesToShow: 1,
+      adaptiveHeight: false,
+      arrows: true
+      //centerMode: true,
+      //centerPadding: '70px',
+    }
 
     vm.signup = function (name, size) {
 
@@ -57,44 +122,20 @@
         // cancel clicked
       });
     };
-  }
 
-  /** @ngInject */
-  function PortfolioController() {
-    var vm = this;
-
-    vm.slickConfig = {
-      dots: true,
-      autoplay: true,
-      autoplaySpeed: 1500,
-      arrows: false,
-      infinite: true,
-      slidesToShow: 3,
-      centerMode: true,
-      centerPadding: '70px',
-      responsive: [
-        {
-          breakpoint: 1024,
-          settings: {
-            slidesToShow: 3,
-            slidesToScroll: 3
-          }
-        },
-        {
-          breakpoint: 600,
-          settings: {
-            slidesToShow: 2,
-            slidesToScroll: 2
-          }
-        },
-        {
-          breakpoint: 480,
-          settings: {
-            slidesToShow: 1,
-            slidesToScroll: 1
-          }
+    vm.showInfo = function(name) {
+      if (vm.info == name) {
+        vm.info = undefined;
+        vm.infoObject = undefined;
+      } else {
+        vm.info = name;
+        vm.infoObject = vm.options.find(function(x) { return x.id == name;});
+        if (hbTracking) {
+           // track google analytics event
+          Analytics.trackEvent('information', 'showInfo', name);
         }
-      ]
+      }
     }
   }
+
 })();
