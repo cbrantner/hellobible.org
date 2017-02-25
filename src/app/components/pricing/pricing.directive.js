@@ -117,7 +117,7 @@
               productUrl: "https://hellobible.cratejoy.com/subscribe/622412802_hellobible-pack/622412798_month-to-month",
               bullets: [
                 {
-                  text: "$24.90/pack + $3/pack shipping",
+                  text: "$19.90/pack + $3/pack shipping",
                   logo: "tag glyphicon glyphicon-tag"
                 },
                 {

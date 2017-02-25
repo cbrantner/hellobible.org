@@ -38,7 +38,7 @@
       {
         image : "/assets/images/how-image2-s.jpg",
         heading : "2. Read, create, share & pray",
-        text : "Explore a new Bible story. Get a book, crafts and ideas to share & pray. All materials and instructions are included."
+        text : "Explore a great Bible story. Get a book, crafts and ideas to share & pray. All materials and instructions are included."
       },
       {
         image : "/assets/images/how-image3-s.jpg",

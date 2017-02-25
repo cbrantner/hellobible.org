@@ -13,8 +13,8 @@
             <a href="{{plan.productUrl}}" class="list-group-item" ng-repeat="plan in option.plans">
               <button type="button" class="btn btn-md btn-primary pull-right" aria-haspopup="true" aria-expanded="false">Add to Cart</button>
               <h4 class="list-group-item-heading">{{plan.name}}</h4>
-              <p class="list-group-item-text">{{plan.price}} + <span class="fa fa-truck fa-flip-horizontal"></span></p>
-              <p class="list-group-item-text"><span class="heart fa fa-heart"></span> Includes {{plan.donation}} for kids in Kenya</p>
+              <p class="list-group-item-text price">{{plan.price}} + <span class="fa fa-truck fa-flip-horizontal"></span></p>
+              <p class="list-group-item-text" ng-repeat="item in plan.bullets"><span class="fa {{item.logo}}"></span> {{item.text}}</p>
             </a>
           </div>
         </div>
@@ -26,7 +26,7 @@
           <div class="thumbnail" ng-class="{'active' : (option.id === info)}">
             <img ng-src="/assets/images/pricing/{{option.titleImage}}" />
             <div class="caption">
-              <button type="button" class="btn btn-lg btn-primary">Buy {{option.name}} Now</button>
+              <button type="button" class="btn btn-lg btn-primary">Get {{option.name}} Now</button>
             </div>
             <div class="captionHighlight">
               <i class="fa fa-2x" ng-class="{'fa-chevron-down': (info !== option.id), 'fa-chevron-up': (info === option.id)}"></i>
@@ -43,7 +43,7 @@
             <h1>{{plan.name}}</h1>
           </div>
           <div class="panel-body">
-            <h2>{{plan.price}} + <i class="fa fa-truck fa-flip-horizontal"></i></h2>
+            <div class="price">{{plan.price}} + <i class="fa fa-truck fa-flip-horizontal"></i></div>
             <p class="margin-t-30"><a ng-click="addToCart(plan.productUrl, plan.name)"><button type="button" class="btn btn-lg btn-primary">Add to Cart</button></a></p>
             <div class="media" ng-repeat="item in plan.bullets">
               <i class="pull-left media-object {{item.logo}}"></i>
