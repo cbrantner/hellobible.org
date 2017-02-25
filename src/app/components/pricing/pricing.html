@@ -6,7 +6,7 @@
         <div uib-accordion-group is-open="status.open">
           <uib-accordion-heading>
             <i class="accordion-heading-arrow pull-right fa" ng-class="{'fa-chevron-down': !status.open, 'fa-chevron-up': status.open}"></i>
-            <img class="accordion-heading-title" src="/assets/images/pricing/{{option.titleImage}}" />
+            <img class="accordion-heading-title" ng-src="/assets/images/pricing/{{option.titleImage}}" />
             <span class="accordion-heading-subtitle">{{option.name}}</span>
           </uib-accordion-heading>
           <div class="list-group">
@@ -24,9 +24,9 @@
       <div ng-repeat="option in options" class="col-sm-5 col-md-4" ng-class="{'col-md-offset-2 col-sm-offset-1': $first}">
         <a ng-click="showInfo(option.id)">
           <div class="thumbnail" ng-class="{'active' : (option.id === info)}">
-            <img src="/assets/images/pricing/{{option.titleImage}}" />
+            <img ng-src="/assets/images/pricing/{{option.titleImage}}" />
             <div class="caption">
-              <h2>Choose {{option.name}}</h2>
+              <button type="button" class="btn btn-lg btn-primary">Buy {{option.name}} Now</button>
             </div>
             <div class="captionHighlight">
               <i class="fa fa-2x" ng-class="{'fa-chevron-down': (info !== option.id), 'fa-chevron-up': (info === option.id)}"></i>

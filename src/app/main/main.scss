@@ -53,6 +53,7 @@
   color: $BBOrange;
   text-transform: none;
   text-align: left;
+  font-size: 36px;
 }
 
 .topheader h2, .topheader h3 {
@@ -94,7 +95,9 @@
 /* INFORMATIONS
 /*********************************************************/
 #information {
-  background: none repeat scroll 0 0 white;
+  //background: none repeat scroll 0 0 white;
+  background: url(/assets/images/bg.png) repeat center center;
+  //background-color: #AC917F;
   padding: 15px;
 
   a {
@@ -117,6 +120,7 @@
   .active {
     background-color: #F5F5F5;
   }
+
 
   .thumbnail:hover {
     background: $BBLightGrey;
@@ -179,94 +183,46 @@ $slick-next-character: "\2192" !default;
 //$slick-opacity-on-hover: 1 !default;
 //$slick-opacity-not-active: 0.25 !default;
 
-
 .slick-dots li button:before {
   font-size: 15px;
 }
 
-.ribbon {
- font-size: 16px !important;
- /* This ribbon is based on a 16px font side and a 24px vertical rhythm. I've used em's to position each element for scalability. If you want to use a different font size you may have to play with the position of the ribbon elements */
-
- width: 50%;
-    
- position: relative;
- background: $BBOrange;
- color: #fff;
- text-align: center;
- padding: 1em 2em; /* Adjust to suit */
- margin: 2em auto 3em; /* Based on 24px vertical rhythm. 48px bottom margin - normally 24 but the ribbon 'graphics' take up 24px themselves so we double it. */
-}
-.ribbon:before, .ribbon:after {
- content: "";
- position: absolute;
- display: block;
- bottom: -1em;
- border: 1.5em solid #986794;
- z-index: -1;
-}
-.ribbon:before {
- left: -2em;
- border-right-width: 1.5em;
- border-left-color: transparent;
-}
-.ribbon:after {
- right: -2em;
- border-left-width: 1.5em;
- border-right-color: transparent;
-}
-.ribbon .ribbon-content:before, .ribbon .ribbon-content:after {
- content: "";
- position: absolute;
- display: block;
- border-style: solid;
- border-color: #804f7c transparent transparent transparent;
- bottom: -1em;
-}
-.ribbon .ribbon-content:before {
- left: 0;
- border-width: 1em 0 0 1em;
-}
-.ribbon .ribbon-content:after {
- right: 0;
- border-width: 1em 1em 0 0;
-}
 /*********************************************************/
 /* ABOUT
 /*********************************************************/
 #how {
   padding: 20px 20px 0 20px;
   position: relative;
-}
+  margin-bottom:20px;
 
-#how h2 {
-  line-height: 1.0;
-  text-transform: uppercase;
-  text-align: left;
-}
+  h2 {
+    line-height: 1.0;
+    text-transform: uppercase;
+    text-align: left;
+  }
 
-#how p {
-  line-height: 1.1;
-}
+  h1:after {
+    content: "";
+    display: block;
+    height: 4px;
+    width: 80px;
+    background: $BBBlue;
+    margin: 0 auto;
+    margin-top: 10px;
+  }
 
-#how h1:after {
-  content: "";
-  display: block;
-  height: 4px;
-  width: 80px;
-  background: $BBBlue;
-  margin: 0 auto;
-  margin-top: 10px;
-}
+  a {
+    color: $BBBlue;
+  }
 
-#how a {
-  color: $BBBlue;
-}
+  a:hover {
+    color: $BBDarkBlue;
+  }
 
-#how a:hover {
-  color: $BBDarkBlue;
+  .media-object  {
+    width: 120px;
+  }
 }
-
 
 /*********************************************************/
 /* VERSE
@@ -274,56 +230,22 @@ $slick-next-character: "\2192" !default;
 .verse {
   background: none repeat scroll 0 0 $BBBlue;
   color: white;
-}
 
-.verse cite {
-  font-size: 14px;
-  font-weight: 400;
-}
+  cite {
+    font-size: 14px;
+    font-weight: 400;
+  }
 
-.verse img {
-  padding-top: 15px;
-  height: 110px;
-}
+  img {
+    padding-top: 15px;
+    height: 110px;
+  }
 
-.verse blockquote{
-  padding-top: 25px;
-  border-width: 0;
-  font-size: 14px;
-}
+  blockquote{
+    padding-top: 25px;
+    border-width: 0;
+    font-size: 14px;
+  }
 
-/*********************************************************/
-/* DONATION
-/*********************************************************/
-.donation {
-  background: none repeat scroll 0 0 $BBBlue;
-  padding: 20px;
 }
-
-.donation .logo-heart {
-  display: block;
-  width: 100px;
-  height: 100px;
-  border-radius: 100px;
-  border: 3px solid red;
-  margin: 0 auto;
-  font-size: 50px;
-  text-align: center;
-  color: red;
-  margin-top: 20px;
-  margin-right: 20px;
-}
-
-.donation p {
-  color: white;
-  font-size: 20px;
-  font-weight: 400;
-}
-
-.donation ul {
-  color: white;
-  font-size: 20px;
-  font-weight: 400x;
-}
-
 

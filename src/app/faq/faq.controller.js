@@ -17,14 +17,17 @@
         items: [
           {
             title: "What is HelloBible?",
-            answer: ["HelloBible is a monthly christian subscription for kids ages 4 and older. It is a fun way to explore the Bible. Each box includes a Bible storybook, crafts and ideas to share and pray. HelloBible is an awesome opportunity to spend valuable family time."]
+            answer: ["HelloBible is a monthly christian subscription for kids ages 4 and older. It is a fun way to explore the Bible as a family. Explore one Bible story each month through great activities. Read, create, share and pray together. All ideas, materials and instructions are included."]
           },
           {
-            title: "What’s included in my box?",
-            answer: ["HelloBible takes children on a journey through the Bible in a fun & creative way. Each box is designed by moms and teachers and is based on a specific Bible story. It comes with an age-appropriate Bible storybook, creative craft projects and various ideas to share and pray. All materials and instructions are included."]
+            title: "What is the difference between the HelloBible basic pack and the premium box?",
+            answer: [
+              "The basic pack includes different activities to engage in the monthly Bible story. It comes with an age-appropriate Bible storybook, an awesome craft project and a parent guide with ideas to share and pray together.",
+              "The premium box is a full curriculum with weekly activities for the entire month. It includes a progress chart and a monthly memory Bible verse to collect. It comes with a great Bible storybook and two creative craft projects to dig deeper into the content of the Bible story. It also includes ideas to share and pray together, to nurture your child’s faith and to discover the Bible as a family."
+            ]
           },
           {
-            title: "What is the suggested age range for a box?",
+            title: "What is the suggested age range for HelloBible?",
             answer: ["HelloBible is designed for kids ages 4 and older. Sometimes a younger child may need more help of the parents, whereas, an older child can already do more steps by himself."]
           },
           {
@@ -66,7 +69,7 @@
           },
           {
             title: "What happens at the end of my subscription?",
-            answer: ["Subscriptions will automatically renew at the end of the subscription period. That's great because you will never miss a box! We will send you a reminder email one day before the automatic renewal. If you do not cancel after receiving the reminder email, it will renew for the same number of months as the term that was originally purchased."]
+            answer: ["Subscriptions will automatically renew at the end of the subscription period. That's great because you will never miss a pack or box! We will send you a reminder email one day before the automatic renewal. If you do not cancel after receiving the reminder email, it will renew for the same number of months as the term that was originally purchased."]
           },
           {
             title: "How can I give HelloBible as a gift?",
@@ -77,7 +80,7 @@
             answer: ["All our subscriptions come addressed to the child. So the gift giver will be a surprise."]
           },          {
             title: "Do you accept returns?",
-            answer: ["Our HelloBible boxes and packs are not returnable. However, if any materials in your box or in your pack are missing or damaged please contact us at info@hellobible.org. We will be happy to replace those."]
+            answer: ["Our HelloBible boxes and packs are not returnable. However, if any materials are missing or damaged please contact us at info@hellobible.org. We will be happy to replace those."]
           },
           {
             title: "What if there is a problem with my order?",
@@ -93,8 +96,8 @@
         id: "shipping",
         items: [
           {
-            title: "Where do HelloBible boxes ship?",
-            answer: ["We ship our boxes anywhere in the United States, including Hawaii and Alaska. If you’d like us to ship abroad, please contact us at info@hellobible.org."]
+            title: "Where does HelloBible ship?",
+            answer: ["We ship anywhere in the United States, including Hawaii and Alaska. If you’d like us to ship abroad, please contact us at info@hellobible.org."]
           },
           {
             title: "How much does shipping cost?",

@@ -52,43 +52,34 @@
 	</div>
 </div>
 
-<!-- About 
-<div id="how">
+<!-- About -->
+<div id="how" ng-controller="MainController as aboutCtrl">
 	<h1 class="text-center text-uppercase">How It Works</h1>
 
-	<div class="row">
-		<div class="col-md-4">
-			<div class="thumbnail">
-				<img class="img-rounded" src="/assets/images/how-image1-s.jpg" alt="" />
-				<div class="caption">
-					<h2>Get 1 box per month</h2>
-					<p>Explore the Bible and enjoy quality time with your child.</p>
-				</div>
-			</div>
-		</div>
-		<div class="col-md-4">
-			<div class="thumbnail">
-				<img class="img-rounded" src="/assets/images/how-image2-s.jpg" alt="" />
-				<div class="caption">
-					<h2>Read, create, share &amp; pray</h2>
-					<p>All ideas, materials and instructions are included.</p>
-				</div>
-			</div>
-		</div>
-		<div class="col-md-4">
-			<div class="thumbnail">
-				<img class="img-rounded" src="/assets/images/how-image3-s.jpg" alt="" />
-				<div class="caption">
-					<h2>Give God's love</h2>
-					<p>For each ordered box, we donate to children in need.</p>
+	<div class="row hidden-xs">
+		<div class="col-md-8 col-md-offset-2">
+			<div class="col-md-4 col-sm-4" ng-repeat="item in aboutCtrl.how">
+				<div class="thumbnail">
+					<img ng-src="{{item.image}}" alt="" />
+					<div class="caption">
+						<h2>{{item.heading}}</h2>
+						<p>{{item.text}}</p>
+					</div>
 				</div>
 			</div>
 		</div>
 	</div>
-</div>
-About End -->
 
-<acme-social></acme-social>
+	<div class="media visible-xs-block"  ng-repeat="item in aboutCtrl.how">
+		<img class="pull-left media-object" ng-src="{{item.image}}" alt="">
+		<div class="media-body">
+			<h4 ng-bind-html="item.heaading" class="media-heading"></h4>
+			<p ng-bind-html="item.text"></p>
+		</div>
+	</div>
+</div>
+<!--About End -->
+
 
 <div id="information" ng-controller="MainController as informationCtrl">
 	<div class="container">
@@ -98,7 +89,7 @@ About End -->
 				<div uib-accordion-group is-open="status.open" class="panel-default">
 					<uib-accordion-heading>
 						<i class="accordion-heading-arrow pull-right fa" ng-class="{'fa-chevron-down': !status.open, 'fa-chevron-up': status.open}"></i>
-						<img class="accordion-heading-title" src="{{option.titleImage}}" />
+						<img class="accordion-heading-title" ng-src="{{option.titleImage}}" />
 						<span class="accordion-heading-subtitle">{{option.name}}</span>
 					</uib-accordion-heading>
 					<div class="media">
@@ -106,14 +97,14 @@ About End -->
 							<slick settings="informationCtrl.slickConfig">
 								<div class="item" ng-repeat="c in option.carousel">
 									<a href="/assets/images/info/{{c.image}}-l.jpg" data-lightbox="{{option.id}}" data-title="{{c.title}}">
-										<img src="/assets/images/info/{{c.image}}-l.jpg" />
+										<img ng-src="/assets/images/info/{{c.image}}-l.jpg" />
 									</a>
 								</div>
 							</slick>
 						</div>
 						<div class="col-md-4">
 							<h1>{{option.title}}</h1>
-							<span ng-bind-html="option.text">{{option.text}}</span>
+							<span ng-bind-html="option.text"></span>
 							<div class="buttons">
 								<a ui-sref="home({'#' : 'pricing'})" du-smooth-scroll><button type="button" class="btn btn-lg btn-primary" aria-haspopup="true" aria-expanded="false">Get {{option.name}} Now</button></a>
 							</div>
@@ -126,10 +117,10 @@ About End -->
 			<div ng-repeat="option in informationCtrl.options"  class="col-sm-5 col-md-4" ng-class="{'col-md-offset-2 col-sm-offset-1': $first}">
 				<a ng-click="informationCtrl.showInfo(option.id)">
 					<div class="thumbnail"  ng-class="{'active' : (option.id === informationCtrl.info)}">
-						<img src="{{option.titleImage}}" />
+						<img ng-src="{{option.titleImage}}" />
 						<div class="caption">
 							<div class="captionHighlight">
-								<p class="margin-t-30"><button type="button" class="btn btn-md btn-primary">Peek Inside {{option.name}}</button></p>
+								<p>Peek Inside {{option.name}}</p>
 								<i class="fa fa-2x" ng-class="{'fa-chevron-down': (informationCtrl.info !== option.id), 'fa-chevron-up': (informationCtrl.info === option.id)}"></i>
 							</div>
 						</div>
@@ -143,16 +134,16 @@ About End -->
 					<slick settings="informationCtrl.slickConfig">
 						<div class="item" ng-repeat="c in informationCtrl.infoObject.carousel track by $index">
 							<a href="/assets/images/info/{{c.image}}-l.jpg" data-lightbox="{{informationCtrl.infoObject.id}}" data-title="{{c.title}}">
-								<img src="/assets/images/info/{{c.image}}-l.jpg" />
+								<img ng-src="/assets/images/info/{{c.image}}-l.jpg" />
 							</a>
 						</div>
 					</slick>
 				</div>
 				<div class="col-md-4">
 					<h1>{{informationCtrl.infoObject.title}}</h1>
-					<span ng-bind-html="informationCtrl.infoObject.text">{{informationCtrl.infoObject.text}}</span>
+					<span ng-bind-html="informationCtrl.infoObject.text"></span>
 					<div class="buttons">
-						<a ui-sref="home({'#' : 'pricing'})"  du-smooth-scroll><button type="button" class="btn btn-lg btn-primary" aria-haspopup="true" aria-expanded="false">Shop {{informationCtrl.infoObject.name}} Now</button></a>
+						<a ui-sref="home({'#' : 'pricing'})" ng-click="showInfo(informationCtrl.infoObject.id)" du-smooth-scroll><button type="button" class="btn btn-lg btn-primary" aria-haspopup="true" aria-expanded="false">Buy {{informationCtrl.infoObject.name}}</button></a>
 					</div>
 				</div>		
 			</div>
@@ -160,8 +151,12 @@ About End -->
 	</div>
 </div>
 
+<acme-pricing></acme-pricing>
 
-<!-- Verse -->
+<acme-social></acme-social>
+
+<acme-testimonials></acme-testimonials>
+
 <div class="verse ">
 	<div class="container text-center ">
 		<div class="col-xs-4 col-md-2 "><img src="/assets/images/danny-bible-white.png " /></div>
@@ -173,12 +168,5 @@ About End -->
 		</div>
 	</div>
 </div>
-
-<acme-pricing></acme-pricing>
-
-<acme-social></acme-social>
-
-<acme-testimonials></acme-testimonials>
-
 
 <acme-footer></acme-footer>

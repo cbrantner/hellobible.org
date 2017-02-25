@@ -29,6 +29,24 @@
     vm.info = undefined;
     vm.infoObject = undefined;
 
+    vm.how = [
+      {
+        image : "/assets/images/how-image1-s.jpg",
+        heading : "1. Choose your subscription",
+        text : "Order a box or pack for your child to receive HelloBible every month."
+      },
+      {
+        image : "/assets/images/how-image2-s.jpg",
+        heading : "2. Read, create, share & pray",
+        text : "Explore a new Bible story. Get a book, crafts and ideas to share & pray. All materials and instructions are included."
+      },
+      {
+        image : "/assets/images/how-image3-s.jpg",
+        heading : "3. Give God's love",
+        text : "For each ordered box, we donate to The Kilgoris Project. It supports children in rural Kenya."
+      }
+    ];
+
     vm.options = [
       {
         id : "envelope",
