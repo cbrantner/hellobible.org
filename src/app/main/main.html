@@ -60,10 +60,10 @@
 		<div class="col-md-8 col-md-offset-2">
 			<div class="col-md-4 col-sm-4" ng-repeat="item in aboutCtrl.how">
 				<div class="thumbnail">
-					<img ng-src="{{item.image}}" alt="" />
+					<img ng-src="{{item.image}}.jpg" />
 					<div class="caption">
 						<h2>{{item.heading}}</h2>
-						<p>{{item.text}}</p>
+						<p ng-bind-html="item.text"></p>
 					</div>
 				</div>
 			</div>
@@ -71,7 +71,7 @@
 	</div>
 
 	<div class="media visible-xs-block"  ng-repeat="item in aboutCtrl.how">
-		<img class="pull-left media-object" ng-src="{{item.image}}" alt="">
+		<img class="pull-left media-object" ng-src="{{item.image}}-s.jpg" >
 		<div class="media-body">
 			<h4 ng-bind-html="item.heaading" class="media-heading"></h4>
 			<p ng-bind-html="item.text"></p>
@@ -128,12 +128,12 @@
 				</a>
 			</div>
 		</div>
-		<div class="panel panel-default col-md-12 info-panel" ng-show="informationCtrl.info">
+		<div class="panel panel-default col-md-12 info-panel" ng-repeat="option in informationCtrl.options" ng-show="informationCtrl.info === option.id">
 			<div class="panel-body">
-				<div class="col-md-8" ng-if="informationCtrl.info">
+				<div class="col-md-8" ng-if="informationCtrl.info === option.id">
 					<slick settings="informationCtrl.slickConfig">
-						<div class="item" ng-repeat="c in informationCtrl.infoObject.carousel track by $index">
-							<a href="/assets/images/info/{{c.image}}-l.jpg" data-lightbox="{{informationCtrl.infoObject.id}}" data-title="{{c.title}}">
+						<div class="item" ng-repeat="c in option.carousel track by $index">
+							<a href="/assets/images/info/{{c.image}}-l.jpg" data-lightbox="{{option.id}}" data-title="{{c.title}}">
 								<img ng-src="/assets/images/info/{{c.image}}-l.jpg" />
 							</a>
 						</div>
@@ -141,9 +141,9 @@
 				</div>
 				<div class="col-md-4">
 					<h1>{{informationCtrl.infoObject.title}}</h1>
-					<span ng-bind-html="informationCtrl.infoObject.text"></span>
+					<span ng-bind-html="option.text"></span>
 					<div class="buttons">
-						<a ui-sref="home({'#' : 'pricing'})" ng-click="showInfo(informationCtrl.infoObject.id)" du-smooth-scroll><button type="button" class="btn btn-lg btn-primary" aria-haspopup="true" aria-expanded="false">Get {{informationCtrl.infoObject.name}}</button></a>
+						<a ui-sref="home({'#' : 'pricing'})" ng-click="showInfo(option.id)" du-smooth-scroll><button type="button" class="btn btn-lg btn-primary" aria-haspopup="true" aria-expanded="false">Get {{option.name}}</button></a>
 					</div>
 				</div>		
 			</div>

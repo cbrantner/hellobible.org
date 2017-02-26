@@ -27,23 +27,22 @@
     var vm = this;
 
     vm.info = undefined;
-    vm.infoObject = undefined;
 
     vm.how = [
       {
-        image : "/assets/images/how-image1-s.jpg",
+        image : "/assets/images/how-image1",
         heading : "1. Choose your subscription",
-        text : "Order a box or pack for your child to receive HelloBible every month."
+        text : "<b>Order</b> a box or pack for your child to receive HelloBible every month."
       },
       {
-        image : "/assets/images/how-image2-s.jpg",
+        image : "/assets/images/how-image2",
         heading : "2. Read, create, share & pray",
-        text : "Explore a great Bible story. Get a book, crafts and ideas to share & pray. All materials and instructions are included."
+        text : "<b>Explore</b> a great Bible story. Get a book, crafts and ideas to share & pray."
       },
       {
-        image : "/assets/images/how-image3-s.jpg",
+        image : "/assets/images/how-image3",
         heading : "3. Give God's love",
-        text : "For each ordered box, we donate to The Kilgoris Project. It supports children in rural Kenya."
+        text : "We <b>donate</b> to The Kilgoris Project that supports children in rural Kenya."
       }
     ];
 
@@ -51,7 +50,7 @@
       {
         id : "envelope",
         name : "Basic Pack",
-        titleImage : "/assets/images/info/envelope.png",
+        titleImage : "/assets/images/info/envelope.jpg",
         carousel : [
           {
             image : "envelope-content",
@@ -68,13 +67,13 @@
         ],
         title : "HelloBible Basic Pack",
         text : '<p><b>A fun activity to explore a Bible Story each month</b>.</p>' +
-							'<p><span class="text-read">Read</span> an age-appropriate Bible Story Book and <span class="text-create">create</span> a wonderful craft to enlarge upon the Bible story.' +
+							'<p><span class="text-read">Read</span> an age-appropriate Bible Story Book and <span class="text-create">create</span> a wonderful craft to build upon the Bible story. ' +
 								'<span class="text-pray">Share and pray</span> together.' +
 							'</p>'
       }, {
         id : "premium",
         name : "Premium Box",
-        titleImage : "/assets/images/how-image1-s.jpg",
+        titleImage : "/assets/images/info/premium.jpg",
         carousel : [
           {
             image : "premium-content",
@@ -91,7 +90,7 @@
         ],
         title : "HelloBible Premium Box",
         text : '<p><b>A fun curriculum for the entire month</b>.</p>' +
-							'<p><span class="text-read">Read</span> an age-appropriate Bible Story Book and <span class="text-create">create</span> two wonderful crafts to dig deep into the Bible story. Enjoy high quality family time by <span class="text-pray">sharing and praying</span> ' +
+							'<p><span class="text-read">Read</span> an age-appropriate Bible Story Book and <span class="text-create">create</span> two wonderful crafts to deepen the understanding of the Bible story. Enjoy high quality family time. <span class="text-pray">Share and pray</span> ' +
               'together.' +
 							'</p>'
       }
@@ -144,10 +143,8 @@
     vm.showInfo = function(name) {
       if (vm.info == name) {
         vm.info = undefined;
-        vm.infoObject = undefined;
       } else {
         vm.info = name;
-        vm.infoObject = vm.options.find(function(x) { return x.id == name;});
         if (hbTracking) {
            // track google analytics event
           Analytics.trackEvent('information', 'showInfo', name);
