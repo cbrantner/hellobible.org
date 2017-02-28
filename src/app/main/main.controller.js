@@ -80,7 +80,7 @@
           }
         ],
         title : "HelloBible Basic Pack",
-        text : '<p><b>A fun activity to explore a Bible Story each month</b>.</p>' +
+        text : '<p><b>Fun activities to explore a Bible Story each month</b>.</p>' +
 							'<p><span class="text-read">Read</span> an age-appropriate Bible Story Book and <span class="text-create">create</span> a wonderful craft to build upon the Bible story. ' +
 								'<span class="text-pray">Share and pray</span> together.' +
 							'</p>'
