@@ -27,8 +27,6 @@
       <%- partial('post/date', {class_name: 'article-date', date_format: null}) %>
       <% if (post.author){ %><div class="article-author"><%= post.author %></div><% } %>
       <%- partial('post/category') %>
-      <div class="fb-share-button" data-href="<%= post.id %>" data-layout="button" data-mobile-iframe="false"><a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&amp;src=sdkpreparse">Share</a></div>
-      <div class="fb-like" data-href="https://developers.facebook.com/docs/plugins/" data-layout="button" data-action="like" data-size="small" data-show-faces="false" data-share="false"></div>
     </div> <!-- article-meta -->
     <div class="article-inner">
 

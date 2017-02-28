@@ -33,6 +33,7 @@
   font-weight: bold;
 }
 
+
 /*********************************************************/
 /* HEADER
 /*********************************************************/
@@ -63,6 +64,10 @@
 
 
 /* #### Top Header Small Devices #### */
+.topheader-mobile img {
+  width: 100%;
+}
+
 .topheader-mobile h1 {
   color: $BBOrange;
   text-transform: none;
@@ -73,8 +78,13 @@
 }
 
 .subscribe-mobile {
-  margin: auto;
   text-align: center;
+}
+
+.subscribe-mobile {
+  .btn-secondary {
+    color: $BBBlue;
+  }
 }
 
 .arrow-down {

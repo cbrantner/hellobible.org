@@ -1,5 +1,5 @@
 ---
-title: "January’s Bible Story: CREATION"
+title: "CREATION"
 categories: 'past packs & boxes'
 date: 2017/01/10 20:00:00
 featured_image: /assets/images/boxes/0117/DSC09396.jpg

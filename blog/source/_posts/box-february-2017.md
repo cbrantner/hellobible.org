@@ -1,5 +1,5 @@
 ---
-title: "February’s Bible Story: NOAH’S ARK"
+title: "NOAH’S ARK"
 categories: 'past packs & boxes'
 date: 2017/02/10 20:00:00
 featured_image: /assets/images/boxes/0217/noah_content.png

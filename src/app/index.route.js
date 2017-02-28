@@ -18,16 +18,6 @@
           title: 'FAQ'
         }
       })
-
-      .state('kilgoris', {
-        url: '/kilgoris',
-        templateUrl: 'app/kilgoris/kilgoris.html',
-        controller: 'KilgorisController',
-        controllerAs: 'kilgoris',
-        data : {
-          title: 'A Fun Way for Kids to Explore the Bible'
-        }
-      })
       .state('home', {
         url: '/',
         templateUrl: 'app/main/main.html',
@@ -97,6 +87,8 @@
       });
 
 
+      $urlRouterProvider
+        .when('/kilgoris', '/blog/categories/kilgoris/')
       $urlRouterProvider.otherwise('/');
       $locationProvider.html5Mode(true);
   }

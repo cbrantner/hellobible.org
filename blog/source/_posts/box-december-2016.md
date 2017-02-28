@@ -1,5 +1,5 @@
 ---
-title: "December’s Bible story: CHRISTMAS"
+title: "CHRISTMAS"
 categories: 'past packs & boxes'
 date: 2016/12/10 20:00:00
 featured_image: /assets/images/boxes/1216/DSC09980.jpg

@@ -4,7 +4,8 @@
   angular
     .module('hellobible')
     .controller('MainController', MainController)
-    .controller('SignupModalController', SignupModalController);
+    .controller('SignupModalController', SignupModalController)
+    .controller('VideoModalController', VideoModalController);
 
   /** @ngInject */
   function SignupModalController($uibModalInstance) {
@@ -20,6 +21,19 @@
     };
   }
 
+  /** @ngInject */
+  function VideoModalController($uibModalInstance) {
+    
+    var vm = this;
+
+    vm.ok = function () {
+      $uibModalInstance.close();
+    };
+
+    vm.cancel = function () {
+      $uibModalInstance.dismiss('cancel');
+    };
+  }
 
   /** @ngInject */
   function MainController($location, $anchorScroll, $uibModal, Analytics, hbTracking) {
@@ -131,6 +145,30 @@
             return name;
           }
         }
+      });
+
+      modalInstance.result.then(function () {
+        // ok clicked
+      }, function () {
+        // cancel clicked
+      });
+    };
+
+    vm.showVideo = function (size) {
+
+      // $log.debug(name + ': cart clicked')
+
+      if (hbTracking) {
+        // track google analytics event
+        Analytics.trackEvent('video', 'show');
+      }
+
+      var modalInstance = $uibModal.open({
+        animation: true,
+        templateUrl: 'videoModal.html',
+        controller: 'VideoModalController',
+        controllerAs: 'vm',
+        size : size
       });
 
       modalInstance.result.then(function () {
