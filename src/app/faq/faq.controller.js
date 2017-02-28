@@ -50,6 +50,10 @@
               "<li>Tell your family, friends, your church about HelloBible.</li>" +
               "<li>Share us on <a href='https://www.facebook.com/hellobible.org/'>Facebook</a>, <a href='http://www.instagram.com/hellobiblebox/'>Instagram</a>, or <a href='http://www.pinterest.com/hellobible'>Pinterest</a>.</li>"
               ]
+          },
+          {
+            title: "Is there a sibling box or pack?",
+            answer : ["There is no sibling box or pack. Each months' content is designed for one child. However, you can read the storybook and do family activities together. Some families even have older siblings share with the younger ones."]
           }
         ]
       }, {
