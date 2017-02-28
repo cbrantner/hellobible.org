@@ -1,5 +1,7 @@
 #testimonials {
   padding-bottom: 20px;
+	background: url(/assets/images/bg.png) repeat center center;
+
 }
 
 #testimonials p {
@@ -32,6 +34,7 @@
 	-moz-border-radius: 3px;
 	border-radius: 3px;
 	transition: all 0.5s ease;
+	background-color: white;
 }
 
 .testimonial-group:hover {

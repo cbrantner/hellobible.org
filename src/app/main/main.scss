@@ -33,6 +33,7 @@
   font-weight: bold;
 }
 
+
 /*********************************************************/
 /* HEADER
 /*********************************************************/
@@ -50,8 +51,10 @@
 }
 
 .topheader h1 {
-  color: $BBBlue;
+  color: $BBOrange;
+  text-transform: none;
   text-align: left;
+  font-size: 36px;
 }
 
 .topheader h2, .topheader h3 {
@@ -61,13 +64,27 @@
 
 
 /* #### Top Header Small Devices #### */
+.topheader-mobile img {
+  width: 100%;
+}
+
 .topheader-mobile h1 {
-  color: $BBBlue;
+  color: $BBOrange;
+  text-transform: none;
+}
+
+.topheader-mobile h3 {
+  text-align: center;
 }
 
 .subscribe-mobile {
-  margin: auto;
   text-align: center;
+}
+
+.subscribe-mobile {
+  .btn-secondary {
+    color: $BBBlue;
+  }
 }
 
 .arrow-down {
@@ -88,75 +105,72 @@
 /* INFORMATIONS
 /*********************************************************/
 #information {
-  background: none repeat scroll 0 0 white;
+  //background: none repeat scroll 0 0 white;
+  background: url(/assets/images/bg.png) repeat center center;
+  //background-color: #AC917F;
   padding: 15px;
-}
 
-
-#information h1:after {
-  content: "";
-  display: block;
-  height: 4px;
-  width: 80px;
-  background: $BBBlue;
-  margin: 0 auto;
-  margin-top: 10px;
-  margin-bottom: 30px;
-}
-
-#information .text-read {
-  color: $BBBlue;
-	font-weight: bold;
-  text-transform: uppercase;
-}
-
-#information .text-create {
-  color: $BBGreen;
-	font-weight: bold;
-  text-transform: uppercase;
-}
-
-#information .text-pray {
-  color: $BBYellow;
-	font-weight: bold;
-  text-transform: uppercase;
-}
-
-#information .logo-read {
-	font-size: 36px;
-  border-radius: 100px;
-  padding: 10px;
-  color: $BBBlue;
-  border: 3px solid $BBBlue;
-}
-
-#information .logo-create {
-	font-size: 36px;
-  border-radius: 100px;
-  padding: 10px;
-  color: $BBGreen;
-  border: 3px solid $BBGreen;
-}
-
-#information .logo-pray {
-	font-size: 36px;
-  border-radius: 100px;
-  padding: 10px;
-  color: $BBYellow;
-  border: 3px solid $BBYellow;
-}
-
-// center the buttons on small devices
-@media (max-width: 991px) {
-  #information .buttons {
-    text-align: center;
-    padding-bottom: 20px;
+  a {
+    color: black;
   }
+
+  .accordion-heading-title  {
+    width : 100px;
+  }
+
+  .accordion-heading-subtitle {
+    font-size: 16px;
+    margin-left: 10px;
+  }
+
+  .accordion-toggle:focus {
+    outline: none;
+  }
+
+  .active {
+    background-color: #F5F5F5;
+  }
+
+
+  .thumbnail:hover {
+    background: $BBLightGrey;
+  }
+
+  .captionHighlight {
+    text-align: center;
+  }
+
+  h1:after {
+    content: "";
+    display: block;
+    height: 4px;
+    width: 80px;
+    background: $BBBlue;
+    margin: 0 auto;
+    margin-top: 10px;
+    margin-bottom: 30px;
+  }
+
+  .text-read {
+    color: $BBBlue;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+
+  .text-create {
+    color: $BBGreen;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+
+  .text-pray {
+    color: $BBOrange;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+
 }
 
-#portfolio {
-  padding-top: 20px;
-}
 
 // Default Variables
 
@@ -168,131 +182,57 @@
 $slick-font-path: "./fonts/" !default;
 $slick-font-family: "slick" !default;
 $slick-loader-path: "./" !default;
-$slick-arrow-color: white !default;
-$slick-dot-color: black !default;
-$slick-dot-color-active: $slick-dot-color !default;
+//$slick-arrow-color: white !default;
+//$slick-dot-color: black !default;
+//$slick-dot-color-active: $slick-dot-color !default;
 $slick-prev-character: "\2190" !default;
 $slick-next-character: "\2192" !default;
-$slick-dot-character: "\2022" !default;
-$slick-dot-size: 40px !default;
-$slick-opacity-default: 0.75 !default;
-$slick-opacity-on-hover: 1 !default;
-$slick-opacity-not-active: 0.25 !default;
-
-@function slick-image-url($url) {
-    @if function-exists(image-url) {
-        @return image-url($url);
-    }
-    @else {
-        @return url($slick-loader-path + $url);
-    }
-}
-
-@function slick-font-url($url) {
-    @if function-exists(font-url) {
-        @return font-url($url);
-    }
-    @else {
-        @return url($slick-font-path + $url);
-    }
-}
-
-/* the slides */
-.slick-slide {
-    margin: 0 3px;
-}
-/* the parent */
-.slick-list {
-    margin: 0 -3px;
-}
+//$slick-dot-character: "\2022" !default;
+//$slick-dot-size: 40px !default;
+//$slick-opacity-default: 0.75 !default;
+//$slick-opacity-on-hover: 1 !default;
+//$slick-opacity-not-active: 0.25 !default;
 
 .slick-dots li button:before {
   font-size: 15px;
 }
 
-.ribbon {
- font-size: 16px !important;
- /* This ribbon is based on a 16px font side and a 24px vertical rhythm. I've used em's to position each element for scalability. If you want to use a different font size you may have to play with the position of the ribbon elements */
-
- width: 50%;
-    
- position: relative;
- background: $BBOrange;
- color: #fff;
- text-align: center;
- padding: 1em 2em; /* Adjust to suit */
- margin: 2em auto 3em; /* Based on 24px vertical rhythm. 48px bottom margin - normally 24 but the ribbon 'graphics' take up 24px themselves so we double it. */
-}
-.ribbon:before, .ribbon:after {
- content: "";
- position: absolute;
- display: block;
- bottom: -1em;
- border: 1.5em solid #986794;
- z-index: -1;
-}
-.ribbon:before {
- left: -2em;
- border-right-width: 1.5em;
- border-left-color: transparent;
-}
-.ribbon:after {
- right: -2em;
- border-left-width: 1.5em;
- border-right-color: transparent;
-}
-.ribbon .ribbon-content:before, .ribbon .ribbon-content:after {
- content: "";
- position: absolute;
- display: block;
- border-style: solid;
- border-color: #804f7c transparent transparent transparent;
- bottom: -1em;
-}
-.ribbon .ribbon-content:before {
- left: 0;
- border-width: 1em 0 0 1em;
-}
-.ribbon .ribbon-content:after {
- right: 0;
- border-width: 1em 1em 0 0;
-}
 /*********************************************************/
 /* ABOUT
 /*********************************************************/
 #how {
   padding: 20px 20px 0 20px;
   position: relative;
-}
+  margin-bottom:20px;
 
-#how h2 {
-  line-height: 1.0;
-  text-transform: uppercase;
-  text-align: left;
-}
+  h2 {
+    line-height: 1.0;
+    text-transform: uppercase;
+    text-align: left;
+  }
 
-#how p {
-  line-height: 1.1;
-}
+  h1:after {
+    content: "";
+    display: block;
+    height: 4px;
+    width: 80px;
+    background: $BBBlue;
+    margin: 0 auto;
+    margin-top: 10px;
+  }
 
-#how h1:after {
-  content: "";
-  display: block;
-  height: 4px;
-  width: 80px;
-  background: $BBBlue;
-  margin: 0 auto;
-  margin-top: 10px;
-}
+  a {
+    color: $BBBlue;
+  }
 
-#how a {
-  color: $BBBlue;
-}
+  a:hover {
+    color: $BBDarkBlue;
+  }
 
-#how a:hover {
-  color: $BBDarkBlue;
+  .media-object  {
+    width: 120px;
+  }
 }
-
 
 /*********************************************************/
 /* VERSE
@@ -300,56 +240,22 @@ $slick-opacity-not-active: 0.25 !default;
 .verse {
   background: none repeat scroll 0 0 $BBBlue;
   color: white;
-}
 
-.verse cite {
-  font-size: 14px;
-  font-weight: 400;
-}
+  cite {
+    font-size: 14px;
+    font-weight: 400;
+  }
 
-.verse img {
-  padding-top: 15px;
-  height: 110px;
-}
+  img {
+    padding-top: 15px;
+    height: 110px;
+  }
 
-.verse blockquote{
-  padding-top: 25px;
-  border-width: 0;
-  font-size: 14px;
-}
+  blockquote{
+    padding-top: 25px;
+    border-width: 0;
+    font-size: 14px;
+  }
 
-/*********************************************************/
-/* DONATION
-/*********************************************************/
-.donation {
-  background: none repeat scroll 0 0 $BBBlue;
-  padding: 20px;
 }
-
-.donation .logo-heart {
-  display: block;
-  width: 100px;
-  height: 100px;
-  border-radius: 100px;
-  border: 3px solid red;
-  margin: 0 auto;
-  font-size: 50px;
-  text-align: center;
-  color: red;
-  margin-top: 20px;
-  margin-right: 20px;
-}
-
-.donation p {
-  color: white;
-  font-size: 20px;
-  font-weight: 400;
-}
-
-.donation ul {
-  color: white;
-  font-size: 20px;
-  font-weight: 400x;
-}
-
 

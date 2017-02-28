@@ -1,4 +1,5 @@
 #pricing {
+
   p {
     color: $BBDarkGrey;
     text-align: center;
@@ -14,50 +15,45 @@
     margin-top: 10px;
   }
 
-  .header span {
-    color: red;
+  .price {
+    font-size: 24px;
+    text-align: center;
+  }
+
+  .accordion-toggle:focus {
+    outline: none;
+  }
+
+  .caption {
+    text-align: center;
+  }
+
+  .captionHighlight {
+    text-align: center;
+    color: black;
+  }
+
+  .active {
+    background-color: #F5F5F5;
   }
 
   .footer {
     text-align: center;
   }
 
-  .accordion-heading-title {
-    color: $BBBlue;
-    font-size: 26pt;
-  }
-
-  .accordion-heading-arrow {
-    color: $BBBlue;
-  }
-
   .accordion-heading-subtitle {
-    font-size: 10pt;
-    line-height: 1.0;
-
-    .accordion-heading-donation {
-      color: red;
-    }
-
+    font-size: 16pt;
+    margin-left: 20px;
   }
 
-  .caption {
-    margin-top: -25px;
+  .accordion-heading-title {
+    width : 80px;
   }
 
-  .captionHighlight {
-    background-color: $BBBlue;
-
-    h2, p {
-      color: white;
-    }
-
+  .list-group-item-text {
+    text-align: left;
   }
 
-  .media-body {
-    line-height: 1.1;
-  }
-  
   .gift {
     color: $BBBlue;
   }
@@ -66,35 +62,4 @@
     color: red;
   }
 
-  .book {
-    color: $BBBlue;
-  }
-
-  .giftChoose {
-    color: $BBBlue;
-  }
-
-  input[type="checkbox"] {
-    position:relative;
-    vertical-align:middle;
-    transform:scale(1.5, 1.5);
-  }
-
-  label {  
-    padding-top: 12px;
-    position:relative;
-    left: 15px;
-    display:inline-block;    
-    vertical-align:middle; 
-  }
-
-}
-
-.pricing-mobile span:focus {
-  outline: none;
-  border: 0;
-}
-
-.modal-body p {
-   color: $BBDarkGrey;
 }

@@ -1,5 +1,5 @@
 ---
-title: 'Noah Box: Preschools'
+title: "Preschools in Kilgoris"
 categories: kilgoris
 date: 2017/02/15 20:00:00
 featured_image: /assets/images/blog/blog0217-2-small.jpg

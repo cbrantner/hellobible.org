@@ -1,5 +1,5 @@
 ---
-title: 'Creation Box: Clean Water'
+title: 'Clean Water in Kilgoris'
 categories: kilgoris
 date: 2017/01/10 20:00:00
 featured_image: /assets/images/blog/blog0117-1-small.jpg

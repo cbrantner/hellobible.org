@@ -1,5 +1,5 @@
 ---
-title: 'Christmas Box: Graduation'
+title: 'Graduation in Kilgoris'
 categories: kilgoris
 date: 2016/12/10 20:00:00
 featured_image: /assets/images/blog/blog1216-3.jpg
