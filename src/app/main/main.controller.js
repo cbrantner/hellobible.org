@@ -46,17 +46,23 @@
       {
         image : "/assets/images/how-image1",
         heading : "1. Choose your subscription",
-        text : "<b>Order</b> a box or pack for your child to receive HelloBible every month."
+        text : "<b>Order</b> a box or pack for your child to receive HelloBible every month.",
+        button : "Shop Now",
+        link : "#pricing"
       },
       {
         image : "/assets/images/how-image2",
         heading : "2. Read, create, share & pray",
-        text : "<b>Explore</b> a great Bible story. Get a book, crafts and ideas to share & pray."
+        text : "<b>Explore</b> a great Bible story. Get a book, crafts and ideas to share & pray.",
+        button : "Explore Past Boxes",
+        link : "/blog/categories/past-packs-boxes"
       },
       {
         image : "/assets/images/how-image3",
         heading : "3. Give God's love",
-        text : "We <b>donate</b> to The Kilgoris Project that supports children in rural Kenya."
+        text : "<b>We donate</b> to The Kilgoris Project that supports children in rural Kenya.",
+        button : "Learn about Kilgoris",
+        link : "/blog/categories/kilgoris"
       }
     ];
 

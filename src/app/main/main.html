@@ -72,10 +72,19 @@
 		<div class="col-md-8 col-md-offset-2">
 			<div class="col-md-4 col-sm-4" ng-repeat="item in aboutCtrl.how">
 				<div class="thumbnail">
-					<img ng-src="{{item.image}}.jpg" />
+					<span ng-switch on="item.link.charAt(0)">
+						<a ng-switch-when="#" ui-sref="home({'#' : '{{item.link.substring(1)}}'})" ><img ng-src="{{item.image}}.jpg" /></a>
+						<a ng-switch-default href="{{item.link}}"><img ng-src="{{item.image}}.jpg" /></a>
+					</span>
+
 					<div class="caption">
 						<h2>{{item.heading}}</h2>
 						<p ng-bind-html="item.text"></p>
+						<span ng-switch on="item.link.charAt(0)">
+							<p ng-switch-when="#"><a ui-sref="home({'#' : '{{item.link.substring(1)}}'})" class="btn btn-primary">{{item.button}}</a></p>
+							<p ng-switch-default><a href="{{item.link}}" class="btn btn-primary">{{item.button}}</a></p>
+						</span>
+						<p>
 					</div>
 				</div>
 			</div>
@@ -85,8 +94,11 @@
 	<div class="media visible-xs-block"  ng-repeat="item in aboutCtrl.how">
 		<img class="pull-left media-object" ng-src="{{item.image}}-s.jpg" >
 		<div class="media-body">
-			<h4 ng-bind-html="item.heaading" class="media-heading"></h4>
 			<p ng-bind-html="item.text"></p>
+			<span ng-switch on="item.link.charAt(0)">
+				<p ng-switch-when="#"><a ui-sref="home({'#' : '{{item.link.substring(1)}}'})" class="btn btn-primary">{{item.button}}</a></p>
+				<p ng-switch-default><a href="{{item.link}}" class="btn btn-primary">{{item.button}}</a></p>
+			</span>
 		</div>
 	</div>
 </div>
