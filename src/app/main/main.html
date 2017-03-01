@@ -141,6 +141,7 @@
 		<div class="row hidden-xs">
 			<div ng-repeat="option in informationCtrl.options"  class="col-sm-5 col-md-4" ng-class="{'col-md-offset-2 col-sm-offset-1': $first}">
 				<a ng-click="informationCtrl.showInfo(option.id)">
+				  <div class="starburst example" id="curriculum" ng-show="option.ribbon"><span>{{option.ribbon}}</span></div>
 					<div class="thumbnail"  ng-class="{'active' : (option.id === informationCtrl.info)}">
 						<img ng-src="{{option.titleImage}}" />
 						<div class="caption">

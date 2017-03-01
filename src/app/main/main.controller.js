@@ -94,6 +94,7 @@
         id : "premium",
         name : "Premium Box",
         titleImage : "/assets/images/info/premium.jpg",
+        ribbon : "Full Curriculum",
         carousel : [
           {
             image : "premium-content",
