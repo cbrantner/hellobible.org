@@ -129,6 +129,7 @@
 						<div class="col-md-4">
 							<h1>{{option.title}}</h1>
 							<span ng-bind-html="option.text"></span>
+							<p>Learn more in our <a ng-click="informationCtrl.showVideo()">Video</a>.</p>
 							<div class="buttons">
 								<a ui-sref="home({'#' : 'pricing'})" du-smooth-scroll><button type="button" class="btn btn-lg btn-primary" aria-haspopup="true" aria-expanded="false">Get {{option.name}} Now</button></a>
 							</div>
@@ -164,8 +165,9 @@
 					</slick>
 				</div>
 				<div class="col-md-4">
-					<h1>{{informationCtrl.infoObject.title}}</h1>
+					<h1>{{option.title}}</h1>
 					<span ng-bind-html="option.text"></span>
+					<p>Learn more in our <a ng-click="informationCtrl.showVideo()">Video</a>.</p>
 					<div class="buttons">
 						<a ui-sref="home({'#' : 'pricing'})" ng-click="showInfo(option.id)" du-smooth-scroll><button type="button" class="btn btn-lg btn-primary" aria-haspopup="true" aria-expanded="false">Get {{option.name}}</button></a>
 					</div>

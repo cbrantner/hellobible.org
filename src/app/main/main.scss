@@ -169,6 +169,14 @@
     text-transform: uppercase;
   }
 
+  a {
+    color: $BBBlue;
+  }
+
+  a:hover {
+    color: $BBDarkBlue;
+  }
+
 }
 
 
