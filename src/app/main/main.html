@@ -72,10 +72,19 @@
 		<div class="col-md-8 col-md-offset-2">
 			<div class="col-md-4 col-sm-4" ng-repeat="item in aboutCtrl.how">
 				<div class="thumbnail">
-					<img ng-src="{{item.image}}.jpg" />
+					<span ng-switch on="item.link.charAt(0)">
+						<a ng-switch-when="#" ui-sref="home({'#' : '{{item.link.substring(1)}}'})" ><img ng-src="{{item.image}}.jpg" /></a>
+						<a ng-switch-default href="{{item.link}}"><img ng-src="{{item.image}}.jpg" /></a>
+					</span>
+
 					<div class="caption">
 						<h2>{{item.heading}}</h2>
 						<p ng-bind-html="item.text"></p>
+						<span ng-switch on="item.link.charAt(0)">
+							<p ng-switch-when="#"><a ui-sref="home({'#' : '{{item.link.substring(1)}}'})" class="btn btn-primary">{{item.button}}</a></p>
+							<p ng-switch-default><a href="{{item.link}}" class="btn btn-primary">{{item.button}}</a></p>
+						</span>
+						<p>
 					</div>
 				</div>
 			</div>
@@ -85,8 +94,11 @@
 	<div class="media visible-xs-block"  ng-repeat="item in aboutCtrl.how">
 		<img class="pull-left media-object" ng-src="{{item.image}}-s.jpg" >
 		<div class="media-body">
-			<h4 ng-bind-html="item.heaading" class="media-heading"></h4>
 			<p ng-bind-html="item.text"></p>
+			<span ng-switch on="item.link.charAt(0)">
+				<p ng-switch-when="#"><a ui-sref="home({'#' : '{{item.link.substring(1)}}'})" class="btn btn-primary">{{item.button}}</a></p>
+				<p ng-switch-default><a href="{{item.link}}" class="btn btn-primary">{{item.button}}</a></p>
+			</span>
 		</div>
 	</div>
 </div>
@@ -117,6 +129,7 @@
 						<div class="col-md-4">
 							<h1>{{option.title}}</h1>
 							<span ng-bind-html="option.text"></span>
+							<p>Learn more in our <a ng-click="informationCtrl.showVideo()">Video</a>.</p>
 							<div class="buttons">
 								<a ui-sref="home({'#' : 'pricing'})" du-smooth-scroll><button type="button" class="btn btn-lg btn-primary" aria-haspopup="true" aria-expanded="false">Get {{option.name}} Now</button></a>
 							</div>
@@ -128,6 +141,7 @@
 		<div class="row hidden-xs">
 			<div ng-repeat="option in informationCtrl.options"  class="col-sm-5 col-md-4" ng-class="{'col-md-offset-2 col-sm-offset-1': $first}">
 				<a ng-click="informationCtrl.showInfo(option.id)">
+				  <div class="starburst example" id="curriculum" ng-show="option.ribbon"><span>{{option.ribbon}}</span></div>
 					<div class="thumbnail"  ng-class="{'active' : (option.id === informationCtrl.info)}">
 						<img ng-src="{{option.titleImage}}" />
 						<div class="caption">
@@ -152,8 +166,9 @@
 					</slick>
 				</div>
 				<div class="col-md-4">
-					<h1>{{informationCtrl.infoObject.title}}</h1>
+					<h1>{{option.title}}</h1>
 					<span ng-bind-html="option.text"></span>
+					<p>Learn more in our <a ng-click="informationCtrl.showVideo()">Video</a>.</p>
 					<div class="buttons">
 						<a ui-sref="home({'#' : 'pricing'})" ng-click="showInfo(option.id)" du-smooth-scroll><button type="button" class="btn btn-lg btn-primary" aria-haspopup="true" aria-expanded="false">Get {{option.name}}</button></a>
 					</div>

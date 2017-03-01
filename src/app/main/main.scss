@@ -169,6 +169,72 @@
     text-transform: uppercase;
   }
 
+  a {
+    color: $BBBlue;
+  }
+
+  a:hover {
+    color: $BBDarkBlue;
+  }
+
+  .starburst {
+    font: bold 15px 'Open Sans', Arial, sans-serif;
+    background: $BBBlue;
+    width: 5.5em;
+    height: 5.5em;
+    text-align: center;
+    color: #fff;
+  }
+
+  .starburst,
+  .starburst span {
+    display: box;
+  }
+
+  .starburst span {
+    width: 100%;
+    height: 100%;
+    background: inherit;
+    transform: rotate(45deg);
+  }
+
+  .starburst:before,
+  .starburst:after ,
+  .starburst span:before,
+  .starburst span:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: inherit;
+    z-index: -1;
+    transform: rotate(30deg);
+  }
+
+  .starburst:after {
+    transform: rotate(-30deg);
+  }
+  .starburst span:after {
+    transform: rotate(30deg);
+  }
+  .starburst span:before {
+    transform: rotate(-30deg);
+  }
+
+  .example {
+    position: absolute;
+    margin-top: -2.25em;
+    margin-left: 1.25em;
+  }
+
+  #curriculum {
+    left: 75%;
+    padding-top: 18px;
+    transform: rotate(-325deg);
+  }
+
 }
 
 
@@ -219,14 +285,6 @@ $slick-next-character: "\2192" !default;
     background: $BBBlue;
     margin: 0 auto;
     margin-top: 10px;
-  }
-
-  a {
-    color: $BBBlue;
-  }
-
-  a:hover {
-    color: $BBDarkBlue;
   }
 
   .media-object  {
