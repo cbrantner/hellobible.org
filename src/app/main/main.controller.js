@@ -83,6 +83,10 @@
           {
             image : "play",
             title : "Play an awesome matching game. Help Noah to bring two of all the animals into the Ark."
+          },
+          {
+            image : "testimonial",
+            title : "What our customers say."
           }
         ],
         title : "HelloBible Basic Pack",
@@ -107,6 +111,10 @@
           {
             image : "bubble",
             title : "Have fun with giant rainbow bubbles."
+          },
+          {
+            image : "testimonial",
+            title : "What our customers say."
           }
         ],
         title : "HelloBible Premium Box",
