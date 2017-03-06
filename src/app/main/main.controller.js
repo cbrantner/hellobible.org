@@ -59,7 +59,7 @@
       },
       {
         image : "/assets/images/how-image3",
-        heading : "3. Give God's love",
+        heading : "3. Spread God's love",
         text : "<b>We donate</b> to The Kilgoris Project that supports children in rural Kenya.",
         button : "Learn about Kilgoris",
         link : "/blog/categories/kilgoris"
