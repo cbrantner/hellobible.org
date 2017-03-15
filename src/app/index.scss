@@ -164,8 +164,10 @@ img {
 
 .btn-secondary {
   background: transparent;
-	color: #ffffff;
+  color: #ffffff;
   border: 2px solid $BBBlue;
+  //box-shadow: 0px 2px 0px $BBDarkBlue;
+
 }
 
 .btn-primary:hover {
@@ -175,7 +177,7 @@ img {
 }
 
 .btn-secondary:hover {
-  background: $BBBlue;
+  background: $BBDarkBlue;
   color: #ffffff;
   border: 2px solid $BBBlue;
 }

@@ -51,7 +51,7 @@
 }
 
 .topheader h1 {
-  color: $BBOrange;
+  color: white;
   text-transform: none;
   text-align: left;
   font-size: 36px;
@@ -81,10 +81,13 @@
   text-align: center;
 }
 
-.subscribe-mobile {
-  .btn-secondary {
-    color: $BBBlue;
-  }
+.subscribe-mobile .btn-secondary {
+  color: $BBBlue;
+}
+
+.subscribe-mobile .btn-secondary:hover {
+  background: $BBBlue;
+  color: white;
 }
 
 .arrow-down {

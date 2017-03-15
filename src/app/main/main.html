@@ -32,13 +32,14 @@
 
 <div class="topheader hidden-xs" ng-controller="MainController as headerCtrl">
     <div class="container">
-        <div class="row margin-t-120">
-            <div class="col-sm-6 col-sm-offset-6">
-                <h1>Spark Faith in Kids</h1>
-                <h2>Read, Create, Share and Pray.</h2>
+        <div class="row margin-t-90">
+            <div class="col-sm-7">
+                <h1>Spark Faith in Your Child</h1>
+                <h2>Get a Monthly Bible storybook, Engaging Crafts, and Ideas to Share &amp; Pray</h2>
+                <h3>Designed by moms for kids ages 4+</h3>
+
                 <a ui-sref="home({'#' : 'pricing'})" du-smooth-scroll><button type="button" class="btn btn-lg btn-primary">Spark Faith Now</button></a>
-                <a ng-click="headerCtrl.showVideo()"><button type="button" class="btn btn-lg btn-secondary">Watch Video</button></a>
-                <h3>Designed by moms and teachers for kids ages 4+.</h3>
+                <a ng-click="headerCtrl.showVideo()"><button type="button" class="btn btn-lg btn-secondary">Watch Movie</button></a>
             </div>
         </div>
     </div>
@@ -53,13 +54,14 @@
             <img src="/assets/images/headerbg-970.jpg" />
         </div>
         <div class="row">
-            <h1>Spark Faith in Kids</h1>
-            <h2>Read, Create, Share and Pray.</h2>
+            <h1>Spark Faith in Your Child</h1>
+            <h2>Get a Monthly Bible storybook, Engaging Crafts, and Ideas to Share &amp; Pray</h2>
+            <h3>Designed by moms for kids ages 4+</h3>
+
             <div class="margin-t-30 subscribe-mobile">
                 <a ui-sref="home({'#' : 'pricing'})" du-smooth-scroll><button type="button" class="btn btn-lg btn-primary">Spark Faith Now</button></a>
-                <a ng-click="headerMobileCtrl.showVideo()"><button type="button" class="btn btn-lg btn-secondary">Watch Video</button></a>
+                <a ng-click="headerMobileCtrl.showVideo()"><button type="button" class="btn btn-lg btn-secondary">Watch Movie</button></a>
             </div>
-            <h3>Designed by moms and teachers for kids ages 4+.</h3>
         </div>
     </div>
 </div>
@@ -78,7 +80,6 @@
                     </span>
 
                     <div class="caption">
-                        <h2>{{item.heading}}</h2>
                         <p ng-bind-html="item.text"></p>
                         <span ng-switch on="item.link.charAt(0)">
                             <p ng-switch-when="#"><a ui-sref="home({'#' : '{{item.link.substring(1)}}'})" class="btn btn-primary">{{item.button}}</a></p>
