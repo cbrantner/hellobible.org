@@ -47,7 +47,7 @@
         image : "/assets/images/how-image1",
         heading : "1. Pick your subscription!",
         text : "<b>Order</b> a charming box of quality activities each month. Kids love to receive mail.",
-        button : "Shop Now",
+        button : "Order Now",
         link : "#pricing"
       },
       {
