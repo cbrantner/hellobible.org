@@ -1,6 +1,6 @@
 <div id="pricing">
   <div class="container">
-    <h1 class="text-center text-uppercase">Shop Now</h1>
+    <h1 class="text-center text-uppercase">Order Now</h1>
     <div class="row info-mobile visible-xs-block">
       <uib-accordion close-others="true" ng-repeat="option in options">
         <div uib-accordion-group is-open="status.open">
@@ -26,7 +26,7 @@
           <div class="thumbnail" ng-class="{'active' : (option.id === info)}">
             <img ng-src="/assets/images/pricing/{{option.titleImage}}" />
             <div class="caption">
-              <button type="button" class="btn btn-lg btn-primary">Get {{option.name}} Now</button>
+              <button type="button" class="btn btn-lg btn-primary">Order {{option.name}} Now</button>
             </div>
             <div class="captionHighlight">
               <i class="fa fa-2x" ng-class="{'fa-chevron-down': (info !== option.id), 'fa-chevron-up': (info === option.id)}"></i>

@@ -45,23 +45,23 @@
     vm.how = [
       {
         image : "/assets/images/how-image1",
-        heading : "1. Choose your subscription",
-        text : "<b>Order</b> a box or pack for your child to receive HelloBible every month.",
-        button : "Shop Now",
+        heading : "1. Pick your subscription!",
+        text : "<b>Order</b> a charming box of quality activities each month. Kids love to receive mail.",
+        button : "Order Now",
         link : "#pricing"
       },
       {
         image : "/assets/images/how-image2",
-        heading : "2. Read, create, share & pray",
-        text : "<b>Explore</b> a great Bible story. Get a book, crafts and ideas to share & pray.",
+        heading : "2. Read, create, share & pray!",
+        text : "<b>Dig deeper</b> into a Bible story with reading, keepsake crafts and ideas for discussion and prayer.",
         button : "Explore Past Boxes",
         link : "/blog/categories/past-packs-boxes"
       },
       {
         image : "/assets/images/how-image3",
-        heading : "3. Give God's love",
-        text : "<b>We donate</b> to The Kilgoris Project that supports children in rural Kenya.",
-        button : "Learn about Kilgoris",
+        heading : "3. Spread God's love!",
+        text : "<b>We donate</b> to The Kilgoris Project. Learn about the importance of giving.",
+        button : "The Kilgoris Project",
         link : "/blog/categories/kilgoris"
       }
     ];
@@ -91,9 +91,9 @@
         ],
         title : "HelloBible Basic Pack",
         text : '<p><b>Fun activities to explore a Bible Story each month</b>.</p>' +
-							'<p><span class="text-read">Read</span> an age-appropriate Bible Story Book and <span class="text-create">create</span> a wonderful craft to build upon the Bible story. ' +
-								'<span class="text-pray">Share and pray</span> together.' +
-							'</p>'
+                            '<p><span class="text-read">Read</span> an age-appropriate Bible Story Book and <span class="text-create">create</span> a wonderful craft to build upon the Bible story. ' +
+                                '<span class="text-pray">Share and pray</span> together.' +
+                            '</p>'
       }, {
         id : "premium",
         name : "Premium Box",
@@ -119,9 +119,9 @@
         ],
         title : "HelloBible Premium Box",
         text : '<p><b>A fun curriculum for the entire month</b>.</p>' +
-							'<p><span class="text-read">Read</span> an age-appropriate Bible Story Book and <span class="text-create">create</span> two wonderful crafts to deepen the understanding of the Bible story. Enjoy high quality family time. <span class="text-pray">Share and pray</span> ' +
+                            '<p><span class="text-read">Read</span> an age-appropriate Bible Story Book and <span class="text-create">create</span> two wonderful crafts to deepen the understanding of the Bible story. Enjoy high quality family time. <span class="text-pray">Share and pray</span> ' +
               'together.' +
-							'</p>'
+                            '</p>'
       }
     ];
 

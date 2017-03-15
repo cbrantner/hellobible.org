@@ -1,181 +1,183 @@
 <acme-navbar></acme-navbar>
 
 <script type="text/ng-template" id="signupModal.html">
-	<div class="modal-header">
-		<button type="button" class="close" ng-click="vm.cancel()">&times;</button>
-		<img src="/assets/images/ogp.png" />
-	</div>
-	<div class="modal-body" id="modal-body">
-		<h1>Sign up to our newsletter.</h1>
-		<p>You will get exlusive <b>offers</b> and <b>updates</b> on HelloBible.</p>
-		<acme-subscribe></acme-subscribe>
-	</div>
+    <div class="modal-header">
+        <button type="button" class="close" ng-click="vm.cancel()">&times;</button>
+        <img src="/assets/images/ogp.png" />
+    </div>
+    <div class="modal-body" id="modal-body">
+        <h1>Sign up to our newsletter.</h1>
+        <p>You will get exlusive <b>offers</b> and <b>updates</b> on HelloBible.</p>
+        <acme-subscribe></acme-subscribe>
+    </div>
 </script>
 
 <script type="text/ng-template" id="videoModal.html">
-	<div class="modal-header">
-		<button type="button" class="close" ng-click="vm.cancel()">&times;</button>
-	</div>
-	<div class="modal-body">
+    <div class="modal-header">
+        <button type="button" class="close" ng-click="vm.cancel()">&times;</button>
+    </div>
+    <div class="modal-body">
 
-		<iframe width="100%" height="350" src="https://www.youtube.com/embed/5bGF5PBkMF8?rel=0&autoplay=1" frameborder="0" allowfullscreen></iframe>
-	</div>
+        <iframe width="100%" height="350" src="https://www.youtube.com/embed/5bGF5PBkMF8?rel=0&autoplay=1" frameborder="0" allowfullscreen></iframe>
+    </div>
 </script>
 
 
 <div class="notificationBar" ng-show="showNotificationBar" ng-controller="MainController as mainCtrl">
-	<a ng-click="showNotificationBar = false"><i class="close glyphicon glyphicon-remove"></i></a>
-	<div class="text">
-		<a ng-click="mainCtrl.signup('notificationBar')">Sign up</a> to our newsletter to get exclusive offers &amp; updates.
-	</div>
+    <a ng-click="showNotificationBar = false"><i class="close glyphicon glyphicon-remove"></i></a>
+    <div class="text">
+        <a ng-click="mainCtrl.signup('notificationBar')">Sign up</a> to our newsletter to get exclusive offers &amp; updates.
+    </div>
 </div>
 
 <div class="topheader hidden-xs" ng-controller="MainController as headerCtrl">
-	<div class="container">
-		<div class="row margin-t-120">
-			<div class="col-sm-6 col-sm-offset-6">
-				<h1>Read, Create, Share &amp; Pray</h1>
-				<h2>Exploring the Bible through a wonderful curriculum.</h2>
-				<a ui-sref="home({'#' : 'pricing'})" du-smooth-scroll><button type="button" class="btn btn-lg btn-primary">Get HelloBible Each Month</button></a>
-				<a ng-click="headerCtrl.showVideo()"><button type="button" class="btn btn-lg btn-secondary">Watch Video</button></a>
-				<h3>Designed by moms and teachers for kids ages 4+.</h3>
-			</div>
-		</div>
-	</div>
-	<a ui-sref="home({ '#' : 'information'})" du-smooth-scroll>
-		<div class="arrow-down animated bounce"></div>
-	</a>
+    <div class="container">
+        <div class="row margin-t-90">
+            <div class="col-sm-7">
+                <h1>Spark Faith in Your Child</h1>
+                <h2>Get a Monthly Bible storybook, Engaging Crafts, and Ideas to Share &amp; Pray</h2>
+                <h3>Designed by moms for kids ages 4+</h3>
+
+                <a ui-sref="home({'#' : 'pricing'})" du-smooth-scroll><button type="button" class="btn btn-lg btn-primary">Spark Faith Now</button></a>
+                <a ng-click="headerCtrl.showVideo()"><button type="button" class="btn btn-lg btn-secondary">Watch Movie</button></a>
+            </div>
+        </div>
+    </div>
+    <a ui-sref="home({ '#' : 'information'})" du-smooth-scroll>
+        <div class="arrow-down animated bounce"></div>
+    </a>
 </div>
 
 <div class="topheader-mobile visible-xs-block" ng-controller="MainController as headerMobileCtrl">
-	<div class="container">
-		<div class="row margin-t-40"">
-			<img src="/assets/images/headerbg-970.jpg" />
-		</div>
-		<div class="row">
-			<h1>Read, Create, Share &amp; Pray</h1>
-			<h2>Exploring the Bible through a wonderful curriculum.</h2>
-			<div class="margin-t-30 subscribe-mobile">
-				<a ui-sref="home({'#' : 'pricing'})" du-smooth-scroll><button type="button" class="btn btn-lg btn-primary">Get HelloBible</button></a>
-				<a ng-click="headerMobileCtrl.showVideo()"><button type="button" class="btn btn-lg btn-secondary">Watch Video</button></a>
-			</div>
-			<h3>Designed by moms and teachers for kids ages 4+.</h3>
-		</div>
-	</div>
+    <div class="container">
+        <div class="row margin-t-40">
+            <img src="/assets/images/headerbg-970.jpg" />
+        </div>
+        <div class="row">
+            <h1>Spark Faith in Your Child</h1>
+            <h2>Get a Monthly Bible storybook, Engaging Crafts, and Ideas to Share &amp; Pray</h2>
+            <h3>Designed by moms for kids ages 4+</h3>
+
+            <div class="margin-t-30 subscribe-mobile">
+                <a ui-sref="home({'#' : 'pricing'})" du-smooth-scroll><button type="button" class="btn btn-lg btn-primary">Spark Faith Now</button></a>
+                <a ng-click="headerMobileCtrl.showVideo()"><button type="button" class="btn btn-lg btn-secondary">Watch Movie</button></a>
+            </div>
+        </div>
+    </div>
 </div>
 
 <!-- About -->
 <div id="how" ng-controller="MainController as aboutCtrl">
-	<h1 class="text-center text-uppercase">How It Works</h1>
+    <h1 class="text-center text-uppercase">How It Works</h1>
 
-	<div class="row hidden-xs">
-		<div class="col-md-8 col-md-offset-2">
-			<div class="col-md-4 col-sm-4" ng-repeat="item in aboutCtrl.how">
-				<div class="thumbnail">
-					<span ng-switch on="item.link.charAt(0)">
-						<a ng-switch-when="#" ui-sref="home({'#' : '{{item.link.substring(1)}}'})" ><img ng-src="{{item.image}}.jpg" /></a>
-						<a ng-switch-default href="{{item.link}}"><img ng-src="{{item.image}}.jpg" /></a>
-					</span>
+    <div class="row hidden-xs">
+        <div class="col-md-8 col-md-offset-2">
+            <div class="col-md-4 col-sm-4" ng-repeat="item in aboutCtrl.how">
+                <div class="thumbnail">
+                    <span ng-switch on="item.link.charAt(0)">
+                        <a ng-switch-when="#" ui-sref="home({'#' : '{{item.link.substring(1)}}'})" ><img ng-src="{{item.image}}.jpg" /></a>
+                        <a ng-switch-default href="{{item.link}}"><img ng-src="{{item.image}}.jpg" /></a>
+                    </span>
 
-					<div class="caption">
-						<h2>{{item.heading}}</h2>
-						<p ng-bind-html="item.text"></p>
-						<span ng-switch on="item.link.charAt(0)">
-							<p ng-switch-when="#"><a ui-sref="home({'#' : '{{item.link.substring(1)}}'})" class="btn btn-primary">{{item.button}}</a></p>
-							<p ng-switch-default><a href="{{item.link}}" class="btn btn-primary">{{item.button}}</a></p>
-						</span>
-						<p>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
+                    <div class="caption">
+                        <p ng-bind-html="item.text"></p>
+                        <span ng-switch on="item.link.charAt(0)">
+                            <p ng-switch-when="#"><a ui-sref="home({'#' : '{{item.link.substring(1)}}'})" class="btn btn-primary">{{item.button}}</a></p>
+                            <p ng-switch-default><a href="{{item.link}}" class="btn btn-primary">{{item.button}}</a></p>
+                        </span>
+                        <p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
-	<div class="media visible-xs-block"  ng-repeat="item in aboutCtrl.how">
-		<img class="pull-left media-object" ng-src="{{item.image}}-s.jpg" >
-		<div class="media-body">
-			<p ng-bind-html="item.text"></p>
-			<span ng-switch on="item.link.charAt(0)">
-				<p ng-switch-when="#"><a ui-sref="home({'#' : '{{item.link.substring(1)}}'})" class="btn btn-primary">{{item.button}}</a></p>
-				<p ng-switch-default><a href="{{item.link}}" class="btn btn-primary">{{item.button}}</a></p>
-			</span>
-		</div>
-	</div>
+    <div class="media visible-xs-block"  ng-repeat="item in aboutCtrl.how">
+        <img class="pull-left media-object" ng-src="{{item.image}}-s.jpg" >
+        <div class="media-body">
+            <p ng-bind-html="item.text"></p>
+            <span ng-switch on="item.link.charAt(0)">
+                <p ng-switch-when="#"><a ui-sref="home({'#' : '{{item.link.substring(1)}}'})" class="btn btn-primary">{{item.button}}</a></p>
+                <p ng-switch-default><a href="{{item.link}}" class="btn btn-primary">{{item.button}}</a></p>
+            </span>
+        </div>
+    </div>
 </div>
 <!--About End -->
 
 
 <div id="information" ng-controller="MainController as informationCtrl">
-	<div class="container">
-		<h1 class="text-center text-uppercase">Our Subscriptions</h1>
-		<div class="row info-mobile visible-xs-block">
-			<uib-accordion close-others="true" ng-repeat="option in informationCtrl.options">
-				<div uib-accordion-group is-open="status.open" class="panel-default">
-					<uib-accordion-heading>
-						<i class="accordion-heading-arrow pull-right fa" ng-class="{'fa-chevron-down': !status.open, 'fa-chevron-up': status.open}"></i>
-						<img class="accordion-heading-title" ng-src="{{option.titleImage}}" />
-						<span class="accordion-heading-subtitle">{{option.name}}</span>
-					</uib-accordion-heading>
-					<div class="media">
-						<div class="col-md-8" ng-if="option">
-							<slick settings="informationCtrl.slickConfig">
-								<div class="item" ng-repeat="c in option.carousel">
-									<a href="/assets/images/info/{{c.image}}-l.jpg" data-lightbox="{{option.id}}" data-title="{{c.title}}">
-										<img ng-src="/assets/images/info/{{c.image}}-l.jpg" />
-									</a>
-								</div>
-							</slick>
-						</div>
-						<div class="col-md-4">
-							<h1>{{option.title}}</h1>
-							<span ng-bind-html="option.text"></span>
-							<p>Learn more in our <a ng-click="informationCtrl.showVideo()">Video</a>.</p>
-							<div class="buttons">
-								<a ui-sref="home({'#' : 'pricing'})" du-smooth-scroll><button type="button" class="btn btn-lg btn-primary" aria-haspopup="true" aria-expanded="false">Get {{option.name}} Now</button></a>
-							</div>
-						</div>
-					</div>
-				</div>
-			</uib-accordion>
-		</div>
-		<div class="row hidden-xs">
-			<div ng-repeat="option in informationCtrl.options"  class="col-sm-5 col-md-4" ng-class="{'col-md-offset-2 col-sm-offset-1': $first}">
-				<a ng-click="informationCtrl.showInfo(option.id)">
-				  <div class="starburst example" id="curriculum" ng-show="option.ribbon"><span>{{option.ribbon}}</span></div>
-					<div class="thumbnail"  ng-class="{'active' : (option.id === informationCtrl.info)}">
-						<img ng-src="{{option.titleImage}}" />
-						<div class="caption">
-							<div class="captionHighlight">
-								<p>Peek Inside {{option.name}}</p>
-								<i class="fa fa-2x" ng-class="{'fa-chevron-down': (informationCtrl.info !== option.id), 'fa-chevron-up': (informationCtrl.info === option.id)}"></i>
-							</div>
-						</div>
-					</div>
-				</a>
-			</div>
-		</div>
-		<div class="panel panel-default col-md-12 info-panel" ng-repeat="option in informationCtrl.options" ng-show="informationCtrl.info === option.id">
-			<div class="panel-body">
-				<div class="col-md-8" ng-if="informationCtrl.info === option.id">
-					<slick settings="informationCtrl.slickConfig">
-						<div class="item" ng-repeat="c in option.carousel track by $index">
-							<a href="/assets/images/info/{{c.image}}-l.jpg" data-lightbox="{{option.id}}" data-title="{{c.title}}">
-								<img ng-src="/assets/images/info/{{c.image}}-l.jpg" />
-							</a>
-						</div>
-					</slick>
-				</div>
-				<div class="col-md-4">
-					<h1>{{option.title}}</h1>
-					<span ng-bind-html="option.text"></span>
-					<p>Learn more in our <a ng-click="informationCtrl.showVideo()">Video</a>.</p>
-					<div class="buttons">
-						<a ui-sref="home({'#' : 'pricing'})" ng-click="showInfo(option.id)" du-smooth-scroll><button type="button" class="btn btn-lg btn-primary" aria-haspopup="true" aria-expanded="false">Get {{option.name}}</button></a>
-					</div>
-				</div>		
-			</div>
-		</div>
-	</div>
+    <div class="container">
+        <h1 class="text-center text-uppercase">Our Subscriptions</h1>
+        <div class="row info-mobile visible-xs-block">
+            <uib-accordion close-others="true" ng-repeat="option in informationCtrl.options">
+                <div uib-accordion-group is-open="status.open" class="panel-default">
+                    <uib-accordion-heading>
+                        <i class="accordion-heading-arrow pull-right fa" ng-class="{'fa-chevron-down': !status.open, 'fa-chevron-up': status.open}"></i>
+                        <img class="accordion-heading-title" ng-src="{{option.titleImage}}" />
+                        <span class="accordion-heading-subtitle">{{option.name}}</span>
+                    </uib-accordion-heading>
+                    <div class="media">
+                        <div class="col-md-8" ng-if="option">
+                            <slick settings="informationCtrl.slickConfig">
+                                <div class="item" ng-repeat="c in option.carousel">
+                                    <a href="/assets/images/info/{{c.image}}-l.jpg" data-lightbox="{{option.id}}" data-title="{{c.title}}">
+                                        <img ng-src="/assets/images/info/{{c.image}}-l.jpg" />
+                                    </a>
+                                </div>
+                            </slick>
+                        </div>
+                        <div class="col-md-4">
+                            <h1>{{option.title}}</h1>
+                            <span ng-bind-html="option.text"></span>
+                            <p>Learn more in our <a ng-click="informationCtrl.showVideo()">Video</a>.</p>
+                            <div class="buttons">
+                                <a ui-sref="home({'#' : 'pricing'})" du-smooth-scroll><button type="button" class="btn btn-lg btn-primary" aria-haspopup="true" aria-expanded="false">Order {{option.name}} Now</button></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </uib-accordion>
+        </div>
+        <div class="row hidden-xs">
+            <div ng-repeat="option in informationCtrl.options"  class="col-sm-5 col-md-4" ng-class="{'col-md-offset-2 col-sm-offset-1': $first}">
+                <a ng-click="informationCtrl.showInfo(option.id)">
+                  <div class="starburst example" id="curriculum" ng-show="option.ribbon"><span>{{option.ribbon}}</span></div>
+                    <div class="thumbnail"  ng-class="{'active' : (option.id === informationCtrl.info)}">
+                        <img ng-src="{{option.titleImage}}" />
+                        <div class="caption">
+                            <div class="captionHighlight">
+                                <p>Peek Inside {{option.name}}</p>
+                                <i class="fa fa-2x" ng-class="{'fa-chevron-down': (informationCtrl.info !== option.id), 'fa-chevron-up': (informationCtrl.info === option.id)}"></i>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="panel panel-default col-md-12 info-panel" ng-repeat="option in informationCtrl.options" ng-show="informationCtrl.info === option.id">
+            <div class="panel-body">
+                <div class="col-md-8" ng-if="informationCtrl.info === option.id">
+                    <slick settings="informationCtrl.slickConfig">
+                        <div class="item" ng-repeat="c in option.carousel track by $index">
+                            <a href="/assets/images/info/{{c.image}}-l.jpg" data-lightbox="{{option.id}}" data-title="{{c.title}}">
+                                <img ng-src="/assets/images/info/{{c.image}}-l.jpg" />
+                            </a>
+                        </div>
+                    </slick>
+                </div>
+                <div class="col-md-4">
+                    <h1>{{option.title}}</h1>
+                    <span ng-bind-html="option.text"></span>
+                    <!--<p>Learn more in our <a ng-click="informationCtrl.showVideo()">Video</a>.</p>-->
+                    <div class="buttons">
+                        <a ui-sref="home({'#' : 'pricing'})" ng-click="showInfo(option.id)" du-smooth-scroll><button type="button" class="btn btn-lg btn-primary" aria-haspopup="true" aria-expanded="false">Order {{option.name}}</button></a>
+                        <a ng-click="informationCtrl.showVideo()"><button type="button" class="btn btn-lg btn-secondary" aria-haspopup="true" aria-expanded="false">Watch Movie</button></a>
+                    </div>
+                </div>        
+            </div>
+        </div>
+    </div>
 </div>
 
 <acme-pricing></acme-pricing>
@@ -185,15 +187,15 @@
 <acme-testimonials></acme-testimonials>
 
 <div class="verse ">
-	<div class="container text-center ">
-		<div class="col-xs-4 col-md-2 "><img src="/assets/images/danny-bible-white.png " /></div>
-		<div class="col-xs-8 col-md-10 ">
-			<blockquote class="blockquote ">
-				"Let the little children come to me and do not hinder them, for to such belongs the kingdom of heaven. "
-				<cite>Matthew 19:14</cite>
-			</blockquote>
-		</div>
-	</div>
+    <div class="container text-center ">
+        <div class="col-xs-4 col-md-2 "><img src="/assets/images/danny-bible-white.png " /></div>
+        <div class="col-xs-8 col-md-10 ">
+            <blockquote class="blockquote ">
+                "Let the little children come to me and do not hinder them, for to such belongs the kingdom of heaven. "
+                <cite>Matthew 19:14</cite>
+            </blockquote>
+        </div>
+    </div>
 </div>
 
 <acme-footer></acme-footer>
