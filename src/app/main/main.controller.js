@@ -87,6 +87,10 @@
           {
             image : "testimonial",
             title : "What our customers say."
+          },
+          {
+            image : "easter_pack",
+            title : "Content of the Easter Pack."
           }
         ],
         title : "HelloBible Basic Pack",
@@ -115,6 +119,10 @@
           {
             image : "testimonial",
             title : "What our customers say."
+          },
+          {
+            image : "easter_premium",
+            title : "Content of the Easter Box."
           }
         ],
         title : "HelloBible Premium Box",

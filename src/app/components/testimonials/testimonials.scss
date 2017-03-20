@@ -1,6 +1,6 @@
 #testimonials {
   padding-bottom: 20px;
-	background: url(/assets/images/bg.png) repeat center center;
+    background: url(/assets/images/bg.png) repeat center center;
 
 }
 
@@ -19,31 +19,45 @@
 }
 
 #testimonials .media-object {
-	width : 80px;
+    width : 80px;
 }
 
 #testimonials .media {
-	margin-bottom: 20px;
+    margin-bottom: 20px;
 }
 
 .testimonial-group {
-	border: 1px solid $BBDarkGrey;
-	padding: 10px;
-	font-size: 12px;
-	-webkit-border-radius: 3px;
-	-moz-border-radius: 3px;
-	border-radius: 3px;
-	transition: all 0.5s ease;
-	background-color: white;
+    border: 1px solid $BBDarkGrey;
+    padding: 10px;
+    font-size: 12px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    transition: all 0.5s ease;
+    background-color: white;
 }
 
 .testimonial-group:hover {
-	border: 1px solid $BBDarkGrey;
-	padding: 10px;
-	font-size: 12px;
-	-webkit-border-radius: 3px;
-	-moz-border-radius: 3px;
-	border-radius: 3px;
-	background: #00a8d6;
-	color: white;
+    border: 1px solid $BBDarkGrey;
+    padding: 10px;
+    font-size: 12px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    background: #00a8d6;
+    color: white;
+}
+
+#press {
+  padding-bottom: 50px;
+}
+
+#press h1:after {
+  content: "";
+  display: block;
+  height: 4px;
+  width: 80px;
+  background: $BBBlue;
+  margin: 0 auto;
+  margin-top: 10px;
 }
