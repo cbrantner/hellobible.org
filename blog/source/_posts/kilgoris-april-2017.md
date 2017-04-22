@@ -1,5 +1,5 @@
 ---
-title: "The Kilgoris Schools"
+title: "Outside of School"
 categories: kilgoris
 date: 2017/04/22 14:00:00
 featured_image: /assets/images/blog/blog0422-1-small.jpg
