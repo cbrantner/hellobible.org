@@ -13,5 +13,6 @@ The bible explorers made a wonderful star garland. Every night they will remembe
 Having fun with this month family activity. On their long journey from Ur to Canaan, Abraham and his household slept in tents. The little explorers were invited to build their own tent and imagine about the life at that time.
 
 <img src="/assets/images/boxes/0417/abraham_content_premium.jpg"/>
+<img src="/assets/images/boxes/0417/abraham_content_2.jpg"/>
 
 He took him outside and said, “Now look toward the heavens, and count the stars, if you are able to count them.” And He said to him, “So shall your descendants be.” Gen 15:5
