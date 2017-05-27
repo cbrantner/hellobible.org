@@ -20,10 +20,9 @@
             answer: ["HelloBible is a monthly christian subscription for kids ages 5 and older. It is a fun way to explore the Bible as a family. Explore one Bible story each month through great activities. Read, create, share and pray together. All ideas, materials and instructions are included."]
           },
           {
-            title: "What is the difference between the HelloBible basic pack and the premium box?",
+            title: "What is included in my box?",
             answer: [
-              "The basic pack includes different activities to engage in the monthly Bible story. It comes with an age-appropriate Bible storybook, an awesome craft project and a parent guide with ideas to share and pray together.",
-              "The premium box is a full curriculum with weekly activities for the entire month. It includes a progress chart and a monthly memory Bible verse to collect. It comes with a great Bible storybook and two creative craft projects to dig deeper into the content of the Bible story. It also includes ideas to share and pray together, to nurture your child’s faith and to discover the Bible as a family."
+              "Our box is a full curriculum with weekly activities for the entire month. It includes a progress chart and a monthly memory Bible verse to collect. It comes with a great Bible storybook and two creative craft projects to dig deeper into the content of the Bible story. It also includes ideas to share and pray together, to nurture your child’s faith and to discover the Bible as a family."
             ]
           },
           {
@@ -41,7 +40,7 @@
           },
           {
             title: "What is The Kilgoris Project?",
-            answer: ["The Kilgoris Project educates and feeds the children of a Masaai village in southwest Kenya. They work Hand-in-Hand with local leaders and families to operate schools, provide daily food and clean water, and Foster economic development. We happend to get to know the founders of The Kilgoris Project. We love what they do and want to support their great work in Kenya. So we started an awesome partnership. For every HelloBible subscription purchased, we donate to this wonderful project. Every box/pack helps the children in Kenya. "]
+            answer: ["The Kilgoris Project educates and feeds the children of a Masaai village in southwest Kenya. They work Hand-in-Hand with local leaders and families to operate schools, provide daily food and clean water, and Foster economic development. We happend to get to know the founders of The Kilgoris Project. We love what they do and want to support their great work in Kenya. So we started an awesome partnership. For every HelloBible subscription purchased, we donate to this wonderful project. Every box helps the children in Kenya. "]
           },
           {
             title: "How can I support HelloBible?",
@@ -52,8 +51,8 @@
               ]
           },
           {
-            title: "Is there a sibling box or pack?",
-            answer : ["There is no sibling box or pack. Each months' content is designed for one child. However, you can read the storybook and do family activities together. Some families even have older siblings share with the younger ones."]
+            title: "Is there a sibling box?",
+            answer : ["There is no sibling box. Each months' content is designed for one child. However, you can read the storybook and do family activities together. Some families even have older siblings share with the younger ones."]
           }
         ]
       }, {
@@ -73,7 +72,7 @@
           },
           {
             title: "What happens at the end of my subscription?",
-            answer: ["Subscriptions will automatically renew at the end of the subscription period. That's great because you will never miss a pack or box! We will send you a reminder email one day before the automatic renewal. If you do not cancel after receiving the reminder email, it will renew for the same number of months as the term that was originally purchased."]
+            answer: ["Subscriptions will automatically renew at the end of the subscription period. That's great because you will never miss a box! We will send you a reminder email one day before the automatic renewal. If you do not cancel after receiving the reminder email, it will renew for the same number of months as the term that was originally purchased."]
           },
           {
             title: "How can I give HelloBible as a gift?",
@@ -84,7 +83,7 @@
             answer: ["All our subscriptions come addressed to the child. So the gift giver will be a surprise."]
           },          {
             title: "Do you accept returns?",
-            answer: ["Our HelloBible boxes and packs are not returnable. However, if any materials are missing or damaged please contact us at info@hellobible.org. We will be happy to replace those."]
+            answer: ["Our HelloBible boxes are not returnable. However, if any materials are missing or damaged please contact us at info@hellobible.org. We will be happy to replace those."]
           },
           {
             title: "What if there is a problem with my order?",
@@ -105,11 +104,11 @@
           },
           {
             title: "How much does shipping cost?",
-            answer: ["Shipping is $5 per box and $3 per pack within the United States. For example, for the 6 month premium box subscription term, $30 shipping will be added at checkout. For the 6 month basic pack subscription term, $18 will be added at checkout."]
+            answer: ["Shipping is $5 per box within the United States. For example, for the 6 month box subscription term, $30 shipping will be added at checkout."]
           },
           {
             title: "When does HelloBible ship?",
-            answer: ["If you want to receive a HelloBible shipment the same month, you need to subscribe before the 10th of that month. Your first box/pack will then ship between the 15th and the 19th of the same month. If you sign up after the 10th, your box/pack will ship between the 15th and the 19th of the following month. For example, if you order on January 9th, your first HelloBible box/pack will ship between the 15th and the 19th of January. If you order on January 11th, your first HelloBible box/pack will be shipped between the 15th and the 19th of February."]
+            answer: ["If you want to receive a HelloBible shipment the same month, you need to subscribe before the 10th of that month. Your first box will then ship between the 15th and the 19th of the same month. If you sign up after the 10th, your box will ship between the 15th and the 19th of the following month. For example, if you order on January 9th, your first HelloBible box will ship between the 15th and the 19th of January. If you order on January 11th, your first HelloBible box will be shipped between the 15th and the 19th of February."]
           }
         ]
       }, {

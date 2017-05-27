@@ -1,6 +1,6 @@
 ---
 title: "CHRISTMAS"
-categories: 'past packs & boxes'
+categories: 'past boxes'
 date: 2016/12/10 20:00:00
 featured_image: /assets/images/boxes/1216/DSC09980.jpg
 ---
@@ -14,12 +14,12 @@ Our journey lead us to a very important Bible story in the New Testament: The st
 
 <div class="row">
   <div class="col-xs-6 col-md-4">
-  	<img src="/assets/images/boxes/1216/IMG_0367.jpg"/>
+      <img src="/assets/images/boxes/1216/IMG_0367.jpg"/>
   </div>
   <div class="col-xs-6 col-md-4">
-  	<img src="/assets/images/boxes/1216/IMG_0366.jpg"/>
+      <img src="/assets/images/boxes/1216/IMG_0366.jpg"/>
   </div>
   <div class="col-xs-6 col-md-4">
-  	<img src="/assets/images/boxes/1216/IMG_0350.jpg"/>
+      <img src="/assets/images/boxes/1216/IMG_0350.jpg"/>
   </div>
 </div>

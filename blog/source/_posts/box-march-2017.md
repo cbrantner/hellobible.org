@@ -1,6 +1,6 @@
 ---
 title: "EASTER"
-categories: 'past packs & boxes'
+categories: 'past boxes'
 date: 2017/03/19 20:00:00
 featured_image: /assets/images/boxes/0317/easter_content_premium_small.png
 ---
@@ -16,12 +16,12 @@ You can also watch the <a href="https://youtu.be/MBwRg_IETBg">unboxing video</a>
 
 <div class="row">
   <div class="col-xs-6 col-md-4">
-  	<img src="/assets/images/boxes/0317/craft.jpg"/>
+      <img src="/assets/images/boxes/0317/craft.jpg"/>
   </div>
   <div class="col-xs-6 col-md-4">
-  	<img src="/assets/images/boxes/0317/cross.png"/>
+      <img src="/assets/images/boxes/0317/cross.png"/>
   </div>
   <div class="col-xs-6 col-md-4">
-  	<img src="/assets/images/boxes/0317/sprout.jpg"/>
+      <img src="/assets/images/boxes/0317/sprout.jpg"/>
   </div>
 </div>

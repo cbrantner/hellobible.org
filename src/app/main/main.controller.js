@@ -55,7 +55,7 @@
         heading : "2. Read, create, share & pray!",
         text : "<b>Dig deeper</b> into a Bible story with reading, keepsake crafts and ideas for discussion and prayer.",
         button : "Explore Past Boxes",
-        link : "/blog/categories/past-packs-boxes"
+        link : "/blog/categories/past-boxes"
       },
       {
         image : "/assets/images/how-image3",
@@ -68,37 +68,6 @@
 
     vm.options = [
       {
-        id : "envelope",
-        name : "Basic Pack",
-        titleImage : "/assets/images/info/envelope.jpg",
-        carousel : [
-          {
-            image : "envelope-content",
-            title : "Crafts, instructions and ideas to share &amp; pray."
-          },
-          {
-            image : "read",
-            title : "Read a wonderful Bible story together."
-          },
-          {
-            image : "play",
-            title : "Play an awesome matching game. Help Noah to bring two of all the animals into the Ark."
-          },
-          {
-            image : "testimonial",
-            title : "What our customers say."
-          },
-          {
-            image : "easter_pack",
-            title : "Content of the Easter Pack."
-          }
-        ],
-        title : "HelloBible Basic Pack",
-        text : '<p><b>Fun activities to explore a Bible Story each month</b>.</p>' +
-                            '<p><span class="text-read">Read</span> an age-appropriate Bible Story Book and <span class="text-create">create</span> a wonderful craft to build upon the Bible story. ' +
-                                '<span class="text-pray">Share and pray</span> together.' +
-                            '</p>'
-      }, {
         id : "premium",
         name : "Premium Box",
         titleImage : "/assets/images/info/premium.jpg",
@@ -126,8 +95,7 @@
           }
         ],
         title : "HelloBible Premium Box",
-        text : '<p><b>A fun curriculum for the entire month</b>.</p>' +
-                            '<p><span class="text-read">Read</span> an age-appropriate Bible Story Book and <span class="text-create">create</span> two wonderful crafts to deepen the understanding of the Bible story. Enjoy high quality family time. <span class="text-pray">Share and pray</span> ' +
+        text : '<p><span class="text-read">Read</span> an age-appropriate Bible Story Book and <span class="text-create">create</span> two wonderful crafts to deepen the understanding of the Bible story. Enjoy high quality family time. <span class="text-pray">Share and pray</span> ' +
               'together.' +
                             '</p>'
       }
