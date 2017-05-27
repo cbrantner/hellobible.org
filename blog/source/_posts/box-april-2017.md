@@ -1,6 +1,6 @@
 ---
 title: "ABRAHAM"
-categories: 'past packs & boxes'
+categories: 'past boxes'
 date: 2017/04/19 20:00:00
 featured_image: /assets/images/boxes/0417/abraham_content_premium_small.jpg
 ---

@@ -86,80 +86,7 @@
 
       $scope.checkBoxValue = "default";
 
-      $scope.info = undefined;
-      $scope.infoObject = undefined;
-
-      $scope.showInfo = function (name) {
-        if ($scope.info == name) {
-          $scope.info = undefined;
-          $scope.infoObject = undefined;
-        } else {
-          $scope.info = name;
-          $scope.infoObject = $scope.options.find(function (x) { return x.id == name; });
-          if (hbTracking) {
-            // track google analytics event
-            Analytics.trackEvent('information', 'showInfo', name);
-          }
-        }
-      }
-
-      $scope.options = [
-        {
-          id : "envelope",
-          name: "Basic Pack",
-          titleImage : "basic-pack.png",
-          subtitle: "Each pack provides education for children in Kenya.",
-          plans: [
-            {
-              name: "Monthly",
-              price: "$19.90/pack",
-              donation: "$1",
-              productUrl: "https://hellobible.cratejoy.com/subscribe/622412802_hellobible-pack/622412798_month-to-month",
-              bullets: [
-                {
-                  text: "$19.90/pack + $3/pack shipping",
-                  logo: "tag glyphicon glyphicon-tag"
-                },
-                {
-                  text: "$1/pack go to children in Kenya",
-                  logo: "heart fa fa-heart"
-                }
-              ]
-            },
-            {
-              name: "6 Months",
-              price: "$18.90/pack",
-              donation: "$6",
-              productUrl: "https://hellobible.cratejoy.com/subscribe/622412802_hellobible-pack/622412800_6-month-prepay",
-              bullets: [
-                {
-                  text: "$114 + $3/pack shipping",
-                  logo: "tag glyphicon glyphicon-tag"
-                },
-                {
-                  text: "$6 go to children in Kenya",
-                  logo: "heart fa fa-heart"
-                }
-              ]
-            },
-            {
-              name: "12 Months",
-              price: "$16.90/pack",
-              donation: "$12",
-              productUrl: "https://hellobible.cratejoy.com/subscribe/622412802_hellobible-pack/622412801_12-month-prepay",
-              bullets: [
-                {
-                  text: "$203 + $3/pack shipping",
-                  logo: "tag glyphicon glyphicon-tag"
-                },
-                {
-                  text: "$12 go to children in Kenya",
-                  logo: "heart fa fa-heart"
-                }
-              ]
-            }
-          ]
-        },
+      $scope.option =
         {
           id : "premium",
           name: "Premium Box",
@@ -216,8 +143,7 @@
               ]
             }
           ]
-        }
-      ]
+        };
     }
   }
 })();

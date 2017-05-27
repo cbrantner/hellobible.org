@@ -108,70 +108,24 @@
 
 <div id="information" ng-controller="MainController as informationCtrl">
     <div class="container">
-        <h1 class="text-center text-uppercase">Our Subscriptions</h1>
-        <div class="row info-mobile visible-xs-block">
-            <uib-accordion close-others="true" ng-repeat="option in informationCtrl.options">
-                <div uib-accordion-group is-open="status.open" class="panel-default">
-                    <uib-accordion-heading>
-                        <i class="accordion-heading-arrow pull-right fa" ng-class="{'fa-chevron-down': !status.open, 'fa-chevron-up': status.open}"></i>
-                        <img class="accordion-heading-title" ng-src="{{option.titleImage}}" />
-                        <span class="accordion-heading-subtitle">{{option.name}}</span>
-                    </uib-accordion-heading>
-                    <div class="media">
-                        <div class="col-md-8" ng-if="option">
-                            <slick settings="informationCtrl.slickConfig">
-                                <div class="item" ng-repeat="c in option.carousel">
-                                    <a href="/assets/images/info/{{c.image}}-l.jpg" data-lightbox="{{option.id}}" data-title="{{c.title}}">
-                                        <img ng-src="/assets/images/info/{{c.image}}-l.jpg" />
-                                    </a>
-                                </div>
-                            </slick>
-                        </div>
-                        <div class="col-md-4">
-                            <h1>{{option.title}}</h1>
-                            <span ng-bind-html="option.text"></span>
-                            <p>Learn more in our <a ng-click="informationCtrl.showVideo()">Video</a>.</p>
-                            <div class="buttons">
-                                <a ui-sref="home({'#' : 'pricing'})" du-smooth-scroll><button type="button" class="btn btn-lg btn-primary" aria-haspopup="true" aria-expanded="false">Order {{option.name}} Now</button></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </uib-accordion>
-        </div>
-        <div class="row hidden-xs">
-            <div ng-repeat="option in informationCtrl.options" class="col-sm-5 col-md-4" ng-class="{'col-md-offset-2 col-sm-offset-1': $first}">
-                <a ng-click="informationCtrl.showInfo(option.id)">
-                    <div class="starburst example" id="curriculum" ng-show="option.ribbon"><span>{{option.ribbon}}</span></div>
-                    <div class="thumbnail" ng-class="{'active' : (option.id === informationCtrl.info)}">
-                        <img ng-src="{{option.titleImage}}" />
-                        <div class="caption">
-                            <div class="captionHighlight">
-                                <p>Peek Inside {{option.name}}</p>
-                                <i class="fa fa-2x" ng-class="{'fa-chevron-down': (informationCtrl.info !== option.id), 'fa-chevron-up': (informationCtrl.info === option.id)}"></i>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-            </div>
-        </div>
-        <div class="panel panel-default col-md-12 info-panel" ng-repeat="option in informationCtrl.options" ng-show="informationCtrl.info === option.id">
+        <h1 class="text-center text-uppercase">Peek Inside the Box</h1>
+        <div class="panel panel-default col-md-12 info-panel">
             <div class="panel-body">
-                <div class="col-md-8" ng-if="informationCtrl.info === option.id">
+                <div class="col-md-8">
                     <slick settings="informationCtrl.slickConfig">
-                        <div class="item" ng-repeat="c in option.carousel track by $index">
-                            <a href="/assets/images/info/{{c.image}}-l.jpg" data-lightbox="{{option.id}}" data-title="{{c.title}}">
+                        <div class="item" ng-repeat="c in informationCtrl.options[0].carousel track by $index">
+                            <a href="/assets/images/info/{{c.image}}-l.jpg" data-lightbox="{{informationCtrl.options[0].id}}" data-title="{{c.title}}">
                                 <img ng-src="/assets/images/info/{{c.image}}-l.jpg" />
                             </a>
                         </div>
                     </slick>
                 </div>
                 <div class="col-md-4">
-                    <h1>{{option.title}}</h1>
-                    <span ng-bind-html="option.text"></span>
-                    <!--<p>Learn more in our <a ng-click="informationCtrl.showVideo()">Video</a>.</p>-->
+                    <h1>A fun curriculum for the entire month</h1>
+                    <span ng-bind-html="informationCtrl.options[0].text"></span>
+                    <p>Peek into our  <a href="/blog/categories/past-boxes">past boxes</a>.</p>
                     <div class="buttons">
-                        <a ui-sref="home({'#' : 'pricing'})" ng-click="showInfo(option.id)" du-smooth-scroll><button type="button" class="btn btn-lg btn-primary" aria-haspopup="true" aria-expanded="false">Order {{option.name}}</button></a>
+                        <a ui-sref="home({'#' : 'pricing'})" ng-click="showInfo(informationCtrl.options[0].id)" du-smooth-scroll><button type="button" class="btn btn-lg btn-primary" aria-haspopup="true" aria-expanded="false">Order Now</button></a>
                         <a ng-click="informationCtrl.showVideo()"><button type="button" class="btn btn-lg btn-secondary" aria-haspopup="true" aria-expanded="false">Watch Movie</button></a>
                     </div>
                 </div>
@@ -179,6 +133,11 @@
         </div>
     </div>
 </div>
+
+<acme-pricing></acme-pricing>
+
+<acme-social></acme-social>
+
 
 <div id="reviews" class="row">
     <h1 class="text-center text-uppercase">What Others Say</h1>
@@ -216,9 +175,7 @@
     </div>
 </div>
 
-<acme-pricing></acme-pricing>
 
-<acme-social></acme-social>
 
 <acme-testimonials></acme-testimonials>
 

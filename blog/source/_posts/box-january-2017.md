@@ -1,6 +1,6 @@
 ---
 title: "CREATION"
-categories: 'past packs & boxes'
+categories: 'past boxes'
 date: 2017/01/10 20:00:00
 featured_image: /assets/images/boxes/0117/DSC09396.jpg
 ---
@@ -14,9 +14,9 @@ We started our journey at the very beginning of the Bible in the book of Genesis
 
 <div class="row">
   <div class="col-xs-6 col-md-6">
-  	<img src="/assets/images/boxes/0117/DSC08712.jpg"/>
+      <img src="/assets/images/boxes/0117/DSC08712.jpg"/>
   </div>
   <div class="col-xs-6 col-md-6">
-  	<img src="/assets/images/boxes/0117/DSC00777.jpg"/>
+      <img src="/assets/images/boxes/0117/DSC00777.jpg"/>
   </div>
 </div>

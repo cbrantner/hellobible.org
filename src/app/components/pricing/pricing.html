@@ -1,43 +1,12 @@
 <div id="pricing">
   <div class="container">
     <h1 class="text-center text-uppercase">Order Now</h1>
-    <div class="row info-mobile visible-xs-block">
-      <uib-accordion close-others="true" ng-repeat="option in options">
-        <div uib-accordion-group is-open="status.open">
-          <uib-accordion-heading>
-            <i class="accordion-heading-arrow pull-right fa" ng-class="{'fa-chevron-down': !status.open, 'fa-chevron-up': status.open}"></i>
-            <img class="accordion-heading-title" ng-src="/assets/images/pricing/{{option.titleImage}}" />
-            <span class="accordion-heading-subtitle">{{option.name}}</span>
-          </uib-accordion-heading>
-          <div class="list-group">
-            <a href="{{plan.productUrl}}" class="list-group-item" ng-repeat="plan in option.plans">
-              <button type="button" class="btn btn-md btn-primary pull-right" aria-haspopup="true" aria-expanded="false">Add to Cart</button>
-              <h4 class="list-group-item-heading">{{plan.name}}</h4>
-              <p class="list-group-item-text price">{{plan.price}} + <span class="fa fa-truck fa-flip-horizontal"></span></p>
-              <p class="list-group-item-text" ng-repeat="item in plan.bullets"><span class="fa {{item.logo}}"></span> {{item.text}}</p>
-            </a>
-          </div>
-        </div>
-      </uib-accordion>
+    <div class="row">
+    <h2><img ng-src="/assets/images/pricing/{{option.titleImage}}" /></h2>
     </div>
-    <div class="row hidden-xs">
-      <div ng-repeat="option in options" class="col-sm-5 col-md-4" ng-class="{'col-md-offset-2 col-sm-offset-1': $first}">
-        <a ng-click="showInfo(option.id)">
-          <div class="thumbnail" ng-class="{'active' : (option.id === info)}">
-            <img ng-src="/assets/images/pricing/{{option.titleImage}}" />
-            <div class="caption">
-              <button type="button" class="btn btn-lg btn-primary">Order {{option.name}} Now</button>
-            </div>
-            <div class="captionHighlight">
-              <i class="fa fa-2x" ng-class="{'fa-chevron-down': (info !== option.id), 'fa-chevron-up': (info === option.id)}"></i>
-            </div>
-          </div>
-        </a>
-      </div>
-    </div>
-    <div class="row hidden-xs">
-      <h1 ng-show="info">{{infoObject.name}}</h1>
-      <div class="col-sm-4 col-md-4" ng-repeat="plan in infoObject.plans">
+
+    <div class="row">
+      <div class="col-sm-4 col-md-4" ng-repeat="plan in option.plans">
         <div class="panel panel-default">
           <div class="panel-heading">
             <h1>{{plan.name}}</h1>
