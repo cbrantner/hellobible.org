@@ -45,24 +45,21 @@
     vm.how = [
       {
         image : "/assets/images/how-image1",
-        heading : "1. Pick your subscription!",
-        text : "<b>Order</b> a charming box of quality activities each month. Kids love to receive mail.",
-        button : "Order Now",
+        text : "<b>Choose your subscription</b> and pick the number of kids.",
+        button : "Try It Now",
         link : "#pricing"
       },
       {
         image : "/assets/images/how-image2",
-        heading : "2. Read, create, share & pray!",
-        text : "<b>Dig deeper</b> into a Bible story with reading, keepsake crafts and ideas for discussion and prayer.",
+        text : "<b>Receive a box</b> every month and find creative, fun, and hands-on Bible lessons.",
         button : "Explore Past Boxes",
         link : "/blog/categories/past-boxes"
       },
       {
         image : "/assets/images/how-image3",
-        heading : "3. Spread God's love!",
-        text : "<b>We donate</b> to The Kilgoris Project. Learn about the importance of giving.",
-        button : "The Kilgoris Project",
-        link : "/blog/categories/kilgoris"
+        text : "<b>Start your journey</b> in Sunday school, homeschool, or within your Family.",
+        button : "What Others Say",
+        link : "#reviews"
       }
     ];
 
