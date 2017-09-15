@@ -179,52 +179,7 @@
     color: $BBDarkBlue;
   }
 
-  .starburst {
-    font: bold 15px 'Open Sans', Arial, sans-serif;
-    background: $BBBlue;
-    width: 5.5em;
-    height: 5.5em;
-    text-align: center;
-    color: #fff;
-  }
-
-  .starburst,
-  .starburst span {
-    display: box;
-  }
-
-  .starburst span {
-    width: 100%;
-    height: 100%;
-    background: inherit;
-    transform: rotate(45deg);
-  }
-
-  .starburst:before,
-  .starburst:after ,
-  .starburst span:before,
-  .starburst span:after {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: inherit;
-    z-index: -1;
-    transform: rotate(30deg);
-  }
-
-  .starburst:after {
-    transform: rotate(-30deg);
-  }
-  .starburst span:after {
-    transform: rotate(30deg);
-  }
-  .starburst span:before {
-    transform: rotate(-30deg);
-  }
-
+  
   .example {
     position: absolute;
     margin-top: -2.25em;
@@ -243,6 +198,28 @@
 
   .btn-secondary:hover {
     color: white;
+  }
+
+  .buttons {
+    text-align: center;
+  }
+
+  .steps {
+    font-size: 10pt;
+  }
+
+  .list-group-item {
+
+    color: white;
+
+    h4 {
+      color: $BBBlue;
+    }
+
+    p {
+      font-style: italic;
+      color: $BBDarkGrey;
+    }
   }
 
 }
@@ -284,7 +261,7 @@ $slick-next-character: "\2192" !default;
   h2 {
     line-height: 1.0;
     text-transform: uppercase;
-    text-align: left;
+    text-align: center;
   }
 
   h1:after {
@@ -299,6 +276,24 @@ $slick-next-character: "\2192" !default;
 
   .media-object  {
     width: 120px;
+  }
+
+  a {
+    color: $BBBlue;
+    text-decoration: none;
+  }
+  
+  a, button {
+    transition: 0.2s;
+    -moz-transition: 0.2s;
+    -webkit-transition: 0.2s;
+    -o-transition: 0.2s;
+  }
+  
+  a:hover, a:focus {
+    color: $BBDarkBlue;
+    text-decoration: none;
+    cursor: pointer;
   }
 }
 
