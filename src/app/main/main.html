@@ -35,7 +35,7 @@
         <div class="row margin-t-90">
             <div class="col-sm-7">
                 <h1>Join us on a JOURNEY through the BIBLE.</h1>
-                <h2>Bible-based learning, hands-on crafts and fun activities.</h2>
+                <h2>Bible-based learning, keepsake crafts and fun activities.</h2>
                 <h3>Thoughfully designed by moms and teachers. All materials included and delivered.</h3>
 
                 <a ui-sref="home({'#' : 'pricing'})" du-smooth-scroll><button type="button" class="btn btn-lg btn-primary">Try It Now</button></a>
@@ -55,7 +55,7 @@
         </div>
         <div class="row">
             <h1>Join us on a JOURNEY through the BIBLE.</h1>
-            <h2>Bible-based learning, hands-on crafts and fun activities.</h2>
+            <h2>Bible-based learning, keepsake crafts and fun activities.</h2>
             <h3>Thoughfully designed by moms and teachers. All materials included and delivered.</h3>
 
             <div class="margin-t-30 subscribe-mobile">
@@ -105,13 +105,7 @@
     </div>
 </div>
 
-<!--<div id="instafeed"></div>-->
-<!-- About End -->
-<!--
-<acme-testimonials></acme-testimonials>
 
-
-<acme-pricing></acme-pricing>-->
 
 <div id="information" ng-controller="MainController as informationCtrl">
     <div class="container">
@@ -214,42 +208,27 @@
     </div>
 </div>
 
-<!--
-<div id="information" ng-controller="MainController as informationCtrl">
-    <div class="container">
-        <h1 class="text-center text-uppercase">Peek Inside the Box</h1>
-        <div class="panel panel-default col-md-12 info-panel">
-            <div class="panel-body">
-                <div class="col-md-8">
-                    <slick settings="informationCtrl.slickConfig">
-                        <div class="item" ng-repeat="c in informationCtrl.options[0].carousel track by $index">
-                            <a href="/assets/images/info/{{c.image}}-l.jpg" data-lightbox="{{informationCtrl.options[0].id}}" data-title="{{c.title}}">
-                                <img ng-src="/assets/images/info/{{c.image}}-l.jpg" />
-                            </a>
-                        </div>
-                    </slick>
-                </div>
-                <div class="col-md-4">
-                    <h1>A fun curriculum for the entire month</h1>
-                    <span ng-bind-html="informationCtrl.options[0].text"></span>
-                    <p>Peek into our  <a href="/blog/categories/past-boxes">past boxes</a>.</p>
-                    <div class="buttons">
-                        <a ui-sref="home({'#' : 'pricing'})" ng-click="showInfo(informationCtrl.options[0].id)" du-smooth-scroll><button type="button" class="btn btn-lg btn-primary" aria-haspopup="true" aria-expanded="false">Order Now</button></a>
-                        <a ng-click="informationCtrl.showVideo()"><button type="button" class="btn btn-lg btn-secondary" aria-haspopup="true" aria-expanded="false">Watch Movie</button></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
--->
 
 
 <acme-social></acme-social>
-<!--
+
+<acme-pricing></acme-pricing>
 
 
-<div id="reviews" class="row">
+<div class="verse ">
+    <div class="container text-center ">
+        <div class="col-xs-4 col-md-2 "><img src="/assets/images/danny-bible-white.png " /></div>
+        <div class="col-xs-8 col-md-10 ">
+            <blockquote class="blockquote ">
+                "Let the little children come to me and do not hinder them, for to such belongs the kingdom of heaven. "
+                <cite>Matthew 19:14</cite>
+            </blockquote>
+        </div>
+    </div>
+</div>
+
+
+<div id="reviews">
     <h1 class="text-center text-uppercase">What Others Say</h1>
     <div class="col-md-8 col-md-offset-2">
         <div class="col-sm-6 col-md-4">
@@ -285,27 +264,7 @@
     </div>
 </div>
 
+<acme-testimonials></acme-testimonials>
 
-<div id="press">
-    <div class="container text-center">
-        <h1 class="text-uppercase text-center">As Seen On:</h1>
-        <img width="200" src="/assets/images/testimonials/mompreneurmedia.png"/>
-        <img width="200" src="/assets/images/testimonials/electronicparenting.png"/>
-        <img width="200" src="/assets/images/testimonials/sfbusinesstimes.png"/>        
-    </div>
-</div>
-
-
-<div class="verse ">
-    <div class="container text-center ">
-        <div class="col-xs-4 col-md-2 "><img src="/assets/images/danny-bible-white.png " /></div>
-        <div class="col-xs-8 col-md-10 ">
-            <blockquote class="blockquote ">
-                "Let the little children come to me and do not hinder them, for to such belongs the kingdom of heaven. "
-                <cite>Matthew 19:14</cite>
-            </blockquote>
-        </div>
-    </div>
-</div>-->
 
 <acme-footer></acme-footer>

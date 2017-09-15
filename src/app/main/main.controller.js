@@ -52,14 +52,14 @@
       },
       {
         image : "/assets/images/how-image2",
-        text : "<b>ENJOY</b> child-friendly instructions and thoughful teaching guides.",
+        text : "<b>ENJOY</b> child-friendly instructions and thoughtful teaching guides.",
         quote : "The unique crafts also come with clear, attractive directions for assembly (which makes my teacher heart go pitter-patter). Noah’s Ark box also had thoughtful faith formation opportunities and discussion questions.",
         name : "Maria",
         title : "Kindergarten teacher and founder of <a href='http://kindercraze.com/meet-hellobible-christian-subscription-box-kids/'>Kinder Craze</a>"
       },
       {
         image : "/assets/images/how-image3",
-        text : "<b>CREATE</b> hands-on crafts and fun activities.",
+        text : "<b>CREATE</b> keepsake crafts and fun activities.",
         quote : "Very appealing, high-quality materials and keepsake crafts. My 7 year old daughter really liked the story book and the fun mix of activities.",
         name : "Tenny",
         title : "Homeschooling mom of 3"
