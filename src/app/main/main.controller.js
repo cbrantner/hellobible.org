@@ -182,6 +182,13 @@
       //centerPadding: '70px',
     }
 
+    vm.testimonialConfig = {
+      dots: true,
+      autoplay: true,
+      autoplaySpeed: 2500,
+      mobileFirst: true
+    }
+
     vm.signup = function (name, size) {
 
       // $log.debug(name + ': cart clicked')
