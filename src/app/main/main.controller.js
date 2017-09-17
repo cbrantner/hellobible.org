@@ -189,6 +189,14 @@
       mobileFirst: true
     }
 
+    vm.howConfig = {
+      dots: true,
+      autoplay: true,
+      autoplaySpeed: 2500,
+      mobileFirst: true,
+      adaptiveHeight: true
+    }
+
     vm.signup = function (name, size) {
 
       // $log.debug(name + ': cart clicked')

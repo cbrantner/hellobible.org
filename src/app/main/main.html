@@ -93,15 +93,19 @@
         </div>
     </div>
 
-    <div class="media visible-xs-block" ng-repeat="item in aboutCtrl.how">
-        <img class="pull-left media-object" ng-src="{{item.image}}-s.jpg">
-        <div class="media-body">
-            <p ng-bind-html="item.text"></p>
-        </div><br/>
-        <blockquote class="blockquote">
-            <p class="mb-0">{{item.quote}}</p>
-            <footer class="blockquote-footer">{{item.name}} <cite ng-bind-html="item.title"></cite></footer>
-        </blockquote>
+    <div class="col-md-10 col-md-offset-1">
+        <slick settings="aboutCtrl.howConfig">
+            <div class="media visible-xs-block" ng-repeat="item in aboutCtrl.how">
+                <img class="pull-left media-object" ng-src="{{item.image}}-s.jpg">
+                <div class="media-body">
+                    <p ng-bind-html="item.text"></p>
+                </div><br/>
+                <blockquote class="blockquote">
+                    <p class="mb-0">{{item.quote}}</p>
+                    <footer class="blockquote-footer">{{item.name}} <cite ng-bind-html="item.title"></cite></footer>
+                </blockquote>
+            </div>
+        </slick>
     </div>
 </div>
 
