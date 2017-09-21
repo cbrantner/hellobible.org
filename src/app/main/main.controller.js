@@ -122,7 +122,7 @@
         ]
       }, {
         id : "schools",
-        name : "Sunday Schools & Homeschooling",
+        name : "Homeschooling",
         titleImage : "/assets/images/info/premium.jpg",
         carousel : [
           {
@@ -146,7 +146,7 @@
             title : "Content of the Easter Box."
           }
         ],
-        title : "You Get a Fun Curriculum for Grades K-3",
+        title : "A Fun Bible & Art Curriculum - Grades K-3",
         subtitle: "Ready to start the Journey?",
         bullets: [
           {
@@ -158,7 +158,7 @@
             text : "Thoughtful lesson guides and fun activities to dig deeper into the story."
           },
           {
-            title : "Creative Projects",
+            title : "Art Projects",
             text : "Story-focused keepsake crafts. High-quality material and attractive instructions for assembly."
           },
           {

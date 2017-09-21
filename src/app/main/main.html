@@ -93,7 +93,7 @@
         </div>
     </div>
 
-    <div class="col-md-10 col-md-offset-1">
+    <div class="col-md-10 col-md-offset-1 visible-xs-block">
         <slick settings="aboutCtrl.howConfig">
             <div class="media visible-xs-block" ng-repeat="item in aboutCtrl.how">
                 <img class="pull-left media-object" ng-src="{{item.image}}-s.jpg">
@@ -139,14 +139,14 @@
                                     <p class="list-group-item-text">{{bullet.text}}</p>
                                 </a>
                             </div>
-                            <div>
+                            <!--<div>
                                 <h2>{{option.subtitle}}</h2>
                                 <ol class="steps">
                                     <li>Choose subscription.</li>
                                     <li>Pick number of children.</li>
                                     <li>Receive mail and start the journey.</li>
                                 </ol>
-                            </div>
+                            </div>-->
                             <div class="buttons">
                                 <a ui-sref="home({'#' : 'pricing'})" du-smooth-scroll>
                                     <button type="button" class="btn btn-lg btn-primary" aria-haspopup="true" aria-expanded="false">Start Now</button>
@@ -174,37 +174,37 @@
                     </div>
                 </a>
             </div>
-        </div>
-        <div class="panel panel-default col-md-12 info-panel" ng-repeat="option in informationCtrl.options" ng-show="informationCtrl.info === option.id">
-            <div class="panel-body">
-                <div class="col-md-8" ng-if="informationCtrl.info === option.id">
-                    <slick settings="informationCtrl.slickConfig">
-                        <div class="item" ng-repeat="c in option.carousel track by $index">
-                            <a href="/assets/images/info/{{c.image}}-l.jpg" data-lightbox="{{option.id}}" data-title="{{c.title}}">
+            <div class="panel panel-default col-md-12 info-panel" ng-repeat="option in informationCtrl.options" ng-show="informationCtrl.info === option.id">
+                <div class="panel-body">
+                    <div class="col-md-8" ng-if="informationCtrl.info === option.id">
+                        <slick settings="informationCtrl.slickConfig">
+                            <div class="item" ng-repeat="c in option.carousel track by $index">
+                                <a href="/assets/images/info/{{c.image}}-l.jpg" data-lightbox="{{option.id}}" data-title="{{c.title}}">
                                 <img ng-src="/assets/images/info/{{c.image}}-l.jpg" />
                             </a>
-                        </div>
-                    </slick>
-                </div>
-                <div class="col-md-4">
-                    <h1>{{option.title}}</h1>
-                    <div class="list-group">
-                        <div class="list-group-item" ng-repeat="bullet in option.bullets">
-                            <h4 class="list-group-item-heading">{{bullet.title}}</h4>
-                            <p class="list-group-item-text">{{bullet.text}}</p>
-                        </div>
+                            </div>
+                        </slick>
                     </div>
-                    <div>
-                        <h2>{{option.subtitle}}</h2>
-                        <ol class="steps">
-                            <li>Choose subscription.</li>
-                            <li>Pick number of children.</li>
-                            <li>Receive mail and start the journey.</li>
-                        </ol>
-                    </div>
-                    <div class="buttons">
-                        <a ui-sref="home({'#' : 'pricing'})" ng-click="showInfo(option.id)" du-smooth-scroll><button type="button" class="btn btn-lg btn-primary" aria-haspopup="true" aria-expanded="false">Start Now</button></a>
-                        <a href="/blog/categories/past-boxes"><button type="button" class="btn btn-lg btn-secondary" aria-haspopup="true" aria-expanded="false">Past Boxes</button></a>
+                    <div class="col-md-4">
+                        <h1>{{option.title}}</h1>
+                        <div class="list-group">
+                            <div class="list-group-item" ng-repeat="bullet in option.bullets">
+                                <h4 class="list-group-item-heading">{{bullet.title}}</h4>
+                                <p class="list-group-item-text">{{bullet.text}}</p>
+                            </div>
+                        </div>
+                        <!--<div>
+                            <h2>{{option.subtitle}}</h2>
+                            <ol class="steps">
+                                <li>Choose subscription.</li>
+                                <li>Pick number of children.</li>
+                                <li>Receive mail and start the journey.</li>
+                            </ol>
+                        </div>-->
+                        <div class="buttons">
+                            <a ui-sref="home({'#' : 'pricing'})" ng-click="showInfo(option.id)" du-smooth-scroll><button type="button" class="btn btn-lg btn-primary" aria-haspopup="true" aria-expanded="false">Start Now</button></a>
+                            <a href="/blog/categories/past-boxes"><button type="button" class="btn btn-lg btn-secondary" aria-haspopup="true" aria-expanded="false">Past Boxes</button></a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -271,24 +271,24 @@
     <div class="col-md-10 col-md-offset-1 visible-xs-block" ng-controller="MainController as reviewCtrl">
         <slick settings="reviewCtrl.testimonialConfig">
             <div class="reviewSlide">
-                <a target="_blank" href="http://kindercraze.com/meet-hellobible-christian-subscription-box-kids/"><img src="http://kindercraze.com/wp-content/uploads/2012/09/thumbnail.png" alt="Kinder-Craze"></a>
+                <a href="http://kindercraze.com/meet-hellobible-christian-subscription-box-kids/"><img src="http://kindercraze.com/wp-content/uploads/2012/09/thumbnail.png" alt="Kinder-Craze"></a>
                 <h3>The Noah Box</h3>
                 <p>Not only are the crafts unique, but they also come with clear, attractive directions for assembly (which
                     <b>makes my teacher heart go pitter-patter</b>).</p>
-                <p><a target="_blank" href="http://kindercraze.com/meet-hellobible-christian-subscription-box-kids/" class="btn btn-primary"
+                <p><a href="http://kindercraze.com/meet-hellobible-christian-subscription-box-kids/" class="btn btn-primary"
                         role="button">Read more</a></p>
             </div>
             <div class="reviewSlide">
-                <a target="_blank" href="https://2littlerosebuds.com/hello-bible-april-2017-childrens-subscription-box-review/"><img src="https://i.imgur.com/TKsMH45.png" alt="2 Little Rosebuds"></a>
+                <a href="https://2littlerosebuds.com/hello-bible-april-2017-childrens-subscription-box-review/"><img src="https://i.imgur.com/TKsMH45.png" alt="2 Little Rosebuds"></a>
                 <h3>The Creation Box</h3>
                 <p>Everything was very well designed and the projects were easy to complete. <b>A great box for teaching children about the Bible in a fun, hands-on way.</p>
-                        <p><a target="_blank" href="https://2littlerosebuds.com/hello-bible-april-2017-childrens-subscription-box-review/" class="btn btn-primary" role="button">Read More</a></p>
+                        <p><a href="https://2littlerosebuds.com/hello-bible-april-2017-childrens-subscription-box-review/" class="btn btn-primary" role="button">Read More</a></p>
             </div>
             <div class="reviewSlide">
-                <a target="_blank" href="http://justreedblog.com/bringbibletolife/"><img width="210" src="https://2.bp.blogspot.com/-ADudC0DKiyk/VkZfINSshjI/AAAAAAAAGas/jpRj54JhX7M/s1600/Just+Reed+Logo+Final1.png" alt="Just Reed Blog"></a>
+                <a href="http://justreedblog.com/bringbibletolife/"><img width="210" src="https://2.bp.blogspot.com/-ADudC0DKiyk/VkZfINSshjI/AAAAAAAAGas/jpRj54JhX7M/s1600/Just+Reed+Logo+Final1.png" alt="Just Reed Blog"></a>
                     <h3>The Abraham Box</h3>
                     <p>If you’re looking for a way to bring the Bible to life for your children or students, <b>I highly suggest looking into this subscription service.</b></p>
-                <p><a target="_blank" href="http://justreedblog.com/bringbibletolife/" class="btn btn-primary" role="button">Read More</a></p>
+                <p><a href="http://justreedblog.com/bringbibletolife/" class="btn btn-primary" role="button">Read More</a></p>
             </div>
         </slick>
     </div>

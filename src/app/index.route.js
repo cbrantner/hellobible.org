@@ -84,6 +84,24 @@
         data : {
           title: 'Meet the Founders'
         }
+      })
+      .state('families', {
+        url: '/families',
+        templateUrl: 'app/families/families.html',
+        controller: 'FamiliesController',
+        controllerAs: 'families',
+        data : {
+          title: 'HelloBible for Families'
+        }
+      })
+      .state('homeschool', {
+        url: '/homeschool',
+        templateUrl: 'app/homeschool/homeschool.html',
+        controller: 'HomeschoolController',
+        controllerAs: 'homeschool',
+        data : {
+          title: 'HelloBible for Homeschooling'
+        }
       });
 
 
