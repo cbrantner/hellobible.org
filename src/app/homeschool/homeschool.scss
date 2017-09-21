@@ -8,27 +8,16 @@
   height: 100%;
   position: relative;
   background-repeat: no-repeat;
-  background-position: center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
 }
 
-.landingpage .well {
-  filter: alpha(opacity=85);
-  opacity: 0.75;
-  -moz-opacity: 0.85;
-  -khtml-opacity: 0.85;
-  width: 100%;
-  height: 100%;
-}
-
 .landingpage h1, .landingpage h2, .landingpage h3 {
-  color: $BBDarkGrey;
-  text-align: center;
+  color: white;
+  text-align: right;
 }
-
 
 .landingpage h3 {
   text-transform: uppercase;

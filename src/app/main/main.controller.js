@@ -44,28 +44,28 @@
 
     vm.how = [
       {
-        image : "/assets/images/how-image1",
+        image : "/assets/images/why-image1",
         text : "<b>EXPLORE</b> Bible-based and Christ-centered learning.",
         quote : "I loved it! I like that Jesus is tied into every story. This is a great way to point children to The Savior.",
         name : "Bethany",
         title : "Sunday school teacher and mom of 2"
       },
       {
-        image : "/assets/images/how-image2",
+        image : "/assets/images/why-image2",
         text : "<b>ENJOY</b> child-friendly instructions and thoughtful teaching guides.",
         quote : "The unique crafts also come with clear, attractive directions for assembly (which makes my teacher heart go pitter-patter). Noah’s Ark box also had thoughtful faith formation opportunities and discussion questions.",
         name : "Maria",
         title : "Kindergarten teacher and founder of <a href='http://kindercraze.com/meet-hellobible-christian-subscription-box-kids/'>Kinder Craze</a>"
       },
       {
-        image : "/assets/images/how-image3",
+        image : "/assets/images/why-image3",
         text : "<b>CREATE</b> keepsake crafts and fun activities.",
         quote : "Very appealing, high-quality materials and keepsake crafts. My 7 year old daughter really liked the story book and the fun mix of activities.",
         name : "Tenny",
         title : "Homeschooling mom of 3"
       },
       {
-        image : "/assets/images/how-image3",
+        image : "/assets/images/why-image4",
         text : "It is <b>CONVENIENT</b>. All Materials are included and delivered.",
         quote : "I like that everything is there, I don’t have to go to the store. We are busy all week, it is great to have the pre-made box that puts it all together.",
         name : "Sarah",
@@ -77,7 +77,7 @@
       {
         id : "families",
         name : "Families",
-        titleImage : "/assets/images/info/envelope.jpg",
+        titleImage : "/assets/images/info/families.jpg",
         carousel : [
           {
             image : "envelope-content",
