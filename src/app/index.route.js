@@ -102,11 +102,16 @@
         data : {
           title: 'HelloBible for Homeschooling'
         }
+      })
+      .state('kilgoris', {
+        url: '/kilgoris',
+        templateUrl: 'app/kilgoris/kilgoris.html',
+        controller: 'KilgorisController',
+        controllerAs: 'kilgoris',
+        data : {
+          title: 'The Kilgoris Project'
+        }
       });
-
-
-      $urlRouterProvider
-        .when('/kilgoris', '/blog/categories/kilgoris/')
       $urlRouterProvider.otherwise('/');
       $locationProvider.html5Mode(true);
   }

@@ -21,3 +21,16 @@
 	margin-top: 20px;
   margin-bottom: 30px;
 }
+
+
+
+#kilgoris h2:after {
+	content: "";
+	display: block;
+	height: 4px;
+	width: 80px;
+	background: $BBBlue;
+	margin: 0 auto;
+	margin-top: 20px;
+  margin-bottom: 30px;
+}
