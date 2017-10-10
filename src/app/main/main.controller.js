@@ -52,7 +52,7 @@
       },
       {
         image : "/assets/images/why-image2",
-        text : "Receive engaging and thoughful <b>lesson plans</b>.",
+        text : "Receive engaging and thoughtful <b>lesson plans</b>.",
         quote : "Discussion questions encourage children to reflect on their own experiences with promises, safety and trusting God.",
         name : "Maria",
         title : "Kindergarten teacher and founder of <a href='http://kindercraze.com/meet-hellobible-christian-subscription-box-kids/'>Kinder Craze</a>"
