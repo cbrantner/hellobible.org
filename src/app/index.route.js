@@ -45,7 +45,7 @@
           title: 'Blog'
         }
       })
-      .state('blog', {
+      /*.state('blog', {
         url: '/blog/*path', // catch all
         templateUrl: 'app/blog/blog.html',
         controller: 'BlogController',
@@ -53,7 +53,7 @@
         data : {
           title: 'Blog'
         }
-      })
+      })*/
       .state('terms', {
         url: '/terms',
         templateUrl: 'app/terms/terms.html',
@@ -103,7 +103,7 @@
           title: 'HelloBible for Homeschooling'
         }
       })
-      .state('boxes', {
+      .state('stories', {
         url: '/stories',
         templateUrl: 'app/boxes/boxes.html',
         controller: 'BoxesController',
