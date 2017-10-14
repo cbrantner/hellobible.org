@@ -103,6 +103,15 @@
           title: 'HelloBible for Homeschooling'
         }
       })
+      .state('boxes', {
+        url: '/stories',
+        templateUrl: 'app/boxes/boxes.html',
+        controller: 'BoxesController',
+        controllerAs: 'boxes',
+        data : {
+          title: 'HelloBible Stories'
+        }
+      })
       .state('kilgoris', {
         url: '/kilgoris',
         templateUrl: 'app/kilgoris/kilgoris.html',
