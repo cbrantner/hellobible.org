@@ -2,26 +2,129 @@
   <div class="container">
     <h1 class="text-center text-uppercase">Start Your Journey</h1>
     <div class="row">
-    <h2><img ng-src="/assets/images/pricing/{{option.titleImage}}" /></h2>
+      <h2>
+        <img src="/assets/images/pricing/premium-box.png" />
+      </h2>
     </div>
 
     <div class="row">
-      <div class="col-sm-4 col-md-4" ng-repeat="plan in option.plans">
+      <div class="col-sm-4 col-md-4">
         <div class="panel panel-default">
           <div class="panel-heading">
-            <h1>{{plan.name}}</h1>
+            <h1>Monthly</h1>
           </div>
           <div class="panel-body">
-            <div class="price">{{plan.price}} + <i class="fa fa-truck fa-flip-horizontal"></i></div>
-            <p class="margin-t-30"><a ng-click="addToCart(plan.productUrl, plan.name)"><button type="button" class="btn btn-lg btn-primary">Add to Cart</button></a></p>
-            <div class="media" ng-repeat="item in plan.bullets">
-              <i class="pull-left media-object {{item.logo}}"></i>
-              <div class="media-body">{{item.text}}</div>
+            <div class="not-offer">$24.90/month</div>
+            <div class="price">
+              <span class="priceColor">$19.90/month</span><br/> Free
+              <span class="fa fa-truck fa-flip-horizontal">
+                <span>
             </div>
+
+            <div class="choose-children">
+              Select number of children:
+              <br/>
+              <select name="monthlyPlan" id="monthlyPlan" ng-model="selectedOptions['monthlyPlan']" ng-change="printData()">
+                <option value="1">1 Child</option>
+                <option value="2">2 Children + $4.90/month</option>
+                <option value="3">3 Children + $9.80/month</option>
+                <option value="4">4 Children + $14.70/month</option>
+                <option value="5">5 Children + $19.60/month</option>
+                <option value="6">6 Children + $24.50/month</option>
+                <option value="7">7 Children + $29.40/month</option>
+                <option value="8">8 Children + $34.30/month</option>
+                <option value="9">9 Children + $39.20/month</option>
+                <option value="10">10 Children + $44.10/month</option>
+              </select>
+            </div>
+
+            <p class="margin-t-30">
+              <a ng-click="addToCart('monthlyPlan')">
+                <button type="button" class="btn btn-lg btn-primary">Add to Cart</button>
+              </a>
+            </p>
+
           </div>
         </div>
       </div>
-      <div class="footer hidden-xs" ng-show="info">
+      <div class="col-sm-4 col-md-4">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h1>6 Months</h1>
+          </div>
+          <div class="panel-body">
+            <div class="not-offer">$23.90/month</div>
+            <div class="price">
+              <span class="priceColor">$18.90/month</span><br/>Free
+              <span class="fa fa-truck fa-flip-horizontal">
+                <span>
+            </div>
+
+            <div class="choose-children">
+              Select number of children:
+              <br/>
+              <select name="sixMonthsPlan" id="sixMonthsPlan" ng-model="selectedOptions['sixMonthsPlan']"ng-change="printData()">
+                <option value="1">1 Child</option>
+                <option value="2">2 Children + $4.90/month</option>
+                <option value="3">3 Children + $9.80/month</option>
+                <option value="4">4 Children + $14.70/month</option>
+                <option value="5">5 Children + $19.60/month</option>
+                <option value="6">6 Children + $24.50/month</option>
+                <option value="7">7 Children + $29.40/month</option>
+                <option value="8">8 Children + $34.30/month</option>
+                <option value="9">9 Children + $39.20/month</option>
+                <option value="10">10 Children + $44.10/month</option>
+              </select>
+            </div>
+
+            <p class="margin-t-30">
+              <a ng-click="addToCart('sixMonthsPlan')">
+                <button type="button" class="btn btn-lg btn-primary">Add to Cart</button>
+              </a>
+            </p>
+
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-4 col-md-4">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h1>12 Months</h1>
+          </div>
+          <div class="panel-body">
+            <div class="not-offer">$22.90/month</div>
+            <div class="price">
+              <span class="priceColor">$17.90/month</span> <br/>Free
+              <span class="fa fa-truck fa-flip-horizontal">
+                <span>
+            </div>
+
+            <div class="choose-children">
+              Select number of children:
+              <br/>
+              <select name="twelveMonthsPlan" id="twelveMonthsPlan" ng-model="selectedOptions['twelveMonthsPlan']" ng-change="printData()">
+                  <option value="1">1 Child</option>
+                  <option value="2">2 Children + $4.90/month</option>
+                  <option value="3">3 Children + $9.80/month</option>
+                  <option value="4">4 Children + $14.70/month</option>
+                  <option value="5">5 Children + $19.60/month</option>
+                  <option value="6">6 Children + $24.50/month</option>
+                  <option value="7">7 Children + $29.40/month</option>
+                  <option value="8">8 Children + $34.30/month</option>
+                  <option value="9">9 Children + $39.20/month</option>
+                  <option value="10">10 Children + $44.10/month</option>
+              </select>
+            </div>
+
+            <p class="margin-t-30">
+              <a ng-click="addToCart('twelveMonthsPlan')">
+                <button type="button" class="btn btn-lg btn-primary">Add to Cart</button>
+              </a>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="footer">
         <div class="col-xs-12">
           All subscriptions renew automatically. You may cancel anytime.
         </div>

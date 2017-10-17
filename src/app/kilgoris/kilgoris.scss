@@ -1,36 +1,44 @@
-#kilgoris .logo {
-  height: 100px;
-  text-align: center;
-}
+#kilgoris {
+	.logo {
+		height: 100px;
+		text-align: center;
+	}
 
-#kilgoris a {
-  color: $BBBlue;
-}
+	a {
+		color: $BBBlue;
+	}
 
-#kilgoris a:hover {
-  color: $BBDarkBlue;
-}
+	a:hover {
+		color: $BBDarkBlue;
+	}
 
-#kilgoris h1:after {
-	content: "";
-	display: block;
-	height: 4px;
-	width: 80px;
-	background: $BBBlue;
-	margin: 0 auto;
-	margin-top: 20px;
-  margin-bottom: 30px;
-}
+	h1:after {
+		content: "";
+		display: block;
+		height: 4px;
+		width: 80px;
+		background: $BBBlue;
+		margin: 0 auto;
+		margin-top: 20px;
+		margin-bottom: 30px;
+	}
 
+	h2:after {
+		content: "";
+		display: block;
+		height: 4px;
+		width: 80px;
+		background: $BBBlue;
+		margin: 0 auto;
+		margin-top: 20px;
+		margin-bottom: 30px;
+	}
 
+	.cfa {
+		text-align: center;
+    display: block;
+		margin: auto;
+		margin: 20px;
+	}
 
-#kilgoris h2:after {
-	content: "";
-	display: block;
-	height: 4px;
-	width: 80px;
-	background: $BBBlue;
-	margin: 0 auto;
-	margin-top: 20px;
-  margin-bottom: 30px;
 }

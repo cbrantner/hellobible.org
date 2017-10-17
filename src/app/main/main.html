@@ -35,8 +35,8 @@
         <div class="row margin-t-90">
             <div class="col-sm-7">
                 <h1>Join us on a JOURNEY through the BIBLE.</h1>
-                <h2>Bible-based learning, keepsake crafts and fun activities.</h2>
-                <h3>Thoughtfully designed by moms and teachers. All materials included and delivered.</h3>
+                <h2>Get thoughtful lesson plans, create keepsake crafts and enjoy fun activities.</h2>
+                <h3>Conveniently delivered each month. All materials included.</h3>
 
                 <a ui-sref="home({'#' : 'pricing'})" du-smooth-scroll><button type="button" class="btn btn-lg btn-primary">Try Now</button></a>
                 <!--<a ng-click="headerCtrl.showVideo()"><button type="button" class="btn btn-lg btn-secondary">Watch Movie</button></a>-->
@@ -82,6 +82,9 @@
 
                     <div class="caption">
                         <p ng-bind-html="item.text"></p>
+                        <a ui-sref="home({'#' : 'pricing'})" du-smooth-scroll>
+                            <button type="button" class="btn btn-primary" aria-haspopup="true" aria-expanded="false">Try Now</button>
+                        </a>
                     </div>
                     <blockquote class="blockquote">
                         <p class="mb-0">{{item.quote}}</p>
@@ -103,6 +106,11 @@
                     <p class="mb-0">{{item.quote}}</p>
                     <footer class="blockquote-footer">{{item.name}} <cite ng-bind-html="item.title"></cite></footer>
                 </blockquote>
+                <div class="how-button">
+                    <a ui-sref="home({'#' : 'pricing'})" du-smooth-scroll>
+                        <button type="button" class="btn btn-primary" aria-haspopup="true" aria-expanded="false">Try Now</button>
+                    </a>
+                </div>
             </div>
         </slick>
     </div>
@@ -139,8 +147,8 @@
                         <a ui-sref="home({'#' : 'pricing'})" du-smooth-scroll>
                             <button type="button" class="btn btn-lg btn-primary" aria-haspopup="true" aria-expanded="false">Try Now</button>
                         </a> &nbsp;
-                        <a href="/blog/categories/past-boxes">
-                            <button type="button" class="btn btn-lg btn-secondary" aria-haspopup="true" aria-expanded="false">Past Boxes</button>
+                        <a href="/stories">
+                            <button type="button" class="btn btn-lg btn-secondary" aria-haspopup="true" aria-expanded="false">Bible Stories</button>
                         </a>
                     </div>
                 </div>
@@ -182,7 +190,7 @@
                         </div>
                         <div class="buttons">
                             <a ui-sref="home({'#' : 'pricing'})" ng-click="showInfo(option.id)" du-smooth-scroll><button type="button" class="btn btn-lg btn-primary" aria-haspopup="true" aria-expanded="false">Try Now</button></a>
-                            <a href="/blog/categories/past-boxes"><button type="button" class="btn btn-lg btn-secondary" aria-haspopup="true" aria-expanded="false">Past Boxes</button></a>
+                            <a href="/stories"><button type="button" class="btn btn-lg btn-secondary" aria-haspopup="true" aria-expanded="false">Bible Stories</button></a>
                         </div>
                     </div>
                 </div>
