@@ -48,7 +48,7 @@
         text : "Explore <b>Bible-based</b> and Christ-centered learning.",
         quote : "I loved it! I like that Jesus is tied into every story. This is a great way to point children to The Savior.",
         name : "Bethany",
-        title : "Sunday School Teacher and Mom of 2"
+        title : "Mom of 2"
       },
       {
         image : "/assets/images/why-image2",
