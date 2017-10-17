@@ -56,6 +56,10 @@
             answer : ["During the checkout process, your can select the number of material sets you want - one for each child."]
           },
           {
+            title: "What if I need material for more than 10 children?",
+            answer: ["That's great. No problem. Please contact us at info@hellobible.org and we will be happy to help you."]
+          },
+          {
             title: "How can I give feedback?",
             answer: ["We love to hear from you! Please send us an email to info@hellobible.org."]
           }
@@ -103,7 +107,7 @@
           },
           {
             title: "When does HelloBible ship?",
-            answer: ["If you want to receive a HelloBible shipment the same month, you need to subscribe before the 17th of that month. Your first box will then be shipped between the 21nd and the 25th of that month. If you sign up after the 18th, your box will ship between the 21st and the 25th of the following month. For example, if you order on January 17th, your first HelloBible box will ship between the 21nd and the 25th of January. If you order on January 18th, your first HelloBible box will be shipped between the 21nd and the 25th of February."]
+            answer: ["If you want to receive a HelloBible shipment the same month, you need to subscribe before the 17th of that month. Your first box will then be shipped around the 19th of that month. If you sign up after the 18th, your box will ship around the 19th of the following month. For example, if you order on January 17th, your first HelloBible box will ship around the 19th of January. If you order on January 18th, your first HelloBible box will be shipped around the 19th of February."]
           }
         ]
       }, {
@@ -116,7 +120,7 @@
           },
           {
             title: "How can I update my shipping address?",
-            answer: ['You can update your shipping address at any time from your <a href="http://hellobible.cratejoy.com/customer/login">Account page</a>. Shipping addresses must be updated one day before the renewal date which generally is the 24th of each month in order to take effect for that month.']
+            answer: ['You can update your shipping address at any time from your <a href="http://hellobible.cratejoy.com/customer/login">Account page</a>. Shipping addresses must be updated one day before the renewal date which generally is the 1st of each month in order to take effect for that month.']
           }
         ]
       }];
