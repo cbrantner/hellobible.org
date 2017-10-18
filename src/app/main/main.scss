@@ -376,22 +376,14 @@
 .verse {
   background: none repeat scroll 0 0 $BBBlue;
   color: white;
+  margin-top: 20px;
 
-  cite {
-    font-size: 14px;
-    font-weight: 400;
-  }
 
   img {
     padding-top: 15px;
     height: 110px;
   }
 
-  blockquote{
-    padding-top: 25px;
-    border-width: 0;
-    font-size: 14px;
-  }
 
 }
 
