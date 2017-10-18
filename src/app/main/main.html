@@ -7,7 +7,7 @@
     </div>
     <div class="modal-body" id="modal-body">
         <h1>Sign up to our newsletter.</h1>
-        <p>You will get exlusive <b>offers</b> and <b>updates</b> on HelloBible.</p>
+        <p>Get exlusive <b>offers</b> and <b>updates</b> on HelloBible.</p>
         <acme-subscribe></acme-subscribe>
     </div>
 </script>
@@ -17,7 +17,6 @@
         <button type="button" class="close" ng-click="vm.cancel()">&times;</button>
     </div>
     <div class="modal-body">
-
         <iframe width="100%" height="350" src="https://www.youtube.com/embed/5bGF5PBkMF8?rel=0&autoplay=1" frameborder="0" allowfullscreen></iframe>
     </div>
 </script>
@@ -26,7 +25,7 @@
 <div class="notificationBar" ng-show="showNotificationBar" ng-controller="MainController as mainCtrl">
     <a ng-click="showNotificationBar = false"><i class="close glyphicon glyphicon-remove"></i></a>
     <div class="text">
-        <a ng-click="mainCtrl.signup('notificationBar')">Sign up</a> to our newsletter to get exclusive offers &amp; updates.
+        <a ng-click="mainCtrl.signup('notificationBar')">Sign up</a> to our newsletter.
     </div>
 </div>
 
@@ -204,15 +203,10 @@
 
 <acme-pricing></acme-pricing>
 
-<div class="verse ">
-    <div class="container text-center ">
-        <div class="col-xs-4 col-md-2 "><img src="/assets/images/danny-bible-white.png " /></div>
-        <div class="col-xs-8 col-md-10 ">
-            <blockquote class="blockquote ">
-                "Let the little children come to me and do not hinder them, for to such belongs the kingdom of heaven. "
-                <cite>Matthew 19:14</cite>
-            </blockquote>
-        </div>
+<div class="verse">
+    <div class="container text-center">
+        <div class="col-md-6 visible-xs-block"><img src="/assets/images/danny-bible-white.png " /></div>
+        <div class="col-md-6 hidden-xs"><img src="/assets/images/danny-bible-white.png " /></div>
     </div>
 </div>
 
