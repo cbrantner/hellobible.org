@@ -36,24 +36,6 @@
           title: 'Privacy Policy'
         }
       })
-      .state('blogIndex', {
-        url: '/blog',
-        templateUrl: 'app/blog/blog.html',
-        controller: 'BlogController',
-        controllerAs: 'blog',
-        data : {
-          title: 'Blog'
-        }
-      })
-      /*.state('blog', {
-        url: '/blog/*path', // catch all
-        templateUrl: 'app/blog/blog.html',
-        controller: 'BlogController',
-        controllerAs: 'blog',
-        data : {
-          title: 'Blog'
-        }
-      })*/
       .state('terms', {
         url: '/terms',
         templateUrl: 'app/terms/terms.html',

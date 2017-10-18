@@ -123,7 +123,7 @@
       }, {
         id : "schools",
         name : "Homeschooling",
-        titleImage : "/assets/images/info/read-l.jpg",
+        titleImage : "/assets/images/info/homeschool.jpg",
         carousel : [
           {
             image : "david-box",
