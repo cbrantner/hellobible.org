@@ -36,24 +36,6 @@
           title: 'Privacy Policy'
         }
       })
-      .state('blogIndex', {
-        url: '/blog',
-        templateUrl: 'app/blog/blog.html',
-        controller: 'BlogController',
-        controllerAs: 'blog',
-        data : {
-          title: 'Blog'
-        }
-      })
-      .state('blog', {
-        url: '/blog/*path', // catch all
-        templateUrl: 'app/blog/blog.html',
-        controller: 'BlogController',
-        controllerAs: 'blog',
-        data : {
-          title: 'Blog'
-        }
-      })
       .state('terms', {
         url: '/terms',
         templateUrl: 'app/terms/terms.html',
@@ -84,11 +66,43 @@
         data : {
           title: 'Meet the Founders'
         }
+      })
+      .state('families', {
+        url: '/families',
+        templateUrl: 'app/families/families.html',
+        controller: 'FamiliesController',
+        controllerAs: 'families',
+        data : {
+          title: 'HelloBible for Families'
+        }
+      })
+      .state('homeschool', {
+        url: '/homeschool',
+        templateUrl: 'app/homeschool/homeschool.html',
+        controller: 'HomeschoolController',
+        controllerAs: 'homeschool',
+        data : {
+          title: 'HelloBible for Homeschooling'
+        }
+      })
+      .state('stories', {
+        url: '/stories',
+        templateUrl: 'app/boxes/boxes.html',
+        controller: 'BoxesController',
+        controllerAs: 'boxes',
+        data : {
+          title: 'HelloBible Stories'
+        }
+      })
+      .state('kilgoris', {
+        url: '/kilgoris',
+        templateUrl: 'app/kilgoris/kilgoris.html',
+        controller: 'KilgorisController',
+        controllerAs: 'kilgoris',
+        data : {
+          title: 'The Kilgoris Project'
+        }
       });
-
-
-      $urlRouterProvider
-        .when('/kilgoris', '/blog/categories/kilgoris/')
       $urlRouterProvider.otherwise('/');
       $locationProvider.html5Mode(true);
   }

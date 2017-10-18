@@ -44,60 +44,128 @@
 
     vm.how = [
       {
-        image : "/assets/images/how-image1",
-        heading : "1. Pick your subscription!",
-        text : "<b>Order</b> a charming box of quality activities each month. Kids love to receive mail.",
-        button : "Order Now",
-        link : "#pricing"
+        image : "/assets/images/why-image1",
+        text : "Explore <b>Bible-based</b> and Christ-centered learning.",
+        quote : "I loved it! I like that Jesus is tied into every story. This is a great way to point children to The Savior.",
+        name : "Bethany",
+        title : "Mom of 2"
       },
       {
-        image : "/assets/images/how-image2",
-        heading : "2. Read, create, share & pray!",
-        text : "<b>Dig deeper</b> into a Bible story with reading, keepsake crafts and ideas for discussion and prayer.",
-        button : "Explore Past Boxes",
-        link : "/blog/categories/past-boxes"
+        image : "/assets/images/why-image2",
+        text : "Receive engaging and thoughtful <b>lesson plans</b>.",
+        quote : "Discussion questions encourage children to reflect on their own experiences with promises, safety and trusting God.",
+        name : "Maria",
+        title : "Kindergarten teacher and founder of <a href='http://kindercraze.com/meet-hellobible-christian-subscription-box-kids/'>Kinder Craze</a>"
       },
       {
-        image : "/assets/images/how-image3",
-        heading : "3. Spread God's love!",
-        text : "<b>We donate</b> to The Kilgoris Project. Learn about the importance of giving.",
-        button : "The Kilgoris Project",
-        link : "/blog/categories/kilgoris"
+        image : "/assets/images/why-image3",
+        text : "Create keepsake <b>crafts</b> and enjoy fun <b>activities</b>.",
+        quote : "Very appealing, high-quality materials and keepsake crafts. My daughter really liked the story book and the fun mix of activities.",
+        name : "Tenny",
+        title : "Homeschooling mom of 3"
+      },
+      {
+        image : "/assets/images/why-image4",
+        text : "All <b>materials are included</b> for your convenience.",
+        quote : "I like that everything is there. We are busy all week, it is great to have the pre-made box that puts it all together.",
+        name : "Sarah",
+        title : "Working mom of 2"
       }
     ];
 
     vm.options = [
       {
-        id : "premium",
-        name : "Premium Box",
-        titleImage : "/assets/images/info/premium.jpg",
-        ribbon : "Full Curriculum",
+        id : "families",
+        name : "Families",
+        titleImage : "/assets/images/info/families.jpg",
         carousel : [
           {
-            image : "premium-content",
-            title : "Crafts, instructions and ideas to share &amp; pray."
+            image : "noah-box",
+            title : "The Story of Noah."
+          },
+          {
+            image : "noah-arch",
+            title : "Create keepsake crafts."
           },
           {
             image : "craft",
-            title : "Build Noah's Ark."
+            title : "Play an awesome matching game. Help Noah to bring two of all the animals into the Ark."
           },
           {
             image : "bubble",
-            title : "Have fun with giant rainbow bubbles."
-          },
-          {
-            image : "testimonial",
-            title : "What our customers say."
-          },
-          {
-            image : "easter_premium",
-            title : "Content of the Easter Box."
+            title : "Enjoy giant rainbow bubbles."
           }
         ],
-        title : "HelloBible Premium Box",
-        text : '<p><span class="text-read">Read</span> an age-appropriate Bible Story Book and <span class="text-create">create</span> two wonderful crafts to deepen the understanding of the Bible story. Enjoy high quality family time. <span class="text-pray">Share and pray</span> ' +
-              'together.' +
-                            '</p>'
+        title : "You get one HelloBible Box/month. Great for Kids Ages 5+.",
+        subtitle: "Ready to start Your Journey?",
+        bullets: [
+          {
+            icon : "fa-book",
+            title : "Bible Storybook.",
+            text : "Read and enjoy one Bible Story each month."
+          },
+          {
+            icon : "fa-comments",
+            title : "Parent Guides",
+            text : "Thoughtful guides and fun family activities to dig deeper into the story."
+          },
+          {
+            icon : "fa-paint-brush",
+            title : "Creative Projects",
+            text : "Story-focused keepsake crafts. High-quality materials and attractive instructions for assembly."
+          },
+          {
+            icon : "fa-suitcase",
+            title : "Bible Travel Journal",
+            text : "Story coloring, activity sheets and memory verses."
+          }
+        ]
+      }, {
+        id : "schools",
+        name : "Homeschooling",
+        titleImage : "/assets/images/info/homeschool.jpg",
+        carousel : [
+          {
+            image : "david-box",
+            title : "The Story of David."
+          },
+          {
+            image : "david-sheep",
+            title : "Create keepsake crafts: play Tic-Tac-Toe with a flock of sheep ."
+          },
+          {
+            image : "david-sling",
+            title : "Create and play an awesome aiming game."
+          },
+          {
+            image : "david-aim",
+            title : "Practice aiming like David."
+          }
+        ],
+        title : "A Fun Bible & Art Curriculum - Grades K-3",
+        subtitle: "Ready to start the Journey?",
+        bullets: [
+          {
+            icon : "fa-book",            
+            title : "Bible Storybook",
+            text : "Read and enjoy a Bible Story."
+          },
+          {
+            icon : "fa-comments",            
+            title : "Lesson Plans",
+            text : "Thoughtful lesson plans and fun activities to dig deeper into the story."
+          },
+          {
+            icon : "fa-paint-brush",            
+            title : "Art Projects",
+            text : "Story-focused keepsake crafts. High-quality materials and attractive instructions for assembly."
+          },
+          {
+            icon : "fa-suitcase",            
+            title : "Bible Travel Journal",
+            text : "Story coloring, activity sheets and memory verses."
+          }
+        ]
       }
     ];
 
@@ -112,6 +180,21 @@
       arrows: true
       //centerMode: true,
       //centerPadding: '70px',
+    }
+
+    vm.testimonialConfig = {
+      dots: true,
+      autoplay: true,
+      autoplaySpeed: 2500,
+      mobileFirst: true
+    }
+
+    vm.howConfig = {
+      dots: true,
+      autoplay: false,
+      autoplaySpeed: 2500,
+      mobileFirst: true,
+      adaptiveHeight: true
     }
 
     vm.signup = function (name, size) {

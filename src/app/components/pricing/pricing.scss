@@ -15,8 +15,23 @@
     margin-top: 10px;
   }
 
+  .not-offer {
+    text-decoration: line-through;
+    font-size: 18px;
+    text-align: center;
+    color: grey;
+  }
+
   .price {
     font-size: 24px;
+    text-align: center;
+  }
+
+  .priceColor {
+    color: #A3331A;
+  }
+
+  .choose-children {
     text-align: center;
   }
 

@@ -71,11 +71,19 @@
 .topheader-mobile h1 {
   color: $BBOrange;
   text-transform: none;
+  margin:  20px 20px 0px 20px;  
+}
+
+.topheader-mobile h2 {
+  text-align: center;
+  margin: 10px 20px 0px 20px;
 }
 
 .topheader-mobile h3 {
   text-align: center;
+  margin: 10px 20px 0px 20px;
 }
+
 
 .subscribe-mobile {
   text-align: center;
@@ -179,52 +187,7 @@
     color: $BBDarkBlue;
   }
 
-  .starburst {
-    font: bold 15px 'Open Sans', Arial, sans-serif;
-    background: $BBBlue;
-    width: 5.5em;
-    height: 5.5em;
-    text-align: center;
-    color: #fff;
-  }
-
-  .starburst,
-  .starburst span {
-    display: box;
-  }
-
-  .starburst span {
-    width: 100%;
-    height: 100%;
-    background: inherit;
-    transform: rotate(45deg);
-  }
-
-  .starburst:before,
-  .starburst:after ,
-  .starburst span:before,
-  .starburst span:after {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: inherit;
-    z-index: -1;
-    transform: rotate(30deg);
-  }
-
-  .starburst:after {
-    transform: rotate(-30deg);
-  }
-  .starburst span:after {
-    transform: rotate(30deg);
-  }
-  .starburst span:before {
-    transform: rotate(-30deg);
-  }
-
+  
   .example {
     position: absolute;
     margin-top: -2.25em;
@@ -245,33 +208,39 @@
     color: white;
   }
 
+  .buttons {
+    text-align: center;
+    margin-top: 30px;
+  }
+
+  .steps {
+    font-size: 10pt;
+  }
+
+  .list-group-item {
+
+    color: white;
+
+    h4 {
+      color: $BBBlue;
+    }
+
+    p {
+      font-style: italic;
+      color: $BBDarkGrey;
+    }
+  }
+
+  .slick-dots li button:before {
+    font-size: 10px;
+  }
+
+  .slideshow {
+    margin-top: 30px;
+  }
+
 }
 
-
-// Default Variables
-
-// Slick icon entity codes outputs the following
-// "\2190" outputs ascii character "←"
-// "\2192" outputs ascii character "→"
-// "\2022" outputs ascii character "•"
-
-$slick-font-path: "./fonts/" !default;
-$slick-font-family: "slick" !default;
-$slick-loader-path: "./" !default;
-//$slick-arrow-color: white !default;
-//$slick-dot-color: black !default;
-//$slick-dot-color-active: $slick-dot-color !default;
-$slick-prev-character: "\2190" !default;
-$slick-next-character: "\2192" !default;
-//$slick-dot-character: "\2022" !default;
-//$slick-dot-size: 40px !default;
-//$slick-opacity-default: 0.75 !default;
-//$slick-opacity-on-hover: 1 !default;
-//$slick-opacity-not-active: 0.25 !default;
-
-.slick-dots li button:before {
-  font-size: 15px;
-}
 
 /*********************************************************/
 /* ABOUT
@@ -284,7 +253,7 @@ $slick-next-character: "\2192" !default;
   h2 {
     line-height: 1.0;
     text-transform: uppercase;
-    text-align: left;
+    text-align: center;
   }
 
   h1:after {
@@ -297,9 +266,59 @@ $slick-next-character: "\2192" !default;
     margin-top: 10px;
   }
 
+  .caption a {
+    text-align: center;
+    display: block;
+    margin: auto;
+  }
+
+  .how-button a {
+    text-align: center;
+    display: block;
+    margin: auto;
+    margin-top: 2px;
+    margin-bottom: 5px;
+  }
+
   .media-object  {
     width: 120px;
   }
+
+  a {
+    color: $BBBlue;
+    text-decoration: none;
+  }
+  
+  a, button {
+    transition: 0.2s;
+    -moz-transition: 0.2s;
+    -webkit-transition: 0.2s;
+    -o-transition: 0.2s;
+  }
+  
+  a:hover, a:focus {
+    color: $BBDarkBlue;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  .slick-dots li button:before {
+    font-size: 20px;
+  }
+  
+  .slick-prev:before,
+  .slick-next:before
+  {
+      font-size: 25px;
+      line-height: 1;
+  
+      opacity: .75;
+      color: black;
+  
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+  }
+ 
 }
 
 /*********************************************************/
@@ -308,7 +327,6 @@ $slick-next-character: "\2192" !default;
 #reviews {
   padding: 20px 20px 0 20px;
   position: relative;
-  margin-bottom:20px;
 
   h2 {
     line-height: 1.0;
@@ -326,9 +344,29 @@ $slick-next-character: "\2192" !default;
     margin-top: 10px;
   }
 
-  .media-object  {
-    width: 120px;
+  .reviewSlide a img {
+    display: block;
+    margin: auto;
   }
+
+  .slick-dots li button:before {
+    font-size: 20px;
+  }
+  
+  .slick-prev:before,
+  .slick-next:before
+  {
+      font-size: 22px;
+      line-height: 1;
+  
+      opacity: .75;
+      color: black;
+  
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+  }
+ 
+
 }
 
 

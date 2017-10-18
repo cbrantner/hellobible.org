@@ -1,0 +1,50 @@
+<acme-navbar></acme-navbar>
+
+<div id="boxes" class="container">
+    <h1>HelloBible Stories</h1>
+
+    <p class="lead" style="text-align:center;">
+        A fun and faith-filled journey through the Bible. Bring Bible stories to life.
+    </p>
+
+    <div ng-controller="BoxesController as boxesCtrl" class="col-sm-12 col-md-6 col-md-offset-3">
+        <uib-accordion close-others="true" >
+            <div uib-accordion-group is-open="isopen" class="panel-default" ng-repeat="story in boxesCtrl.stories">
+                <uib-accordion-heading ng-click="isopen=!isopen">
+                    <img class="storyCover" src="assets/images/stories/{{story.image}}" />
+                    <p class="storyName" ng-class="{'opened' : isopen}" ng-click="boxesCtrl.trackClickedFaqQuestion(story.name)">{{story.name}}
+                        <i class="pull-right glyphicon" ng-class="{'glyphicon-chevron-up': isopen, 'glyphicon-chevron-down': !isopen}"></i>
+                    </p>
+                    <blockquote class="blockquote">
+                        <p class="mb-0">{{story.verse}}</p>
+                        <footer class="blockquote-footer"><cite ng-bind-html="story.location"></cite></footer>
+                    </blockquote>
+                    <div class="cfa">
+                        <a ui-sref="home({'#' : 'pricing'})" du-smooth-scroll>
+                            <button type="button" class="btn btn-large btn-primary" aria-haspopup="true" aria-expanded="false">Order Now</button>
+                        </a>
+                    </div>
+                </uib-accordion-heading>
+
+                <p><b>Bible Storybook:</b> <span ng-bind-html="story.book"></span></p>
+                <p><b>Lessons:</b></p>
+                <ol>
+                    <li ng-repeat="lesson in story.lessons"><b>{{lesson.name}}:</b>
+                        <dl class="dl-horizontal">
+                            <dt><span class="fa fa-book"></span></dt>
+                            <dd ng-bind-html="lesson.bible"></dd>
+                            <dt><span class="fa fa-paint-brush"></span></dt>
+                            <dd ng-bind-html="lesson.art"></dd>
+                        </dl>
+                    </li>
+                </ol>
+            </div>
+
+        </uib-accordion>
+
+    </div>
+
+
+</div>
+
+<acme-footer></acme-footer>

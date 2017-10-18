@@ -10,7 +10,7 @@
 
       <div uib-accordion-group is-open="isopen" class="panel-default __faq-accordion-item" ng-repeat="item in category.items">
         <uib-accordion-heading ng-click="isopen=!isopen">
-          <span ng-class="{'opened' : isopen}" ng-click="faqCtrl.trackClickedFaqQuestion(item.title)" ng-bind-html="item.title"> <i class="pull-right glyphicon" ng-class="{'glyphicon-chevron-down': isopen, 'glyphicon-chevron-right': !isopen}"></i></span>
+          <span ng-class="{'opened' : isopen}" ng-click="faqCtrl.trackClickedFaqQuestion(item.title)">{{item.title}} <i class="pull-right glyphicon" ng-class="{'glyphicon-chevron-down': isopen, 'glyphicon-chevron-right': !isopen}"></i></span>
         </uib-accordion-heading>
         <p ng-repeat="paragraph in item.answer" ng-bind-html="paragraph">
           {{paragraph}}

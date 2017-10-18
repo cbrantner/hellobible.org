@@ -14,6 +14,10 @@ nav ul {
   list-style: none;
 }
 
+.narrow {
+  margin: 0px -10px 0px -10px;
+}
+
 .navbar .navbar-nav > li > a:hover {
   color: white;
   background-color: $BBDarkBlue;
@@ -24,3 +28,4 @@ nav ul {
   color: white;
   font-size: 18px;
 }
+
