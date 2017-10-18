@@ -107,7 +107,7 @@
           },
           {
             title: "When does HelloBible ship?",
-            answer: ["If you want to receive a HelloBible shipment the same month, you need to subscribe before the 17th of that month. Your first box will then be shipped around the 19th of that month. If you sign up after the 18th, your box will ship around the 19th of the following month. For example, if you order on January 17th, your first HelloBible box will ship around the 19th of January. If you order on January 18th, your first HelloBible box will be shipped around the 19th of February."]
+            answer: ["If you want to receive a HelloBible shipment the same month, you need to subscribe before the 17th of that month. Your first box will then be shipped around the 19th of that month. If you sign up after the 17th, your box will ship around the 19th of the following month. For example, if you order on January 17th, your first HelloBible box will ship around the 19th of January. If you order on January 18th, your first HelloBible box will be shipped around the 19th of February."]
           }
         ]
       }, {
