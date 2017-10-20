@@ -223,6 +223,27 @@
             art: "Be brave like David. Craft your own ball aiming game and try to aim as good as David."
           }
         ]
+      },
+      {
+        name: "The Story of Daniel",
+        id: "daniel",
+        image: "daniel.jpg",
+        verse: "So Daniel was taken out of the den, and no wound was found on him, for he had trusted in his God.",
+        location: "Daniel 6:23",
+        text1: "Daniel was a trustworthy and faithful man. Let’s learn more about his story and how God protected him.",
+        book: "Daniel and the lions.",
+        lessons: [
+          {
+            name: "Daniel was trustworthy and faithful",
+            bible: "Daniel trusted God and stayed faithful in prayer even though it was dangerous.",
+            art: "Tie a lion pillow and be reminded to be brave like Daniel."
+          },
+          {
+            name: "God protected Daniel",
+            bible: "Learn how God protected Daniel when he was thrown in the lion’s den.",
+            art: "Make a night-light lighthouse and remember to trust God like Daniel."
+          }
+        ]
       }
     ];
 
