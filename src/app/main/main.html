@@ -138,8 +138,8 @@
 <div id="information" ng-controller="MainController as informationCtrl" ng-init="option = informationCtrl.options[0]">
     <div class="container">
         <h1 class="text-center text-uppercase">What You Get</h1>
-        <h2 ng-bind-html="option.title"></h2>        
         <div class="row visible-xs-block col-md-10 col-md-offset-1">
+            <h2 ng-bind-html="option.title"></h2>
             <div class="media" ng-repeat="bullet in option.bullets">
                 <i class="fa {{bullet.icon}} fa-2x pull-left"></i>
                 <div class="media-body">
