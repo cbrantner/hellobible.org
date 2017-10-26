@@ -167,10 +167,15 @@ img {
   color: white;
   border: 2px solid $BBBlue;
   //box-shadow: 0px 2px 0px $BBDarkBlue;
-
 }
 
 
+.btn-info {
+  background: $BBBlue;
+  color: #ffffff;
+  border: 2px solid $BBDarkBlue;
+  box-shadow: 0px 2px 0px $BBDarkOrange;
+}
 
 .btn-primary:hover {
   background: $BBDarkOrange;
@@ -183,6 +188,14 @@ img {
   color: #ffffff;
   border: 2px solid $BBBlue;
 }
+
+.btn-info:hover {
+  background: $BBBlue;
+  color: #ffffff;
+  border: 2px solid $BBDarkBlue;
+  box-shadow: 0px 2px 0px $BBDarkOrange;
+}
+
 
 /**
  *  Do not remove the comments below. It's the markers used by gulp-inject to inject

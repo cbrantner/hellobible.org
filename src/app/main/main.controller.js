@@ -45,28 +45,28 @@
     vm.how = [
       {
         image : "/assets/images/why-image1",
-        text : "Explore <b>Bible-based</b> and Christ-centered learning.",
+        text : "Grow",
         quote : "I loved it! I like that Jesus is tied into every story. This is a great way to point children to The Savior.",
         name : "Bethany",
         title : "Mom of 2"
       },
       {
         image : "/assets/images/why-image2",
-        text : "Receive engaging and thoughtful <b>lesson plans</b>.",
+        text : "Engage",
         quote : "Discussion questions encourage children to reflect on their own experiences with promises, safety and trusting God.",
         name : "Maria",
-        title : "Kindergarten teacher and founder of <a href='http://kindercraze.com/meet-hellobible-christian-subscription-box-kids/'>Kinder Craze</a>"
+        title : "Founder of <a href='http://kindercraze.com/meet-hellobible-christian-subscription-box-kids/'>Kinder Craze</a>"
       },
       {
         image : "/assets/images/why-image3",
-        text : "Create keepsake <b>crafts</b> and enjoy fun <b>activities</b>.",
+        text : "Create",
         quote : "Very appealing, high-quality materials and keepsake crafts. My daughter really liked the story book and the fun mix of activities.",
         name : "Tenny",
         title : "Homeschooling mom of 3"
       },
       {
         image : "/assets/images/why-image4",
-        text : "All <b>materials are included</b> for your convenience.",
+        text : "Convenient",
         quote : "I like that everything is there. We are busy all week, it is great to have the pre-made box that puts it all together.",
         name : "Sarah",
         title : "Working mom of 2"
@@ -84,10 +84,6 @@
             title : "The Story of Noah."
           },
           {
-            image : "noah-arch",
-            title : "Create keepsake crafts."
-          },
-          {
             image : "craft",
             title : "Play an awesome matching game. Help Noah to bring two of all the animals into the Ark."
           },
@@ -96,22 +92,22 @@
             title : "Enjoy giant rainbow bubbles."
           }
         ],
-        title : "You get one HelloBible Box/month. Great for Kids Ages 5+.",
+        title : "1 Box/Month: Materials for Up to 10 Kids Ages 5+.",
         subtitle: "Ready to start Your Journey?",
         bullets: [
           {
             icon : "fa-book",
-            title : "Bible Storybook.",
+            title : "Bible Storybook",
             text : "Read and enjoy one Bible Story each month."
           },
           {
             icon : "fa-comments",
-            title : "Parent Guides",
+            title : "Lesson Plans",
             text : "Thoughtful guides and fun family activities to dig deeper into the story."
           },
           {
             icon : "fa-paint-brush",
-            title : "Creative Projects",
+            title : "Keepsake Art Projects",
             text : "Story-focused keepsake crafts. High-quality materials and attractive instructions for assembly."
           },
           {
@@ -176,8 +172,8 @@
       //arrows: true,
       //infinite: true,
       slidesToShow: 1,
-      adaptiveHeight: false,
-      arrows: true
+      mobileFirst: true,
+      arrows: false
       //centerMode: true,
       //centerPadding: '70px',
     }
@@ -186,7 +182,9 @@
       dots: true,
       autoplay: true,
       autoplaySpeed: 2500,
-      mobileFirst: true
+      mobileFirst: true,
+      arrows: false
+      
     }
 
     vm.howConfig = {
@@ -194,7 +192,8 @@
       autoplay: false,
       autoplaySpeed: 2500,
       mobileFirst: true,
-      adaptiveHeight: true
+      arrows: false
+      
     }
 
     vm.signup = function (name, size) {

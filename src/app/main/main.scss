@@ -115,10 +115,15 @@
 /* INFORMATIONS
 /*********************************************************/
 #information {
-  //background: none repeat scroll 0 0 white;
-  background: url(/assets/images/bg.png) repeat center center;
+
+  @media(min-width:768px) {
+    //background: none repeat scroll 0 0 white;
+    background: url(/assets/images/bg.png) repeat center center;
+  }
   //background-color: #AC917F;
-  padding: 15px;
+  @media(max-width:768px) {
+    padding-bottom: 15px;
+  }
 
   a {
     color: black;
@@ -161,37 +166,12 @@
     margin-bottom: 30px;
   }
 
-  .text-read {
-    color: $BBBlue;
-    font-weight: bold;
-    text-transform: uppercase;
-  }
-
-  .text-create {
-    color: $BBGreen;
-    font-weight: bold;
-    text-transform: uppercase;
-  }
-
-  .text-pray {
-    color: $BBOrange;
-    font-weight: bold;
-    text-transform: uppercase;
-  }
-
   a {
     color: $BBBlue;
   }
 
   a:hover {
     color: $BBDarkBlue;
-  }
-
-  
-  .example {
-    position: absolute;
-    margin-top: -2.25em;
-    margin-left: 1.25em;
   }
 
   #curriculum {
@@ -232,11 +212,24 @@
   }
 
   .slick-dots li button:before {
-    font-size: 10px;
+    font-size: 20px;
+  }
+  
+  .slick-prev:before,
+  .slick-next:before
+  {
+      font-size: 25px;
+      line-height: 1;
+  
+      opacity: .75;
+      color: black;
+  
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
   }
 
-  .slideshow {
-    margin-top: 30px;
+  .media {
+    padding-bottom: 10px;
   }
 
 }
@@ -266,6 +259,20 @@
     margin-top: 10px;
   }
 
+  .caption {
+    font-size: 20px;
+    text-align: center;
+    font-style: bold;
+  }
+
+  .mb-0 {
+    font-size: 12px;
+  }
+  
+  .blockquote-footer {
+    font-size: 12px;
+  }
+
   .caption a {
     text-align: center;
     display: block;
@@ -281,7 +288,9 @@
   }
 
   .media-object  {
-    width: 120px;
+    width: 250px;
+    display: block;
+    margin: auto;
   }
 
   a {
