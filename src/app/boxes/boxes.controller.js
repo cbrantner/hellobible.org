@@ -34,6 +34,28 @@
         text2: "Video: Watch our video about Christmas."
       },
       {
+        name: "The Easter Story",
+        id: "easter",
+        image: "easter.jpg",
+        verse: "For God so loved the world, that he gave his son, that whoever believes in him should not perish but have eternal life.",
+        location: "John 3:16",
+        text1: "Why are we celebrating Easter? Let’s explore more about the Easter week and the days that led to Jesus resurrection.",
+        book: "The Days That Led To Easter.",
+        lessons: [
+          {
+            name: "JESUS died and rose again",
+            bible: "Find out why Jesus had to died on the cross and pay for our sins.",
+            art: "Paint a light ray easter cross. This empty cross shall remind you that Jesus defeats death. He is our Savior!"
+          },
+          {
+            name: "Easter, a time of renewal and awakening",
+            bible: "God raised Jesus from the death. He gives me new life, too.",
+            art: "Plant sunflower seeds as a symbol of the resurrection and help the seeds grow into a beautiful sunflower."
+          }
+        ],
+        text2: "You can watch the unboxing video with Eline."
+      },
+      {
         name: "The Story of Creation",
         id: "creation",
         image: "creation.jpg",
@@ -75,28 +97,6 @@
           }
         ],
         text2: "Watch our fun Video about Noah and the animals."
-      },
-      {
-        name: "The Easter Story",
-        id: "easter",
-        image: "easter.jpg",
-        verse: "For God so loved the world, that he gave his son, that whoever believes in him should not perish but have eternal life.",
-        location: "John 3:16",
-        text1: "Why are we celebrating Easter? Let’s explore more about the Easter week and the days that led to Jesus resurrection.",
-        book: "The Days That Led To Easter.",
-        lessons: [
-          {
-            name: "JESUS died and rose again",
-            bible: "Find out why Jesus had to died on the cross and pay for our sins.",
-            art: "Paint a light ray easter cross. This empty cross shall remind you that Jesus defeats death. He is our Savior!"
-          },
-          {
-            name: "Easter, a time of renewal and awakening",
-            bible: "God raised Jesus from the death. He gives me new life, too.",
-            art: "Plant sunflower seeds as a symbol of the resurrection and help the seeds grow into a beautiful sunflower."
-          }
-        ],
-        text2: "You can watch the unboxing video with Eline."
       },
       {
         name: "The Story of Abraham",
