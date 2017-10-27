@@ -149,7 +149,7 @@
             <slick class="slideshow" settings="informationCtrl.slickConfig">
                 <div class="item" ng-repeat="c in option.carousel">
                     <a href="/assets/images/info/{{c.image}}-l.jpg" data-lightbox="{{option.id}}" data-title="{{c.title}}">
-                        <img ng-src="/assets/images/info/{{c.image}}-l.jpg" />
+                        <img ng-src="/assets/images/info/{{c.image}}-l.jpg" /><br/>{{c.title}}
                     </a>
                 </div>
             </slick>
@@ -169,7 +169,7 @@
                         <slick settings="informationCtrl.slickConfig">
                             <div class="item" ng-repeat="c in option.carousel track by $index">
                                 <a href="/assets/images/info/{{c.image}}-l.jpg" data-lightbox="{{option.id}}" data-title="{{c.title}}">
-                                    <img ng-src="/assets/images/info/{{c.image}}-l.jpg" />
+                                    <img ng-src="/assets/images/info/{{c.image}}-l.jpg" /><br/>{{c.title}}
                                 </a>
                             </div>
                         </slick>
