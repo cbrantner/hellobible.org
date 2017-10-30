@@ -81,15 +81,19 @@
         carousel : [
           {
             image : "noah-box",
-            title : "The Story of Noah."
+            title : "The Story of Noah. Help Noah to bring two of all the animals into the Ark."
           },
           {
-            image : "craft",
-            title : "Play an awesome matching game. Help Noah to bring two of all the animals into the Ark."
+            image : "david",
+            title : "Receive materials for up to 10 kids. Try to aim like David."
+          },
+          {
+            image : "christmas",
+            title : "Build a wonderful nativity scene and a Christmas light to remember that Jesus is the light of the world."
           },
           {
             image : "bubble",
-            title : "Enjoy giant rainbow bubbles."
+            title : "Enjoy giant rainbow bubbles. Remember the promise God gave to Noah."
           }
         ],
         title : "1 Box/Month: Materials for Up to 10 Kids Ages 5+.",

@@ -8,6 +8,20 @@
 
   /** @ngInject */
   function HomeschoolController() {
+
+    var vm = this;    
+
+    vm.slickConfig = {
+      dots: true,
+      autoplay: true,
+      autoplaySpeed: 6000,
+      infinite: true,
+      centerMode: true,
+      centerPadding: '70px',
+
+      mobileFirst: true
+    }
+
   }
   
 })();

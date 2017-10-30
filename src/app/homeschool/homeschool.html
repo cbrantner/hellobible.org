@@ -1,25 +1,94 @@
 <acme-navbar></acme-navbar>
 
-<div class="landingpage hidden-xs">
-	<div>
-		<div class="col-md-10 col-md-offset-1 margin-t-120">
-			<h1>Join us on a JOURNEY through the BIBLE.</h1>
-			<h2>A Fun Multisensory Bible & Art Curriculum.</h2>
-			<h3>Conveniently Delivered Each Month. All Materials Included.</h3>
+<div class="homeschool hidden-xs" ng-controller="MainController as hsCtrl">
+	<slick settings="hsCtrl.slickConfig">
+
+		<div class="a-slide item-a">
+			<div class="row col-md-6 col-md-offset-1 margin-t-90">
+				<h1>Join us on a JOURNEY through the BIBLE.</h1>
+				<h2>A Multi-Sensory Bible &amp; Arts Curriculum</h2>
+				<div class="margin-t-30">
+					<a ui-sref="home({'#' : 'pricing'})" du-smooth-scroll>
+						<button type="button" class="btn btn-lg btn-primary">Order Now</button>
+					</a>
+				</div>
+			</div>
 		</div>
-	</div>
+
+		<div class="a-slide item-b">
+			<div class="row col-md-6 col-md-offset-5 margin-t-90">
+				<h1>Thoughtful Lesson Plans. Creative Art Projects.</h1>
+				<h2>Conveniently delivered each month.</h2>
+
+				<div class="margin-t-30">
+					<a ui-sref="stories" du-smooth-scroll>
+						<button type="button" class="btn btn-lg btn-primary">Learn more</button>
+					</a>
+				</div>
+			</div>
+		</div>
+
+
+		<div class="a-slide item-c">
+			<div class="row col-md-6 col-md-offset-5 margin-t-90">
+				<h1>All Materials Included</h1>
+				<h2>Up to 10 Kids.</h2><h2>Grades K-3.</h2>
+
+				<div class="margin-t-30">
+					<a ui-sref="home({'#' : 'pricing'})" du-smooth-scroll>
+						<button type="button" class="btn btn-lg btn-primary">Order Now</button>
+					</a>
+				</div>
+			</div>
+		</div>
+	</slick>
 </div>
 
-<div class="landingpage-mobile visible-xs-block">
+<div class="homeschool-mobile visible-xs-block" ng-controller="MainController as hsCtrl">
+	<slick settings="hsCtrl.slickConfig">
 
-	<img src="/assets/images/landingpage/header-s.jpg" />
-
-	<div class="container">
-		<h1>Sign up to our newsletter</h1>
-		<h3>Get 10% off your first box.</h3>
-
-		<div style="text-align: center;">
-			<acme-subscribe></acme-subscribe>
+		<div class="item">
+			<img src="/assets/images/headerbg-970.jpg" />
+			<div class="row">
+				<h1>Join us on a JOURNEY through the BIBLE.</h1>
+				<h2>A Multi-Sensory Bible &amp; Art Curriculum</h2>
+				<div class="margin-t-30 subscribe-mobile">
+					<a ui-sref="home({'#' : 'pricing'})" du-smooth-scroll>
+						<button type="button" class="btn btn-lg btn-primary">Order Now</button>
+					</a>
+				</div>
+			</div>
 		</div>
-	</div>
+
+		<div class="item">
+			<img src="/assets/images/info/homeschool.jpg" />
+			<div class="row">
+				<h1>Thoughtful Lesson Plans. Creative Art Projects.</h1>
+				<h2>Conveniently delivered each month.</h2>
+
+				<div class="margin-t-30 subscribe-mobile">
+					<a ui-sref="stories" du-smooth-scroll>
+						<button type="button" class="btn btn-lg btn-primary">Learn more</button>
+					</a>
+				</div>
+			</div>
+		</div>
+
+
+		<div class="item">
+			<img src="/assets/images/info/david-l.jpg" />
+			<div class="row">
+				<h1>All Materials Included</h1>
+				<h2>Up to 10 Kids. Grades K-3.</h2>
+
+				<div class="margin-t-30 subscribe-mobile">
+					<a ui-sref="home({'#' : 'pricing'})" du-smooth-scroll>
+						<button type="button" class="btn btn-lg btn-primary">Order Now</button>
+					</a>
+				</div>
+			</div>
+		</div>
+	</slick>
 </div>
+
+<acme-footer></acme-footer>
