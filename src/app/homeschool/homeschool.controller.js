@@ -14,7 +14,7 @@
     vm.slickConfig = {
       dots: true,
       autoplay: true,
-      autoplaySpeed: 5000,
+      autoplaySpeed: 6000,
       infinite: true,
       centerMode: true,
       centerPadding: '70px',
