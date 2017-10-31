@@ -102,7 +102,7 @@
         name: "The Story of Abraham",
         id: "abraham",
         image: "abraham.jpg",
-        verse: "Now look toward the heavens and count the stars. And he said to him “so shall your descendants be.",
+        verse: "Now look toward the heavens and count the stars. And he said to him “so shall your descendants be.“",
         location: "Genesis 15:5",
         text1: "Get to know more about Abraham and Sarah. Do you know that Abraham means “father of many nations”? Do you know if your name has a special meaning?",
         book: "Abraham, Sarah and Isaac.",
@@ -110,11 +110,11 @@
           {
             name: "God called Abraham",
             bible: "Discover how God called Abraham. Although he was already very old, God promised him as many descendants as stars in the sky.",
-            art: "Craft a shiny star garland and be remembered that God always keeps his promises."
+            art: "Craft a shiny star garland and be reminded that God always keeps his promises."
           },
           {
             name: "Abraham trusted God",
-            bible: "Can you imagine if God asked you and your Family to leave behind everything that was familiar to you? What would you do.",
+            bible: "Can you imagine if God asked you and your Family to leave behind everything that was familiar to you? What would you do?",
             art: "Make your own prayer journal and write down important thoughts and prayers."
           }
         ]
