@@ -15,16 +15,12 @@
                     <p class="storyName" ng-class="{'opened' : isopen}" ng-click="boxesCtrl.trackClickedFaqQuestion(story.name)">{{story.name}}
                         <i class="pull-right glyphicon" ng-class="{'glyphicon-chevron-up': isopen, 'glyphicon-chevron-down': !isopen}"></i>
                     </p>
-                    <blockquote class="blockquote">
-                        <p class="mb-0">{{story.verse}}</p>
-                        <footer class="blockquote-footer"><cite ng-bind-html="story.location"></cite></footer>
-                    </blockquote>
-                    <div class="cfa">
-                        <a ui-sref="home({'#' : 'pricing'})" du-smooth-scroll>
-                            <button type="button" class="btn btn-lg btn-primary" aria-haspopup="true" aria-expanded="false">Order Now</button>
-                        </a>
-                    </div>
                 </uib-accordion-heading>
+
+                <blockquote class="blockquote">
+                    <p class="mb-0">{{story.verse}}</p>
+                    <footer class="blockquote-footer"><cite ng-bind-html="story.location"></cite></footer>
+                </blockquote>
 
                 <p><b>Bible Storybook:</b> <span ng-bind-html="story.book"></span></p>
                 <p><b>Lessons:</b></p>
@@ -38,6 +34,11 @@
                         </dl>
                     </li>
                 </ol>
+                <div class="cfa">
+                    <a ui-sref="home({'#' : 'pricing'})" du-smooth-scroll>
+                        <button type="button" class="btn btn-lg btn-primary" aria-haspopup="true" aria-expanded="false">Order Now</button>
+                    </a>
+                </div>
             </div>
 
         </uib-accordion>
