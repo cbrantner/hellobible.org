@@ -14,7 +14,7 @@
       {
         name: "The Christmas Story",
         id: "christmas",
-        image: "christmas.jpg",
+        image: "christmas.png",
         verse: "Today in the town of David a Savior has been born to you: He is the Messiah, the Lord.",
         location: "Luke 2:11",
         text1: "Talk about the Christmas Story and learn more about Jesus and why we really celebrate Christmas.",
@@ -36,7 +36,7 @@
       {
         name: "The Easter Story",
         id: "easter",
-        image: "easter.jpg",
+        image: "easter.png",
         verse: "For God so loved the world, that he gave his son, that whoever believes in him should not perish but have eternal life.",
         location: "John 3:16",
         text1: "Why are we celebrating Easter? Let’s explore more about the Easter week and the days that led to Jesus resurrection.",
@@ -58,7 +58,7 @@
       {
         name: "The Story of Creation",
         id: "creation",
-        image: "creation.jpg",
+        image: "creation.png",
         verse: "In the beginning, God created the heavens and the earth.",
         location: "Genesis 1:1",
         text1: "Get to know more about the awesome world God created.",
@@ -79,7 +79,7 @@
       {
         name: "The Story of Noah",
         id: "noah",
-        image: "noah.jpg",
+        image: "noah.png",
         verse: "I will put my rainbow in the clouds to be a sign of my promise to the earth.",
         location: "Genesis 9:13",
         text1: "Discover the exciting Story of Noah and his Ark.",
@@ -101,7 +101,7 @@
       {
         name: "The Story of Abraham",
         id: "abraham",
-        image: "abraham.jpg",
+        image: "abraham.png",
         verse: "Now look toward the heavens and count the stars. And he said to him “so shall your descendants be.“",
         location: "Genesis 15:5",
         text1: "Get to know more about Abraham and Sarah. Do you know that Abraham means “father of many nations”? Do you know if your name has a special meaning?",
@@ -122,7 +122,7 @@
       {
         name: "The Story of Joseph",
         id: "joseph",
-        image: "joseph.jpg",
+        image: "joseph.png",
         verse: "The Lord was with Joseph and he became a successful man.",
         location: "Genesis 39:2",
         text1: "Get ready to meet Joseph and his eleven brothers",
@@ -143,7 +143,7 @@
       {
         name: "The Story of Moses",
         id: "moses",
-        image: "moses.jpg",
+        image: "moses.png",
         verse: "God said to Moses “I am who I am”.",
         location: "Exodus 3:14",
         text1: "Be ready to meet Mose and learn about his exciting story",
@@ -161,7 +161,7 @@
           }
         ]
       },
-      {
+      /*{
         name: "The Story of Joshua",
         id: "joshua",
         image: "joshua.jpg",
@@ -181,11 +181,11 @@
             art: "Make a board game and have fun playing and marching around the city of Jericho."
           }
         ]
-      },
+      },*/
       {
         name: "The Story of Ruth and Naomi",
         id: "naomi",
-        image: "ruth.jpg",
+        image: "ruth.png",
         verse: "Where you go I will go, and where you stay I will stay. Your people will be my people and your God my God.",
         location: "Ruth 1:16",
         text1: "Meet two courages women and friends: Ruth and Naomi.",
@@ -206,7 +206,7 @@
       {
         name: "The Story of David",
         id: "david",
-        image: "david.jpg",
+        image: "david.png",
         verse: "The battle is the Lord’s.",
         location: "1 Samuel 17:47",
         text1: "Did you know David was a shepherd boy and a talented musician? Learn more about David and his battle with Goliath, the giant.",
@@ -227,7 +227,7 @@
       {
         name: "The Story of Daniel",
         id: "daniel",
-        image: "daniel.jpg",
+        image: "daniel.png",
         verse: "So Daniel was taken out of the den, and no wound was found on him, for he had trusted in his God.",
         location: "Daniel 6:23",
         text1: "Daniel was a trustworthy and faithful man. Let’s learn more about his story and how God protected him.",
