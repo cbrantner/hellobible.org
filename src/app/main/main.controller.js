@@ -97,6 +97,10 @@
           },
           {
             image : "daniel",
+            title : "The Story of Daniel. Learn how God protected Daniel, when he was thrown into the lions' den."
+          },
+          {
+            image : "daniel-lion",
             title : "Tie a lion pillow and be reminded to be brave like Daniel."
           }
         ],
