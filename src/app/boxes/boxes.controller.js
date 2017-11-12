@@ -161,10 +161,10 @@
           }
         ]
       },
-      /*{
+      {
         name: "The Story of Joshua",
         id: "joshua",
-        image: "joshua.jpg",
+        image: "joshua.jpeg",
         verse: "Be strong and courageous. Do not be afraid; do not be discouraged, for the LORD your God will be with you wherever you go.",
         location: "Joshua 1:9",
         text1: "Be loud! Blow your trumpet like Joshua",
@@ -181,7 +181,7 @@
             art: "Make a board game and have fun playing and marching around the city of Jericho."
           }
         ]
-      },*/
+      },
       {
         name: "The Story of Ruth and Naomi",
         id: "naomi",
@@ -240,7 +240,7 @@
           },
           {
             name: "God protected Daniel",
-            bible: "Learn how God protected Daniel when he was thrown in the lion’s den.",
+            bible: "Learn how God protected Daniel when he was thrown into the lions' den.",
             art: "Make a night-light lighthouse and remember to trust God like Daniel."
           }
         ]
