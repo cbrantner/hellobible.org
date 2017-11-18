@@ -35,9 +35,6 @@
     /** @ngInject */
     function PricingController($scope, $uibModal, $log, $window, Analytics, hbTracking) {
 
-      //var vm = this;
-
-
       $scope.addToCart = function (plan) {
 
         var selected   = $scope.selectedOptions[plan];

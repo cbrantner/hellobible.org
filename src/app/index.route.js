@@ -93,6 +93,15 @@
         data : {
           title: 'The Kilgoris Project'
         }
+      })
+      .state('testimonials', {
+        url: '/testimonials',
+        templateUrl: 'app/testimonials/testimonials.html',
+        controller: 'TestimonialsController',
+        controllerAs: 'testimonials',
+        data : {
+          title: 'What Others Say'
+        }
       });
       $urlRouterProvider.otherwise('/');
       $locationProvider.html5Mode(true);

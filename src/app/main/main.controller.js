@@ -9,7 +9,7 @@
 
   /** @ngInject */
   function SignupModalController($uibModalInstance) {
-    
+
     var vm = this;
 
     vm.ok = function () {
@@ -23,7 +23,7 @@
 
   /** @ngInject */
   function VideoModalController($uibModalInstance) {
-    
+
     var vm = this;
 
     vm.ok = function () {
@@ -42,136 +42,105 @@
 
     vm.info = undefined;
 
-    vm.how = [
-      {
-        image : "/assets/images/why-image1",
-        text : "Grow",
-        quote : "I loved it! I like that Jesus is tied into every story. This is a great way to point children to The Savior.",
-        name : "Bethany",
-        title : "Mom of 2"
-      },
-      {
-        image : "/assets/images/why-image2",
-        text : "Engage",
-        quote : "Discussion questions encourage children to reflect on their own experiences with promises, safety and trusting God.",
-        name : "Maria",
-        title : "Founder of <a href='http://kindercraze.com/meet-hellobible-christian-subscription-box-kids/'>Kinder Craze</a>"
-      },
-      {
-        image : "/assets/images/why-image3",
-        text : "Create",
-        quote : "Very appealing, high-quality materials and keepsake crafts. My daughter really liked the story book and the fun mix of activities.",
-        name : "Tenny",
-        title : "Homeschooling mom of 3"
-      },
-      {
-        image : "/assets/images/why-image4",
-        text : "Convenient",
-        quote : "I like that everything is there. We are busy all week, it is great to have the pre-made box that puts it all together.",
-        name : "Sarah",
-        title : "Working mom of 2"
-      }
-    ];
-
     vm.options = [
       {
-        id : "families",
-        name : "Families",
-        titleImage : "/assets/images/info/families.jpg",
-        carousel : [
+        id: "families",
+        name: "Families",
+        titleImage: "/assets/images/info/families.jpg",
+        carousel: [
           {
-            image : "noah-box",
-            title : "The Story of Noah. Help Noah to bring two of all the animals into the Ark."
+            image: "noah-box",
+            title: "The Story of Noah. Help Noah to bring two of all the animals into the Ark."
           },
           {
-            image : "bubble",
-            title : "Enjoy giant rainbow bubbles. Remember the promise God gave to Noah."
+            image: "bubble",
+            title: "Enjoy giant rainbow bubbles. Remember the promise God gave to Noah."
           },
           {
-            image : "david",
-            title : "Receive materials for up to 10 kids."
+            image: "david",
+            title: "Receive materials for up to 10 kids."
           },
           {
-            image : "david-aim",
-            title : "Try to aim like David."
+            image: "david-aim",
+            title: "Try to aim like David."
           },
           {
-            image : "daniel",
-            title : "The Story of Daniel. Learn how God protected Daniel, when he was thrown into the lions' den."
+            image: "daniel",
+            title: "The Story of Daniel. Learn how God protected Daniel, when he was thrown into the lions' den."
           },
           {
-            image : "daniel-lion",
-            title : "Tie a lion pillow and be reminded to be brave like Daniel."
+            image: "daniel-lion",
+            title: "Tie a lion pillow and be reminded to be brave like Daniel."
           }
         ],
-        title : "1 Box/Month: Materials for Up to 10 Kids Ages 5+.",
+        title: "1 Box/Month: Materials for Up to 10 Kids Ages 5+.",
         subtitle: "Ready to start Your Journey?",
         bullets: [
           {
-            icon : "fa-book",
-            title : "Bible Storybook",
-            text : "Read and enjoy one Bible Story each month."
+            icon: "fa-book",
+            title: "Bible Storybook",
+            text: "Read and enjoy one Bible Story each month."
           },
           {
-            icon : "fa-comments",
-            title : "Lesson Plans",
-            text : "Thoughtful guides and fun family activities to dig deeper into the story."
+            icon: "fa-comments",
+            title: "Lesson Plans",
+            text: "Thoughtful guides and fun family activities to dig deeper into the story."
           },
           {
-            icon : "fa-paint-brush",
-            title : "Keepsake Art Projects",
-            text : "Story-focused keepsake crafts. High-quality materials and attractive instructions for assembly."
+            icon: "fa-paint-brush",
+            title: "Keepsake Art Projects",
+            text: "Story-focused keepsake crafts. High-quality materials and attractive instructions for assembly."
           },
           {
-            icon : "fa-suitcase",
-            title : "Bible Travel Journal",
-            text : "Story coloring, activity sheets and memory verses."
+            icon: "fa-suitcase",
+            title: "Bible Travel Journal",
+            text: "Story coloring, activity sheets and memory verses."
           }
         ]
       }, {
-        id : "schools",
-        name : "Homeschooling",
-        titleImage : "/assets/images/info/homeschool.jpg",
-        carousel : [
+        id: "schools",
+        name: "Homeschooling",
+        titleImage: "/assets/images/info/homeschool.jpg",
+        carousel: [
           {
-            image : "david-box",
-            title : "The Story of David."
+            image: "david-box",
+            title: "The Story of David."
           },
           {
-            image : "david-sheep",
-            title : "Create keepsake crafts: play Tic-Tac-Toe with a flock of sheep ."
+            image: "david-sheep",
+            title: "Create keepsake crafts: play Tic-Tac-Toe with a flock of sheep ."
           },
           {
-            image : "david-sling",
-            title : "Create and play an awesome aiming game."
+            image: "david-sling",
+            title: "Create and play an awesome aiming game."
           },
           {
-            image : "david-aim",
-            title : "Practice aiming like David."
+            image: "david-aim",
+            title: "Practice aiming like David."
           }
         ],
-        title : "A Fun Bible & Art Curriculum - Grades K-3",
+        title: "A Fun Bible & Art Curriculum - Grades K-3",
         subtitle: "Ready to start the Journey?",
         bullets: [
           {
-            icon : "fa-book",            
-            title : "Bible Storybook",
-            text : "Read and enjoy a Bible Story."
+            icon: "fa-book",
+            title: "Bible Storybook",
+            text: "Read and enjoy a Bible Story."
           },
           {
-            icon : "fa-comments",            
-            title : "Lesson Plans",
-            text : "Thoughtful lesson plans and fun activities to dig deeper into the story."
+            icon: "fa-comments",
+            title: "Lesson Plans",
+            text: "Thoughtful lesson plans and fun activities to dig deeper into the story."
           },
           {
-            icon : "fa-paint-brush",            
-            title : "Art Projects",
-            text : "Story-focused keepsake crafts. High-quality materials and attractive instructions for assembly."
+            icon: "fa-paint-brush",
+            title: "Art Projects",
+            text: "Story-focused keepsake crafts. High-quality materials and attractive instructions for assembly."
           },
           {
-            icon : "fa-suitcase",            
-            title : "Bible Travel Journal",
-            text : "Story coloring, activity sheets and memory verses."
+            icon: "fa-suitcase",
+            title: "Bible Travel Journal",
+            text: "Story coloring, activity sheets and memory verses."
           }
         ]
       }
@@ -181,32 +150,40 @@
       dots: true,
       autoplay: true,
       autoplaySpeed: 2500,
-      //arrows: true,
-      //infinite: true,
       slidesToShow: 1,
       mobileFirst: true,
       arrows: false
-      //centerMode: true,
-      //centerPadding: '70px',
-    }
+    };
 
-    vm.testimonialConfig = {
+    vm.slickProductConfig = {
+      centerMode: true,
+      centerPadding: '60px',
+      slidesToShow: 4,
       dots: true,
+      arrows: false,
       autoplay: true,
-      autoplaySpeed: 2500,
-      mobileFirst: true,
-      arrows: false
-      
-    }
-
-    vm.howConfig = {
-      dots: true,
-      autoplay: false,
-      autoplaySpeed: 2500,
-      mobileFirst: true,
-      arrows: false
-      
-    }
+      autoplaySpeed: 2000,
+      responsive: [
+        {
+          breakpoint: 1024,
+          settings: {
+            centerMode: true,
+            centerPadding: '40px',
+            slidesToShow: 3,
+            autoplay: false
+          }
+        },
+        {
+          breakpoint: 480,
+          settings: {
+            centerMode: true,
+            centerPadding: '40px',
+            slidesToShow: 2,
+            autoplay: false
+          }
+        }
+      ]
+    };
 
     vm.signup = function (name, size) {
 
@@ -253,7 +230,7 @@
         templateUrl: 'videoModal.html',
         controller: 'VideoModalController',
         controllerAs: 'vm',
-        size : size
+        size: size
       });
 
       modalInstance.result.then(function () {
@@ -263,13 +240,13 @@
       });
     };
 
-    vm.showInfo = function(name) {
+    vm.showInfo = function (name) {
       if (vm.info == name) {
         vm.info = undefined;
       } else {
         vm.info = name;
         if (hbTracking) {
-           // track google analytics event
+          // track google analytics event
           Analytics.trackEvent('information', 'showInfo', name);
         }
       }

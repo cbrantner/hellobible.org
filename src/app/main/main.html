@@ -22,287 +22,208 @@
 </script>
 
 
-<div class="notificationBar" ng-show="showNotificationBar" ng-controller="MainController as mainCtrl">
+<!--<div class="notificationBar" ng-show="showNotificationBar" ng-controller="MainController as mainCtrl">
     <a ng-click="showNotificationBar = false">
         <i class="close glyphicon glyphicon-remove"></i>
     </a>
     <div class="text">
         <a ng-click="mainCtrl.signup('notificationBar')">Sign up</a> to our newsletter.
     </div>
-</div>
+</div>-->
 
 <div class="topheader hidden-xs" ng-controller="MainController as headerCtrl">
-    <div class="container">
-        <div class="row margin-t-90">
-            <div class="col-sm-7">
+    <slick settings="headerCtrl.slickConfig">
+
+        <div class="a-slide item-a">
+            <div class="row margin-t-90 col-md-6 col-md-offset-1">
                 <h1>Join us on a JOURNEY through the BIBLE.</h1>
-                <h2>Thoughtful lesson plans. Keepsake crafts. Fun activities.</h2>
-                <h3>Conveniently delivered each month. All materials included.</h3>
 
                 <a ui-sref="home({'#' : 'pricing'})" du-smooth-scroll>
                     <button type="button" class="btn btn-lg btn-primary">Order Now</button>
                 </a>
-                <!--<a ng-click="headerCtrl.showVideo()"><button type="button" class="btn btn-lg btn-secondary">Watch Movie</button></a>-->
             </div>
         </div>
+        <div class="a-slide item-b">
+            <div class="row margin-t-90 col-md-6 col-md-offset-5">
+
+                <h1>Thoughtful lesson plans. Keepsake crafts. Fun activities.</h1>
+
+                <a ui-sref="stories" du-smooth-scroll>
+                    <button type="button" class="btn btn-lg btn-primary">Peek Inside</button>
+                </a>
+            </div>
+        </div>
+        <div class="a-slide item-c">
+            <div class="row margin-t-90 col-md-6 col-md-offset-5">
+                <h1>Conveniently delivered each month. All materials included.</h1>
+                <a ui-sref="home({'#' : 'pricing'})" du-smooth-scroll>
+                    <button type="button" class="btn btn-lg btn-primary">Order Now</button>
+                </a>
+            </div>
+        </div>
+    </slick>
+
+    <div class="seen text-center">
+        As Seen On:
+        <img class="seen-image" src="/assets/images/testimonials/kindercraze.png" alt="Kinder-Craze">
+        <img class="seen-image" src="/assets/images/testimonials/just-reed.png"
+            alt="Just Reed Blog">
+        <img class="seen-image" src="/assets/images/testimonials/all-logos.png" />
     </div>
-    <a ui-sref="home({ '#' : 'how'})" du-smooth-scroll>
-        <div class="arrow-down animated bounce"></div>
-    </a>
 </div>
 
 <div class="topheader-mobile visible-xs-block" ng-controller="MainController as headerMobileCtrl">
-    <div class="container">
-        <div class="row margin-t-40">
-            <img src="/assets/images/headerbg-970.jpg" />
-        </div>
-        <div class="row">
-            <h1>Join us on a JOURNEY through the BIBLE.</h1>
-            <h2>Thoughtful lesson plans. Keepsake crafts. Fun activities.</h2>
-            <h3>All materials included.</h3>
+    <slick settings="headerMobileCtrl.slickConfig">
 
-            <div class="margin-t-30 subscribe-mobile">
-                <a ui-sref="home({'#' : 'pricing'})" du-smooth-scroll>
-                    <button type="button" class="btn btn-lg btn-primary">Order Now</button>
-                </a>
-                <!--<a ng-click="headerMobileCtrl.showVideo()"><button type="button" class="btn btn-lg btn-secondary">Watch Movie</button></a>-->
+        <div class="a-slide item-a">
+            <div class="item-a-image"></div>
+            <div class="row">
+                <h1>Join us on a JOURNEY through the BIBLE.</h1>
+                <div class="margin-t-15 button-mobile">
+                    <a ui-sref="home({'#' : 'pricing'})" du-smooth-scroll>
+                        <button type="button" class="btn btn-lg btn-primary">Order Now</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="a-slide item-b">
+            <div class="item-b-image"></div>
+            <div class="row">
+                <h1>Thoughtful lesson plans. Keepsake crafts. Fun activities.</h1>
+
+                <div class="margin-t-15 button-mobile">
+                    <a ui-sref="stories" du-smooth-scroll>
+                        <button type="button" class="btn btn-lg btn-primary">Peek Inside</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="a-slide item-c">
+            <div class="item-c-image"></div>
+            <div class="row">
+                <h1>Conveniently delivered each month. All materials included.</h1>
+                <div class="margin-t-15 button-mobile">
+                    <a ui-sref="testimonials" du-smooth-scroll>
+                        <button type="button" class="btn btn-lg btn-primary">What Others Say</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </slick>
+
+    <a ui-sref="testimonials" du-smooth-scroll>
+        <div class="seen text-center">
+            As Seen On:
+            <img class="seen-image" src="/assets/images/testimonials/kindercraze.png" alt="Kinder-Craze">
+            <img class="seen-image" src="/assets/images/testimonials/just-reed.png"
+                alt="Just Reed Blog">
+            <img class="seen-image" src="/assets/images/testimonials/all-logos.png" />
+        </div>
+    </a>
+
+</div>
+
+<div id="how">
+    <div class="container">
+        <h1 class="text-center text-uppercase">How it Works</h1>
+
+        <div class="row">
+            <div class="col-lg-12">
+                <ul>
+                    <li>
+                        <div class="timeline-left">
+                            <div class="timeline-image">
+                                <img src="/assets/images/how/how1.jpg" alt="">
+                            </div>
+                            <br class="clearfix">
+                            <h3>1. Choose Number of Children</h3>
+                            <p>
+                                <b>Materials for up to 10 children</b>. Great for ages 5+.</p>
+                            <a ui-sref="home({'#' : 'pricing'})" du-smooth-scroll>
+                                <button type="button" class="btn btn-primary">Order Now</button>
+                            </a>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="timeline-right">
+                            <div class="timeline-image">
+                                <img src="/assets/images/how/how2.jpg" alt="">
+                            </div>
+                            <h3>2. Delivered Every Month</h3>
+                            <p>
+                                <b>Choose your subscription length</b>. No commitment. You may cancel anytime.
+                            </p>
+                            <a ui-sref="home({'#' : 'pricing'})" du-smooth-scroll>
+                                <button type="button" class="btn btn-primary">Start Journey</button>
+                            </a>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="timeline-left">
+                            <div class="timeline-image">
+                                <img src="/assets/images/how/how3.jpg" alt="">
+                            </div>
+                            <h3>3. Enjoy fun Bible &amp; Art Projects</h3>
+                            <p>
+                                <b>Grow closer to the Lord</b>. Thoughtful lesson plans. Keepsake crafts. Fun activities.</p>
+                            <a ui-sref="stories" du-smooth-scroll>
+                                <button type="button" class="btn btn-primary">Peek Inside</button>
+                            </a>
+                        </div>
+                    </li>
+                </ul>
             </div>
         </div>
     </div>
 </div>
 
-<acme-social class="visible-xs-block"></acme-social>
-
-<!-- About -->
-<div id="how" ng-controller="MainController as aboutCtrl">
-    <h1 class="text-center text-uppercase">Why HelloBible?</h1>
-
-    <div class="row hidden-xs">
-        <div class="col-md-10 col-md-offset-1">
-            <div class="col-md-3 col-sm-3" ng-repeat="item in aboutCtrl.how">
-                <div class="thumbnail">
-                    <span ng-switch on="item.link.charAt(0)">
-                        <a ng-switch-when="#" ui-sref="home({'#' : '{{item.link.substring(1)}}'})">
-                            <img ng-src="{{item.image}}.jpg" />
-                        </a>
-                        <a ng-switch-default href="{{item.link}}">
-                            <img ng-src="{{item.image}}.jpg" />
-                        </a>
-                    </span>
-
-                    <div class="caption">
-                        <p ng-bind-html="item.text"></p>
-                    </div>
-                    <blockquote class="blockquote">
-                        <p class="mb-0">{{item.quote}}</p>
-                        <footer class="blockquote-footer">{{item.name}}
-                            <cite ng-bind-html="item.title"></cite>
-                        </footer>
-                    </blockquote>
-                    <div class="caption">
-                        <a ui-sref="home({'#' : 'pricing'})" du-smooth-scroll>
-                            <button type="button" class="btn btn-primary" aria-haspopup="true" aria-expanded="false">Order Now</button>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="visible-xs-block">
-        <slick settings="aboutCtrl.howConfig">
-            <div class="media" ng-repeat="item in aboutCtrl.how">
-                <h2 ng-bind-html="item.text"></h2>
-
-                <img class="media-object" ng-src="{{item.image}}.jpg">
-                <div class="media-body">
-
-                    <blockquote class="blockquote">
-                        <p class="mb-0">{{item.quote}}</p>
-                        <footer class="blockquote-footer">{{item.name}}
-                            <cite ng-bind-html="item.title"></cite>
-                        </footer>
-                    </blockquote>
-                </div>
-            </div>
-        </slick>
-        <div class="how-button">
-            <a ui-sref="home({'#' : 'pricing'})" du-smooth-scroll>
-                <button type="button" class="btn btn-lg btn-primary" aria-haspopup="true" aria-expanded="false">Order Now</button>
+<div class="productSlides" ng-controller="MainController as headerMobileCtrl">
+    <slick settings="headerMobileCtrl.slickProductConfig">
+        <div>
+            <a href="/assets/images/info/noah-box-l.jpg" data-lightbox="productInfo" data-title="Help Noah to bring two of all the animals into the Ark.">
+                <img src="/assets/images/info/noah-box-s.jpg" />
             </a>
         </div>
-    </div>
-</div>
-
-
-<div id="information" ng-controller="MainController as informationCtrl" ng-init="option = informationCtrl.options[0]">
-    <div class="container">
-        <h1 class="text-center text-uppercase">What You Get</h1>
-        <div class="row visible-xs-block col-md-10 col-md-offset-1">
-            <h2 ng-bind-html="option.title"></h2>
-            <div class="media" ng-repeat="bullet in option.bullets">
-                <i class="fa {{bullet.icon}} fa-2x pull-left"></i>
-                <div class="media-body">
-                    <h4 class="media-heading">{{bullet.title}}</h4>
-                </div>
-            </div>
-            <slick class="slideshow" settings="informationCtrl.slickConfig">
-                <div class="item" ng-repeat="c in option.carousel">
-                    <a href="/assets/images/info/{{c.image}}-l.jpg" data-lightbox="{{option.id}}" data-title="{{c.title}}">
-                        <img ng-src="/assets/images/info/{{c.image}}-l.jpg" />
-                        <br/>
-                    </a>{{c.title}}
-                </div>
-            </slick>
-            <div class="buttons">
-                <a ui-sref="home({'#' : 'pricing'})" du-smooth-scroll>
-                    <button type="button" class="btn btn-lg btn-primary" aria-haspopup="true" aria-expanded="false">Order Now</button>
-                </a>
-                <a href="/stories">
-                    <button type="button" class="btn btn-lg btn-info" aria-haspopup="true" aria-expanded="false">Our Boxes</button>
-                </a>
-            </div>
+        <div>
+            <a href="/assets/images/info/bubble-l.jpg" data-lightbox="productInfo" data-title="Enjoy giant rainbow bubbles. Remember the promise God gave to Noah.">
+                <img src="/assets/images/info/bubble-s.jpg" />
+            </a>
         </div>
-        <div class="row hidden-xs">
-            <div class="panel panel-default col-md-12 info-panel">
-                <div class="panel-body">
-                    <div class="col-md-8">
-                        <slick settings="informationCtrl.slickConfig">
-                            <div class="item" ng-repeat="c in option.carousel track by $index">
-                                <a href="/assets/images/info/{{c.image}}-l.jpg" data-lightbox="{{option.id}}" data-title="{{c.title}}">
-                                    <img ng-src="/assets/images/info/{{c.image}}-l.jpg" />
-                                    <br/>
-                                </a>{{c.title}}
-                            </div>
-                        </slick>
-                    </div>
-                    <div class="col-md-4">
-                        <h1>{{option.title}}</h1>
-                        <div class="media" ng-repeat="bullet in option.bullets">
-                            <i class="fa {{bullet.icon}} fa-2x pull-left"></i>
-                            <div class="media-body">
-                                <h4 class="media-heading">{{bullet.title}}</h4>
-                                <br/>
-                            </div>
-                        </div>
-                        <div class="buttons">
-                            <a ui-sref="home({'#' : 'pricing'})" ng-click="showInfo(option.id)" du-smooth-scroll>
-                                <button type="button" class="btn btn-lg btn-primary" aria-haspopup="true" aria-expanded="false">Order Now</button>
-                            </a>
-                            <a href="/stories">
-                                <button type="button" class="btn btn-lg btn-secondary" aria-haspopup="true" aria-expanded="false">Our Boxes</button>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
+        <div>
+            <a href="/assets/images/info/daniel-l.jpg" data-lightbox="productInfo" data-title="Learn how God protected Daniel, when he was thrown into the lions' den.">
+                <img src="/assets/images/info/daniel-s.jpg" />
+            </a>
         </div>
-    </div>
+        <div>
+            <a href="/assets/images/info/daniel-lion-l.jpg" data-lightbox="productInfo" data-title="Tie a lion pillow and be reminded to be brave like Daniel.">
+                <img src="/assets/images/info/daniel-lion-s.jpg" />
+            </a>
+        </div>
+        <div>
+            <a href="/assets/images/info/david-l.jpg" data-lightbox="productInfo" data-title="Explore the story of David and Goliath.">
+                <img src="/assets/images/info/david-s.jpg" />
+            </a>
+        </div>
+        <div>
+            <a href="/assets/images/info/david-aim-l.jpg" data-lightbox="productInfo" data-title="Try to aim like David.">
+                <img src="/assets/images/info/david-aim-s.jpg" />
+            </a>
+        </div>
+    </slick>
 </div>
-
-<acme-social></acme-social>
 
 <acme-pricing></acme-pricing>
 
-<acme-social></acme-social>
-
-<div id="reviews">
-    <h1 class="text-center text-uppercase">What Others Say</h1>
-    <div class="col-md-8 col-md-offset-2 hidden-xs">
-        <div class="col-sm-6 col-md-4">
-            <div class="thumbnail">
-                <a target="_blank" href="http://kindercraze.com/meet-hellobible-christian-subscription-box-kids/">
-                    <img src="http://kindercraze.com/wp-content/uploads/2012/09/thumbnail.png" alt="Kinder-Craze">
-                </a>
-                <div class="caption">
-                    <h3>The Story of Noah</h3>
-                    <p>Not only are the crafts unique, but they also come with clear, attractive directions for assembly (which
-                        <b>makes my teacher heart go pitter-patter</b>).</p>
-                    <p>
-                        <a target="_blank" href="http://kindercraze.com/meet-hellobible-christian-subscription-box-kids/" class="btn btn-primary"
-                            role="button">Read more</a>
-                    </p>
-                </div>
-            </div>
-        </div>
-        <div class="col-sm-6 col-md-4">
-            <div class="thumbnail">
-                <a target="_blank" href="https://2littlerosebuds.com/hello-bible-april-2017-childrens-subscription-box-review/">
-                    <img src="https://i.imgur.com/TKsMH45.png" alt="2 Little Rosebuds">
-                </a>
-                <div class="caption">
-                    <h3>The Story of Creation</h3>
-                    <p>Everything was very well designed and the projects were easy to complete.
-                        <b>A great box for teaching children about the Bible in a fun, hands-on way.
-                    </p>
-                    <p>
-                        <a target="_blank" href="https://2littlerosebuds.com/hello-bible-april-2017-childrens-subscription-box-review/" class="btn btn-primary"
-                            role="button">Read More</a>
-                    </p>
-                </div>
-            </div>
-        </div>
-        <div class="col-sm-6 col-md-4">
-            <div class="thumbnail">
-                <a target="_blank" href="http://justreedblog.com/bringbibletolife/">
-                    <img width="210" src="https://2.bp.blogspot.com/-ADudC0DKiyk/VkZfINSshjI/AAAAAAAAGas/jpRj54JhX7M/s1600/Just+Reed+Logo+Final1.png"
-                        alt="Just Reed Blog">
-                </a>
-                <div class="caption">
-                    <h3>The Story of Abraham</h3>
-                    <p>If you’re looking for a way to bring the Bible to life for your children or students,
-                        <b>I highly suggest looking into this subscription service.</b>
-                    </p>
-                    <p>
-                        <a target="_blank" href="http://justreedblog.com/bringbibletolife/" class="btn btn-primary" role="button">Read More</a>
-                    </p>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="col-md-10 col-md-offset-1 visible-xs-block" ng-controller="MainController as reviewCtrl">
-        <slick settings="reviewCtrl.testimonialConfig">
-            <div class="reviewSlide">
-                <a href="http://kindercraze.com/meet-hellobible-christian-subscription-box-kids/">
-                    <img src="http://kindercraze.com/wp-content/uploads/2012/09/thumbnail.png" alt="Kinder-Craze">
-                </a>
-                <h3>The Story of Noah</h3>
-                <p>Not only are the crafts unique, but they also come with clear, attractive directions for assembly (which
-                    <b>makes my teacher heart go pitter-patter</b>).</p>
-                <p>
-                    <a href="http://kindercraze.com/meet-hellobible-christian-subscription-box-kids/" class="btn btn-primary" role="button">Read more</a>
-                </p>
-            </div>
-            <div class="reviewSlide">
-                <a href="https://2littlerosebuds.com/hello-bible-april-2017-childrens-subscription-box-review/">
-                    <img src="https://i.imgur.com/TKsMH45.png" alt="2 Little Rosebuds">
-                </a>
-                <h3>The Story of Creation</h3>
-                <p>Everything was very well designed and the projects were easy to complete.
-                    <b>A great box for teaching children about the Bible in a fun, hands-on way.
-                </p>
-                <p>
-                    <a href="https://2littlerosebuds.com/hello-bible-april-2017-childrens-subscription-box-review/" class="btn btn-primary" role="button">Read More</a>
-                </p>
-            </div>
-            <div class="reviewSlide">
-                <a href="http://justreedblog.com/bringbibletolife/">
-                    <img width="210" src="https://2.bp.blogspot.com/-ADudC0DKiyk/VkZfINSshjI/AAAAAAAAGas/jpRj54JhX7M/s1600/Just+Reed+Logo+Final1.png"
-                        alt="Just Reed Blog">
-                </a>
-                <h3>The Story of Abraham</h3>
-                <p>If you’re looking for a way to bring the Bible to life for your children or students,
-                    <b>I highly suggest looking into this subscription service.</b>
-                </p>
-                <p>
-                    <a href="http://justreedblog.com/bringbibletolife/" class="btn btn-primary" role="button">Read More</a>
-                </p>
-            </div>
-        </slick>
-    </div>
+<div class="hidden-xs">
+    <acme-social></acme-social>
 </div>
 
-<acme-testimonials></acme-testimonials>
-
+<div class="hidden-xs">
+    <acme-testimonials></acme-testimonials>
+</div>
 
 <acme-footer></acme-footer>

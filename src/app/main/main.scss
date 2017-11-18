@@ -37,217 +37,192 @@
 /*********************************************************/
 /* HEADER
 /*********************************************************/
-.topheader {
-  background: url("/assets/images/headerbg-2560.jpg");
-  width: 100%;
-  height: 100%;
-  position: relative;
-  background-repeat: no-repeat;
-  background-position: center center;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}
+@media(min-width:768px) { // don't use with hidden-xs
+  .topheader {
+    
+    width: 100%;
+    height: 100%;
+    position: relative;
+    background-repeat: no-repeat;
+    background-position: center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 
-.topheader h1 {
-  color: white;
-  text-transform: none;
-  text-align: left;
-  font-size: 36px;
-}
+    .a-slide {
+      height: 100%; width: 100%; background-size: cover !important;
+    }
+      
+    .slick-slider {
+      height: 100%; width: 100%; background-size: cover !important;
+    }
 
-.topheader h2, .topheader h3 {
-  color: white;
-  text-align: left;
+    .slick-list {
+      height: 100%; width: 100%; background-size: cover !important;
+    }
+
+    .slick-track {
+      height: 100%; width: 100%; background-size: cover !important;
+    }
+
+    h1 {
+      color: white;
+      text-transform: none;
+      font-size: 42px;
+    }
+
+    h2, h3 {
+      color: white;
+      text-align: left;
+    }
+
+    .item-a {
+      background: url("/assets/images/headerbg-2560.jpg");    
+
+      h1 {
+        text-align: left;
+      }
+    }
+
+    .item-b {
+      background: url("/assets/images/info/homeschoolbg-2560.jpg");
+      text-align: right;
+
+      h1 {
+        text-align: right;
+      }
+    }
+
+    .item-c {
+      background: url("/assets/images/info/noahbg-2560.jpg") no-repeat center;;
+      text-align: right;
+
+      h1 {
+        text-align: right;
+      }
+      h2 {
+        font-size: 24pt;
+        text-align: right;
+      }
+    }
+
+    .slick-dots {
+      margin-bottom: 140px;
+    }
+
+    .slick-dots li button:before {
+      font-size: 20px;
+      color: white;
+    }
+
+    .seen {
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      text-align: center;
+      background: none repeat scroll 0 0 $BBLightGrey;
+      padding: 10px;
+      margin-top:20px;
+    }
+
+    .seen-image {
+      width: 60px;
+    }
+  }
+
 }
 
 
 /* #### Top Header Small Devices #### */
-.topheader-mobile img {
-  width: 100%;
-}
+@media(max-width:768px) {
+  .topheader-mobile {
 
-.topheader-mobile h1 {
-  color: $BBOrange;
-  text-transform: none;
-  margin:  20px 20px 0px 20px;  
-}
+    height: 100%;
 
-.topheader-mobile h2 {
-  text-align: center;
-  margin: 10px 20px 0px 20px;
-}
-
-.topheader-mobile h3 {
-  text-align: center;
-  margin: 10px 20px 0px 20px;
-}
-
-
-.subscribe-mobile {
-  text-align: center;
-}
-
-.subscribe-mobile .btn-secondary {
-  color: $BBBlue;
-}
-
-.subscribe-mobile .btn-secondary:hover {
-  color: white;
-}
-
-.arrow-down {
-  animation-duration: 1s;
-  animation-iteration-count: 3;
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  margin-left:-20px;
-  width: 40px;
-  height: 40px;
-  margin-bottom: 60px;
-  background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAxNi4wLjAsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+DQo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IiB3aWR0aD0iNTEycHgiIGhlaWdodD0iNTEycHgiIHZpZXdCb3g9IjAgMCA1MTIgNTEyIiBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCA1MTIgNTEyIiB4bWw6c3BhY2U9InByZXNlcnZlIj4NCjxwYXRoIGZpbGw9IiNGRkZGRkYiIGQ9Ik0yOTMuNzUxLDQ1NS44NjhjLTIwLjE4MSwyMC4xNzktNTMuMTY1LDE5LjkxMy03My42NzMtMC41OTVsMCwwYy0yMC41MDgtMjAuNTA4LTIwLjc3My01My40OTMtMC41OTQtNzMuNjcyICBsMTg5Ljk5OS0xOTBjMjAuMTc4LTIwLjE3OCw1My4xNjQtMTkuOTEzLDczLjY3MiwwLjU5NWwwLDBjMjAuNTA4LDIwLjUwOSwyMC43NzIsNTMuNDkyLDAuNTk1LDczLjY3MUwyOTMuNzUxLDQ1NS44Njh6Ii8+DQo8cGF0aCBmaWxsPSIjRkZGRkZGIiBkPSJNMjIwLjI0OSw0NTUuODY4YzIwLjE4LDIwLjE3OSw1My4xNjQsMTkuOTEzLDczLjY3Mi0wLjU5NWwwLDBjMjAuNTA5LTIwLjUwOCwyMC43NzQtNTMuNDkzLDAuNTk2LTczLjY3MiAgbC0xOTAtMTkwYy0yMC4xNzgtMjAuMTc4LTUzLjE2NC0xOS45MTMtNzMuNjcxLDAuNTk1bDAsMGMtMjAuNTA4LDIwLjUwOS0yMC43NzIsNTMuNDkyLTAuNTk1LDczLjY3MUwyMjAuMjQ5LDQ1NS44Njh6Ii8+DQo8L3N2Zz4=);
-  background-size: contain;
-}
-
-/*********************************************************/
-/* INFORMATIONS
-/*********************************************************/
-#information {
-
-  @media(min-width:768px) {
-    //background: none repeat scroll 0 0 white;
-    background: url(/assets/images/bg.png) repeat center center;
-  }
-  //background-color: #AC917F;
-  @media(max-width:768px) {
-    padding-bottom: 15px;
-  }
-
-  a {
-    color: black;
-  }
-
-  .accordion-heading-title  {
-    width : 100px;
-  }
-
-  .accordion-heading-subtitle {
-    font-size: 16px;
-    margin-left: 10px;
-  }
-
-  .accordion-toggle:focus {
-    outline: none;
-  }
-
-  .active {
-    background-color: #F5F5F5;
-  }
-
-
-  .thumbnail:hover {
-    background: $BBLightGrey;
-  }
-
-  .captionHighlight {
-    text-align: center;
-  }
-
-  h1:after {
-    content: "";
-    display: block;
-    height: 4px;
-    width: 80px;
-    background: $BBBlue;
-    margin: 0 auto;
-    margin-top: 10px;
-    margin-bottom: 30px;
-  }
-
-  a {
-    color: $BBBlue;
-  }
-
-  a:hover {
-    color: $BBDarkBlue;
-  }
-
-  #curriculum {
-    left: 75%;
-    padding-top: 18px;
-    transform: rotate(-325deg);
-  }
-
-  .btn-secondary {
-    color: $BBBlue;
-  }
-
-  .btn-secondary:hover {
-    color: white;
-  }
-
-  .buttons {
-    text-align: center;
-    margin-top: 30px;
-  }
-
-  .steps {
-    font-size: 10pt;
-  }
-
-  .list-group-item {
-
-    color: white;
-
-    h4 {
-      color: $BBBlue;
+    h1 {
+      color: $BBDarkBlue;
+      text-transform: none;
+      margin:  20px 20px 0px 20px;
     }
 
-    p {
-      font-style: italic;
+    h2 {
+      text-align: center;
+      margin: 10px 20px 0px 20px;
+    }
+
+    h3 {
+      text-align: center;
+      margin: 10px 20px 0px 20px;
+    }
+
+    .slick-dots li button:before {
+      margin-top: 15px;
+      font-size: 20px;
       color: $BBDarkGrey;
     }
-  }
 
-  .slick-dots li button:before {
-    font-size: 20px;
-  }
-  
-  .slick-prev:before,
-  .slick-next:before
-  {
-      font-size: 25px;
-      line-height: 1;
-  
-      opacity: .75;
-      color: black;
-  
-      -webkit-font-smoothing: antialiased;
-      -moz-osx-font-smoothing: grayscale;
-  }
+    div.item-a-image {
+      content:url(/assets/images/headerbg-970.jpg);
+      width: 100%;
+    }
 
-  .media {
-    padding-bottom: 10px;
+    div.item-b-image {
+      content:url(/assets/images/info/homeschool.jpg);
+      width: 100%;
+    }
+
+    div.item-c-image {
+      content:url(/assets/images/info/david-l.jpg);
+      width: 100%;
+    }
+
+    .button-mobile {
+      text-align: center;
+    }
+
+
+    .seen {
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      text-align: center;
+      background: none repeat scroll 0 0 $BBLightGrey;
+      padding: 10px;
+      margin-top:20px;
+    }
+
+    .seen-image {
+      width: 60px;
+    }
+
   }
 
 }
 
+ul li .timeline-image {
+	position: absolute;
+	top: 40px;
+	left: 50%;
+	margin-left: -60px;
+	clear: both;
+}
 
-/*********************************************************/
-/* ABOUT
-/*********************************************************/
+#how:before {
+	content: "";
+	background: #dedede;
+	width: 2px;
+	height: 400px;
+	display: block;
+	position: absolute;
+	top: 160px;
+	left: 50%;
+	margin-left: -1px;
+}
+
 #how {
-  padding: 20px 20px 0 20px;
-  position: relative;
-  margin-bottom:20px;
 
-  h2 {
-    line-height: 1.0;
-    text-transform: uppercase;
-    text-align: center;
-  }
+  position: relative;
 
   h1:after {
     content: "";
@@ -259,140 +234,82 @@
     margin-top: 10px;
   }
 
-  .caption {
-    font-size: 20px;
-    text-align: center;
-    font-style: bold;
+  h3 {
+    font-size: 15pt;
   }
 
-  .mb-0 {
-    font-size: 12px;
-  }
-  
-  .blockquote-footer {
-    font-size: 12px;
-  }
-
-  .caption a {
-    text-align: center;
-    display: block;
-    margin: auto;
+  ul li img {
+    border-radius: 100%;
+    width: 120px;
+    height: 120px;
+    border: 6px solid $BBLightGrey;
   }
 
-  .how-button a {
-    text-align: center;
-    display: block;
-    margin: auto;
-    margin-top: 2px;
-    margin-bottom: 5px;
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
   }
 
-  .media-object  {
-    width: 250px;
-    display: block;
-    margin: auto;
+  ul li {
+    position: relative;
+    margin-bottom: 30px;
+    min-height: 150px;
   }
 
-  a {
-    color: $BBBlue;
-    text-decoration: none;
-  }
-  
-  a, button {
-    transition: 0.2s;
-    -moz-transition: 0.2s;
-    -webkit-transition: 0.2s;
-    -o-transition: 0.2s;
-  }
-  
-  a:hover, a:focus {
-    color: $BBDarkBlue;
-    text-decoration: none;
-    cursor: pointer;
+  .timeline-left {
+    float: left;
+    width: 41%;
+    text-align: right;
   }
 
-  .slick-dots li button:before {
-    font-size: 20px;
-  }
-  
-  .slick-prev:before,
-  .slick-next:before
-  {
-      font-size: 25px;
-      line-height: 1;
-  
-      opacity: .75;
-      color: black;
-  
-      -webkit-font-smoothing: antialiased;
-      -moz-osx-font-smoothing: grayscale;
-  }
- 
-}
-
-/*********************************************************/
-/* Reviews
-/*********************************************************/
-#reviews {
-  padding: 20px 20px 0 20px;
-  position: relative;
-
-  h2 {
-    line-height: 1.0;
-    text-transform: uppercase;
+  .timeline-right {
+    float: right;
+    width: 41%;
     text-align: left;
   }
 
-  h1:after {
+}
+
+@media(max-width:768px) {
+
+  #how:before {
     content: "";
-    display: block;
-    height: 4px;
-    width: 80px;
-    background: $BBBlue;
-    margin: 0 auto;
-    margin-top: 10px;
+    display: none;
   }
 
-  .reviewSlide a img {
-    display: block;
-    margin: auto;
+	ul li .timeline-image {
+    position: absolute;
+    top: 40px;
+    left: 10%;
+    margin-left: -53px;
+    clear: both;
   }
+  
+  #how {
 
-  .slick-dots li button:before {
-    font-size: 20px;
+    margin-left: 10px;
+
+    .timeline-left {
+      float: none;
+      width: 100%;
+      text-align: left;
+      padding-left: 100px;
+    }
+
+    .timeline-right {
+      float: none;
+      width: 100%;
+      text-align: left;
+      padding-left: 100px;
+    }
+
+    ul li img {
+      border-radius: 100%;
+      width: 80px;
+      height: 80px;
+      border: 4px solid $BBLightGrey;
+    }
   }
-  
-  .slick-prev:before,
-  .slick-next:before
-  {
-      font-size: 22px;
-      line-height: 1;
-  
-      opacity: .75;
-      color: black;
-  
-      -webkit-font-smoothing: antialiased;
-      -moz-osx-font-smoothing: grayscale;
-  }
- 
 
 }
-
-
-/*********************************************************/
-/* VERSE
-/*********************************************************/
-.verse {
-  background: none repeat scroll 0 0 $BBBlue;
-  color: white;
-  margin-top: 20px;
-
-
-  img {
-    padding-top: 15px;
-    height: 110px;
-  }
-
-
-}
-

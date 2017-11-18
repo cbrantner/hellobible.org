@@ -27,7 +27,7 @@
           },
           {
             title: "What is the suggested age range for HelloBible?",
-            answer: ["HelloBible™ is designed for kids ages 5 and older. The curriculum is for grades K - 3."]
+            answer: ["HelloBible is designed for kids ages 5 and older. The curriculum is for grades K - 3."]
           },
           {
             title: "Does HelloBible align with my beliefs?",
@@ -52,15 +52,15 @@
               ]
           },
           {
-            title: "How does it work for multiple children?",
-            answer : ["During the checkout process, your can select the number of material sets you want - one for each child."]
+            title: "How does HelloBible work for multiple children?",
+            answer : ["During the checkout process, your can select the number of material sets you need - one for each child."]
           },
           {
-            title: "Why is Hellobible great for homeschooling?",
+            title: "Why is HelloBible great for homeschooling?",
             answer: ["<ul>" +
               "<li><b>Multi-sensory</b>: Read Bible Stories. Create hands-on crafts. Engage in fun activities.</li>" +
               "<li><b>Multi-disciplinary</b>: Combine Bible and Art. Both often fall short in a performance-oriented education.</li>" +
-              "<li><b>Convenient: All</b> materials are included. For up to 10 children.</li>" +
+              "<li><b>Convenient:</b> All materials are included. For up to 10 children.</li>" +
               "<li><b>Easy to teach</b>: Thoughtful lesson plans and child-friendly instructions are included.</li>" +
               "<li><b>Keepsake projects:</b> Always be reminded that you are a child of God.</li>" +
               "<li><b>Giving and compassion</b>: Support children in Kenya.</li>"
@@ -118,7 +118,7 @@
           },
           {
             title: "When does HelloBible ship?",
-            answer: ["If you want to receive a HelloBible shipment the same month, you need to subscribe before the 17th of that month. Your first box will then be shipped around the 19th of that month. If you sign up after the 17th, your box will ship around the 19th of the following month. For example, if you order on January 17th, your first HelloBible box will ship around the 19th of January. If you order on January 18th, your first HelloBible box will be shipped around the 19th of February."]
+            answer: ["If you want to receive a HelloBible shipment the same month, you need to subscribe before the 16th of that month. Your first box will then be shipped around the 19th of that month. If you sign up after the 16th, your box will ship around the 19th of the following month. For example, if you order on January 16th, your first HelloBible box will ship around the 19th of January. If you order on January 18th, your first HelloBible box will be shipped around the 19th of February."]
           }
         ]
       }, {
