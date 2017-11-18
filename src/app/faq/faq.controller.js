@@ -27,7 +27,7 @@
           },
           {
             title: "What is the suggested age range for HelloBible?",
-            answer: ["HelloBible™ is designed for kids ages 5 and older. The curriculum is for grades K - 3."]
+            answer: ["HelloBible is designed for kids ages 5 and older. The curriculum is for grades K - 3."]
           },
           {
             title: "Does HelloBible align with my beliefs?",
