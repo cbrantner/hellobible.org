@@ -52,15 +52,15 @@
               ]
           },
           {
-            title: "How does it work for multiple children?",
-            answer : ["During the checkout process, your can select the number of material sets you want - one for each child."]
+            title: "How does HelloBible work for multiple children?",
+            answer : ["During the checkout process, your can select the number of material sets you need - one for each child."]
           },
           {
-            title: "Why is Hellobible great for homeschooling?",
+            title: "Why is HelloBible great for homeschooling?",
             answer: ["<ul>" +
               "<li><b>Multi-sensory</b>: Read Bible Stories. Create hands-on crafts. Engage in fun activities.</li>" +
               "<li><b>Multi-disciplinary</b>: Combine Bible and Art. Both often fall short in a performance-oriented education.</li>" +
-              "<li><b>Convenient: All</b> materials are included. For up to 10 children.</li>" +
+              "<li><b>Convenient:</b> All materials are included. For up to 10 children.</li>" +
               "<li><b>Easy to teach</b>: Thoughtful lesson plans and child-friendly instructions are included.</li>" +
               "<li><b>Keepsake projects:</b> Always be reminded that you are a child of God.</li>" +
               "<li><b>Giving and compassion</b>: Support children in Kenya.</li>"
