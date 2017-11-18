@@ -1,63 +1,139 @@
 #testimonials {
-  padding-bottom: 20px;
-    background: url(/assets/images/bg.png) repeat center center;
-
+  h1:after {
+    content: "";
+    display: block;
+    height: 4px;
+    width: 80px;
+    background: $BBBlue;
+    margin: 0 auto;
+    margin-top: 10px;
+  }
 }
 
-#testimonials p {
-  color: $BBDarkGrey;
-}
+#why {
+  padding: 0px 20px 0 20px;
+  position: relative;
 
-#testimonials h1:after {
-  content: "";
-  display: block;
-  height: 4px;
-  width: 80px;
-  background: $BBBlue;
-  margin: 0 auto;
-  margin-top: 10px;
-}
+  h2 {
+    line-height: 1.0;
+    text-transform: uppercase;
+    text-align: center;
+  }
 
-#testimonials .media-object {
-    width : 80px;
-}
+  h3 {
+    text-transform: uppercase;
+    text-align: center;
+  }
 
-#testimonials .media {
-    margin-bottom: 20px;
-}
+  .caption {
+    font-size: 20px;
+    text-align: center;
+    font-style: bold;
+  }
 
-.testimonial-group {
-    border: 1px solid $BBDarkGrey;
-    padding: 10px;
+  .mb-0 {
     font-size: 12px;
-    -webkit-border-radius: 3px;
-    -moz-border-radius: 3px;
-    border-radius: 3px;
-    transition: all 0.5s ease;
-    background-color: white;
+  }
+  
+  .blockquote-footer {
+    font-size: 12px;
+  }
+
+  .caption a {
+    text-align: center;
+    display: block;
+    margin: auto;
+  }
+
+  .why-button a {
+    text-align: center;
+    display: block;
+    margin: auto;
+    margin-top: 2px;
+    margin-bottom: 5px;
+  }
+
+  .media-object  {
+    width: 250px;
+    display: block;
+    margin: auto;
+  }
+
+  a {
+    color: $BBBlue;
+    text-decoration: none;
+  }
+
+  a, button {
+    transition: 0.2s;
+    -moz-transition: 0.2s;
+    -webkit-transition: 0.2s;
+    -o-transition: 0.2s;
+  }
+
+  a:hover, a:focus {
+    color: $BBDarkBlue;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  .slick-dots li button:before {
+    font-size: 20px;
+  }
+
+  .slick-prev:before,
+  .slick-next:before
+  {
+      font-size: 25px;
+      line-height: 1;
+  
+      opacity: .75;
+      color: black;
+
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+  }
+
 }
 
-.testimonial-group:hover {
-    border: 1px solid $BBDarkGrey;
-    padding: 10px;
-    font-size: 12px;
-    -webkit-border-radius: 3px;
-    -moz-border-radius: 3px;
-    border-radius: 3px;
-    background: #00a8d6;
-    color: white;
+#reviews {
+  padding: 20px 20px 0 20px;
+  position: relative;
+
+  h2 {
+    line-height: 1.0;
+    text-transform: uppercase;
+    text-align: center;
+  }
+
+  .reviewSlide a img {
+    display: block;
+    margin: auto;
+  }
+
+  .slick-dots li button:before {
+    font-size: 20px;
+  }
+
+  .slick-prev:before,
+  .slick-next:before
+  {
+      font-size: 22px;
+      line-height: 1;
+
+      opacity: .75;
+      color: black;
+
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+  }
+
 }
 
 #press {
-  padding-bottom: 50px;
-}
-
-#press h1:after {
-  content: "";
-  display: block;
-  height: 4px;
-  width: 80px;
-  background: $BBBlue;
-  margin: 0 auto;
-  margin-top: 10px;
+  h2 {
+    line-height: 1.0;
+    text-transform: uppercase;
+    text-align: center;
+  }
 }
