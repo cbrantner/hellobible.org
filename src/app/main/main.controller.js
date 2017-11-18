@@ -161,13 +161,16 @@
       slidesToShow: 4,
       dots: true,
       arrows: false,
+      autoplay: true,
+      autoplaySpeed: 2000,
       responsive: [
         {
           breakpoint: 1024,
           settings: {
             centerMode: true,
             centerPadding: '40px',
-            slidesToShow: 3
+            slidesToShow: 3,
+            autoplay: false
           }
         },
         {
@@ -175,7 +178,8 @@
           settings: {
             centerMode: true,
             centerPadding: '40px',
-            slidesToShow: 2
+            slidesToShow: 2,
+            autoplay: false
           }
         }
       ]
