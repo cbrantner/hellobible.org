@@ -1,15 +1,23 @@
 #boxes {
+    h1:after {
+        content: "";
+        display: block;
+        height: 4px;
+        width: 80px;
+        background: $BBBlue;
+        margin: 0 auto;
+        margin-top: 10px;
+        margin-bottom: 50px;
+    }
     img {
         margin-left: auto;
         margin-right: auto;
         display: block;
     }
-
     .storyName {
         font-weight: bold;
         margin-top: 5px;
     }
-
     .cfa {
         text-align: center;
         display: block;
