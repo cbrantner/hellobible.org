@@ -1,44 +1,38 @@
 #kilgoris {
-	.logo {
-		height: 100px;
-		text-align: center;
-	}
-
-	a {
-		color: $BBBlue;
-	}
-
-	a:hover {
-		color: $BBDarkBlue;
-	}
-
-	h1:after {
-		content: "";
-		display: block;
-		height: 4px;
-		width: 80px;
-		background: $BBBlue;
-		margin: 0 auto;
-		margin-top: 20px;
-		margin-bottom: 30px;
-	}
-
-	h2:after {
-		content: "";
-		display: block;
-		height: 4px;
-		width: 80px;
-		background: $BBBlue;
-		margin: 0 auto;
-		margin-top: 20px;
-		margin-bottom: 30px;
-	}
-
-	.cfa {
-		text-align: center;
-    	display: block;
-		margin: auto;
-		margin: 20px;
-	}
-
+    .logo {
+        height: 100px;
+        text-align: center;
+    }
+    a {
+        color: $BBBlue;
+    }
+    a:hover {
+        color: $BBDarkBlue;
+    }
+    h1:after {
+        content: "";
+        display: block;
+        height: 4px;
+        width: 80px;
+        background: $BBBlue;
+        margin: 0 auto;
+        margin-top: 20px;
+        margin-bottom: 30px;
+    }
+    h2:after {
+        content: "";
+        display: block;
+        height: 4px;
+        width: 80px;
+        background: $BBBlue;
+        margin: 0 auto;
+        margin-top: 20px;
+        margin-bottom: 30px;
+    }
+    .cfa {
+        text-align: center;
+        display: block;
+        margin: auto;
+        margin: 20px;
+    }
 }
