@@ -59,50 +59,50 @@
         {
           monthlyPlan:
             {
-              baseUrl : "https://hellobible.cratejoy.com/ac/CELEBRATE?next=subscribe/",
+              baseUrl : "https://hellobible.cratejoy.com/subscribe/",
               children: [
-                { price: "24.90", discounted: "19.90", url: "1047510662_hellobible-1-child/1047510663_month-to-month"},
-                { price: "29.80", discounted: "24.80", url: "1047516535_hellobible-2-children/1047516536_month-to-month"},
-                { price: "34.70", discounted: "29.70", url: "1047517270_hellobible-3-children/1047517266_month-to-month"},
-                { price: "39.60", discounted: "34.60", url: "1047517708_hellobible-4-children/1047517704_month-to-month"},
-                { price: "44.50", discounted: "39.50", url: "1047518045_hellobible-5-children/1047518046_month-to-month"},
-                { price: "49.40", discounted: "44.40", url: "1047518549_hellobible-6-children/1047518550_month-to-month"},
-                { price: "54.30", discounted: "49.30", url: "1047518340_hellobible-7-children/1047518341_month-to-month"},
-                { price: "59.20", discounted: "54.20", url: "1047518073_hellobible-8-children/1047518075_month-to-month"},
-                { price: "64.10", discounted: "59.10", url: "1047517810_hellobible-9-children/1047517811_month-to-month"},
-                { price: "69.00", discounted: "64.00", url: "1047517391_hellobible-10-children/1047517392_month-to-month"}
+                { price: "19.90", url: "1114186904_hellobible-for-1-child/1114186900_month-to-month"},
+                { price: "24.80", url: "1114187468_hellobible-for-2-children/1114187464_month-to-month"},
+                { price: "29.70", url: "1114187845_hellobible-for-3-children/1114187839_month-to-month"},
+                { price: "34.60", url: "1114188232_hellobible-for-4-children/1114188228_month-to-month"},
+                { price: "39.50", url: "1114188709_hellobible-for-5-children/1114188705_month-to-month"},
+                { price: "44.40", url: "1114189029_hellobible-for-6-children/1114189030_month-to-month"},
+                { price: "49.30", url: "1114189650_hellobible-for-7-children/1114189651_month-to-month"},
+                { price: "54.20", url: "1114190043_hellobible-for-8-children/1114190039_month-to-month"},
+                { price: "59.10", url: "1114190339_hellobible-for-9-children/1114190335_month-to-month"},
+                { price: "64.00", url: "1114186146_hellobible-for-10-children/1114186147_month-to-month"}
               ]
             },
           sixMonthsPlan:
             {
-              baseUrl : "https://hellobible.cratejoy.com/ac/CELEBRATE6?next=subscribe/",
+              baseUrl : "https://hellobible.cratejoy.com/subscribe/",
               children: [
-                { price: "143.40", discounted: "113.40", url: "1047510662_hellobible-1-child/1047510665_6-month-prepay"},
-                { price: "172.80", discounted: "142.80", url: "1047516535_hellobible-2-children/1047516538_6-month-prepay"},
-                { price: "202.20", discounted: "172.20", url: "1047517270_hellobible-3-children/1047517268_6-month-prepay"},
-                { price: "231.60", discounted: "201.60", url: "1047517708_hellobible-4-children/1047517706_6-month-prepay"},
-                { price: "261.00", discounted: "231.00", url: "1047518045_hellobible-5-children/1047518048_6-month-prepay"},
-                { price: "290.40", discounted: "260.40", url: "1047518549_hellobible-6-children/1047518552_6-month-prepay"},
-                { price: "319.80", discounted: "289.80", url: "1047518340_hellobible-7-children/1047518344_6-month-prepay"},
-                { price: "349.20", discounted: "319.20", url: "1047518073_hellobible-8-children/1047518077_6-month-prepay"},
-                { price: "378.60", discounted: "348.60", url: "1047517810_hellobible-9-children/1047517813_6-month-prepay"},
-                { price: "408.00", discounted: "378.00", url: "1047517391_hellobible-10-children/1047517394_6-month-prepay"}
+                { price: "113.40", url: "1114186904_hellobible-for-1-child/1114186902_6-month-prepay"},
+                { price: "142.80", url: "1114187468_hellobible-for-2-children/1114187466_6-month-prepay"},
+                { price: "172.20", url: "1114187845_hellobible-for-3-children/1114187841_6-month-prepay"},
+                { price: "201.60", url: "1114188232_hellobible-for-4-children/1114188230_6-month-prepay"},
+                { price: "231.00", url: "1114188709_hellobible-for-5-children/1114188707_6-month-prepay"},
+                { price: "260.40", url: "1114189029_hellobible-for-6-children/1114189032_6-month-prepay"},
+                { price: "289.80", url: "1114189650_hellobible-for-7-children/1114189653_6-month-prepay"},
+                { price: "319.20", url: "1114190043_hellobible-for-8-children/1114190041_6-month-prepay"},
+                { price: "348.60", url: "1114190339_hellobible-for-9-children/1114190337_6-month-prepay"},
+                { price: "378.00", url: "1114186146_hellobible-for-10-children/1114186149_6-month-prepay"}
               ]
             },
           twelveMonthsPlan:
             {
-              baseUrl : "https://hellobible.cratejoy.com/ac/CELEBRATE12?next=subscribe/",
+              baseUrl : "https://hellobible.cratejoy.com/subscribe/",
               children: [
-                { price: "274.80", discounted: "214.80", url: "1047510662_hellobible-1-child/1047510666_12-month-prepay"},
-                { price: "333.60", discounted: "273.60", url: "1047516535_hellobible-2-children/1047516539_12-month-prepay"},
-                { price: "392.40", discounted: "332.40", url: "1047517270_hellobible-3-children/1047517269_12-month-prepay"},
-                { price: "451.20", discounted: "391.20", url: "1047517708_hellobible-4-children/1047517707_12-month-prepay"},
-                { price: "510.00", discounted: "450.00", url: "1047518045_hellobible-5-children/1047518049_12-month-prepay"},
-                { price: "568.80", discounted: "508.80", url: "1047518549_hellobible-6-children/1047518553_12-month-prepay"},
-                { price: "627.60", discounted: "567.60", url: "1047518340_hellobible-7-children/1047518345_12-month-prepay"},
-                { price: "686.40", discounted: "626.40", url: "1047518073_hellobible-8-children/1047518078_12-month-prepay"},
-                { price: "745.20", discounted: "685.20", url: "1047517810_hellobible-9-children/1047517814_12-month-prepay"},
-                { price: "804.00", discounted: "744.00", url: "1047517391_hellobible-10-children/1047517395_12-month-prepay"}
+                { price: "214.80", url: "1114186904_hellobible-for-1-child/1114186903_12-month-prepay"},
+                { price: "273.60", url: "1114187468_hellobible-for-2-children/1114187467_12-month-prepay"},
+                { price: "332.40", url: "1114187845_hellobible-for-3-children/1114187843_12-month-prepay"},
+                { price: "391.20", url: "1114188232_hellobible-for-4-children/1114188231_12-month-prepay"},
+                { price: "450.00", url: "1114188709_hellobible-for-5-children/1114188708_12-month-prepay"},
+                { price: "508.80", url: "1114189029_hellobible-for-6-children/1114189033_12-month-prepay"},
+                { price: "567.60", url: "1114189650_hellobible-for-7-children/1114189654_12-month-prepay"},
+                { price: "626.40", url: "1114190043_hellobible-for-8-children/1114190042_12-month-prepay"},
+                { price: "685.20", url: "1114190339_hellobible-for-9-children/1114190338_12-month-prepay"},
+                { price: "744.00", url: "1114186146_hellobible-for-10-children/1114186150_12-month-prepay"}
               ]
             }
         };
