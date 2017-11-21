@@ -15,8 +15,7 @@
     margin-top: 10px;
   }
 
-  .not-offer {
-    text-decoration: line-through;
+  .popular {
     font-size: 18px;
     text-align: center;
     color: grey;
@@ -25,9 +24,15 @@
   .price {
     font-size: 24px;
     text-align: center;
+    padding-bottom: 15px;
   }
 
   .priceColor {
+    color: #A3331A;
+    font-weight: bold;
+  }
+
+  .pricePerMonth {
     color: #A3331A;
   }
 
