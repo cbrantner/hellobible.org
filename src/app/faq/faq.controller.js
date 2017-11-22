@@ -22,7 +22,8 @@
           {
             title: "What is included?",
             answer: [
-              "It comes with a Bible storybook, engaging lesson plans and multidisciplinary activities to dig deeper into the content of a Bible story. All materials for amazing bible-based art projects are included. Our Bible explorers can use the included Travel Journal to collect story coloring and activity sheets."
+              "It comes with a Bible storybook, engaging lesson plans and multidisciplinary activities to dig deeper into the content of a Bible story. All materials for amazing bible-based art projects are included. Our Bible explorers can use the included Travel Journal to collect story coloring and activity sheets.",
+              "Visit our <a href='/stories'>Bible Stories page</a> for examples."
             ]
           },
           {
@@ -41,7 +42,7 @@
           {
             title: "Is HelloBible donating?",
             answer: ["Yes. We personally know the founders of The Kilgoris Project and started an awesome partnership with them to support their great work in Kenya. The Kilgoris Project educates and feeds children of a Masaai village in southwest Kenya. They work with local leaders and families to operate schools, provide daily food and clean water.",
-              "For each HelloBible subscription, we donate to The Kilgoris Project. Teach your child the importance of giving: Together we can make a difference in the life of a child in Kilgoris! "]
+              "For each HelloBible subscription, we donate to <a href='/kilgoris'>The Kilgoris Project</a>. Teach your child the importance of giving: Together we can make a difference in the life of a child in Kilgoris! "]
           },
           {
             title: "How can I support HelloBible?",
