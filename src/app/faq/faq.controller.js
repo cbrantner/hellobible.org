@@ -6,9 +6,14 @@
     .controller('FaqController', FaqController);
 
   /** @ngInject */
-  function FaqController(Analytics, hbTracking) {
+  function FaqController(Analytics, $window, hbTracking) {
 
     var vm = this;
+
+    if (hbTracking) {
+      // track as lead on facebook
+      $window.fbq('track', 'Lead');
+    }
 
     vm.faq = [
       {
@@ -16,13 +21,13 @@
         id: "general",
         items: [
           {
-            title: "What is HelloBible?",
+          title: "What is HelloBible?",
             answer: ["HelloBible is a monthly christian subscription for kids ages 5 and older. Its content is a thoughtfully designed Bible and art curriculum meant to help kids understand God's Word and draw them closer to the Lord. It is ideal for families and homeschooling families to explore a Bible story each month through multisensory learning, art projects and fun activities. All materials and instructions are included. Join us on a great Journey through the Bible."]
           },
           {
             title: "What is included?",
             answer: [
-              "It comes with a Bible storybook, engaging lesson plans and multidisciplinary activities to dig deeper into the content of a Bible story. All materials for amazing bible-based art projects are included. Our Bible explorers can use the included Travel Journal to collect story coloring and activity sheets.",
+              "It comes with one Bible storybook, engaging lesson plans and multidisciplinary activities to dig deeper into the content of a Bible story. All materials for amazing bible-based art projects are included. Our Bible explorers can use the included Travel Journal to collect story coloring and activity sheets.",
               "Visit our <a href='/stories'>Bible Stories page</a> for examples."
             ]
           },
@@ -54,7 +59,7 @@
           },
           {
             title: "How does HelloBible work for multiple children?",
-            answer : ["During the checkout process, your can select the number of material sets you need - one for each child."]
+            answer : ["During the checkout process, your can select the number of material sets you need - one for each child. The book is supposed to be a group activity and only one book is included per box."]
           },
           {
             title: "Why is HelloBible great for homeschooling?",
@@ -119,7 +124,7 @@
           },
           {
             title: "When does HelloBible ship?",
-            answer: ["If you want to receive a HelloBible shipment the same month, you need to subscribe before the 16th of that month. Your first box will then be shipped around the 19th of that month. If you sign up after the 16th, your box will ship around the 19th of the following month. For example, if you order on January 16th, your first HelloBible box will ship around the 19th of January. If you order on January 18th, your first HelloBible box will be shipped around the 19th of February."]
+            answer: ["Your first shipment will be sent within a week of receiving the order. Going forward, boxes will ship around the 19th of each month. A shipping confirmation email will be sent to you when a box was shipped." ]
           }
         ]
       }, {

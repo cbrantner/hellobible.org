@@ -7,8 +7,13 @@
 
 
   /** @ngInject */
-  function BoxesController(Analytics, hbTracking) {
+  function BoxesController(Analytics, $window, hbTracking) {
     var vm = this;
+
+    if (hbTracking) {
+      // track as lead on facebook
+      $window.fbq('track', 'Lead');
+    }
 
     vm.stories = [
       {
