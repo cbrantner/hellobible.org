@@ -73,8 +73,6 @@
             }, 10000);
             
             if (hbTracking) {
-              // track as lead on facebook
-              $window.fbq('track', 'Lead');
               // track as lead on pinterest
               $window.pintrk('track', 'lead');
               // track google analytics event

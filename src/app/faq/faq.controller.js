@@ -6,9 +6,14 @@
     .controller('FaqController', FaqController);
 
   /** @ngInject */
-  function FaqController(Analytics, hbTracking) {
+  function FaqController(Analytics, $window, hbTracking) {
 
     var vm = this;
+
+    if (hbTracking) {
+      // track as lead on facebook
+      $window.fbq('track', 'Lead');
+    }
 
     vm.faq = [
       {
@@ -16,7 +21,7 @@
         id: "general",
         items: [
           {
-            title: "What is HelloBible?",
+          title: "What is HelloBible?",
             answer: ["HelloBible is a monthly christian subscription for kids ages 5 and older. Its content is a thoughtfully designed Bible and art curriculum meant to help kids understand God's Word and draw them closer to the Lord. It is ideal for families and homeschooling families to explore a Bible story each month through multisensory learning, art projects and fun activities. All materials and instructions are included. Join us on a great Journey through the Bible."]
           },
           {
