@@ -27,7 +27,7 @@
           {
             title: "What is included?",
             answer: [
-              "It comes with a Bible storybook, engaging lesson plans and multidisciplinary activities to dig deeper into the content of a Bible story. All materials for amazing bible-based art projects are included. Our Bible explorers can use the included Travel Journal to collect story coloring and activity sheets.",
+              "It comes with one Bible storybook, engaging lesson plans and multidisciplinary activities to dig deeper into the content of a Bible story. All materials for amazing bible-based art projects are included. Our Bible explorers can use the included Travel Journal to collect story coloring and activity sheets.",
               "Visit our <a href='/stories'>Bible Stories page</a> for examples."
             ]
           },
@@ -59,7 +59,7 @@
           },
           {
             title: "How does HelloBible work for multiple children?",
-            answer : ["During the checkout process, your can select the number of material sets you need - one for each child."]
+            answer : ["During the checkout process, your can select the number of material sets you need - one for each child. The book is supposed to be a group activity and only one book is included per box."]
           },
           {
             title: "Why is HelloBible great for homeschooling?",
