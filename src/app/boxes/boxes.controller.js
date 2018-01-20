@@ -38,7 +38,7 @@
         ],
         text2: "Video: Watch our video about Christmas."
       },
-      {
+      /*{
         name: "The Easter Story",
         id: "easter",
         image: "easter.jpeg",
@@ -59,8 +59,8 @@
           }
         ],
         text2: "You can watch the unboxing video with Eline."
-      },
-      {
+      },*/
+      /*{
         name: "The Story of Creation",
         id: "creation",
         image: "creation.jpeg",
@@ -80,7 +80,7 @@
             art: "Paint a colorful cotton bag and use it for your grocery shopping."
           }
         ]
-      },
+      },*/
       {
         name: "The Story of Noah",
         id: "noah",
@@ -103,7 +103,7 @@
         ],
         text2: "Watch our fun Video about Noah and the animals."
       },
-      {
+      /*{
         name: "The Story of Abraham",
         id: "abraham",
         image: "abraham.jpeg",
@@ -123,8 +123,8 @@
             art: "Make your own prayer journal and write down important thoughts and prayers."
           }
         ]
-      },
-      {
+      },*/
+      /*{
         name: "The Story of Joseph",
         id: "joseph",
         image: "joseph.jpeg",
@@ -144,8 +144,8 @@
             art: "Paint a wooden bank and take on a project challenge to collect money to donate to a good cause."
           }
         ]
-      },
-      {
+      },*/
+      /*{
         name: "The Story of Moses",
         id: "moses",
         image: "moses.jpeg",
@@ -165,7 +165,7 @@
             art: "Moses met God. Paint Moses and the burning bush using marbles art."
           }
         ]
-      },
+      },*/
       {
         name: "The Story of Joshua",
         id: "joshua",
@@ -208,7 +208,7 @@
           }
         ]
       },
-      {
+      /*{
         name: "The Story of David",
         id: "david",
         image: "david.jpeg",
@@ -228,7 +228,7 @@
             art: "Be brave like David. Craft your own ball aiming game and try to aim as good as David."
           }
         ]
-      },
+      },*/
       {
         name: "The Story of Daniel",
         id: "daniel",
