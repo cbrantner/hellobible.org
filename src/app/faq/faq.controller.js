@@ -10,11 +10,6 @@
 
     var vm = this;
 
-    if (hbTracking) {
-      // track as lead on facebook
-      $window.fbq('track', 'Lead');
-    }
-
     vm.faq = [
       {
         name: "General",
@@ -145,6 +140,10 @@
     vm.trackClickedFaqQuestion = function (question) {
       if (hbTracking) {
         Analytics.trackEvent('faq', 'open', question);
+        fbq('track', 'ViewContent', {
+          content_name: 'faq',
+          content_id: story
+        });
       }
     }
 

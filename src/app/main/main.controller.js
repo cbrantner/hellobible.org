@@ -218,11 +218,9 @@
 
     vm.showVideo = function (size) {
 
-      // $log.debug(name + ': cart clicked')
-
       if (hbTracking) {
-        // track google analytics event
         Analytics.trackEvent('video', 'show');
+        fbq('track', 'ViewContent', { content_name: 'UnboxingVideo'});
       }
 
       var modalInstance = $uibModal.open({
@@ -239,18 +237,6 @@
         // cancel clicked
       });
     };
-
-    vm.showInfo = function (name) {
-      if (vm.info == name) {
-        vm.info = undefined;
-      } else {
-        vm.info = name;
-        if (hbTracking) {
-          // track google analytics event
-          Analytics.trackEvent('information', 'showInfo', name);
-        }
-      }
-    }
   }
 
 })();
