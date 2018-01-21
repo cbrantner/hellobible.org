@@ -36,7 +36,7 @@
   }
 
   /** @ngInject */
-  function MainController($location, $anchorScroll, $uibModal, Analytics, hbTracking) {
+  function MainController($location, $anchorScroll, $uibModal, Analytics, hbTracking, $window) {
 
     var vm = this;
 
@@ -220,7 +220,10 @@
 
       if (hbTracking) {
         Analytics.trackEvent('video', 'show');
-        fbq('track', 'ViewContent', { content_name: 'UnboxingVideo'});
+        $window.fbq('track', 'ViewContent', {
+          content_name: 'Video',
+          content_id: 'UnboxingVideo'
+        });
       }
 
       var modalInstance = $uibModal.open({

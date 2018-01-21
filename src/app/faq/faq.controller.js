@@ -138,12 +138,15 @@
       }];
 
     vm.trackClickedFaqQuestion = function (question) {
-      if (hbTracking) {
-        Analytics.trackEvent('faq', 'open', question);
-        fbq('track', 'ViewContent', {
+      if (hbTracking && angular.isUndefined(question.opened)) {
+        Analytics.trackEvent('faq', 'open', question.title);
+        $window.fbq('track', 'ViewContent', {
           content_name: 'faq',
-          content_id: story
+          content_id: question.title
         });
+      }
+      if (angular.isUndefined(question.opened)) {
+        question.opened = true;
       }
     }
 

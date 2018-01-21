@@ -75,10 +75,12 @@
             if (hbTracking) {
               // track google analytics event
               Analytics.trackEvent('newsletter', 'signup', mailchimp.email);
-              fbq('init', '1803880256491691', {
+              $window.fbq('init', '1803880256491691', {
                 em: mailchimp.email.toLowerCase()
               });
-              fbq('trackCustom', 'newsletter');
+              $window.fbq('trackCustom', 'newsletter', {
+                event: 'signup'
+              });
             }
           }
           mailchimp.email = '';

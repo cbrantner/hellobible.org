@@ -7,9 +7,8 @@
 
 
   /** @ngInject */
-  function BoxesController(Analytics, $window, hbTracking) {
+  function BoxesController(Analytics, hbTracking, $window) {
     var vm = this;
-
     vm.stories = [
       {
         name: "The Christmas Story",
@@ -247,14 +246,17 @@
       }
     ];
 
-    vm.trackClickedFaqQuestion = function (story) {
-      if (hbTracking) {
-        Analytics.trackEvent('stories', 'open', story);
-        fbq('track', 'ViewContent', {
-          content_name: 'story',
-          content_id: story
-        });
+    vm.trackClickedBox = function (story) {
 
+      if (hbTracking && angular.isUndefined(story.opened)) {
+        Analytics.trackEvent('stories', 'open', story.name);
+        $window.fbq('track', 'ViewContent', {
+          content_name: 'story',
+          content_id: story.name
+        });
+      }
+      if (angular.isUndefined(story.opened)) {
+        story.opened = true;
       }
     }
   }

@@ -43,7 +43,7 @@
 
         if (hbTracking) {
           Analytics.trackEvent('cart', 'add', plan, selected);
-          fbq('track', 'AddToCart', {
+          $window.fbq('track', 'AddToCart', {
             content_name: plan + ' ' + selected + ' children',
             value: planObject.children[parseInt(selected) - 1].price,
             currency: "USD",
