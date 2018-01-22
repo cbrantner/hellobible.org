@@ -22,14 +22,17 @@
 </script>
 
 
-<!--<div class="notificationBar" ng-show="showNotificationBar" ng-controller="MainController as mainCtrl">
+<div class="notificationBar" ng-show="showNotificationBar" ng-controller="MainController as mainCtrl">
     <a ng-click="showNotificationBar = false">
         <i class="close glyphicon glyphicon-remove"></i>
     </a>
     <div class="text">
-         <span class="fa fa-gift"/> Cyber Monday: 1st month <a ui-sref="home({'#' : 'pricing'})"><b>starts at $7.90</a></b>! Your box will ship <b>within a week</b>. Use code CYBER17. <span class="fa fa-gift"/>
+        <span class="fa fa-video-camera" />&nbsp;
+        <a ng-click="mainCtrl.showVideo()">Eline explains how HelloBible works
+            <span class="fa fa-play" />
+        </a>
     </div>
-</div>-->
+</div>
 
 <div class="topheader hidden-xs" ng-controller="MainController as headerCtrl">
     <slick settings="headerCtrl.slickConfig">
@@ -64,13 +67,14 @@
         </div>
     </slick>
 
-    <div class="seen text-center">
-        As Seen On:
-        <img class="seen-image" src="/assets/images/testimonials/kindercraze.png" alt="Kinder-Craze">
-        <img class="seen-image" src="/assets/images/testimonials/just-reed.png"
-            alt="Just Reed Blog">
-        <img class="seen-image" src="/assets/images/testimonials/all-logos.png" />
-    </div>
+    <a ui-sref="home({'#' : 'reviews'})" du-smooth-scroll>
+        <div class="seen text-center">
+            As Seen On:
+            <img class="seen-image" src="/assets/images/testimonials/kindercraze.png" alt="Kinder-Craze">
+            <img class="seen-image" src="/assets/images/testimonials/faithful.png" alt="Just Reed Blog">
+            <img class="seen-image" src="/assets/images/testimonials/all-logos.png" />
+        </div>
+    </a>
 </div>
 
 <div class="topheader-mobile visible-xs-block" ng-controller="MainController as headerMobileCtrl">
@@ -116,12 +120,11 @@
 
     </slick>
 
-    <a ui-sref="testimonials" du-smooth-scroll>
+    <a ui-sref="home({'#' : 'reviews'})" du-smooth-scroll>
         <div class="seen text-center">
             As Seen On:
             <img class="seen-image" src="/assets/images/testimonials/kindercraze.png" alt="Kinder-Craze">
-            <img class="seen-image" src="/assets/images/testimonials/just-reed.png"
-                alt="Just Reed Blog">
+            <img class="seen-image" src="/assets/images/testimonials/faithful.png" alt="Just Reed Blog">
             <img class="seen-image" src="/assets/images/testimonials/all-logos.png" />
         </div>
     </a>
@@ -144,8 +147,8 @@
                             <h3>1. Choose Number of Children</h3>
                             <p>
                                 <b>Materials for up to 10 children</b>. Great for ages 5+.</p>
-                            <a ui-sref="home({'#' : 'pricing'})" du-smooth-scroll>
-                                <button type="button" class="btn btn-primary">Order Now</button>
+                            <a ui-sref="kilgoris" du-smooth-scroll>
+                                <button type="button" class="btn btn-primary">We Donate</button>
                             </a>
                         </div>
                     </li>
@@ -173,9 +176,16 @@
                             <h3>3. Enjoy fun Bible &amp; Art Projects</h3>
                             <p>
                                 <b>Grow closer to the Lord</b>. Thoughtful lesson plans. Keepsake crafts. Fun activities.</p>
-                            <a ui-sref="testimonials" du-smooth-scroll>
-                                <button type="button" class="btn btn-primary">What Others Say</button>
-                            </a>
+                            <div class="hidden-xs">
+                                <a ui-sref="home({'#' : 'why'})" du-smooth-scroll>
+                                    <button type="button" class="btn btn-primary">Why HelloBible</button>
+                                </a>
+                            </div>
+                            <div class="visible-xs">
+                                <a ui-sref="why" du-smooth-scroll>
+                                    <button type="button" class="btn btn-primary">Why HelloBible</button>
+                                </a>
+                            </div>
                         </div>
                     </li>
                 </ul>
@@ -226,7 +236,9 @@
 </div>
 
 <div class="hidden-xs">
-    <acme-testimonials></acme-testimonials>
+    <acme-why></acme-why>
 </div>
+
+<acme-reviews></acme-reviews>
 
 <acme-footer></acme-footer>

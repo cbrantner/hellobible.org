@@ -94,13 +94,13 @@
           title: 'The Kilgoris Project'
         }
       })
-      .state('testimonials', {
-        url: '/testimonials',
-        templateUrl: 'app/testimonials/testimonials.html',
-        controller: 'TestimonialsController',
-        controllerAs: 'testimonials',
+      .state('why', {
+        url: '/why',
+        templateUrl: 'app/why/why.html',
+        controller: 'WhyController',
+        controllerAs: 'why',
         data : {
-          title: 'What Others Say'
+          title: 'Why HelloBible'
         }
       });
       $urlRouterProvider.otherwise('/');

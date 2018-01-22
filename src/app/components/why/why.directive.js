@@ -3,22 +3,22 @@
 
   angular
     .module('hellobible')
-    .directive('acmeTestimonials', acmeTestimonials);
+    .directive('acmeWhy', acmeWhy);
 
   /** @ngInject */
-  function acmeTestimonials() {
+  function acmeWhy() {
     var directive = {
       restrict: 'E',
-      templateUrl: 'app/components/testimonials/testimonials.html',
-      controller: TestimonialsDirController,
-      controllerAs: 'testimonialsDirCtrl',
+      templateUrl: 'app/components/why/why.html',
+      controller: WhyDirController,
+      controllerAs: 'WhyDirCtrl',
       bindToController: true
     };
 
     return directive;
 
     /** @ngInject */
-    function TestimonialsDirController($scope) {
+    function WhyDirController($scope) {
 
       $scope.slideConfig = {
         dots: true,

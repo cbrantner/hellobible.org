@@ -73,10 +73,14 @@
             }, 10000);
             
             if (hbTracking) {
-              // track as lead on pinterest
-              $window.pintrk('track', 'lead');
               // track google analytics event
               Analytics.trackEvent('newsletter', 'signup', mailchimp.email);
+              $window.fbq('init', '1803880256491691', {
+                em: mailchimp.email.toLowerCase()
+              });
+              $window.fbq('trackCustom', 'newsletter', {
+                event: 'signup'
+              });
             }
           }
           mailchimp.email = '';

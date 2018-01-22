@@ -1,0 +1,83 @@
+#why {
+    padding: 0px 20px 0 20px;
+    position: relative;
+    h1:after {
+        content: "";
+        display: block;
+        height: 4px;
+        width: 80px;
+        background: $BBBlue;
+        margin: 0 auto;
+        margin-top: 10px;
+    }
+    h3 {
+        text-transform: uppercase;
+        text-align: center;
+    }
+    .caption {
+        font-size: 20px;
+        text-align: center;
+        font-style: bold;
+    }
+    .mb-0 {
+        font-size: 12px;
+    }
+    .blockquote-footer {
+        font-size: 12px;
+    }
+    .caption a {
+        text-align: center;
+        display: block;
+        margin: auto;
+    }
+    .why-button a {
+        text-align: center;
+        display: block;
+        margin: auto;
+        margin-top: 2px;
+        margin-bottom: 5px;
+    }
+    .media-object {
+        width: 250px;
+        display: block;
+        margin: auto;
+    }
+    a {
+        color: $BBBlue;
+        text-decoration: none;
+    }
+    a,
+    button {
+        transition: 0.2s;
+        -moz-transition: 0.2s;
+        -webkit-transition: 0.2s;
+        -o-transition: 0.2s;
+    }
+    a:hover,
+    a:focus {
+        color: $BBDarkBlue;
+        text-decoration: none;
+        cursor: pointer;
+    }
+    .slick-dots li button:before {
+        font-size: 20px;
+    }
+    .slick-prev:before,
+    .slick-next:before {
+        font-size: 25px;
+        line-height: 1;
+        opacity: .75;
+        color: black;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+    }
+}
+
+#press {
+    h2 {
+        line-height: 1.0;
+        text-transform: uppercase;
+        text-align: center;
+        margin-top: 80px;
+    }
+}
