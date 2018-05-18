@@ -17,7 +17,7 @@
         items: [
           {
           title: "What is HelloBible?",
-            answer: ["HelloBible is a monthly christian subscription for kids ages 5 and older. Its content is a thoughtfully designed Bible and art curriculum meant to help kids understand God's Word and draw them closer to the Lord. It is ideal for families and homeschooling families to explore a Bible story each month through multisensory learning, art projects and fun activities. All materials and instructions are included. Join us on a great Journey through the Bible."]
+            answer: ["HelloBible is a monthly Christian subscription for kids ages 5 and older. Its content is a thoughtfully designed Bible and art curriculum meant to help kids understand God's Word and draw them closer to the Lord. It is ideal for families and homeschooling families to explore a Bible story each month through multisensory learning, art projects and fun activities. All materials and instructions are included. Join us on a great Journey through the Bible."]
           },
           {
             title: "What is included?",
@@ -39,7 +39,7 @@
           },
           {
             title: "Does HelloBible align with my beliefs?",
-            answer: ["Our content is Bible based. We focus on Scripture and we share suggestions on how to teach Bible Stories to children. We hope that those ideas and suggestions apply to a broad range of christian families and homeschool groups. If you have any questions please do not hesitate to contact us."]
+            answer: ["Our content is Bible based. We focus on Scripture and we share suggestions on how to teach Bible Stories to children. We hope that those ideas and suggestions apply to a broad range of Christian families and homeschool groups. If you have any questions please do not hesitate to contact us."]
           },
           {
             title: "Who is Danny the Donkey?",
