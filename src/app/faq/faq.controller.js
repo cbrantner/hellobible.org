@@ -22,7 +22,7 @@
           {
             title: "What is included?",
             answer: [
-              "It comes with one Bible storybook, engaging lesson plans and multidisciplinary activities to dig deeper into the content of a Bible story. All materials for amazing bible-based art projects are included. Our Bible explorers can use the included Travel Journal to collect story coloring and activity sheets.",
+              "It comes with one Bible storybook, engaging lesson plans and multidisciplinary activities to dig deeper into the content of a Bible story. All materials for amazing bible-based art projects are included.",
               "Visit our <a href='/stories'>Bible Stories page</a> for examples."
             ]
           },
@@ -68,14 +68,14 @@
             answer: ["<ul>" +
               "<li><b>Multi-sensory</b>: Read Bible Stories. Create hands-on crafts. Engage in fun activities.</li>" +
               "<li><b>Multi-disciplinary</b>: Combine Bible and Art. Both often fall short in a performance-oriented education.</li>" +
-              "<li><b>Convenient:</b> All materials are included. For up to 10 children.</li>" +
+              "<li><b>Convenient:</b> All materials are included. For up to 4 children.</li>" +
               "<li><b>Easy to teach</b>: Thoughtful lesson plans and child-friendly instructions are included.</li>" +
               "<li><b>Keepsake projects:</b> Always be reminded that you are a child of God.</li>" +
               "<li><b>Giving and compassion</b>: Support children in Kenya.</li>"
             ]
           },
           {
-            title: "What if I need material for more than 10 children?",
+            title: "What if I need material for more than 4 children?",
             answer: ["That's great. No problem. Please contact us at info@hellobible.org and we will be happy to help you."]
           },
           {

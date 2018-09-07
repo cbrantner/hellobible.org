@@ -7,11 +7,12 @@
     </div>
     <div class="modal-body" id="modal-body">
         <h1>Sign up to our newsletter.</h1>
-        <p>Get exlusive <b>offers</b> and <b>updates</b> on HelloBible.</p>
+        <p>Get exclusive <b>offers</b> and <b>updates</b> on HelloBible.</p>
         <acme-subscribe></acme-subscribe>
     </div>
 </script>
 
+<!--
 <script type="text/ng-template" id="videoModal.html">
     <div class="modal-header">
         <button type="button" class="close" ng-click="vm.cancel()">&times;</button>
@@ -20,7 +21,7 @@
         <iframe width="100%" height="350" src="https://www.youtube.com/embed/5bGF5PBkMF8?rel=0&autoplay=1" frameborder="0" allowfullscreen></iframe>
     </div>
 </script>
-
+-->
 
 <div class="notificationBar" ng-show="showNotificationBar" ng-controller="MainController as mainCtrl">
     <a ng-click="showNotificationBar = false">
@@ -28,9 +29,8 @@
     </a>
     <div class="text">
         <!--Order your Moses box now and get $5 off (use code MOSES5)-->
-        <span class="fa fa-video-camera" />&nbsp;
-        <a ng-click="mainCtrl.showVideo()">Eline explains how HelloBible works
-            <span class="fa fa-play" />
+        <a ng-click="mainCtrl.signup()">Sign up to our newsletter
+            <span class="fa fa-envelope" />
         </a>
     </div>
 </div>
@@ -147,7 +147,7 @@
                             <br class="clearfix">
                             <h3>1. Choose Number of Children</h3>
                             <p>
-                                <b>Materials for up to 10 children</b>. Great for ages 5+.</p>
+                                <b>Materials for up to 4 children</b>. Great for ages 5+.</p>
                             <a ui-sref="kilgoris" du-smooth-scroll>
                                 <button type="button" class="btn btn-primary">We Donate</button>
                             </a>

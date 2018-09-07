@@ -58,7 +58,7 @@
           },
           {
             image: "david",
-            title: "Receive materials for up to 10 kids."
+            title: "Receive materials for up to 4 kids."
           },
           {
             image: "david-aim",
@@ -73,7 +73,7 @@
             title: "Tie a lion pillow and be reminded to be brave like Daniel."
           }
         ],
-        title: "1 Box/Month: Materials for Up to 10 Kids Ages 5+.",
+        title: "1 Box/Month: Materials for Up to 4 Kids Ages 5+.",
         subtitle: "Ready to start Your Journey?",
         bullets: [
           {
