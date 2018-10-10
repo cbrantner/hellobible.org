@@ -4,9 +4,12 @@
 * ===================================================
 */
 
+@import "./_colors.scss";
+
+
 .ribbon {
     position: absolute;
-    top: 10px;
+    top: -20px;
     left: -11px;
     z-index: 999;
     display: inline-block;
@@ -43,6 +46,20 @@
         &::before {
             border-top-color: darken($color, 20%);
         }
+    }
+}
+
+.ribbon-bbblue {
+    background-color: $BBBlue !important;
+    &::before {
+        border-top-color: darken($BBBlue, 20%);
+    }
+}
+
+.ribbon-bborange {
+    background-color: $BBOrange !important;
+    &::before {
+        border-top-color: darken($BBOrange, 20%);
     }
 }
 
