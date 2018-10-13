@@ -7,12 +7,19 @@ import { AboutComponent } from '../about/about.component';
 import { TermsComponent } from '../terms/terms.component';
 import { PrivacyComponent } from '../privacy/privacy.component';
 import { KilgorisComponent } from '../kilgoris/kilgoris.component';
-
+import { HomeschoolComponent } from '../homeschool/homeschool.component';
 
 const routes: Routes = [
     {
         path: 'home',
         component: HomeComponent,
+    },
+    {
+        path: 'faq',
+        component: FaqsComponent,
+        data: {
+            title: 'Example of static route data'
+        }
     },
     {
         path: 'faqs',
@@ -24,6 +31,13 @@ const routes: Routes = [
     {
         path: 'stories',
         component: StoriesComponent,
+        data: {
+            title: 'Example of static route data'
+        }
+    },
+    {
+        path: 'homeschool',
+        component: HomeschoolComponent,
         data: {
             title: 'Example of static route data'
         }

@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
+declare const fbq: any;
+
 @Component({
   selector: 'app-faqs',
   templateUrl: './faqs.component.html',
@@ -147,6 +149,9 @@ export class FaqsComponent implements OnInit {
   }
 
   ngOnInit() {
+    fbq('track', 'ViewContent', {
+      content_name: 'faq'
+    });
   }
 
 }

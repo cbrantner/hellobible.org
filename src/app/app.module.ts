@@ -12,6 +12,8 @@ import { AboutComponent } from './about/about.component';
 import { TermsComponent } from './terms/terms.component';
 import { PrivacyComponent } from './privacy/privacy.component';
 import { KilgorisComponent } from './kilgoris/kilgoris.component';
+import { NgxPageScrollModule } from 'ngx-page-scroll';
+import { HomeschoolComponent } from './homeschool/homeschool.component';
 
 @NgModule({
   declarations: [
@@ -24,11 +26,13 @@ import { KilgorisComponent } from './kilgoris/kilgoris.component';
     AboutComponent,
     TermsComponent,
     PrivacyComponent,
-    KilgorisComponent
+    KilgorisComponent,
+    HomeschoolComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    NgxPageScrollModule
   ],
   providers: [],
   bootstrap: [AppComponent]
