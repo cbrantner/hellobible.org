@@ -6,7 +6,7 @@ node_js:
 before_script:
 - npm install
 script:
-- ng build
+- ng build --prod
 deploy:
   provider: s3
   access_key_id: AKIAJ2BKFBX6E3OKIGNA

@@ -5,21 +5,28 @@
             <div class="row d-flex align-items-center">
                 <div class="col-sm-7 d-none d-sm-block">
                     <ul class="list-inline mb-0">
-
-                        <li class="list-inline-item px-3 d-none d-lg-inline-block">Free shipping on orders over $300</li>
+                        <li class="list-inline-item pr-3 mr-0">
+                            020-800-456-747
+                        </li>
+                        <li class="list-inline-item px-3 border-left d-none d-lg-inline-block">Free shipping on orders
+                            over $300</li>
                     </ul>
+                </div>
+                <div class="col-sm-5 d-flex justify-content-end">
+                    <a pageScroll href="#pricing" class="btn btn-primary">Order Now</a>
                 </div>
             </div>
         </div>
     </div>
     <!-- Top Bar End-->
-    <!-- Navbar-->                                                               
+    <!-- Navbar-->
     <nav [ngClass]="{
         'bg-hover-white':router.url === '/home',
         'navbar-hover-light':router.url === '/home',
         'navbar-fixed-light':router.url === '/home',
         'bg-white':router.url !== '/home'
-    }" class="navbar navbar-expand-lg bg-transparent navbar-sticky navbar-airy navbar-light bg-fixed-white">
+    }"
+        class="navbar navbar-expand-lg bg-transparent navbar-sticky navbar-airy navbar-light bg-fixed-white">
         <div class="container-fluid">
             <!-- Navbar Header  -->
             <a href="index.html" class="navbar-brand">
@@ -33,7 +40,8 @@
                 <ul class="navbar-nav mx-auto">
                     <li class="nav-item dropdown"><a href="/home" routerLinkActive="active" class="nav-link">Home</a>
                     </li>
-                    <li class="nav-item"><a routerLink="/stories" routerLinkActive="active" class="nav-link">Bible Stories</a>
+                    <li class="nav-item"><a routerLink="/stories" routerLinkActive="active" class="nav-link">Bible
+                            Stories</a>
                     </li>
                     <li class="nav-item"><a routerLink="/faqs" routerLinkActive="active" class="nav-link">FAQ</a>
                     </li>
