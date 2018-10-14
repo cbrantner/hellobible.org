@@ -8,25 +8,25 @@ before_script:
 script:
 - ng build --prod
 deploy:
-  provider: s3
-  access_key_id: AKIAJ2BKFBX6E3OKIGNA
-  secret_access_key:
-    secure: JJG3EGL4oHU3PONl01pGW1ZUz8htDTJoZlYKJOjmBEfYwl/zg4p9paFhUbQIOeq+ZWQx5R6DG2Wik8cgiDHpv9SNvX8owh5HzQi42bYzyOY5YmkP9NNT/8pwDU/thM0SrF0BtAOCG/0Ak7y35rblzuDXeBzvqlUroodozJrMGyX32yShGwOXmBYBaUHX96q1PK0vQ7csCgZytQuHtzAKDnArzwTNrkkWNqmt8BaHCZ9QmVPBGv7m3jhDhvU+xj5+7oJahfbhzNzbEpJoJqGFMpo8XaQKpyBEHfreH7NMGe0fquxlRwBdcrS5wAj+2SKrfU6Q6hIeEkfwUSXLuIJvFiMFzK2re2qe1/2DSHYdy17O3o4kg+KNQ+nM3DEpM8y3HQq2J6e5c96XKmx8kVF+ggr/QfmBvQjYQEAd2ELpFkEuuZAFwFdfuoRsLmMEtZD151tYcPow/kNIOHemT0YTAQSVEu0Epd6+DKJDBWuHD+jC7hxxxXCnQzOjWoJH4hycNBMqH9xyCA8DdJk+CSyQrJ1KoaaakHVtKMxfdt/7xxqWcXWeiN9ToEtSlSSO3Zm88I76sYKDo4ngRY3YKUy/rJm405OE/qc2aR19bCmWwgTWc7ZIrBK1AmCdaLWB00buazJuaUdpfS6FcXNLfuGiGPFEf40/5rRbBIK1XWzpdxs=
-  bucket: beta.hellobible.org
-  local-dir: dist/hellobible/
-  acl: public_read
-  skip_cleanup: true
-  on:
-    repo: cbrantner/hellobible.org
-    branch: beta
-  provider: s3
-  access_key_id: AKIAJ2BKFBX6E3OKIGNA
-  secret_access_key:
-    secure: JJG3EGL4oHU3PONl01pGW1ZUz8htDTJoZlYKJOjmBEfYwl/zg4p9paFhUbQIOeq+ZWQx5R6DG2Wik8cgiDHpv9SNvX8owh5HzQi42bYzyOY5YmkP9NNT/8pwDU/thM0SrF0BtAOCG/0Ak7y35rblzuDXeBzvqlUroodozJrMGyX32yShGwOXmBYBaUHX96q1PK0vQ7csCgZytQuHtzAKDnArzwTNrkkWNqmt8BaHCZ9QmVPBGv7m3jhDhvU+xj5+7oJahfbhzNzbEpJoJqGFMpo8XaQKpyBEHfreH7NMGe0fquxlRwBdcrS5wAj+2SKrfU6Q6hIeEkfwUSXLuIJvFiMFzK2re2qe1/2DSHYdy17O3o4kg+KNQ+nM3DEpM8y3HQq2J6e5c96XKmx8kVF+ggr/QfmBvQjYQEAd2ELpFkEuuZAFwFdfuoRsLmMEtZD151tYcPow/kNIOHemT0YTAQSVEu0Epd6+DKJDBWuHD+jC7hxxxXCnQzOjWoJH4hycNBMqH9xyCA8DdJk+CSyQrJ1KoaaakHVtKMxfdt/7xxqWcXWeiN9ToEtSlSSO3Zm88I76sYKDo4ngRY3YKUy/rJm405OE/qc2aR19bCmWwgTWc7ZIrBK1AmCdaLWB00buazJuaUdpfS6FcXNLfuGiGPFEf40/5rRbBIK1XWzpdxs=
-  bucket: www.hellobible.org
-  local-dir: dist/hellobible/
-  acl: public_read
-  skip_cleanup: true
-  on:
-    repo: cbrantner/hellobible.org
-    branch: master
+  - provider: s3
+    access_key_id: AKIAJ2BKFBX6E3OKIGNA
+    secret_access_key:
+      secure: JJG3EGL4oHU3PONl01pGW1ZUz8htDTJoZlYKJOjmBEfYwl/zg4p9paFhUbQIOeq+ZWQx5R6DG2Wik8cgiDHpv9SNvX8owh5HzQi42bYzyOY5YmkP9NNT/8pwDU/thM0SrF0BtAOCG/0Ak7y35rblzuDXeBzvqlUroodozJrMGyX32yShGwOXmBYBaUHX96q1PK0vQ7csCgZytQuHtzAKDnArzwTNrkkWNqmt8BaHCZ9QmVPBGv7m3jhDhvU+xj5+7oJahfbhzNzbEpJoJqGFMpo8XaQKpyBEHfreH7NMGe0fquxlRwBdcrS5wAj+2SKrfU6Q6hIeEkfwUSXLuIJvFiMFzK2re2qe1/2DSHYdy17O3o4kg+KNQ+nM3DEpM8y3HQq2J6e5c96XKmx8kVF+ggr/QfmBvQjYQEAd2ELpFkEuuZAFwFdfuoRsLmMEtZD151tYcPow/kNIOHemT0YTAQSVEu0Epd6+DKJDBWuHD+jC7hxxxXCnQzOjWoJH4hycNBMqH9xyCA8DdJk+CSyQrJ1KoaaakHVtKMxfdt/7xxqWcXWeiN9ToEtSlSSO3Zm88I76sYKDo4ngRY3YKUy/rJm405OE/qc2aR19bCmWwgTWc7ZIrBK1AmCdaLWB00buazJuaUdpfS6FcXNLfuGiGPFEf40/5rRbBIK1XWzpdxs=
+    bucket: beta.hellobible.org
+    local-dir: dist/hellobible/
+    acl: public_read
+    skip_cleanup: true
+    on:
+      repo: cbrantner/hellobible.org
+      branch: beta
+  - provider: s3
+    access_key_id: AKIAJ2BKFBX6E3OKIGNA
+    secret_access_key:
+      secure: JJG3EGL4oHU3PONl01pGW1ZUz8htDTJoZlYKJOjmBEfYwl/zg4p9paFhUbQIOeq+ZWQx5R6DG2Wik8cgiDHpv9SNvX8owh5HzQi42bYzyOY5YmkP9NNT/8pwDU/thM0SrF0BtAOCG/0Ak7y35rblzuDXeBzvqlUroodozJrMGyX32yShGwOXmBYBaUHX96q1PK0vQ7csCgZytQuHtzAKDnArzwTNrkkWNqmt8BaHCZ9QmVPBGv7m3jhDhvU+xj5+7oJahfbhzNzbEpJoJqGFMpo8XaQKpyBEHfreH7NMGe0fquxlRwBdcrS5wAj+2SKrfU6Q6hIeEkfwUSXLuIJvFiMFzK2re2qe1/2DSHYdy17O3o4kg+KNQ+nM3DEpM8y3HQq2J6e5c96XKmx8kVF+ggr/QfmBvQjYQEAd2ELpFkEuuZAFwFdfuoRsLmMEtZD151tYcPow/kNIOHemT0YTAQSVEu0Epd6+DKJDBWuHD+jC7hxxxXCnQzOjWoJH4hycNBMqH9xyCA8DdJk+CSyQrJ1KoaaakHVtKMxfdt/7xxqWcXWeiN9ToEtSlSSO3Zm88I76sYKDo4ngRY3YKUy/rJm405OE/qc2aR19bCmWwgTWc7ZIrBK1AmCdaLWB00buazJuaUdpfS6FcXNLfuGiGPFEf40/5rRbBIK1XWzpdxs=
+    bucket: www.hellobible.org
+    local-dir: dist/hellobible/
+    acl: public_read
+    skip_cleanup: true
+    on:
+      repo: cbrantner/hellobible.org
+      branch: master
