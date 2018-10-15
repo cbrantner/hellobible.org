@@ -18,7 +18,7 @@
           <div class="col-lg-2 col-md-6 mb-5 mb-lg-0">
             <h6 class="text-uppercase text-dark mb-3">Company</h6>
             <ul class="list-unstyled">
-              <li> <a routerLink="/home" routerLinkActive="font-weight-bold" class="text-muted">Home</a></li>
+              <li> <a href="/home" routerLinkActive="font-weight-bold" class="text-muted">Home</a></li>
               <li> <a routerLink="/stories" routerLinkActive="font-weight-bold" class="text-muted">Bible Stories</a></li>
               <li> <a routerLink="/faqs" routerLinkActive="font-weight-bold" class="text-muted">FAQ</a></li>
               <li> <a routerLink="/about" routerLinkActive="font-weight-bold" class="text-muted">About</a></li>
@@ -39,14 +39,7 @@
           <div class="col-lg-4">
             <h6 class="text-uppercase text-dark mb-3">Offers & Discounts</h6>
             <p class="mb-3">Join our VIP list for special discounts and exclusive news.</p>
-            <form action="#" id="newsletter-form">
-              <div class="input-group mb-3">
-                <input type="email" placeholder="Your Email Address" aria-label="Your Email Address" class="form-control bg-transparent border-secondary border-right-0">
-                <div class="input-group-append">
-                  <button type="submit" class="btn btn-outline-secondary border-left-0"> <i class="fa fa-paper-plane text-lg text-dark"></i></button>
-                </div>
-              </div>
-            </form>
+            <app-newsletter></app-newsletter>
           </div>
         </div>
       </div>

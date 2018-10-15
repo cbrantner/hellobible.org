@@ -1,8 +1,9 @@
 import { Component } from '@angular/core';
 import {PageScrollConfig} from 'ngx-page-scroll';
 import {Router, NavigationEnd} from "@angular/router";
+import { Gtag } from 'angular-gtag';
 
-declare let ga: Function;
+declare let gtag: Function;
 
 @Component({
   selector: 'app-root',
@@ -11,14 +12,8 @@ declare let ga: Function;
 })
 export class AppComponent {
   title = 'HelloBible - Empowering Families to Grow in Faith';
-
-  constructor(public router: Router) {
+  
+  constructor(public router: Router, gtag: Gtag) {
     PageScrollConfig.defaultDuration = 500;
-    this.router.events.subscribe(event => {
-      if (event instanceof NavigationEnd) {
-        ga('set', 'page', event.urlAfterRedirects);
-        ga('send', 'pageview');
-      }
-    });
   }
 }

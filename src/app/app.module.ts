@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 
 import { AppComponent } from './app.component';
 import { NavComponent } from './nav/nav.component';
@@ -14,6 +15,8 @@ import { PrivacyComponent } from './privacy/privacy.component';
 import { KilgorisComponent } from './kilgoris/kilgoris.component';
 import { NgxPageScrollModule } from 'ngx-page-scroll';
 import { HomeschoolComponent } from './homeschool/homeschool.component';
+import { NewsletterComponent } from './newsletter/newsletter.component';
+import { GtagModule } from 'angular-gtag';
 
 @NgModule({
   declarations: [
@@ -27,12 +30,15 @@ import { HomeschoolComponent } from './homeschool/homeschool.component';
     TermsComponent,
     PrivacyComponent,
     KilgorisComponent,
-    HomeschoolComponent
+    HomeschoolComponent,
+    NewsletterComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    NgxPageScrollModule
+    NgxPageScrollModule,
+    NgbModule,
+    GtagModule.forRoot({ trackingId: 'UA-82839547-1', trackPageviews: true })
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -2,17 +2,18 @@
     <!-- Top Bar-->
     <div class="top-bar">
         <div class="container-fluid">
-            <div class="row d-flex align-items-center">
-                <div class="col-sm-7 d-none d-sm-block">
-                    <ul class="list-inline mb-0">
+            <div class="d-flex align-items-center">
+                <div class="col-sm-3 d-none d-sm-block ">
+                    <app-newsletter></app-newsletter>
+                    <!--<ul class="list-inline mb-0">
                         <li class="list-inline-item pr-3 mr-0">
                             020-800-456-747
                         </li>
                         <li class="list-inline-item px-3 border-left d-none d-lg-inline-block">Free shipping on orders
                             over $300</li>
-                    </ul>
+                    </ul>-->
                 </div>
-                <div class="col-sm-5 d-flex justify-content-end">
+                <div class="col-sm-9 d-flex justify-content-end">
                     <a pageScroll href="#pricing" class="btn btn-primary">Order Now</a>
                 </div>
             </div>
@@ -20,13 +21,7 @@
     </div>
     <!-- Top Bar End-->
     <!-- Navbar-->
-    <nav [ngClass]="{
-        'bg-hover-white':router.url === '/home',
-        'navbar-hover-light':router.url === '/home',
-        'navbar-fixed-light':router.url === '/home',
-        'bg-white':router.url !== '/home'
-    }"
-        class="navbar navbar-expand-lg bg-transparent navbar-sticky navbar-airy navbar-light bg-fixed-white">
+    <nav class="navbar navbar-expand-lg bg-transparent navbar-sticky navbar-airy navbar-light bg-fixed-white bg-hover-white navbar-hover-light navbar-fixed-light bg-white">
         <div class="container-fluid">
             <!-- Navbar Header  -->
             <a href="index.html" class="navbar-brand">
@@ -40,8 +35,7 @@
                 <ul class="navbar-nav mx-auto">
                     <li class="nav-item dropdown"><a href="/home" routerLinkActive="active" class="nav-link">Home</a>
                     </li>
-                    <li class="nav-item"><a routerLink="/stories" routerLinkActive="active" class="nav-link">Bible
-                            Stories</a>
+                    <li class="nav-item"><a routerLink="/stories" routerLinkActive="active" class="nav-link">Bible Stories</a>
                     </li>
                     <li class="nav-item"><a routerLink="/faqs" routerLinkActive="active" class="nav-link">FAQ</a>
                     </li>
@@ -50,20 +44,20 @@
                     <li class="nav-item"><a routerLink="/kilgoris" routerLinkActive="active" class="nav-link">We Donate</a>
                     </li>
                 </ul>
-                <div class="d-flex align-items-center justify-content-between justify-content-lg-end mt-1 mb-2 my-lg-0">
-                    <div class="nav-item"><a href="https://hellobible.cratejoy.com/customer/login" class="navbar-icon-link">
+                <div class="d-flex align-items-center mt-1 mb-2 my-lg-0">
+                    <div class="nav-item">
+                        <a href="https://hellobible.cratejoy.com/customer/login" class="navbar-icon-link">
                             <svg class="svg-icon">
                                 <use xlink:href="#male-user-1"> </use>
-                            </svg><span class="text-sm ml-2 ml-lg-0 text-uppercase text-sm font-weight-bold d-none d-sm-inline d-lg-none">Log
-                                in </span></a></div>
+                            </svg>
+                        </a>
+                    </div>
                     <div class="nav-item">
-                        <div class="d-none d-lg-block"><a id="cartdetails" aria-haspopup="true" aria-expanded="false"
-                                href="https://hellobible.cratejoy.com/checkout/" class="navbar-icon-link dropdown-toggle">
-                                <svg class="svg-icon">
-                                    <use xlink:href="#cart-1"> </use>
-                                </svg>
-                            </a>
-                        </div>
+                        <a href="https://hellobible.cratejoy.com/checkout/" class="navbar-icon-link">
+                            <svg class="svg-icon">
+                                <use xlink:href="#cart-1"> </use>
+                            </svg>
+                        </a>
                     </div>
                 </div>
             </div>

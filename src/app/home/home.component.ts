@@ -1,8 +1,8 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, isDevMode } from '@angular/core';
 import { DOCUMENT } from '@angular/common';
 
 declare const fbq: any;
-declare let ga: Function;
+declare let gtag: any;
 
 @Component({
   selector: 'app-home',
@@ -59,19 +59,21 @@ export class HomeComponent implements OnInit {
     var planObject = option[plan];
     var url = planObject.children[parseInt(selected) - 1].url;
 
-    fbq('track', 'AddToCart', {
-      content_name: plan + ' ' + selected + ' children',
-      value: planObject.children[parseInt(selected) - 1].price,
-      currency: "USD",
-      content_id: planObject.children[parseInt(selected) - 1].url
-    });
+    if (!isDevMode()) {
+      fbq('track', 'AddToCart', {
+        content_name: plan + ' ' + selected + ' children',
+        value: planObject.children[parseInt(selected) - 1].price,
+        currency: "USD",
+        content_id: planObject.children[parseInt(selected) - 1].url
+      });
 
-    ga('send', 'event', {
-      eventCategory: 'cart',
-      eventAction: 'add',
-      eventValue: planObject.children[parseInt(selected) - 1].price
-    });
-
+      gtag.event('event', 'addToCart', {
+        event_category: 'cart',
+        event_label: 'add ' + planObject.children[parseInt(selected) - 1].url,
+        value: planObject.children[parseInt(selected) - 1].price
+      });
+    }
+    
     // redirect
     window.location.href = url;
   }

@@ -1,4 +1,6 @@
-<section class="position-relative py-6 mt-7 mb-30px"><img src="/assets/images/faq/top.jpg" alt="Picture of Danny Sticker Chart"
+<app-nav></app-nav>
+
+<section class="position-relative py-6 topMargin mb-30px"><img src="/assets/images/faq/top.jpg" alt="Picture of Danny Sticker Chart"
     class="bg-image">
   <div class="container">
     <div class="row">
@@ -19,15 +21,24 @@
 
 <section class="pb-5">
   <div class="container">
-    <div class="py-4" *ngFor="let faq of faqs; let i = index">
-      <h2 class="mb-5 text-muted">{{faq.name}}</h2>
-      <div class="row">
-        <div class="col-md-6" *ngFor="let q of faq.items">
-          <h5>{{q.title}}</h5>
-          <p class="text-muted mb-4" *ngFor="let p of q.answer" [innerHtml]="p"></p>
-        </div>
-      </div>
-      <hr *ngIf="i !== faqs.length - 1">
+    <div class="py-4" *ngFor="let faq of faqs">
+      <h2 id="{{faq.name}}" class="mb-5 text-muted">{{faq.name}}</h2>
+      <ngb-accordion [closeOthers]="true" #acc="ngbAccordion" activeIds="ngb-panel-0">
+        <ngb-panel *ngFor="let q of faq.items">
+          <ng-template ngbPanelTitle><h6 
+            gtagEvent
+            action="faq_opened"
+            category="faq"
+            [params]="{ event_label: q.title }"
+            (click)="trackClickedFaqQuestion(q)">{{q.title}}</h6></ng-template>
+          <ng-template ngbPanelContent>
+            <p *ngFor="let p of q.answer" [innerHtml]="p"></p>
+          </ng-template>
+        </ngb-panel>
+      </ngb-accordion>
     </div>
+
+    <h2 class="mb-5 text-muted">Was This Helpful?</h2>
+    If you have additional questions, chat with us or reach us at <a href="mailto:info@hellobible.org">info@hellobible.org</a>.
   </div>
 </section>
