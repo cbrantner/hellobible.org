@@ -18,9 +18,9 @@ export class FaqsComponent implements OnInit {
         id: "general",
         items: [
           {
-            title: "What is HelloBible™?",
+            title: "What is HelloBible?",
             answer: [
-              "HelloBible™ is a monthly Christian subscription for kids ages 5+. Each box provides a book, creative art projects, fun activities, and parent guides to explore one Bible story every month. You may add materials for up to 4 children.",
+              "HelloBible is a monthly Christian subscription for kids ages 5+. Each box provides a book, creative art projects, fun activities, and parent guides to explore one Bible story every month. You may add materials for up to 4 children.",
               "Grow in faith together and help your children thrive in relationship with Jesus!"
             ]
           },
@@ -44,11 +44,11 @@ export class FaqsComponent implements OnInit {
               "Donkeys are humble and often serving behind the scenes. In the Bible donkeys are constantly mentioned and considered reliable helpers to the humans. The New Testament tells us that Jesus entered Jerusalem on a donkey while the crowd worshipped him. Why did Jesus ride on an unimportant donkey instead of a mighty horse in such an important occasion? This shows that Jesus is a humble king, nobody needs to be perfect in order to serve Jesus. Let's all be reminded by Danny the Donkey, that we are important to Jesus and that he wants to use us."]
           },
           {
-            title: "What is the suggested age range for HelloBible™?",
-            answer: ["HelloBible™ is designed for kids ages 5-10."]
+            title: "What is the suggested age range for HelloBible?",
+            answer: ["HelloBible is designed for kids ages 5-10."]
           },
           {
-            title: "Does HelloBible™ align with my beliefs?",
+            title: "Does HelloBible align with my beliefs?",
             answer: ["Our content is Bible based. We focus on Scripture and we share suggestions on how to teach Bible Stories to children. We hope that those ideas and suggestions apply to a broad range of Christian families and homeschool groups. If you have any questions please do not hesitate to contact us."]
           },
           {
@@ -57,10 +57,10 @@ export class FaqsComponent implements OnInit {
               "For each HelloBible subscription, we donate to <a href='/kilgoris'>The Kilgoris Project</a>. Teach your child the importance of giving: Together we can make a difference in the life of a child in Kilgoris! "]
           },
           {
-            title: "How can I support HelloBible™?",
-            answer: ["Thanks for your interest in HelloBible™. There are many ways to support us: <ul>" +
+            title: "How can I support HelloBible?",
+            answer: ["Thanks for your interest in HelloBible. There are many ways to support us: <ul>" +
               "<li>Pray for us.</li>" +
-              "<li>Tell your family, friends, your church about HelloBible™.</li>" +
+              "<li>Tell your family, friends, your church about HelloBible.</li>" +
               "<li>Share us on <a href='https://www.facebook.com/hellobible.org/'>Facebook</a>, <a href='http://www.instagram.com/hellobiblebox/'>Instagram</a>, or <a href='http://www.pinterest.com/hellobible'>Pinterest</a>.</li>"
             ]
           },
@@ -69,9 +69,9 @@ export class FaqsComponent implements OnInit {
             answer: ["During the checkout process, you can select the number of material sets you need - one for each child. The book is supposed to be a group activity and only one book is included per box."]
           },
           {
-            title: "Can HelloBible™ be used for homeschooling?",
+            title: "Can HelloBible be used for homeschooling?",
             answer: [
-              "HelloBible™ is great for homeschooling elementary children (ages 5-10).",
+              "HelloBible is great for homeschooling elementary children (ages 5-10).",
               "You can find more at <a href='/homeschool'>6 Reasons Why HelloBible is Great for Homeschooling</a>."
             ]
           },
@@ -103,11 +103,11 @@ export class FaqsComponent implements OnInit {
           },
           {
             title: "How can I give HelloBible as a gift?",
-            answer: ["HelloBible™ is a wonderful gift! During the checkout, please provide your gift recipient’s name and address in the shipping section at checkout. You can also leave a personalized note for the recipient."]
+            answer: ["HelloBible is a wonderful gift! During the checkout, please provide your gift recipient’s name and address in the shipping section at checkout. You can also leave a personalized note for the recipient."]
           },
           {
             title: "Do you accept returns?",
-            answer: ["HelloBible™ shipments are not returnable or refundable. However, if any materials are missing or damaged please contact us at info@hellobible.org. We will be happy to replace those."]
+            answer: ["HelloBible shipments are not returnable or refundable. However, if any materials are missing or damaged please contact us at info@hellobible.org. We will be happy to replace those."]
           },
           {
             title: "What if there is a problem with my order?",
@@ -127,7 +127,7 @@ export class FaqsComponent implements OnInit {
             answer: ["We ship anywhere in the United States, including Hawaii and Alaska. If you’d like us to ship abroad, please contact us at info@hellobible.org."]
           },
           {
-            title: "When does HelloBible™ ship?",
+            title: "When does HelloBible ship?",
             answer: ["Your first shipment will be sent within a week of receiving the order. Going forward, boxes will ship around the 4th of each month. A shipping confirmation email will be sent to you when a box was shipped."]
           }
         ]
