@@ -17,6 +17,10 @@ import { NgxPageScrollModule } from 'ngx-page-scroll';
 import { HomeschoolComponent } from './homeschool/homeschool.component';
 import { NewsletterComponent } from './newsletter/newsletter.component';
 import { GtagModule } from 'angular-gtag';
+import { FormsModule } from '@angular/forms';
+import { HttpClientModule, HttpClientJsonpModule } from '@angular/common/http';
+import { ToastaModule } from 'ngx-toasta';
+
 
 @NgModule({
   declarations: [
@@ -31,15 +35,20 @@ import { GtagModule } from 'angular-gtag';
     PrivacyComponent,
     KilgorisComponent,
     HomeschoolComponent,
-    NewsletterComponent
+    NewsletterComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     NgxPageScrollModule,
     NgbModule,
-    GtagModule.forRoot({ trackingId: 'UA-82839547-1', trackPageviews: true })
+    GtagModule.forRoot({ trackingId: 'UA-82839547-1', trackPageviews: true }),
+    FormsModule,
+    HttpClientModule,
+    HttpClientJsonpModule,
+    ToastaModule.forRoot()
   ],
+  exports: [BrowserModule, ToastaModule],
   providers: [],
   bootstrap: [AppComponent]
 })

@@ -35,7 +35,8 @@
               "src/styles.scss",
               "node_modules/owl.carousel/dist/assets/owl.carousel.css",
               "node_modules/ekko-lightbox/dist/ekko-lightbox.css",
-              "src/fonts/hkgrotesk/stylesheet.css"
+              "src/fonts/hkgrotesk/stylesheet.css",
+              "node_modules/ngx-toasta/styles/style-default.css"
             ],
             "scripts": [
               "./node_modules/jquery/dist/jquery.min.js",
@@ -46,7 +47,8 @@
               "./node_modules/smooth-scroll/dist/smooth-scroll.polyfills.min.js",
               "./node_modules/ekko-lightbox/dist/ekko-lightbox.min.js",
               "./node_modules/holderjs/holder.min.js",
-              "./js/theme.js"
+              "./js/theme.js",
+              "./node_modules/ngx-toasta/bundles/ngx-toasta.umd.js"
             ]
           },
           "configurations": {
