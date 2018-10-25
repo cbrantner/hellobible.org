@@ -41,7 +41,7 @@ import { ToastaModule } from 'ngx-toasta';
     BrowserModule,
     AppRoutingModule,
     NgxPageScrollModule,
-    NgbModule,
+    NgbModule.forRoot(),
     GtagModule.forRoot({ trackingId: 'UA-82839547-1', trackPageviews: true }),
     FormsModule,
     HttpClientModule,
