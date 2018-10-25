@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, isDevMode } from '@angular/core';
 
 declare const fbq: any;
 
@@ -12,9 +12,11 @@ export class StoriesComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-    fbq('track', 'ViewContent', {
-      content_name: 'story'
-    });
+    if (!isDevMode()) {
+      fbq('track', 'ViewContent', {
+        content_name: 'story'
+      });
+    }
   }
 
 }
