@@ -1,6 +1,7 @@
 import { Component, OnInit, isDevMode } from '@angular/core';
 
 declare const fbq: any;
+declare const gtag: any;
 
 @Component({
   selector: 'app-faqs',
@@ -166,6 +167,10 @@ export class FaqsComponent implements OnInit {
       fbq('track', 'ViewContent', {
         content_name: 'faq',
         content_id: question.title
+      });
+      gtag.event('faq_opened', {
+        event_category: 'faq',
+        event_label: question.title
       });
     }
   }

@@ -25,12 +25,9 @@
       <h2 id="{{faq.name}}" class="mb-5 text-muted">{{faq.name}}</h2>
       <ngb-accordion [closeOthers]="true" #acc="ngbAccordion" activeIds="ngb-panel-0">
         <ngb-panel *ngFor="let q of faq.items">
-          <ng-template ngbPanelTitle><h6 
-            gtagEvent
-            action="faq_opened"
-            category="faq"
-            [params]="{ event_label: q.title }"
-            (click)="trackClickedFaqQuestion(q)">{{q.title}}</h6></ng-template>
+          <ng-template ngbPanelTitle >
+              <span (click)="trackClickedFaqQuestion(q)">{{q.title}}</span>
+          </ng-template>
           <ng-template ngbPanelContent>
             <p *ngFor="let p of q.answer" [innerHtml]="p"></p>
           </ng-template>
