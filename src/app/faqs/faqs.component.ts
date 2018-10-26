@@ -31,13 +31,7 @@ export class FaqsComponent implements OnInit {
               "Visit our <a href='/stories'>Bible Stories page</a> for examples."
             ]
           },
-          {
-            title: "What is your Statement of Faith?",
-            answer: ["We believe the Bible is the inspired, authoritative Word of God.",
-              "We believe there is one God, eternally existent in three persons: Father, Son, and Holy Spirit.",
-              "We believe in the deity of Jesus Christ, in his virgin birth, in his sinless life, in his death on the cross, in his bodily resurrection, in his ascension to the right hand of the Father, and in his personal return.",
-              "We believe people receive forgiveness of sins and eternal life through Jesus."]
-          },
+
           {
             title: "Who is Danny the Donkey?",
             answer: ["Danny the Donkey is our little helper who takes the kids on their journey through the Bible. He welcomes, explains the crafts and knows a lot of great Bible Verses.",
@@ -46,10 +40,6 @@ export class FaqsComponent implements OnInit {
           {
             title: "What is the suggested age range for HelloBible?",
             answer: ["HelloBible is designed for kids ages 5-10."]
-          },
-          {
-            title: "Does HelloBible align with my beliefs?",
-            answer: ["Our content is Bible based. We focus on Scripture and we share suggestions on how to teach Bible Stories to children. We hope that those ideas and suggestions apply to a broad range of Christian families and homeschool groups. If you have any questions please do not hesitate to contact us."]
           },
           {
             title: "Is HelloBible donating?",
@@ -83,6 +73,27 @@ export class FaqsComponent implements OnInit {
             title: "How can I give feedback?",
             answer: ["We'd love to hear from you! Please send us an email to info@hellobible.org."]
           }
+        ]
+      },
+      {
+        name: "Faith",
+        id: "beliefs",
+        items: [
+          {
+            title: "What is your Statement of Faith?",
+            answer: ["We believe the Bible is the inspired, authoritative Word of God.",
+              "We believe there is one God, eternally existent in three persons: Father, Son, and Holy Spirit.",
+              "We believe in the deity of Jesus Christ, in his virgin birth, in his sinless life, in his death on the cross, in his bodily resurrection, in his ascension to the right hand of the Father, and in his personal return.",
+              "We believe people receive forgiveness of sins and eternal life through Jesus."]
+          },
+          {
+            title: "What version of the Bible do you use?",
+            answer: ["We are using the Arch Book Series. There is one book included in each box. In addition, we encourage families to read the Bible story in their Children's Bible as well. Other Verses and box inserts are based on the NIV Bible."]
+          },
+          {
+            title: "Does HelloBible align with my beliefs?",
+            answer: ["Our content is Bible based. We focus on Scripture and we share suggestions on how to teach Bible Stories to children. We hope that those ideas and suggestions apply to a broad range of Christian families and homeschool groups. If you have any questions please do not hesitate to contact us."]
+          },
         ]
       },
       {
@@ -132,7 +143,7 @@ export class FaqsComponent implements OnInit {
           }
         ]
       }, {
-        name: "Managing your Account",
+        name: "Account",
         id: "account",
         items: [
           {
@@ -145,17 +156,17 @@ export class FaqsComponent implements OnInit {
           }
         ]
       }];
-    }
+  }
 
-    ngOnInit() {
-    }
+  ngOnInit() {
+  }
 
-    trackClickedFaqQuestion = function (question) {
-      if (!isDevMode()) {
-        fbq('track', 'ViewContent', {
-          content_name: 'faq',
-          content_id: question.title
-        });
-      }
+  trackClickedFaqQuestion = function (question) {
+    if (!isDevMode()) {
+      fbq('track', 'ViewContent', {
+        content_name: 'faq',
+        content_id: question.title
+      });
     }
   }
+}

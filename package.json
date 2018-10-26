@@ -34,6 +34,7 @@
     "owl.carousel": "^2.3.4",
     "owl.carousel2.thumbs": "^0.1.8",
     "rxjs": "~6.2.0",
+    "rxjs-compat": "^6.3.3",
     "smooth-scroll": "^14.2.1",
     "zone.js": "~0.8.26"
   },
