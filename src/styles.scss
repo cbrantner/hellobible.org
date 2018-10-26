@@ -1,0 +1,29 @@
+/* You can add global styles to this file, and also import other style files */
+
+$templateColour: blue;
+
+.topMargin {
+    margin-top: 70px;
+}
+
+$fa-font-path: "../node_modules/font-awesome/fonts";
+@import "../node_modules/font-awesome/scss/font-awesome.scss";
+
+// functions.scss - Bootstrap functions
+@import "../node_modules/bootstrap/scss/_functions"; 
+
+// your variables + overrides of Bootstrap variables 
+@import "scss/user/user-variables"; 
+
+// custom variables + overrides of Bootstrap variables for this theme
+@import "scss/custom/variables"; 
+
+// bootstrap main
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+// theme components
+@import "scss/custom/theme";
+
+// your components
+@import "scss/user/user"; 
+

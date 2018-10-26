@@ -1,0 +1,9 @@
+<ngx-toasta [position]="'top-left'"></ngx-toasta>
+<form (ngSubmit)="onSubmit()" id="newsletter-form" #NewsletterComponent="ngForm">
+  <div class="input-group">
+    <input type="email" [(ngModel)]="model.email" name="email" placeholder="Your Email Address" aria-label="Your Email Address" class="form-control bg-transparent border-secondary border-right-0" required>
+    <div class="input-group-append">
+      <button type="submit" class="btn btn-outline-secondary border-left-0"> <i class="fa fa-paper-plane text-lg text-dark"></i></button>
+    </div>
+  </div>
+</form>
