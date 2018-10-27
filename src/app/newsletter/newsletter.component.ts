@@ -2,6 +2,8 @@ import { Component, OnInit, isDevMode } from '@angular/core';
 import { NewsletterSubscriber } from '../newsletter-subscriber';
 import { HttpClient, HttpParams, HttpParameterCodec } from '@angular/common/http';
 import { ToastaService, ToastaConfig, ToastOptions } from 'ngx-toasta';
+import { Gtag } from 'angular-gtag';
+
 
 interface MailChimpResponse {
   result: string;
@@ -42,7 +44,7 @@ export class NewsletterComponent implements OnInit {
 
   url: string = 'https://hellobible.us11.list-manage.com/subscribe/post-json?u=241bb925118b3a87d221f6dca&id=afc638b89c&';
 
-  constructor(private toastaService: ToastaService, private toastaConfig: ToastaConfig, private http: HttpClient) {
+  constructor(private toastaService: ToastaService, private toastaConfig: ToastaConfig, private http: HttpClient, private gtag: Gtag) {
   }
 
   ngOnInit() {
@@ -63,7 +65,12 @@ export class NewsletterComponent implements OnInit {
 
         if (!isDevMode()) {
           fbq('trackCustom', 'newsletter', { event: 'signup' });
+          this.gtag.event('newsletter', {
+            event_category: 'subscribe',
+            event_label: this.model.email
+          })
         }
+        this.model.email = '';
       }
       else {
         this.toastaService.error(response.msg);

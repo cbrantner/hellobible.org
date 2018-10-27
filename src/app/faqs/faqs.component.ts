@@ -1,7 +1,7 @@
 import { Component, OnInit, isDevMode } from '@angular/core';
+import { Gtag } from 'angular-gtag';
 
 declare const fbq: any;
-declare const gtag: any;
 
 @Component({
   selector: 'app-faqs',
@@ -12,7 +12,7 @@ export class FaqsComponent implements OnInit {
 
   faqs: Array<Object>;
 
-  constructor() {
+  constructor(gtag: Gtag) {
     this.faqs = [
       {
         name: "General",
@@ -168,7 +168,7 @@ export class FaqsComponent implements OnInit {
         content_name: 'faq',
         content_id: question.title
       });
-      gtag.event('faq_opened', {
+      this.gtag.event('faq_opened', {
         event_category: 'faq',
         event_label: question.title
       });
