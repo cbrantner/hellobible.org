@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import {PageScrollConfig} from 'ngx-page-scroll';
 import {Router, NavigationEnd} from "@angular/router";
 import { Gtag } from 'angular-gtag';
@@ -16,4 +16,13 @@ export class AppComponent {
   constructor(public router: Router, gtag: Gtag) {
     PageScrollConfig.defaultDuration = 500;
   }
+
+  ngOnInit() {
+    this.router.events.subscribe((evt) => {
+        if (!(evt instanceof NavigationEnd)) {
+            return;
+        }
+        window.scrollTo(0, 0);
+    });
+}
 }
