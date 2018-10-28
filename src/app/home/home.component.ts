@@ -1,10 +1,9 @@
-import { Component, OnInit, OnDestroy, ElementRef, isDevMode } from '@angular/core';
+import { Component, OnInit, OnDestroy, isDevMode } from '@angular/core';
 import { DOCUMENT } from '@angular/common';
 import { Observable, Subscription } from 'rxjs-compat';
-
+import { Gtag } from 'angular-gtag';
 
 declare const fbq: any;
-declare let gtag: any;
 
 @Component({
   selector: 'app-home',
@@ -17,9 +16,10 @@ export class HomeComponent implements OnInit {
   private counter$: Observable<number>;
   private subscription: Subscription;
   public launchCountdown: string;
+  private gtag: Gtag;
 
-  constructor(elm: ElementRef) {
-    //this.futureString = elm.nativeElement.getElementById('countdown');
+  constructor(gtag: Gtag) {
+    this.gtag = gtag;
   }
 
   dhms(t) {
@@ -104,8 +104,7 @@ export class HomeComponent implements OnInit {
         content_id: planObject.children[parseInt(selected) - 1].url
       });
 
-      gtag.event('event', 'addToCart', {
-        event_category: 'cart',
+      this.gtag.event('cart', {
         event_label: 'add ' + planObject.children[parseInt(selected) - 1].url,
         value: planObject.children[parseInt(selected) - 1].price
       });
