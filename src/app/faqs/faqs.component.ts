@@ -168,7 +168,7 @@ export class FaqsComponent implements OnInit {
         content_name: 'faq',
         content_id: question.title
       });
-      this.gtag.event('faq_opened', {
+      this.gtag.event('faq', {
         event_category: 'faq',
         event_label: question.title
       });
