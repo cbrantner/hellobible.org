@@ -91,8 +91,8 @@
     <div id="pricing" class="row">
       <div class="col-xl-8 mx-auto text-center mb-5">
         <h2 class="text-uppercase">Start Your Journey</h2>
-        <!--<p class="lead text-muted">First box ships within a week. Cancel anytime.</p>-->
-        <p class="lead">The new Gospel Series starts soon!</p>
+        <p class="lead text-muted">Your Christmas box will ship on November 27th. Cancel anytime.</p>
+        <p class="lead" style="color: #FF0099;">Order today to get FREE shipping on your 1st box and a special GIFT. Use code LAUNCH.</p>
       </div>
     </div>
     <div class="row">
@@ -112,7 +112,7 @@
               <li><span class="fa fa-users"></span> Up to 4 Children.</li>
             </ul>
             <div class="text-center choose-children">
-              <select name="monthlyPlan" id="monthlyPlan" ng-model="selectedOptions['monthlyPlan']" ng-change="printData()">
+              <select name="monthlyPlan" id="monthlyPlan" [(ngModel)]="selectedOptions['monthlyPlan']" ng-change="printData()">
                 <option value="1">1 Child</option>
                 <option value="2">2 Children + $4.90/month</option>
                 <option value="3">3 Children + $9.80/month</option>
@@ -120,10 +120,9 @@
               </select>
             </div>
             <div class="text-center mt-3">
-              <!--<a (click)="addToCart('twelveMonthsPlan')">-->
-              <!--<button type="submit" class="btn btn-outline-dark"><i class="far fa-save mr-2"></i>Add to Cart</button>-->
-              <button type="submit" class="btn btn-outline-dark disabled"><i class="far fa-save mr-2"></i>Preorder soon</button>
-              <!--</a>-->
+              <a (click)="addToCart('monthlyPlan')">
+              <button type="submit" class="btn btn-outline-dark"><i class="far fa-save mr-2"></i>Add to Cart</button>
+              </a>
             </div>
           </div>
         </div>
@@ -142,7 +141,7 @@
               <li><span class="fa fa-users"></span> Up to 4 Children.</li>
             </ul>
             <div class="text-center choose-children">
-              <select name="sixMonthsPlan" id="sixMonthsPlan" ng-model="selectedOptions['sixMonthsPlan']" ng-change="printData()">
+              <select name="sixMonthsPlan" id="sixMonthsPlan" [(ngModel)]="selectedOptions['sixMonthsPlan']" ng-change="printData()">
                 <option value="1">1 Child</option>
                 <option value="2">2 Children + $4.90/month</option>
                 <option value="3">3 Children + $9.80/month</option>
@@ -150,10 +149,9 @@
               </select>
             </div>
             <div class="text-center mt-3">
-              <!--<a (click)="addToCart('twelveMonthsPlan')">-->
-              <!--<button type="submit" class="btn btn-outline-dark"><i class="far fa-save mr-2"></i>Add to Cart</button>-->
-              <button type="submit" class="btn btn-outline-dark disabled"><i class="far fa-save mr-2"></i>Preorder soon</button>
-              <!--</a>-->
+              <a (click)="addToCart('sixMonthsPlan')">
+              <button type="submit" class="btn btn-outline-dark"><i class="far fa-save mr-2"></i>Add to Cart</button>
+              </a>
             </div>
           </div>
         </div>
@@ -175,7 +173,7 @@
               <li><span class="fa fa-users"></span> Up to 4 Children.</li>
             </ul>
             <div class="text-center choose-children">
-              <select name="twelveMonthsPlan" id="twelveMonthsPlan" ng-model="selectedOptions['twelveMonthsPlan']"
+              <select name="twelveMonthsPlan" id="twelveMonthsPlan" [(ngModel)]="selectedOptions['twelveMonthsPlan']"
                 ng-change="printData()">
                 <option value="1">1 Child</option>
                 <option value="2">2 Children + $4.90/month</option>
@@ -184,22 +182,23 @@
               </select>
             </div>
             <div class="text-center mt-3">
-              <!--<a (click)="addToCart('twelveMonthsPlan')">-->
-              <!--<button type="submit" class="btn btn-outline-dark"><i class="far fa-save mr-2"></i>Add to Cart</button>-->
-              <button type="submit" class="btn btn-outline-dark disabled"><i class="far fa-save mr-2"></i>Preorder soon</button>
-              <!--</a>-->
+              <a (click)="addToCart('twelveMonthsPlan')">
+              <button type="submit" class="btn btn-outline-dark"><i class="far fa-save mr-2"></i>Add to Cart</button>
+              </a>
             </div>
           </div>
         </div>
       </div>
-      <!-- /product-->
+      <div class="col-xl-8 mx-auto text-center mb-5">
+        <p class="lead text-muted">Every order after November 27th, will be shipped within one week of the order. After the holidays, going forward, for existing subscribers, we ship on the 2nd of every month.</p>
+      </div>      <!-- /product--><!--
       <div class="container-fluid text-center">
           <h3 style="color: #FF0099">
               Preorder in {{launchCountdown}}.
           </h3>
         <p class="mb-3">In the meantime, join our VIP list for special discounts and exclusive news.</p>
         <div class="mx-auto col-md-4"><app-newsletter></app-newsletter></div>
-    </div>
+    </div>-->
     </div>
   </div>
 

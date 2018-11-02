@@ -1,6 +1,4 @@
 import { Component, OnInit, OnDestroy, isDevMode } from '@angular/core';
-import { DOCUMENT } from '@angular/common';
-import { Observable, Subscription } from 'rxjs-compat';
 import { Gtag } from 'angular-gtag';
 
 declare const fbq: any;
@@ -12,54 +10,28 @@ declare const fbq: any;
 })
 export class HomeComponent implements OnInit {
 
-  private future: Date;
-  private counter$: Observable<number>;
-  private subscription: Subscription;
-  public launchCountdown: string;
   private gtag: Gtag;
+  public selectedOptions: object;
 
   constructor(gtag: Gtag) {
     this.gtag = gtag;
   }
 
-  dhms(t) {
-    var days, hours, minutes, seconds;
-    days = Math.floor(t / 86400);
-    t -= days * 86400;
-    hours = Math.floor(t / 3600) % 24;
-    t -= hours * 3600;
-    minutes = Math.floor(t / 60) % 60;
-    t -= minutes * 60;
-    seconds = t % 60;
 
-    return [
-      days + ' days',
-      hours + ' hours'/*,
-      minutes + 'm',
-      seconds + 's'*/
-    ].join(' ');
-  }
 
   ngOnInit() {
-    this.future = new Date("2018-11-02T00:00:00-09:00");
-    this.counter$ = Observable.interval(1000).map((x) => {
-      return Math.floor((this.future.getTime() -  new Date().getTime()) / 1000);
-    });
-
-    this.subscription = this.counter$.subscribe((x) => this.launchCountdown = this.dhms(x));
-  }
-
-  ngOnDestroy() {
-    this.subscription.unsubscribe();
-  }
-
-  addToCart(plan) {
-
-    var selectedOptions = {
+    this.selectedOptions = {
       monthlyPlan: "1",
       sixMonthsPlan: "1",
       twelveMonthsPlan: "1"
     };
+
+  }
+
+  ngOnDestroy() {
+  }
+
+  addToCart(plan) {
 
     var option =
     {
@@ -92,7 +64,7 @@ export class HomeComponent implements OnInit {
       }
     };
 
-    var selected = selectedOptions[plan];
+    var selected = this.selectedOptions[plan];
     var planObject = option[plan];
     var url = planObject.children[parseInt(selected) - 1].url;
 
