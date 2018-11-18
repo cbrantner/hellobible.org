@@ -27,6 +27,14 @@
   <link rel=icon href="/favicon.ico" sizes="32x32 48x48" type="image/vnd.microsoft.icon">
   <link rel=icon href="/favicon.icns" sizes="128x128 512x512 8192x8192 32768x32768">
 
+
+</head>
+
+<body>
+
+  <app-root></app-root>
+
+
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-82839547-1"></script>
   <script>
@@ -59,29 +67,25 @@
   <!-- End Facebook Pixel Code -->
 
   <!-- Facebook Pixel Code -->
-<script>
-  !function(f,b,e,v,n,t,s)
-  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-  n.queue=[];t=b.createElement(e);t.async=!0;
-  t.src=v;s=b.getElementsByTagName(e)[0];
-  s.parentNode.insertBefore(t,s)}(window, document,'script',
-  'https://connect.facebook.net/en_US/fbevents.js');
-  fbq('init', '1803880256491691');
-  fbq('track', 'PageView');
-</script>
-<noscript><img height="1" width="1" style="display:none"
-  src="https://www.facebook.com/tr?id=1803880256491691&ev=PageView&noscript=1"
-/></noscript>
-<!-- End Facebook Pixel Code -->
+  <script>
+    !function (f, b, e, v, n, t, s) {
+      if (f.fbq) return; n = f.fbq = function () {
+        n.callMethod ?
+          n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+      };
+      if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
+      n.queue = []; t = b.createElement(e); t.async = !0;
+      t.src = v; s = b.getElementsByTagName(e)[0];
+      s.parentNode.insertBefore(t, s)
+    }(window, document, 'script',
+      'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '1803880256491691');
+    fbq('track', 'PageView');
+  </script>
+  <noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1803880256491691&ev=PageView&noscript=1" /></noscript>
+  <!-- End Facebook Pixel Code -->
 
-
-
-  <app-root></app-root>
-  </body>
-
-
+  <script src="//assets.pcrl.co/js/jstracker.min.js"></script>
 
 
   <!-- pinterest tag -->
@@ -89,9 +93,8 @@
   <noscript> <img height="1" width="1" style="display:none;" alt="" src="https://ct.pinterest.com/v3/?tid=2619655637242&noscript=1" />
   </noscript>
   <!-- pinterest tag end -->
-</head>
+  </head>
 
-<body>
 
 
   <!-- Start of hellobible Zendesk Widget script -->
@@ -127,5 +130,12 @@
     var basePath = ''
 
   </script>
+
+
+
+
+</body>
+
+
 
 </html>
