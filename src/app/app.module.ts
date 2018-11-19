@@ -20,6 +20,7 @@ import { GtagModule } from 'angular-gtag';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule, HttpClientJsonpModule } from '@angular/common/http';
 import { ToastaModule } from 'ngx-toasta';
+import { NoahComponent } from './noah/noah.component';
 
 
 @NgModule({
@@ -36,6 +37,7 @@ import { ToastaModule } from 'ngx-toasta';
     KilgorisComponent,
     HomeschoolComponent,
     NewsletterComponent,
+    NoahComponent,
   ],
   imports: [
     BrowserModule,
