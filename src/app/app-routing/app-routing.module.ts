@@ -9,6 +9,7 @@ import { PrivacyComponent } from '../privacy/privacy.component';
 import { KilgorisComponent } from '../kilgoris/kilgoris.component';
 import { HomeschoolComponent } from '../homeschool/homeschool.component';
 import { NoahComponent } from '../noah/noah.component';
+import { ChristmasComponent } from '../christmas/christmas.component';
 
 const routes: Routes = [
     {
@@ -50,9 +51,10 @@ const routes: Routes = [
     {
         path: 'noah',
         component: NoahComponent,
-        data: {
-            title: 'Example of static route data'
-        }
+    },
+    {
+        path: 'christmas',
+        component: ChristmasComponent,
     },
     {
         path: '',

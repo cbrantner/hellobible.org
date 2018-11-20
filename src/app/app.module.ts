@@ -21,6 +21,7 @@ import { FormsModule } from '@angular/forms';
 import { HttpClientModule, HttpClientJsonpModule } from '@angular/common/http';
 import { ToastaModule } from 'ngx-toasta';
 import { NoahComponent } from './noah/noah.component';
+import { ChristmasComponent } from './christmas/christmas.component';
 
 
 @NgModule({
@@ -38,6 +39,7 @@ import { NoahComponent } from './noah/noah.component';
     HomeschoolComponent,
     NewsletterComponent,
     NoahComponent,
+    ChristmasComponent,
   ],
   imports: [
     BrowserModule,
