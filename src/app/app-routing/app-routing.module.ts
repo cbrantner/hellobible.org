@@ -8,6 +8,8 @@ import { TermsComponent } from '../terms/terms.component';
 import { PrivacyComponent } from '../privacy/privacy.component';
 import { KilgorisComponent } from '../kilgoris/kilgoris.component';
 import { HomeschoolComponent } from '../homeschool/homeschool.component';
+import { NoahComponent } from '../noah/noah.component';
+import { ChristmasComponent } from '../christmas/christmas.component';
 
 const routes: Routes = [
     {
@@ -16,59 +18,43 @@ const routes: Routes = [
     },
     {
         path: 'faq',
-        component: FaqsComponent,
-        data: {
-            title: 'Example of static route data'
-        }
+        component: FaqsComponent
     },
     {
         path: 'faqs',
-        component: FaqsComponent,
-        data: {
-            title: 'Example of static route data'
-        }
+        component: FaqsComponent
     },
     {
         path: 'stories',
-        component: StoriesComponent,
-        data: {
-            title: 'Example of static route data'
-        }
+        component: StoriesComponent
     },
     {
         path: 'homeschool',
-        component: HomeschoolComponent,
-        data: {
-            title: 'Example of static route data'
-        }
+        component: HomeschoolComponent
     },
     {
         path: 'about',
-        component: AboutComponent,
-        data: {
-            title: 'Example of static route data'
-        }
+        component: AboutComponent
     },
     {
         path: 'terms',
-        component: TermsComponent,
-        data: {
-            title: 'Example of static route data'
-        }
+        component: TermsComponent
     },
     {
         path: 'privacy',
-        component: PrivacyComponent,
-        data: {
-            title: 'Example of static route data'
-        }
+        component: PrivacyComponent
     },
     {
         path: 'kilgoris',
-        component: KilgorisComponent,
-        data: {
-            title: 'Example of static route data'
-        }
+        component: KilgorisComponent
+    },
+    {
+        path: 'noah',
+        component: NoahComponent,
+    },
+    {
+        path: 'christmas',
+        component: ChristmasComponent,
     },
     {
         path: '',
