@@ -11,7 +11,7 @@ import { ActivatedRoute } from '@angular/router';
 
 export class NavComponent implements OnInit, OnDestroy {
   public isCollapsed = false;
-  public message: string = "foo";
+  public message: string = "";
   private sub: any;
 
   private campaigns = {
@@ -29,6 +29,8 @@ export class NavComponent implements OnInit, OnDestroy {
         var message: string = this.campaigns[utm];
         if (message) {
           this.message = message;
+        } else {
+          this.message = this.campaigns.default;
         }
       } else {
         this.message = this.campaigns.default;

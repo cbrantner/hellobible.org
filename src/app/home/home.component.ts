@@ -13,7 +13,7 @@ export class HomeComponent implements OnInit {
 
   private gtag: Gtag;
   public selectedOptions: object;
-  public message: string = "foo";
+  public message: string = "";
   private sub: any;
 
   private campaigns = {
@@ -38,6 +38,8 @@ export class HomeComponent implements OnInit {
         var message: string = this.campaigns[utm];
         if (message) {
           this.message = message;
+        } else {
+          this.message = this.campaigns.default;
         }
       } else {
         this.message = this.campaigns.default;
