@@ -18,7 +18,8 @@ export class HomeComponent implements OnInit {
 
   private campaigns = {
     "a56d739d32-GIFT_EMAIL_2018_11_15": "1 Month FREE. 6 months subscription for one child $99. Use code GIFT6.<br/>3 Months FREE. 12 months subscription for one child $178. Use code GIFT12.",
-    "default": "Order today and get $5 OFF your Christmas Box. Use code CHRISTMAS5."
+    "christmas": "Order today and get $5 OFF your Christmas Box. Use code CHRISTMAS5.",
+    "default": "Early Black Friday. Best Deal of the Year. <b>Starts at $9.90</b>. Use code EARLY.",
   }
 
   constructor(gtag: Gtag, private route: ActivatedRoute) {
