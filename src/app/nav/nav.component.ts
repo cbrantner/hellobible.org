@@ -17,7 +17,7 @@ export class NavComponent implements OnInit, OnDestroy {
   private campaigns = {
     "a56d739d32-GIFT_EMAIL_2018_11_15": "1 Month FREE. 6 months subscription for one child $99. Use code GIFT6.<br/>3 Months FREE. 12 months subscription for one child $178. Use code GIFT12.",
     "christmas": "Order today and get $5 OFF your Christmas Box. Use code CHRISTMAS5.",
-    "default": "Early Black Friday. Best Deal of the Year. <b>Starts at $9.90</b>. Use code EARLY.",
+    "default": "<b>$10 off</b> monthly subscriptions. Code BLACKFRIDAY10<br/> <b>$20 off</b> 6 and 12 months subscriptions. Code BLACKFRIDAY20."
   }
   
   constructor(public router: Router, private route: ActivatedRoute) {
