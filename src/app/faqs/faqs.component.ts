@@ -140,7 +140,7 @@ export class FaqsComponent implements OnInit {
           },
           {
             title: "When does HelloBible ship?",
-            answer: ["Your first shipment will be sent within a week of receiving the order. After that, boxes are shipped around the 2nd of each month. A shipping confirmation email will be sent to you when a box is shipped."]
+            answer: ["Boxes generally (including new orders) ship around the 2nd of each month. A shipping confirmation email will be sent to you when a box is shipped."]
           }
         ]
       }, {
