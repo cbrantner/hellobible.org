@@ -62,28 +62,28 @@ export class HomeComponent implements OnInit {
       monthlyPlan:
       {
         children: [
-          { price: "24.90", url: "https://hellobible.cratejoy.org/subscribe/2108509072_hellobible-1-child/2108509073_month-to-month" },
-          { price: "29.80", url: "https://hellobible.cratejoy.org/subscribe/2108518485_hellobible-2-children/2108518481_month-to-month" },
-          { price: "34.70", url: "https://hellobible.cratejoy.org/subscribe/2108530720_hellobible-3-children/2108530721_month-to-month" },
-          { price: "39.60", url: "https://hellobible.cratejoy.org/subscribe/2108532982_hellobible-4-children/2108532983_month-to-month" }
+          { price: "24.90", url: "https://hellobible.cratejoy.com/subscribe/2108509072_hellobible-1-child/2108509073_month-to-month" },
+          { price: "29.80", url: "https://hellobible.cratejoy.com/subscribe/2108518485_hellobible-2-children/2108518481_month-to-month" },
+          { price: "34.70", url: "https://hellobible.cratejoy.com/subscribe/2108530720_hellobible-3-children/2108530721_month-to-month" },
+          { price: "39.60", url: "https://hellobible.cratejoy.com/subscribe/2108532982_hellobible-4-children/2108532983_month-to-month" }
         ]
       },
       sixMonthsPlan:
       {
         children: [
-          { price: "143.40", url: "https://hellobible.cratejoy.org/subscribe/2108509072_hellobible-1-child/2108509075_6-month-prepay" },
-          { price: "172.80", url: "https://hellobible.cratejoy.org/subscribe/2108518485_hellobible-2-children/2108518483_6-month-prepay" },
-          { price: "202.20", url: "https://hellobible.cratejoy.org/subscribe/2108530720_hellobible-3-children/2108530723_6-month-prepay" },
-          { price: "231.60", url: "https://hellobible.cratejoy.org/subscribe/2108532982_hellobible-4-children/2108532985_6-month-prepay" }
+          { price: "143.40", url: "https://hellobible.cratejoy.com/subscribe/2108509072_hellobible-1-child/2108509075_6-month-prepay" },
+          { price: "172.80", url: "https://hellobible.cratejoy.com/subscribe/2108518485_hellobible-2-children/2108518483_6-month-prepay" },
+          { price: "202.20", url: "https://hellobible.cratejoy.com/subscribe/2108530720_hellobible-3-children/2108530723_6-month-prepay" },
+          { price: "231.60", url: "https://hellobible.cratejoy.com/subscribe/2108532982_hellobible-4-children/2108532985_6-month-prepay" }
         ]
       },
       twelveMonthsPlan:
       {
         children: [
-          { price: "262.80", url: "https://hellobible.cratejoy.org/subscribe/2108509072_hellobible-1-child/2108509076_12-month-prepay" },
-          { price: "321.60", url: "https://hellobible.cratejoy.org/subscribe/2108518485_hellobible-2-children/2108518484_12-month-prepay" },
-          { price: "380.40", url: "https://hellobible.cratejoy.org/subscribe/2108530720_hellobible-3-children/2108530724_12-month-prepay" },
-          { price: "439.20", url: "https://hellobible.cratejoy.org/subscribe/2108532982_hellobible-4-children/2108532986_12-month-prepay" }
+          { price: "262.80", url: "https://hellobible.cratejoy.com/subscribe/2108509072_hellobible-1-child/2108509076_12-month-prepay" },
+          { price: "321.60", url: "https://hellobible.cratejoy.com/subscribe/2108518485_hellobible-2-children/2108518484_12-month-prepay" },
+          { price: "380.40", url: "https://hellobible.cratejoy.com/subscribe/2108530720_hellobible-3-children/2108530724_12-month-prepay" },
+          { price: "439.20", url: "https://hellobible.cratejoy.com/subscribe/2108532982_hellobible-4-children/2108532986_12-month-prepay" }
         ]
       }
     };
