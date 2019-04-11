@@ -93,13 +93,6 @@ export class HomeComponent implements OnInit {
     var url = planObject.children[parseInt(selected) - 1].url;
 
     if (!isDevMode()) {
-      fbq('track', 'AddToCart', {
-        content_name: plan + ' ' + selected + ' children',
-        value: planObject.children[parseInt(selected) - 1].price,
-        currency: "USD",
-        content_id: planObject.children[parseInt(selected) - 1].url
-      });
-
       this.gtag.event('cart', {
         event_label: 'add ' + planObject.children[parseInt(selected) - 1].url,
         value: planObject.children[parseInt(selected) - 1].price
