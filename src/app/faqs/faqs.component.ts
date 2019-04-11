@@ -67,10 +67,6 @@ export class FaqsComponent implements OnInit {
             ]
           },
           {
-            title: "What if I need material for more than 4 children?",
-            answer: ["That's great. No problem. Please contact us at info@hellobible.org and we will be happy to help you."]
-          },
-          {
             title: "How can I give feedback?",
             answer: ["We'd love to hear from you! Please send us an email to info@hellobible.org."]
           }
