@@ -15,6 +15,11 @@ export class HomeComponent implements OnInit {
   public selectedOptions: object;
   public message: string = "";
   private sub: any;
+  private utm_source: string = "";
+  private utm_medium: string = "";
+  private utm_campaign: string = "";
+  private utm_term: string = "";
+  private utm_content: string = "";
 
   private campaigns = {
     "a56d739d32-GIFT_EMAIL_2018_11_15": "1 Month FREE. 6 months subscription for one child $99. Use code GIFT6.<br/>3 Months FREE. 12 months subscription for one child $178. Use code GIFT12.",
@@ -36,9 +41,13 @@ export class HomeComponent implements OnInit {
     };
         
     this.sub = this.route.queryParams.subscribe(params => {
-      var utm: string = params.utm_campaign;
-      if (utm) {
-        var message: string = this.campaigns[utm];
+      this.utm_source = params.utm_source;
+      this.utm_medium = params.utm_medium;
+      this.utm_campaign = params.utm_campaign;
+      this.utm_term = params.utm_term;
+      this.utm_content = params.utm_content;
+      if (this.utm_campaign) {
+        var message: string = this.campaigns[this.utm_campaign];
         if (message) {
           this.message = message;
         } else {
@@ -90,7 +99,22 @@ export class HomeComponent implements OnInit {
 
     var selected = this.selectedOptions[plan];
     var planObject = option[plan];
-    var url = planObject.children[parseInt(selected) - 1].url;
+    var url = planObject.children[parseInt(selected) - 1].url + "?";
+    if (this.utm_campaign) {
+      url += "utm_campaign=" + this.utm_campaign;
+    }
+    if (this.utm_medium) {
+      url += "&utm_medium=" + this.utm_medium;
+    }
+    if (this.utm_content) {
+      url += "&utm_content=" + this.utm_content;
+    }
+    if (this.utm_term) {
+      url += "&utm_term=" + this.utm_term;
+    }
+    if (this.utm_source) {
+      url += "&utm_source=" + this.utm_source;
+    }
 
     if (!isDevMode()) {
       this.gtag.event('cart', {
