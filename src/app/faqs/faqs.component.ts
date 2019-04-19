@@ -111,7 +111,7 @@ export class FaqsComponent implements OnInit {
           },
           {
             title: "How can I give HelloBible as a gift?",
-            answer: ["HelloBible is a wonderful gift! During the checkout, please provide your gift recipient’s name and address in the shipping section at checkout. You can also leave a personalized note for the recipient."]
+            answer: ["HelloBible is a wonderful gift! During the checkout, please provide your gift recipient’s name and address in the shipping section at checkout."]
           },
           {
             title: "Do you accept returns?",
