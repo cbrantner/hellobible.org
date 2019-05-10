@@ -50,9 +50,9 @@ export class HomeComponent implements OnInit {
       ]
     }
   };
-  private monthlyTotal = this.option['monthlyPlan'].children[0].price;
-  private sixMonthsTotal = this.option['sixMonthsPlan'].children[0].price;
-  private twelveMonthsTotal = this.option['twelveMonthsPlan'].children[0].price;
+  public monthlyTotal = this.option['monthlyPlan'].children[0].price;
+  public sixMonthsTotal = this.option['sixMonthsPlan'].children[0].price;
+  public twelveMonthsTotal = this.option['twelveMonthsPlan'].children[0].price;
 
 
   private campaigns = {
