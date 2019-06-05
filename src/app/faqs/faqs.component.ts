@@ -2,6 +2,7 @@ import { Component, OnInit, isDevMode } from '@angular/core';
 import { Gtag } from 'angular-gtag';
 
 declare const fbq: any;
+declare const zE: any;
 
 @Component({
   selector: 'app-faqs',
@@ -156,6 +157,10 @@ export class FaqsComponent implements OnInit {
   }
 
   ngOnInit() {
+  }
+
+  openWebWidget = function () {
+    zE('webWidget', 'open');
   }
 
   trackClickedFaqQuestion = function (question) {
