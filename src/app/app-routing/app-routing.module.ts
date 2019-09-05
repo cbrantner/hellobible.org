@@ -11,6 +11,7 @@ import { HomeschoolComponent } from '../homeschool/homeschool.component';
 import { NoahComponent } from '../noah/noah.component';
 import { ChristmasComponent } from '../christmas/christmas.component';
 import { FishersOfMenComponent } from '../fishers-of-men/fishers-of-men.component';
+import { AffiliatesComponent } from '../affiliates/affiliates.component';
 
 const routes: Routes = [
     {
@@ -60,6 +61,10 @@ const routes: Routes = [
     {
         path: 'fishers-of-men',
         component: FishersOfMenComponent,
+    },
+    {
+        path: 'affiliates',
+        component: AffiliatesComponent,
     },
     {
         path: '',

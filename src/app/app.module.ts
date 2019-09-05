@@ -23,6 +23,7 @@ import { ToastaModule } from 'ngx-toasta';
 import { NoahComponent } from './noah/noah.component';
 import { ChristmasComponent } from './christmas/christmas.component';
 import { FishersOfMenComponent } from './fishers-of-men/fishers-of-men.component';
+import { AffiliatesComponent } from './affiliates/affiliates.component';
 
 
 @NgModule({
@@ -42,6 +43,7 @@ import { FishersOfMenComponent } from './fishers-of-men/fishers-of-men.component
     NoahComponent,
     ChristmasComponent,
     FishersOfMenComponent,
+    AffiliatesComponent,
   ],
   imports: [
     BrowserModule,
