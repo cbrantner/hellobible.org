@@ -15,11 +15,8 @@ export class HomeComponent implements OnInit {
   public selectedOptions: object;
   public message: string = "";
   private sub: any;
-  private utm_source: string = "";
-  private utm_medium: string = "";
+  private params: any = {};
   private utm_campaign: string = "";
-  private utm_term: string = "";
-  private utm_content: string = "";
   private option =
   {
     monthlyPlan:
@@ -75,11 +72,7 @@ export class HomeComponent implements OnInit {
     };
         
     this.sub = this.route.queryParams.subscribe(params => {
-      this.utm_source = params.utm_source;
-      this.utm_medium = params.utm_medium;
       this.utm_campaign = params.utm_campaign;
-      this.utm_term = params.utm_term;
-      this.utm_content = params.utm_content;
       if (this.utm_campaign) {
         var message: string = this.campaigns[this.utm_campaign];
         if (message) {
@@ -90,6 +83,7 @@ export class HomeComponent implements OnInit {
       } else {
         this.message = this.campaigns.default;
       }
+      Object.assign(this.params, params);
     });
 
   }
@@ -114,21 +108,15 @@ export class HomeComponent implements OnInit {
     var selected = this.selectedOptions[plan];
     var planObject = this.option[plan];
 
-    var url = planObject.children[parseInt(selected) - 1].url + "?";
-    if (this.utm_campaign) {
-      url += "utm_campaign=" + this.utm_campaign;
-    }
-    if (this.utm_medium) {
-      url += "&utm_medium=" + this.utm_medium;
-    }
-    if (this.utm_content) {
-      url += "&utm_content=" + this.utm_content;
-    }
-    if (this.utm_term) {
-      url += "&utm_term=" + this.utm_term;
-    }
-    if (this.utm_source) {
-      url += "&utm_source=" + this.utm_source;
+    var url = planObject.children[parseInt(selected) - 1].url;
+    var i = 0;
+    for (var key in this.params) {
+      if (this.params.hasOwnProperty(key)) {
+        var sep = i===0 ? "?" : "&";
+        url += sep + key + "=" + this.params[key];
+        ++i;
+      }
+
     }
 
     if (!isDevMode()) {
