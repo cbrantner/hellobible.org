@@ -69,9 +69,7 @@
                 your children at home.
                 Every month all materials, teaching guides and instructions are delivered to your door.</p>
             </div>
-            <div class="service-text">
-              <p>We are now on a journey through the Gospel following the footsteps of Jesus.</p>
-            </div>
+
             <div class="service-text mx-auto">
               <p> <a routerLink="/stories" class="btn btn-primary">View Our Boxes</a> &nbsp;
                 <a routerLink="/faq" class="btn btn-light">FAQs</a>
@@ -85,8 +83,88 @@
   </div>
 </section>
 
-<section class="bg-gray-100">
+<section class="pt-6 bg-gray-100">
   <div class="container">
+    <div class="row">
+      <div class="col-xl-8 mx-auto text-center mb-3">
+        <h2 class="text-uppercase">Previous Boxes</h2>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-6 col-md-4">
+        <a routerLink="/stories">
+  
+          <div class="thumbnail">
+            <img src="/assets/images/stories/fishers-of-men.jpg" class="img-fluid" alt="Fishers of Men">
+            <div class="caption">
+              <h4>Fishers of Men</h4>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="col-sm-6 col-md-4">
+        <a routerLink="/stories">
+  
+          <div class="thumbnail">
+            <img src="/assets/images/stories/jesus-heals.jpg" class="img-fluid" alt="Jesus Heals The Paralytic">
+            <div class="caption">
+              <h4>Jesus Heals The Paralytic</h4>
+            </div>
+          </div>
+        </a>
+  
+      </div>
+      <div class="col-sm-6 col-md-4">
+        <a routerLink="/stories">
+  
+          <div class="thumbnail">
+            <img src="/assets/images/stories/jesus-is-risen.jpg" class="img-fluid" alt="Jesus is Risen">
+            <div class="caption">
+              <h4>Jesus is Risen</h4>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-6 col-md-4">
+        <a routerLink="/stories">
+  
+          <div class="thumbnail">
+            <img src="/assets/images/stories/jesus-blesses-the-children.jpg" class="img-fluid"
+              alt="Jesus Blesses the Children">
+            <div class="caption">
+              <h4>Jesus Blesses the Children</h4>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="col-sm-6 col-md-4">
+        <a routerLink="/stories">
+  
+          <div class="thumbnail">
+            <img src="/assets/images/stories/jesus-calms-storm.jpg" class="img-fluid" alt="Jesus Calms the Storm">
+            <div class="caption">
+              <h4>Jesus Calms the Storm</h4>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="col-sm-6 col-md-4">
+        <a routerLink="/stories">
+  
+          <div class="thumbnail">
+            <img src="/assets/images/stories/the-good-samaritan.jpg" class="img-fluid" alt="The Good Samaritan">
+            <div class="caption">
+              <h4>The Good Samaritan</h4>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!--<div class="container">
     <div class="row">
       <div class="col-md-6 d-flex align-items-md-stretch mb-30px mb-md-0">
         <div style="background: center center url(assets/images/home/grow.jpg) no-repeat; background-size: cover" class="d-flex align-items-center text-white dark-overlay w-100 text-center py-6 py-md-0"><a
@@ -116,7 +194,7 @@
         </div>
       </div>
     </div>
-  </div>
+  </div>-->
 </section>
 
 <section class="pt-6 pb-5">
@@ -139,7 +217,7 @@
           </div>
           <div class="card-body">
             <div class="ribbon ribbon-bbblue">Most popular</div>
-            <h3 class="card-title pricing-card-title text-center">$24.90 <small class="text-muted">/ mo</small></h3>
+            <h4 class="card-title pricing-card-title text-center">$24.90 <small class="text-muted">/ mo</small></h4>
             <ul class="list-unstyled mt-3 mb-4">
               <li><span class="fa fa-heart"></span> Supports children in Kenya.</li>
               <li><span class="fa fa-users"></span> Up to 4 Children.</li>
@@ -168,7 +246,7 @@
             <h2 class="my-0 font-weight-normal text-center">6 Months</h2>
           </div>
           <div class="card-body">
-            <h3 class="card-title pricing-card-title text-center">$23.90 <small class="text-muted">/ mo</small></h3>
+            <h4 class="card-title pricing-card-title text-center">$23.90 <small class="text-muted">/ mo</small></h4>
             <ul class="list-unstyled mt-3 mb-4">
               <li><span class="fa fa-heart"></span> Supports children in Kenya.</li>
               <li><span class="fa fa-users"></span> Up to 4 Children.</li>
@@ -201,7 +279,7 @@
           </div>
           <div class="card-body">
             <div class="ribbon ribbon-bborange">Best value</div>
-            <h3 class="card-title pricing-card-title text-center">$21.90 <small class="text-muted">/ mo</small></h3>
+            <h4 class="card-title pricing-card-title text-center">$21.90 <small class="text-muted">/ mo</small></h4>
             <ul class="list-unstyled mt-3 mb-4">
               <li><span class="fa fa-heart"></span> Supports children in Kenya.</li>
               <li><span class="fa fa-users"></span> Up to 4 Children.</li>
@@ -227,9 +305,9 @@
 <!-- /product-->
       <!--
       <div class="container-fluid text-center">
-          <h3 style="color: #FF0099">
+          <h4 style="color: #FF0099">
               Preorder in {{launchCountdown}}.
-          </h3>
+          </h4>
         <p class="mb-3">In the meantime, join our VIP list for special discounts and exclusive news.</p>
         <div class="mx-auto col-md-4"><app-newsletter></app-newsletter></div>
     </div>-->
@@ -241,7 +319,7 @@
 <div class="container">
   <div class="row">
     <div class="col-xl-8 mx-auto text-center">
-      <h3 class="text-uppercase">From Our Community</h3>
+      <h4 class="text-uppercase">From Our Community</h4>
       <p class="lead text-muted">Read what others say about us.</p>
     </div>
   </div>
