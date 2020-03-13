@@ -124,7 +124,7 @@ export class FaqsComponent implements OnInit {
           },
           {
             title: "How can I cancel a subscription?",
-            answer: ['If, for any reason, you decided to leave us, you can cancel your subscription in your <a href="http://hellobible.cratejoy.com/customer/login">account</a>. Please note, subscriptions can’t be canceled mid-term. All Cancellations need to be received one day before the automatic renewal which generally is the 11th of each month.']
+            answer: ['If you choose to cancel your subscription, you must do so by contacting customer support by submitting your request to support@hellobible.org, live chat or call us at (503) 395-2556 during normal business hours, Monday - Friday 9am - 5pm EST. Your Cancellation will take effect at the end of your current subscription cycle.  If you are in the middle of a 6 or 12-month subscription, you can cancel anytime, but please note that canceling your subscription will not automatically issue a refund or cancel future shipments.']
           }
         ]
       }, {
