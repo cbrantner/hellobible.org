@@ -69,7 +69,7 @@ export class FaqsComponent implements OnInit {
           },
           {
             title: "How can I give feedback?",
-            answer: ["We'd love to hear from you! Please send us an email to info@hellobible.org."]
+            answer: ["We'd love to hear from you! Please <a target='_blank' href='https://hellobible2.zendesk.com/hc/en-us/requests/new'>contact us</a>."]
           }
         ]
       },
@@ -90,7 +90,7 @@ export class FaqsComponent implements OnInit {
           },
           {
             title: "Does HelloBible align with my beliefs?",
-            answer: ["Our content is Bible based. We focus on Scripture and share suggestions on how to teach Bible stories to children. These ideas and suggestions are designed to apply to a broad range of Christian families and homeschool groups. If you have any questions please do not hesitate to contact us."]
+            answer: ["Our content is Bible based. We focus on Scripture and share suggestions on how to teach Bible stories to children. These ideas and suggestions are designed to apply to a broad range of Christian families and homeschool groups. If you have any questions please do not hesitate to <a target='_blank' href='https://hellobible2.zendesk.com/hc/en-us/requests/new'>contact us</a>."]
           },
         ]
       },
@@ -116,11 +116,11 @@ export class FaqsComponent implements OnInit {
           },
           {
             title: "Do you accept returns?",
-            answer: ["HelloBible shipments are not returnable or refundable. However, if any materials are missing or damaged please contact us at info@hellobible.org. We will be happy to replace those."]
+            answer: ["HelloBible shipments are not returnable or refundable. However, if any materials are missing or damaged please <a target='_blank' href='https://hellobible2.zendesk.com/hc/en-us/requests/new'>contact us</a>. We will be happy to replace those."]
           },
           {
             title: "What if there is a problem with my order?",
-            answer: ["We want all customers to enjoy HelloBible. If there is any problem, please contact us at info@hellobible.org."]
+            answer: ["We want all customers to enjoy HelloBible. If there is any problem, please <a target='_blank' href='https://hellobible2.zendesk.com/hc/en-us/requests/new'>contact us</a>."]
           },
           {
             title: "How can I cancel a subscription?",
@@ -133,7 +133,7 @@ export class FaqsComponent implements OnInit {
         items: [
           {
             title: "Where does HelloBible ship?",
-            answer: ["We ship anywhere in the United States, including Hawaii and Alaska. If you’d like us to ship abroad, please contact us at info@hellobible.org."]
+            answer: ["We ship anywhere in the United States, including Hawaii and Alaska. If you’d like us to ship abroad, please <a target='_blank' href='https://hellobible2.zendesk.com/hc/en-us/requests/new'>contact us</a>."]
           },
           {
             title: "When does HelloBible ship?",
