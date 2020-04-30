@@ -27,7 +27,7 @@
     "ekko-lightbox": "^5.3.0",
     "font-awesome": "^4.7.0",
     "holderjs": "^2.9.6",
-    "jquery": "^3.4.1",
+    "jquery": "^3.5.0",
     "jquery.cookie": "^1.4.1",
     "ngx-page-scroll": "^5.0.1",
     "ngx-toasta": "^0.1.0",
