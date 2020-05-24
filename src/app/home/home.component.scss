@@ -16,3 +16,33 @@
     background-color: $BBOrange;
     border: none;
 }
+
+.buy-card {
+    text-transform: none;
+    color: white;
+    h2:link {
+        text-decoration: none;
+    }
+    h2:hover {
+        text-decoration: none;
+    }
+    h2:focus {
+        text-decoration: none;
+    }
+}
+
+.card-kids {
+    background-color: $BBBlue;
+}
+
+.card-junior {
+    background-color: $BBGreen;
+}
+
+.card-kids-logo {
+    max-width: 240px;
+}
+
+.card-junior-logo {
+    max-width: 240px;
+}
