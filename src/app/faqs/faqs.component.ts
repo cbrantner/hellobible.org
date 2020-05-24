@@ -22,26 +22,16 @@ export class FaqsComponent implements OnInit {
           {
             title: "What is HelloBible?",
             answer: [
-              "HelloBible is a monthly Christian subscription for kids ages 5+. Each box provides a book, creative art projects, fun activities, and parent guides to explore one Bible story every month. You may add materials for up to 4 children.",
-              "Grow in faith together and help your children thrive in their relationships with Jesus!"
+              "HelloBible is a set of monthly Christian subscription boxes for kids ages 3+. Each box provides a book, creative art projects, fun activities, and parent guides to explore one Bible story every month.",
+              "HelloBible currently provides two different subscriptions: <b>HelloBible Junior (ages 3-5)</b> and <b>HelloBible Kids (ages 5-10)</b>."
             ]
           },
           {
             title: "What is included?",
             answer: [
-              "It comes with one Bible storybook, engaging parent guides and multidisciplinary activities to dig deeper into the content of a Bible story. All materials for amazing Bible-based art projects are included.",
+              "Both, HelloBible Junior and HelloBible Kids, come with one Bible storybook, engaging parent guides and multidisciplinary activities to dig deeper into the content of a Bible story. All materials for amazing Bible-based art projects are included.",
               "Visit our <a href='/stories'>Bible Stories page</a> for examples."
             ]
-          },
-
-          {
-            title: "Who is Danny the Donkey?",
-            answer: ["Danny the Donkey is our little helper who takes the kids on their journey through the Bible. He welcomes, explains the crafts, and knows a lot of great Bible Verses.",
-              "Donkeys are humble and often serving behind the scenes. In the Bible donkeys are often mentioned and considered to be reliable helpers. The New Testament tells us that Jesus entered Jerusalem on a donkey while the crowd worshipped him. Why did Jesus ride on an unimportant donkey instead of a mighty horse on such an important occasion? This shows that Jesus is a humble king; nobody needs to be perfect in order to serve Jesus. Danny the Donkey reminds us that we are important to Jesus and that He wants to use us."]
-          },
-          {
-            title: "What is the suggested age range for HelloBible?",
-            answer: ["HelloBible is designed for kids ages 5-10."]
           },
           {
             title: "How does my HelloBible subscription give back?",
@@ -57,20 +47,69 @@ export class FaqsComponent implements OnInit {
             ]
           },
           {
-            title: "How does HelloBible work for multiple children in a family?",
-            answer: ["During the checkout process, you select the number of material sets you need - one for each child. The story book is a part of a group discussion, so only one copy is included per box."]
-          },
-          {
-            title: "Can HelloBible be used for homeschooling?",
-            answer: [
-              "HelloBible is great for homeschooling elementary children (ages 5-10).",
-              "You can find more at <a href='/homeschool'>6 Reasons Why HelloBible is Great for Homeschooling</a>."
-            ]
-          },
-          {
             title: "How can I give feedback?",
             answer: ["We'd love to hear from you! Please <a target='_blank' href='https://hellobible2.zendesk.com/hc/en-us/requests/new'>contact us</a>."]
           }
+        ]
+      },
+      {
+        name: "HelloBible Kids (Ages 5-10)",
+        id: "kids",
+        items: [
+          {
+            title: "What is HelloBible Kids?",
+            answer: [
+              "HelloBible Kids is a monthly Christian subscription for elementary kids ages 5-10. Each box provides a book, creative art projects, fun activities, and parent guides to explore one Bible story every month. You may add materials for up to 4 children.",
+              "Grow in faith together and help your children thrive in their relationships with Jesus!"
+            ]
+          },
+          {
+            title: "Who is Danny the Donkey?",
+            answer: ["Danny the Donkey is the HelloBible Kids mascot. He's a little helper who takes the kids on their journey through the Bible. He welcomes, explains the crafts, and knows a lot of great Bible Verses.",
+              "Donkeys are humble and often serving behind the scenes. In the Bible, donkeys are often mentioned and considered to be reliable helpers. The New Testament tells us that Jesus entered Jerusalem on a donkey while the crowd worshipped him. Why did Jesus ride on an unimportant donkey instead of a mighty horse on such an important occasion? This shows that Jesus is a humble king; nobody needs to be perfect in order to serve Jesus. Danny the Donkey reminds us that we are important to Jesus and that He wants to use us."]
+          },
+          {
+            title: "What is the suggested age range for HelloBible Kids?",
+            answer: ["HelloBible is designed for elementary kids ages 5-10."]
+          },
+          {
+            title: "Can HelloBible Kids be used for homeschooling?",
+            answer: [
+              "HelloBible Kids is great for homeschooling elementary children (ages 5-10).",
+              "You can find more at <a href='/homeschool'>6 Reasons Why HelloBible Kids is Great for Homeschooling</a>."
+            ]
+          },
+          {
+            title: "How does HelloBible Kids work for multiple children in a family?",
+            answer: ["During the checkout process for HelloBible Kids, you select the number of material sets you need - one for each child. The story book is a part of a group discussion, so only one copy is included per box."]
+          },
+        ]
+      },
+      {
+        name: "HelloBible Junior (Ages 3-5)",
+        id: "junior",
+        items: [
+          {
+            title: "What is HelloBible Junior?",
+            answer: [
+              "HelloBible Junior is a monthly Christian subscription for preschoolers ages 3-5. Each box comes with a Bible story book, creative crafts and games, easy-to-follow directions, and all material needed that can be shared between two children. This is great for parents or older siblings to craft along!",
+              "Grow in faith together and help your children thrive in their relationships with Jesus!",
+            ]
+          },
+          {
+            title: "Who is Bella the Butterfly?",
+            answer: ["Bella the Butterfly is the HelloBible Junior mascot. She likes long flies on the beach. Picnics with her friends in flower gardens. Bella loves all things colorful! Especially rainbows. But most of all, Bella loves Jesus. Her favorite thing in the world to do is to share His story with preschoolers.",
+              "Butterflies are a symbol of Jesus' resurrection. Every butterfly starts out as a little caterpillar. The caterpillar forms a chrysalis around itself and stays there for several weeks. When it comes out, it is no longer a caterpillar. It has changed into a beautiful butterfly! The chrysalis is like the cave where Jesus was buried for three days. Then He rose from the dead.",
+              "Bella the Butterfly reminds us that we have new live in Jesus!"]
+          },
+          {
+            title: "What is the suggested age range for HelloBible Junior?",
+            answer: ["HelloBible is designed for preschoolers ages 3-5."]
+          },
+          {
+            title: "How does HelloBible Junior work for multiple children in a family?",
+            answer: ["Each HelloBible Junior box comes with craft materials that can be shared between two people. This is great to use for two preschoolers. It also provides a great opportunity to craft along with a parent, grandparent, or older sibling."]
+          },
         ]
       },
       {
