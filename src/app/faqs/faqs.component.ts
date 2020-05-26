@@ -23,13 +23,13 @@ export class FaqsComponent implements OnInit {
             title: "What is HelloBible?",
             answer: [
               "HelloBible is a set of monthly Christian subscription boxes for kids ages 3+. Each box provides a book, creative art projects, fun activities, and parent guides to explore one Bible story every month.",
-              "HelloBible currently provides two different subscriptions: <b>HelloBible Junior (ages 3-5)</b> and <b>HelloBible Kids (ages 5-10)</b>."
+              "HelloBible currently provides two different subscriptions: <b>HelloBible Junior (ages 3-5)</b> and <b>HelloBible Explorer (ages 5-10)</b>."
             ]
           },
           {
             title: "What is included?",
             answer: [
-              "Both, HelloBible Junior and HelloBible Kids, come with one Bible storybook, engaging parent guides and multidisciplinary activities to dig deeper into the content of a Bible story. All materials for amazing Bible-based art projects are included.",
+              "Both, HelloBible Junior and HelloBible Explorer, come with one Bible storybook, engaging parent guides and multidisciplinary activities to dig deeper into the content of a Bible story. All materials for amazing Bible-based art projects are included.",
               "Visit our <a href='/stories'>Bible Stories page</a> for examples."
             ]
           },
@@ -53,35 +53,35 @@ export class FaqsComponent implements OnInit {
         ]
       },
       {
-        name: "HelloBible Kids (Ages 5-10)",
+        name: "HelloBible Explorer (Ages 5-10)",
         id: "kids",
         items: [
           {
-            title: "What is HelloBible Kids?",
+            title: "What is HelloBible Explorer?",
             answer: [
-              "HelloBible Kids is a monthly Christian subscription for elementary kids ages 5-10. Each box provides a book, creative art projects, fun activities, and parent guides to explore one Bible story every month. You may add materials for up to 4 children.",
+              "HelloBible Explorer is a monthly Christian subscription for elementary kids ages 5-10. Each box provides a book, creative art projects, fun activities, and parent guides to explore one Bible story every month. You may add materials for up to 4 children.",
               "Grow in faith together and help your children thrive in their relationships with Jesus!"
             ]
           },
           {
             title: "Who is Danny the Donkey?",
-            answer: ["Danny the Donkey is the HelloBible Kids mascot. He's a little helper who takes the kids on their journey through the Bible. He welcomes, explains the crafts, and knows a lot of great Bible Verses.",
+            answer: ["Danny the Donkey is the HelloBible Explorer mascot. He's a little helper who takes the kids on their journey through the Bible. He welcomes, explains the crafts, and knows a lot of great Bible Verses.",
               "Donkeys are humble and often serving behind the scenes. In the Bible, donkeys are often mentioned and considered to be reliable helpers. The New Testament tells us that Jesus entered Jerusalem on a donkey while the crowd worshipped him. Why did Jesus ride on an unimportant donkey instead of a mighty horse on such an important occasion? This shows that Jesus is a humble king; nobody needs to be perfect in order to serve Jesus. Danny the Donkey reminds us that we are important to Jesus and that He wants to use us."]
           },
           {
-            title: "What is the suggested age range for HelloBible Kids?",
+            title: "What is the suggested age range for HelloBible Explorer?",
             answer: ["HelloBible is designed for elementary kids ages 5-10."]
           },
           {
-            title: "Can HelloBible Kids be used for homeschooling?",
+            title: "Can HelloBible Explorer be used for homeschooling?",
             answer: [
-              "HelloBible Kids is great for homeschooling elementary children (ages 5-10).",
-              "You can find more at <a href='/homeschool'>6 Reasons Why HelloBible Kids is Great for Homeschooling</a>."
+              "HelloBible Explorer is great for homeschooling elementary children (ages 5-10).",
+              "You can find more at <a href='/homeschool'>6 Reasons Why HelloBible Explorer is Great for Homeschooling</a>."
             ]
           },
           {
-            title: "How does HelloBible Kids work for multiple children in a family?",
-            answer: ["During the checkout process for HelloBible Kids, you select the number of material sets you need - one for each child. The story book is a part of a group discussion, so only one copy is included per box."]
+            title: "How does HelloBible Explorer work for multiple children in a family?",
+            answer: ["During the checkout process for HelloBible Explorer, you select the number of material sets you need - one for each child. The story book is a part of a group discussion, so only one copy is included per box."]
           },
         ]
       },
