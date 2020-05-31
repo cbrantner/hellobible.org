@@ -263,6 +263,7 @@ $(function () {
         margin: 0,
         smartSpeed: 500,
         autoplay: true,
+        autoplayTimeout: 5000,
         responsiveClass: true,
         navText: ['<img src="img/prev.svg" alt="" width="50">', '<img src="img/next.svg" alt="" width="50">'],
         responsive: {
