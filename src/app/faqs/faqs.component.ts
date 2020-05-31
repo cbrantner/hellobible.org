@@ -110,6 +110,13 @@ export class FaqsComponent implements OnInit {
             title: "How does HelloBible Junior work for multiple children in a family?",
             answer: ["Each HelloBible Junior box comes with craft materials that can be shared between two people. This is great to use for two preschoolers. It also provides a great opportunity to craft along with a parent, grandparent, or older sibling."]
           },
+          {
+            title: "What if I need HelloBible Junior for more than 2 children?",
+            answer: [
+              "We don't offer HelloBible for more than 2 preschoolers because most families don't have more than two children in the age range between 3-5.",
+              "If you need more materials you can order two HelloBible Junior boxes or switch to HelloBible Explorer which offers materials for up to 4 children."
+          ]
+          },
         ]
       },
       {
@@ -144,6 +151,13 @@ export class FaqsComponent implements OnInit {
           {
             title: "How does the 6 or 12 months subscription work?",
             answer: ["When you sign up for a 6 or 12 months subscription, you will get one HelloBible shipment each month for the duration of your subscription. You will pay for the entire subscription upfront. The subscriptions will renew automatically."]
+          },
+          {
+            title: "How do I switch my subscription between Junior and Explorer",
+            answer: [
+              'Changes to your subscription can be made at any time. However, if your subscription has already renewed or if you have a pre-paid subscription, the changes will not take place until your next renewal date.',
+              'To make changes, login into your <a target="_blank" href="http://hellobible.cratejoy.com/customer/login">HelloBible Account</a>. Click EDIT in the <b>Your Subscriptions</b> box and choose the new product and term desired. Click CHANGE at the bottom of the page to save the changes.'
+          ]
           },
           {
             title: "What happens at the end of my subscription?",
