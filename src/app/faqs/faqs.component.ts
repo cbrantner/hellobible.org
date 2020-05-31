@@ -172,11 +172,14 @@ export class FaqsComponent implements OnInit {
         items: [
           {
             title: "Where does HelloBible ship?",
-            answer: ["We ship anywhere in the United States, including Hawaii and Alaska. If you’d like us to ship abroad, please <a target='_blank' href='https://hellobible2.zendesk.com/hc/en-us/requests/new'>contact us</a>."]
+            answer: ["We ship anywhere in the United States, including Hawaii and Alaska."]
           },
           {
             title: "When does HelloBible ship?",
-            answer: ["Boxes generally (including new orders) ship around the 2nd of each month. A shipping confirmation email will be sent to you when a box is shipped."]
+            answer: ["All orders received (or renewed) during the current month are for the next month's box. They begin shipping at the end of the ordering month, typically around the 25th of each month. Tracking emails will be sent to you once your box has shipped. You can track the shipping progress by clicking on the tracking history dropdown.",
+              "For example: If you place an order on May 2nd your subscription will begin with the June box that ships out at the end of May. In this example, your subscription will then renew on June 11th for the July box that ships at the end of June. This cycle will repeat until you turn your subscription off.",
+              "Please note this example is for Month to Month subscriptions. If you have a 6 or 12 months prepaid plan, your subscription will renew once every 6 or 12 months."
+            ]
           }
         ]
       }, {
