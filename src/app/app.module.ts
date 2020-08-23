@@ -23,6 +23,7 @@ import { ToastaModule } from 'ngx-toasta';
 import { NoahComponent } from './noah/noah.component';
 import { ChristmasComponent } from './christmas/christmas.component';
 import { FishersOfMenComponent } from './fishers-of-men/fishers-of-men.component';
+import { NoahJuniorComponent } from './noah-junior/noah-junior.component';
 import { AffiliatesComponent } from './affiliates/affiliates.component';
 
 
@@ -43,6 +44,7 @@ import { AffiliatesComponent } from './affiliates/affiliates.component';
     NoahComponent,
     ChristmasComponent,
     FishersOfMenComponent,
+    NoahJuniorComponent,
     AffiliatesComponent,
   ],
   imports: [
