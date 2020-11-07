@@ -34,8 +34,6 @@ export class NavComponent implements OnInit, OnDestroy {
         } else {
           this.message = this.campaigns.default;
         }
-      } else if (next) {
-        this.message = this.campaigns.gethellobible;
       } else {
         this.message = this.campaigns.default;
       }
