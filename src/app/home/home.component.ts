@@ -17,36 +17,15 @@ export class HomeComponent implements OnInit {
   private sub: any;
   private params: any = {};
   private utm_campaign: string = "";
-  private kidsOptions =
-    {
-      monthlyPlan:
-      {
-        children: [
-          { price: "24.90", url: "https://hellobible.cratejoy.com/subscribe/2108509072_hellobible-1-child/2108509073_month-to-month" },
-          { price: "29.80", url: "https://hellobible.cratejoy.com/subscribe/2108518485_hellobible-2-children/2108518481_month-to-month" },
-          { price: "34.70", url: "https://hellobible.cratejoy.com/subscribe/2108530720_hellobible-3-children/2108530721_month-to-month" },
-          { price: "39.60", url: "https://hellobible.cratejoy.com/subscribe/2108532982_hellobible-4-children/2108532983_month-to-month" }
-        ]
-      },
-      sixMonthsPlan:
-      {
-        children: [
-          { price: "143.40", url: "https://hellobible.cratejoy.com/subscribe/2108509072_hellobible-1-child/2108509075_6-month-prepay" },
-          { price: "172.80", url: "https://hellobible.cratejoy.com/subscribe/2108518485_hellobible-2-children/2108518483_6-month-prepay" },
-          { price: "202.20", url: "https://hellobible.cratejoy.com/subscribe/2108530720_hellobible-3-children/2108530723_6-month-prepay" },
-          { price: "231.60", url: "https://hellobible.cratejoy.com/subscribe/2108532982_hellobible-4-children/2108532985_6-month-prepay" }
-        ]
-      },
-      twelveMonthsPlan:
-      {
-        children: [
-          { price: "262.80", url: "https://hellobible.cratejoy.com/subscribe/2108509072_hellobible-1-child/2108509076_12-month-prepay" },
-          { price: "321.60", url: "https://hellobible.cratejoy.com/subscribe/2108518485_hellobible-2-children/2108518484_12-month-prepay" },
-          { price: "380.40", url: "https://hellobible.cratejoy.com/subscribe/2108530720_hellobible-3-children/2108530724_12-month-prepay" },
-          { price: "439.20", url: "https://hellobible.cratejoy.com/subscribe/2108532982_hellobible-4-children/2108532986_12-month-prepay" }
-        ]
-      }
-    };
+  private explorerOptions =
+  {
+    explorerMonthlyPlan:
+      { price: "29.80", url: "https://hellobible.cratejoy.com/subscribe/3453405312_hellobible-explorer/3453405308_month-to-month" },
+    explorerSixMonthsPlan:
+      { price: "172.80", url: "https://hellobible.cratejoy.com/subscribe/3453405312_hellobible-explorer/3453405310_6-month-prepay" },
+    explorerTwelveMonthsPlan:
+      { price: "321.60", url: "https://hellobible.cratejoy.com/subscribe/3453405312_hellobible-explorer/3453405311_12-month-prepay" }
+  };
   private juniorOptions =
     {
       juniorMonthlyPlan:
@@ -58,14 +37,13 @@ export class HomeComponent implements OnInit {
     };
 
 
-  public monthlyTotal = this.kidsOptions['monthlyPlan'].children[0].price;
-  public sixMonthsTotal = this.kidsOptions['sixMonthsPlan'].children[0].price;
-  public twelveMonthsTotal = this.kidsOptions['twelveMonthsPlan'].children[0].price;
-
   public juniorMonthlyTotal = this.juniorOptions['juniorMonthlyPlan'].price;
   public juniorSixMonthsTotal = this.juniorOptions['juniorSixMonthsPlan'].price;
   public juniorTwelveMonthsTotal = this.juniorOptions['juniorTwelveMonthsPlan'].price;
 
+  public explorerMonthlyTotal = this.explorerOptions['explorerMonthlyPlan'].price;
+  public explorerSixMonthsTotal = this.explorerOptions['explorerSixMonthsPlan'].price;
+  public explorerTwelveMonthsTotal = this.explorerOptions['explorerTwelveMonthsPlan'].price;
 
   private campaigns = {
   "a56d739d32-GIFT_EMAIL_2018_11_15": "1 Month FREE. 6 months subscription for one child $99. Use code GIFT6.<br/>3 Months FREE. 12 months subscription for one child $178. Use code GIFT12.",
@@ -107,23 +85,11 @@ ngOnDestroy() {
   this.sub.unsubscribe();
 }
 
-computePrice(value, plan) {
-  var newValue = this.kidsOptions[plan].children[value - 1].price;
-  if (plan === 'monthlyPlan') {
-    this.monthlyTotal = newValue;
-  } else if (plan === 'sixMonthsPlan') {
-    this.sixMonthsTotal = newValue;
-  } else if (plan === 'twelveMonthsPlan') {
-    this.twelveMonthsTotal = newValue;
-  }
-}
+addToCartExplorer(plan) {
 
-addToCartKids(plan) {
+  var planObject = this.explorerOptions[plan];
 
-  var selected = this.selectedOptions[plan];
-  var planObject = this.kidsOptions[plan];
-
-  var url = planObject.children[parseInt(selected) - 1].url;
+  var url = planObject.url;
   var i = 0;
   for (var key in this.params) {
     if (this.params.hasOwnProperty(key)) {
@@ -136,14 +102,16 @@ addToCartKids(plan) {
 
   if (!isDevMode()) {
     this.gtag.event('cart', {
-      event_label: 'add ' + planObject.children[parseInt(selected) - 1].url,
-      value: planObject.children[parseInt(selected) - 1].price
+      event_label: 'add ' + planObject.url,
+      value: planObject.price
     });
   }
 
   // redirect
   window.location.href = url;
 }
+
+
 
 addToCartJunior(plan) {
 

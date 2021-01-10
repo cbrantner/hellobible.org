@@ -43,7 +43,7 @@
   <div class="container">
     <div class="row">
       <div class="col-xl-8 mx-auto text-center mb-3">
-        <h2 class="text-uppercase">Bible Stories, Art Projects, and Activities That Kids LOVE!</h2>
+        <h2 class="text-uppercase">Bible Stories, Craft Projects, and Activities That Kids LOVE!</h2>
         <p class="lead text-muted">Conveniently Delivered. All Materials Included. Easy-to-teach Guides.</p>
       </div>
     </div>
@@ -53,7 +53,7 @@
         </span>
         <div class="service-text">
           <h6 class="text-uppercase">Choose a Subscription</h6>
-          <p class="font-weight-light text-sm mb-0">HelloBible Explorer (ages 5-10) or HelloBible Junior (ages 3-5).</p>
+          <p class="font-weight-light text-sm mb-0">HelloBible Junior (ages 3-5) or HelloBible Explorer (ages 5-10).</p>
         </div>
       </div>
       <div class="col-lg-4 service-column">
@@ -145,156 +145,6 @@
 
     <div class="row justify-content-md-center">
       <div class="accordion col-md-10 mx-auto col-xl-10" id="accordionExample">
-        <div class="card">
-          <div class="card-header card-kids" id="headingOne">
-            <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse"
-              data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-              <div class="row no-gutters">
-                <div class="col-md-4 col-xs-4">
-                  <img class="card-kids-logo" src="/assets/images/home/box-kids.png" />
-                </div>
-                <div class="col-md-8 col-xs-8">
-                  <div class="card-body buy-card">
-                    <h2 class="card-title">Explorer</h2>
-                    <h3 class="card-text mb-3">Ages 5-10</h3>
-                    <span class="btn btn-lg btn-primary">Join Now</span>
-                  </div>
-                </div>
-              </div>
-            </button>
-          </div>
-
-
-          <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
-
-            <div class="card-body ">
-              <div class="row">
-                <div class="mx-auto mb-10px px-5px">
-                  <div class="row">
-                    <h6 class="mx-auto text-uppercase mb-1">1. Choose Subscription Length</h6>
-                  </div>
-                  <div class="row">
-                    <p class="mx-auto font-weight-light text-sm">Boxes ship around the 26th of each month.</p>
-                  </div>
-                  <div class="row">
-                    <h6 class="mx-auto text-uppercase mb-1">2. Choose Number of Children</h6>
-                  </div>
-                  <div class="row">
-                    <p class="mx-auto font-weight-light text-sm">Materials can be added for up to 4 children.</p>
-                  </div>
-                </div>
-
-              </div>
-              <div class="row">
-                <!-- HelloBible Explorer -->
-                <div class="mx-auto mb-10px px-5px">
-                  <div class="card mb-4 shadow-sm">
-
-                    <div class="card-header">
-                      <h2 class="my-0 font-weight-normal text-center">Monthly</h2>
-                    </div>
-                    <div class="card-body">
-                      <h4 class="card-title pricing-card-title text-center">$24.90 <small class="text-muted">/
-                          mo</small>
-                      </h4>
-                      <ul class="list-unstyled mt-3 mb-4">
-                        <li><span class="fa fa-heart"></span> Supports children in Kenya.</li>
-                        <li><span class="fa fa-users"></span> Up to 4 children.</li>
-                        <li><span class="fa fa-tag"></span> ${{monthlyTotal}} + $5 shipping/box</li>
-                      </ul>
-                      <div class="text-center choose-children">
-                        <select name="monthlyPlan" id="monthlyPlan" [(ngModel)]="selectedOptions['monthlyPlan']"
-                          (change)="computePrice($event.target.value, 'monthlyPlan')">
-                          <option value="1">1 Child</option>
-                          <option value="2">2 Children + $4.90/month</option>
-                          <option value="3">3 Children + $9.80/month</option>
-                          <option value="4">4 Children + $14.70/month</option>
-                        </select>
-                      </div>
-                      <div class="text-center mt-3">
-                        <a (click)="addToCartKids('monthlyPlan')">
-                          <button type="submit" class="btn btn-primary"><i class="fa fa-shopping-cart mr-2"></i>Add to
-                            Cart</button>
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="mx-auto mb-10px px-5px">
-                  <div class="card mb-4 shadow-sm">
-
-                    <div class="card-header">
-                      <h2 class="my-0 font-weight-normal text-center">6 Months</h2>
-                    </div>
-                    <div class="card-body">
-                      <h4 class="card-title pricing-card-title text-center">$23.90 <small class="text-muted">/
-                          mo</small>
-                      </h4>
-                      <ul class="list-unstyled mt-3 mb-4">
-                        <li><span class="fa fa-heart"></span> Supports children in Kenya.</li>
-                        <li><span class="fa fa-users"></span> Up to 4 children.</li>
-                        <li><span class="fa fa-tag"></span> ${{sixMonthsTotal}} + $5 shipping/box</li>
-                      </ul>
-                      <div class="text-center choose-children">
-                        <select name="sixMonthsPlan" id="sixMonthsPlan" [(ngModel)]="selectedOptions['sixMonthsPlan']"
-                          (change)="computePrice($event.target.value, 'sixMonthsPlan')">
-                          <option value="1">1 Child</option>
-                          <option value="2">2 Children + $4.90/month</option>
-                          <option value="3">3 Children + $9.80/month</option>
-                          <option value="4">4 Children + $14.70/month</option>
-                        </select>
-                      </div>
-                      <div class="text-center mt-3">
-                        <a (click)="addToCartKids('sixMonthsPlan')">
-                          <button type="submit" class="btn btn-primary"><i class="fa fa-shopping-cart mr-2"></i>Add to
-                            Cart</button>
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-
-                </div>
-
-                <div class="mx-auto mb-10px px-5px">
-                  <div class="card mb-4 shadow-sm">
-
-                    <div class="card-header">
-                      <h2 class="my-0 font-weight-normal text-center">12 Months</h2>
-                    </div>
-                    <div class="card-body">
-                      <div class="ribbon ribbon-bbblue">Best value</div>
-                      <h4 class="card-title pricing-card-title text-center">$21.90 <small class="text-muted">/
-                          mo</small>
-                      </h4>
-                      <ul class="list-unstyled mt-3 mb-4">
-                        <li><span class="fa fa-heart"></span> Supports children in Kenya.</li>
-                        <li><span class="fa fa-users"></span> Up to 4 children.</li>
-                        <li><span class="fa fa-tag"></span> ${{twelveMonthsTotal}} + $5 shipping/box</li>
-                      </ul>
-                      <div class="text-center choose-children">
-                        <select name="twelveMonthsPlan" id="twelveMonthsPlan"
-                          [(ngModel)]="selectedOptions['twelveMonthsPlan']"
-                          (change)="computePrice($event.target.value, 'twelveMonthsPlan')">
-                          <option value="1">1 Child</option>
-                          <option value="2">2 Children + $4.90/month</option>
-                          <option value="3">3 Children + $9.80/month</option>
-                          <option value="4">4 Children + $14.70/month</option>
-                        </select>
-                      </div>
-                      <div class="text-center mt-3">
-                        <a (click)="addToCartKids('twelveMonthsPlan')">
-                          <button type="submit" class="btn btn-primary"><i class="fa fa-shopping-cart mr-2"></i>Add to
-                            Cart</button>
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <!-- End HelloBible Explorer -->
-              </div>
-            </div>
-          </div>
-        </div>
         <div class="card">
           <div class="card-header card-junior" id="headingTwo">
             <h2 class="mb-0">
@@ -413,6 +263,128 @@
                   </div>
                 </div>
                 <!-- End HelloBible Junior -->
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header card-kids" id="headingOne">
+            <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse"
+              data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+              <div class="row no-gutters">
+                <div class="col-md-4 col-xs-4">
+                  <img class="card-kids-logo" src="/assets/images/home/box-kids.png" />
+                </div>
+                <div class="col-md-8 col-xs-8">
+                  <div class="card-body buy-card">
+                    <h2 class="card-title">Explorer</h2>
+                    <h3 class="card-text mb-3">Ages 5-10</h3>
+                    <span class="btn btn-lg btn-primary">Join Now</span>
+                  </div>
+                </div>
+              </div>
+            </button>
+          </div>
+
+
+          <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+
+            <div class="card-body ">
+              <div class="row">
+                <div class="mx-auto mb-10px px-5px">
+                  <div class="row">
+                    <h6 class="mx-auto text-uppercase mb-1">1. Choose Subscription Length</h6>
+                  </div>
+                  <div class="row">
+                    <p class="mx-auto font-weight-light text-sm">Boxes ship around the 26th of each month.</p>
+                  </div>
+                  <div class="row">
+                    <h6 class="mx-auto text-uppercase mb-1">2. Material for 2 children</h6>
+                  </div>
+                  <div class="row">
+                    <p class="mx-auto font-weight-light text-sm">Boxes come with craft material to share between two children or to craft along with a parent, grandparent, aunt, uncle, friend...</p>
+                  </div>
+                </div>
+
+              </div>
+              <div class="row">
+                <!-- HelloBible Explorer -->
+                <div class="mx-auto mb-10px px-5px">
+                  <div class="card mb-4 shadow-sm">
+
+                    <div class="card-header">
+                      <h2 class="my-0 font-weight-normal text-center">Monthly</h2>
+                    </div>
+                    <div class="card-body">
+                      <h4 class="card-title pricing-card-title text-center">$29.80 <small class="text-muted">/
+                          mo</small>
+                      </h4>
+                      <ul class="list-unstyled mt-3 mb-4">
+                        <li><span class="fa fa-heart"></span> Supports children in Kenya.</li>
+                        <li><span class="fa fa-users"></span> Shareable material for 2 children.</li>
+                        <li><span class="fa fa-tag"></span> ${{explorerMonthlyTotal}} + $5 shipping/box</li>
+                      </ul>
+                      <div class="text-center mt-3">
+                        <a (click)="addToCartExplorer('explorerMonthlyPlan')">
+                          <button type="submit" class="btn btn-primary"><i class="fa fa-shopping-cart mr-2"></i>Add to
+                            Cart</button>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="mx-auto mb-10px px-5px">
+                  <div class="card mb-4 shadow-sm">
+
+                    <div class="card-header">
+                      <h2 class="my-0 font-weight-normal text-center">6 Months</h2>
+                    </div>
+                    <div class="card-body">
+                      <h4 class="card-title pricing-card-title text-center">$28.80 <small class="text-muted">/
+                          mo</small>
+                      </h4>
+                      <ul class="list-unstyled mt-3 mb-4">
+                        <li><span class="fa fa-heart"></span> Supports children in Kenya.</li>
+                        <li><span class="fa fa-users"></span> Shareable material for 2 children.</li>
+                        <li><span class="fa fa-tag"></span> ${{explorerSixMonthsTotal}} + $5 shipping/box</li>
+                      </ul>
+                      <div class="text-center mt-3">
+                        <a (click)="addToCartExplorer('explorerSixMonthsPlan')">
+                          <button type="submit" class="btn btn-primary"><i class="fa fa-shopping-cart mr-2"></i>Add to
+                            Cart</button>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+
+                <div class="mx-auto mb-10px px-5px">
+                  <div class="card mb-4 shadow-sm">
+
+                    <div class="card-header">
+                      <h2 class="my-0 font-weight-normal text-center">12 Months</h2>
+                    </div>
+                    <div class="card-body">
+                      <div class="ribbon ribbon-bbblue">Best value</div>
+                      <h4 class="card-title pricing-card-title text-center">$26.80 <small class="text-muted">/
+                          mo</small>
+                      </h4>
+                      <ul class="list-unstyled mt-3 mb-4">
+                        <li><span class="fa fa-heart"></span> Supports children in Kenya.</li>
+                        <li><span class="fa fa-users"></span> Shareable material for 2 children.</li>
+                        <li><span class="fa fa-tag"></span> ${{explorerTwelveMonthsTotal}} + $5 shipping/box</li>
+                      </ul>
+                      <div class="text-center mt-3">
+                        <a (click)="addToCartExplorer('explorerTwelveMonthsPlan')">
+                          <button type="submit" class="btn btn-primary"><i class="fa fa-shopping-cart mr-2"></i>Add to
+                            Cart</button>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- End HelloBible Explorer -->
               </div>
             </div>
           </div>
@@ -663,26 +635,6 @@
       </div>
     </div>
 
-    <!--<section class="pt-6 mb-3">
-    <div class="container">
-      <div class="row">
-        <div class="col-xl-8 mx-auto text-center mb-3">
-          <h2 class="text-uppercase">HelloBible Junior  </h2>
-          <p class="lead text-muted">Launching soon. HelloBible for kids ages 3-4. <a href="https://junior.hellobible.org/home/">Sign up now</a> for a chance to WIN 6 months of HelloBible Junior when we launch.</p>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-sm-6 col-md-6">
-          <a target="_blank" href="https://junior.hellobible.org/home/"><img src="/assets/images/junior/junior-box.png" alt="HelloBible Junior Box"
-          class="img-fluid"></a>
-        </div>
-        <div class="col-sm-6 col-md-6">
-          <a target="_blank" href="https://junior.hellobible.org/home/"><img src="/assets/images/junior/junior-content.jpg" alt="Content of HelloBible Junior Box"
-          class="img-fluid"></a>
-        </div>
-      </div>
-    </div>
-  </section>-->
   </div>
 </section>
 <!-- Services block-->

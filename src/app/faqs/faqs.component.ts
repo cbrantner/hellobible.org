@@ -53,39 +53,6 @@ export class FaqsComponent implements OnInit {
         ]
       },
       {
-        name: "HelloBible Explorer (Ages 5-10)",
-        id: "kids",
-        items: [
-          {
-            title: "What is HelloBible Explorer?",
-            answer: [
-              "HelloBible Explorer is a monthly Christian subscription for elementary kids ages 5-10. Each box provides a book, creative art projects, fun activities, and parent guides to explore one Bible story every month. You may add materials for up to 4 children.",
-              "Grow in faith together and help your children thrive in their relationships with Jesus!"
-            ]
-          },
-          {
-            title: "Who is Danny the Donkey?",
-            answer: ["Danny the Donkey is the HelloBible Explorer mascot. He's a little helper who takes the kids on their journey through the Bible. He welcomes, explains the crafts, and knows a lot of great Bible Verses.",
-              "Donkeys are humble and often serving behind the scenes. In the Bible, donkeys are often mentioned and considered to be reliable helpers. The New Testament tells us that Jesus entered Jerusalem on a donkey while the crowd worshipped him. Why did Jesus ride on an unimportant donkey instead of a mighty horse on such an important occasion? This shows that Jesus is a humble king; nobody needs to be perfect in order to serve Jesus. Danny the Donkey reminds us that we are important to Jesus and that He wants to use us."]
-          },
-          {
-            title: "What is the suggested age range for HelloBible Explorer?",
-            answer: ["HelloBible is designed for elementary kids ages 5-10."]
-          },
-          {
-            title: "Can HelloBible Explorer be used for homeschooling?",
-            answer: [
-              "HelloBible Explorer is great for homeschooling elementary children (ages 5-10).",
-              "You can find more at <a href='/homeschool'>6 Reasons Why HelloBible Explorer is Great for Homeschooling</a>."
-            ]
-          },
-          {
-            title: "How does HelloBible Explorer work for multiple children in a family?",
-            answer: ["During the checkout process for HelloBible Explorer, you select the number of material sets you need - one for each child. The story book is a part of a group discussion, so only one copy is included per box."]
-          },
-        ]
-      },
-      {
         name: "HelloBible Junior (Ages 3-5)",
         id: "junior",
         items: [
@@ -107,18 +74,47 @@ export class FaqsComponent implements OnInit {
             answer: ["HelloBible is designed for preschoolers ages 3-5."]
           },
           {
-            title: "How does HelloBible Junior work for multiple children in a family?",
-            answer: ["Each HelloBible Junior box comes with craft materials that can be shared between two people. This is great to use for two preschoolers. It also provides a great opportunity to craft along with a parent, grandparent, or older sibling."]
-          },
-          {
-            title: "What if I need HelloBible Junior for more than 2 children?",
+            title: "Why does HelloBible Junior provide materials for two people?",
             answer: [
-              "We don't offer HelloBible for more than 2 preschoolers because most families don't have more than two children in the age range between 3-5.",
-              "If you need more materials you can order two HelloBible Junior boxes or switch to HelloBible Explorer which offers materials for up to 4 children."
-          ]
+              "Each HelloBible Junior box comes with craft materials that can be shared between two people. This is great to use for two preschoolers. It also provides a great opportunity to craft along with a parent, grandparent, or older sibling."
+            ]
           },
         ]
       },
+      {
+        name: "HelloBible Explorer (Ages 5-10)",
+        id: "kids",
+        items: [
+          {
+            title: "What is HelloBible Explorer?",
+            answer: [
+              "HelloBible Explorer is a monthly Christian subscription for elementary kids ages 5-10. Each box provides a book, creative art projects, fun activities, and parent guides to explore one Bible story every month. Each box contains material for up to 2 children.",
+              "Grow in faith together and help your children thrive in their relationships with Jesus!"
+            ]
+          },
+          {
+            title: "Who is Danny the Donkey?",
+            answer: ["Danny the Donkey is the HelloBible Explorer mascot. He's a little helper who takes the kids on their journey through the Bible. He welcomes, explains the crafts, and knows a lot of great Bible Verses.",
+              "Donkeys are humble and often serving behind the scenes. In the Bible, donkeys are often mentioned and considered to be reliable helpers. The New Testament tells us that Jesus entered Jerusalem on a donkey while the crowd worshipped him. Why did Jesus ride on an unimportant donkey instead of a mighty horse on such an important occasion? This shows that Jesus is a humble king; nobody needs to be perfect in order to serve Jesus. Danny the Donkey reminds us that we are important to Jesus and that He wants to use us."]
+          },
+          {
+            title: "What is the suggested age range for HelloBible Explorer?",
+            answer: ["HelloBible is designed for elementary kids ages 5-10."]
+          },
+          {
+            title: "Can HelloBible Explorer be used for homeschooling?",
+            answer: [
+              "HelloBible Explorer is great for homeschooling elementary children (ages 5-10).",
+              "You can find more at <a href='/homeschool'>6 Reasons Why HelloBible Explorer is Great for Homeschooling</a>."
+            ]
+          },
+          {
+            title: "Why does HelloBible Explorer provide materials for two people?",
+            answer: ["Each HelloBible Explorer box comes with craft materials that can be shared between two people. This is great to use for two children. It also provides a great opportunity to craft along with a parent, grandparent, aunt, uncle, or a friend."]
+          }
+        ]
+      },
+
       {
         name: "Faith",
         id: "beliefs",
@@ -157,7 +153,7 @@ export class FaqsComponent implements OnInit {
             answer: [
               'Changes to your subscription can be made at any time. However, if your subscription has already renewed or if you have a pre-paid subscription, the changes will not take place until your next renewal date.',
               'To make changes, login into your <a target="_blank" href="http://hellobible.cratejoy.com/customer/login">HelloBible Account</a>. Click EDIT in the <b>Your Subscriptions</b> box and choose the new product and term desired. Click CHANGE at the bottom of the page to save the changes.'
-          ]
+            ]
           },
           {
             title: "What happens at the end of my subscription?",
