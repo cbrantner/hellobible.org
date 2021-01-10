@@ -53,6 +53,35 @@ export class FaqsComponent implements OnInit {
         ]
       },
       {
+        name: "HelloBible Junior (Ages 3-5)",
+        id: "junior",
+        items: [
+          {
+            title: "What is HelloBible Junior?",
+            answer: [
+              "HelloBible Junior is a monthly Christian subscription for preschoolers ages 3-5. Each box comes with a Bible story book, creative crafts and games, easy-to-follow directions, and all material needed that can be shared between two children. This is great for parents or older siblings to craft along!",
+              "Grow in faith together and help your children thrive in their relationships with Jesus!",
+            ]
+          },
+          {
+            title: "Who is Bella the Butterfly?",
+            answer: ["Bella the Butterfly is the HelloBible Junior mascot. She likes long flies on the beach. Picnics with her friends in flower gardens. Bella loves all things colorful! Especially rainbows. But most of all, Bella loves Jesus. Her favorite thing in the world to do is to share His story with preschoolers.",
+              "Butterflies are a symbol of Jesus' resurrection. Every butterfly starts out as a little caterpillar. The caterpillar forms a chrysalis around itself and stays there for several weeks. When it comes out, it is no longer a caterpillar. It has changed into a beautiful butterfly! The chrysalis is like the cave where Jesus was buried for three days. Then He rose from the dead.",
+              "Bella the Butterfly reminds us that we have new live in Jesus!"]
+          },
+          {
+            title: "What is the suggested age range for HelloBible Junior?",
+            answer: ["HelloBible is designed for preschoolers ages 3-5."]
+          },
+          {
+            title: "Why does HelloBible Junior provide materials for two people?",
+            answer: [
+              "Each HelloBible Junior box comes with craft materials that can be shared between two people. This is great to use for two preschoolers. It also provides a great opportunity to craft along with a parent, grandparent, or older sibling."
+            ]
+          },
+        ]
+      },
+      {
         name: "HelloBible Explorer (Ages 5-10)",
         id: "kids",
         items: [
@@ -85,35 +114,7 @@ export class FaqsComponent implements OnInit {
           }
         ]
       },
-      {
-        name: "HelloBible Junior (Ages 3-5)",
-        id: "junior",
-        items: [
-          {
-            title: "What is HelloBible Junior?",
-            answer: [
-              "HelloBible Junior is a monthly Christian subscription for preschoolers ages 3-5. Each box comes with a Bible story book, creative crafts and games, easy-to-follow directions, and all material needed that can be shared between two children. This is great for parents or older siblings to craft along!",
-              "Grow in faith together and help your children thrive in their relationships with Jesus!",
-            ]
-          },
-          {
-            title: "Who is Bella the Butterfly?",
-            answer: ["Bella the Butterfly is the HelloBible Junior mascot. She likes long flies on the beach. Picnics with her friends in flower gardens. Bella loves all things colorful! Especially rainbows. But most of all, Bella loves Jesus. Her favorite thing in the world to do is to share His story with preschoolers.",
-              "Butterflies are a symbol of Jesus' resurrection. Every butterfly starts out as a little caterpillar. The caterpillar forms a chrysalis around itself and stays there for several weeks. When it comes out, it is no longer a caterpillar. It has changed into a beautiful butterfly! The chrysalis is like the cave where Jesus was buried for three days. Then He rose from the dead.",
-              "Bella the Butterfly reminds us that we have new live in Jesus!"]
-          },
-          {
-            title: "What is the suggested age range for HelloBible Junior?",
-            answer: ["HelloBible is designed for preschoolers ages 3-5."]
-          },
-          {
-            title: "Why does HelloBible Junior provide materials for two people?",
-            answer: [
-              "Each HelloBible Junior box comes with craft materials that can be shared between two people. This is great to use for two preschoolers. It also provides a great opportunity to craft along with a parent, grandparent, or older sibling."
-          ]
-          },
-        ]
-      },
+
       {
         name: "Faith",
         id: "beliefs",
@@ -152,7 +153,7 @@ export class FaqsComponent implements OnInit {
             answer: [
               'Changes to your subscription can be made at any time. However, if your subscription has already renewed or if you have a pre-paid subscription, the changes will not take place until your next renewal date.',
               'To make changes, login into your <a target="_blank" href="http://hellobible.cratejoy.com/customer/login">HelloBible Account</a>. Click EDIT in the <b>Your Subscriptions</b> box and choose the new product and term desired. Click CHANGE at the bottom of the page to save the changes.'
-          ]
+            ]
           },
           {
             title: "What happens at the end of my subscription?",
