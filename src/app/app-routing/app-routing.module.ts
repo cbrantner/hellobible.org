@@ -145,6 +145,16 @@ const routes: Routes = [
     {
         path: 'postcards',
         component: PostcardsComponent,
+        data: {
+            seo: {
+                title: 'Free coloring download from HelloBible.',
+                metaTags: [
+                    { name: 'description', content: 'Download our Gospel postcard booklet, color, & send them to someone you love. For activities like this & more, join HelloBible today!' },
+                    { property: 'og:title', content: 'Free coloring download from HelloBible.' },
+                    { proprety: 'og:description', content: 'Download our Gospel postcard booklet, color, & send them to someone you love. For activities like this & more, join HelloBible today!' }
+                ]
+            }
+        }
     },
     {
         path: '',
