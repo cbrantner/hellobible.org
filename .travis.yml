@@ -1,8 +1,7 @@
 sudo: false
 language: node_js
 node_js:
-- node
-- '15'
+- 15
 before_script:
 - npm install
 script:
