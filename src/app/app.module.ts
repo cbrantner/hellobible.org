@@ -26,6 +26,7 @@ import { FishersOfMenComponent } from './fishers-of-men/fishers-of-men.component
 import { NoahJuniorComponent } from './noah-junior/noah-junior.component';
 import { AffiliatesComponent } from './affiliates/affiliates.component';
 import { PostcardsComponent } from './postcards/postcards.component';
+import { CampComponent } from './camp/camp.component';
 
 
 @NgModule({
@@ -48,6 +49,7 @@ import { PostcardsComponent } from './postcards/postcards.component';
     NoahJuniorComponent,
     AffiliatesComponent,
     PostcardsComponent,
+    CampComponent,
   ],
   imports: [
     BrowserModule,
