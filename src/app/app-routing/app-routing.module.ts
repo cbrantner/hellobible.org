@@ -14,6 +14,7 @@ import { FishersOfMenComponent } from '../fishers-of-men/fishers-of-men.componen
 import { NoahJuniorComponent } from '../noah-junior/noah-junior.component';
 import { AffiliatesComponent } from '../affiliates/affiliates.component';
 import { PostcardsComponent } from '../postcards/postcards.component';
+import { CampComponent } from '../camp/camp.component';
 
 const routes: Routes = [
     {
@@ -152,6 +153,20 @@ const routes: Routes = [
                     { name: 'description', content: 'Download our Gospel postcard booklet, color, & send them to someone you love. For activities like this & more, join HelloBible today!' },
                     { property: 'og:title', content: 'Free coloring download from HelloBible.' },
                     { proprety: 'og:description', content: 'Download our Gospel postcard booklet, color, & send them to someone you love. For activities like this & more, join HelloBible today!' }
+                ]
+            }
+        }
+    },
+    {
+        path: 'camp',
+        component: CampComponent,
+        data: {
+            seo: {
+                title: 'HelloBible Summer Camp in a Box.',
+                metaTags: [
+                    { name: 'description', content: 'Join us on an amazing Bible adventure this summer! HelloBible Summer Camp in a Box includes a camp schedule, amazing crafts and fun activities.' },
+                    { property: 'og:title', content: 'HelloBible Summer Camp in a Box.' },
+                    { proprety: 'og:description', content: 'Join us on an amazing Bible adventure this summer! HelloBible Summer Camp in a Box includes a camp schedule, amazing crafts and fun activities.' }
                 ]
             }
         }
