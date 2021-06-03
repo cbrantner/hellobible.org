@@ -15,7 +15,7 @@ export class NavComponent implements OnInit, OnDestroy {
   private sub: any;
 
   private campaigns = {
-    "default": "If you order now, your first box will be our Christmas Box."
+    "default": "NEW: <a href='/camp'>HelloBible Camp in a Box</a> (Limited Availability)"
     //"default": "Sold out of Christmas boxes. Order your January box today - Shipping out on January 2nd. All subscriptions come with a special printable card for under-the-tree gifting. Use code CHRISTMAS5 to get $5 off."
     //"default": "Order today and get $5 OFF. Use code VDAY19."
   }
