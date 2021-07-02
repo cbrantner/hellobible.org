@@ -15,6 +15,7 @@ import { NoahJuniorComponent } from '../noah-junior/noah-junior.component';
 import { AffiliatesComponent } from '../affiliates/affiliates.component';
 import { PostcardsComponent } from '../postcards/postcards.component';
 import { CampComponent } from '../camp/camp.component';
+import { CampExclusivesComponent } from '../camp-exclusives/camp-exclusives.component';
 
 const routes: Routes = [
     {
@@ -100,6 +101,10 @@ const routes: Routes = [
                 ]
             }
         }
+    },
+    {
+        path: 'camp/exclusive',
+        component: CampExclusivesComponent
     },
     {
         path: 'terms',
