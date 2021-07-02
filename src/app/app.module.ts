@@ -27,6 +27,7 @@ import { NoahJuniorComponent } from './noah-junior/noah-junior.component';
 import { AffiliatesComponent } from './affiliates/affiliates.component';
 import { PostcardsComponent } from './postcards/postcards.component';
 import { CampComponent } from './camp/camp.component';
+import { CampExclusivesComponent } from './camp-exclusives/camp-exclusives.component';
 
 
 @NgModule({
@@ -50,6 +51,7 @@ import { CampComponent } from './camp/camp.component';
     AffiliatesComponent,
     PostcardsComponent,
     CampComponent,
+    CampExclusivesComponent,
   ],
   imports: [
     BrowserModule,
