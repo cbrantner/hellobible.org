@@ -14,7 +14,7 @@ import { FishersOfMenComponent } from '../fishers-of-men/fishers-of-men.componen
 import { NoahJuniorComponent } from '../noah-junior/noah-junior.component';
 import { AffiliatesComponent } from '../affiliates/affiliates.component';
 import { PostcardsComponent } from '../postcards/postcards.component';
-import { CampComponent } from '../camp/camp.component';
+// import { CampComponent } from '../camp/camp.component';
 import { CampExclusivesComponent } from '../camp-exclusives/camp-exclusives.component';
 
 const routes: Routes = [
@@ -162,20 +162,20 @@ const routes: Routes = [
             }
         }
     },
-    {
-        path: 'camp',
-        component: CampComponent,
-        data: {
-            seo: {
-                title: 'HelloBible Summer Camp in a Box.',
-                metaTags: [
-                    { name: 'description', content: 'Join us on an amazing Bible adventure this summer! HelloBible Summer Camp in a Box includes a camp schedule, amazing crafts and fun activities.' },
-                    { property: 'og:title', content: 'HelloBible Summer Camp in a Box.' },
-                    { proprety: 'og:description', content: 'Join us on an amazing Bible adventure this summer! HelloBible Summer Camp in a Box includes a camp schedule, amazing crafts and fun activities.' }
-                ]
-            }
-        }
-    },
+    // {
+    //     path: 'camp',
+    //     component: CampComponent,
+    //     data: {
+    //         seo: {
+    //             title: 'HelloBible Summer Camp in a Box.',
+    //             metaTags: [
+    //                 { name: 'description', content: 'Join us on an amazing Bible adventure this summer! HelloBible Summer Camp in a Box includes a camp schedule, amazing crafts and fun activities.' },
+    //                 { property: 'og:title', content: 'HelloBible Summer Camp in a Box.' },
+    //                 { proprety: 'og:description', content: 'Join us on an amazing Bible adventure this summer! HelloBible Summer Camp in a Box includes a camp schedule, amazing crafts and fun activities.' }
+    //             ]
+    //         }
+    //     }
+    // },
     {
         path: '',
         redirectTo: 'home',
