@@ -14,6 +14,8 @@ export class HomeComponent implements OnInit {
   private gtag: Gtag;
   public selectedOptions: object;
   public message: string = "";
+  public juniorLink: string = "https://junior.hellobible.org/";
+  public explorerLink: string = "https://explorer.hellobible.org/";
   private sub: any;
   private params: any = {};
   private utm_campaign: string = "";
@@ -73,6 +75,8 @@ ngOnInit() {
       } else {
         this.message = this.campaigns.default;
       }
+      this.juniorLink += "?utm_campaign=" + this.utm_campaign;
+      this.explorerLink += "?utm_campaign=" + this.utm_campaign;
     } else {
       this.message = this.campaigns.default;
     }
