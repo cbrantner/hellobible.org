@@ -17,6 +17,8 @@ export class HomeComponent implements OnInit {
   private sub: any;
   private params: any = {};
   private utm_campaign: string = "";
+  private juniorLink: string = "https://junior.hellobible.org/";
+  private explorerLink: string = "https://explorer.hellobible.org/";
   private explorerOptions =
   {
     explorerMonthlyPlan:
@@ -73,6 +75,8 @@ ngOnInit() {
       } else {
         this.message = this.campaigns.default;
       }
+      this.juniorLink += "?utm_campaign=" + this.utm_campaign;
+      this.explorerLink += "?utm_campaign=" + this.utm_campaign;
     } else {
       this.message = this.campaigns.default;
     }

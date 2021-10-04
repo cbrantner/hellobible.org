@@ -13,6 +13,8 @@ export class NavComponent implements OnInit, OnDestroy {
   public isCollapsed = false;
   public message: string = "";
   private sub: any;
+  private juniorLink: string = "https://junior.hellobible.org/";
+  private explorerLink: string = "https://explorer.hellobible.org/";
 
   private campaigns = {
     "default": "NEW: <a href='/camp'>HelloBible Camp in a Box</a> (Limited Availability)"
@@ -34,6 +36,8 @@ export class NavComponent implements OnInit, OnDestroy {
         } else {
           this.message = this.campaigns.default;
         }
+        this.juniorLink += "?utm_campaign=" + utm;
+        this.explorerLink += "?utm_campaign=" + utm;
       } else {
         this.message = this.campaigns.default;
       }
