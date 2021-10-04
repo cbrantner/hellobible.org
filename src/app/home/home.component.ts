@@ -14,11 +14,11 @@ export class HomeComponent implements OnInit {
   private gtag: Gtag;
   public selectedOptions: object;
   public message: string = "";
+  public juniorLink: string = "https://junior.hellobible.org/";
+  public explorerLink: string = "https://explorer.hellobible.org/";
   private sub: any;
   private params: any = {};
   private utm_campaign: string = "";
-  private juniorLink: string = "https://junior.hellobible.org/";
-  private explorerLink: string = "https://explorer.hellobible.org/";
   private explorerOptions =
   {
     explorerMonthlyPlan:
