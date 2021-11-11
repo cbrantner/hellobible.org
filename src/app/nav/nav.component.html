@@ -96,9 +96,9 @@
                         data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="nav-link">Subscribe<i
                             class="fa fa-angle-down"></i></a>
                     <ul aria-labelledby="navbarDropdownMenuLink" class="dropdown-menu">
-                        <li><a href="{{juniorLink}}" class="dropdown-item">Junior (ages 3-5)</a>
+                        <li><a (click)="isCollapsed = false" routerLink="/junior" class="dropdown-item">Junior (ages 3-5)</a>
                         </li>
-                        <li><a href="{{explorerLink}}" class="dropdown-item">Explorer (ages
+                        <li><a (click)="isCollapsed = false" routerLink="/explorer" class="dropdown-item">Explorer (ages
                                 5-10)</a></li>
                     </ul>
                 </li>

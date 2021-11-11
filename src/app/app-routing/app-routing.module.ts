@@ -14,6 +14,8 @@ import { FishersOfMenComponent } from '../fishers-of-men/fishers-of-men.componen
 import { NoahJuniorComponent } from '../noah-junior/noah-junior.component';
 import { AffiliatesComponent } from '../affiliates/affiliates.component';
 import { PostcardsComponent } from '../postcards/postcards.component';
+import { JuniorComponent } from '../junior/junior.component';
+import { ExplorerComponent } from '../explorer/explorer.component';
 // import { CampComponent } from '../camp/camp.component';
 import { CampExclusivesComponent } from '../camp-exclusives/camp-exclusives.component';
 
@@ -147,6 +149,24 @@ const routes: Routes = [
     {
         path: 'affiliates',
         component: AffiliatesComponent,
+    },
+    {
+        path: 'junior',
+        component: JuniorComponent,
+        data: {
+            seo: {
+                title: 'Take a look at the HelloBible Junior Box.'
+            }
+        }
+    },
+    {
+        path: 'explorer',
+        component: ExplorerComponent,
+        data: {
+            seo: {
+                title: 'Take a look at the HelloBible Explorer Box.'
+            }
+        }
     },
     {
         path: 'postcards',
