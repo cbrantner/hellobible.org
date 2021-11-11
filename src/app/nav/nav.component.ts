@@ -12,8 +12,6 @@ import { ActivatedRoute } from '@angular/router';
 export class NavComponent implements OnInit, OnDestroy {
   public isCollapsed = false;
   public message: string = "";
-  public juniorLink: string = "https://junior.hellobible.org/";
-  public explorerLink: string = "https://explorer.hellobible.org/";
   private sub: any;
   private campaigns = {
     "default": "NEW: <a href='/camp'>HelloBible Camp in a Box</a> (Limited Availability)"
@@ -35,8 +33,6 @@ export class NavComponent implements OnInit, OnDestroy {
         } else {
           this.message = this.campaigns.default;
         }
-        this.juniorLink += "?utm_campaign=" + utm;
-        this.explorerLink += "?utm_campaign=" + utm;
       } else {
         this.message = this.campaigns.default;
       }
