@@ -26,6 +26,8 @@ import { FishersOfMenComponent } from './fishers-of-men/fishers-of-men.component
 import { NoahJuniorComponent } from './noah-junior/noah-junior.component';
 import { AffiliatesComponent } from './affiliates/affiliates.component';
 import { PostcardsComponent } from './postcards/postcards.component';
+import { JuniorComponent } from './junior/junior.component';
+import { ExplorerComponent } from './explorer/explorer.component';
 import { CampComponent } from './camp/camp.component';
 import { CampExclusivesComponent } from './camp-exclusives/camp-exclusives.component';
 
@@ -51,6 +53,8 @@ import { CampExclusivesComponent } from './camp-exclusives/camp-exclusives.compo
     AffiliatesComponent,
     PostcardsComponent,
     CampComponent,
+    JuniorComponent,
+    ExplorerComponent,
     CampExclusivesComponent,
   ],
   imports: [

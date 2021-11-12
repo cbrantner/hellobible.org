@@ -5,11 +5,11 @@ import { ActivatedRoute } from '@angular/router';
 declare const fbq: any;
 
 @Component({
-  selector: 'app-home',
-  templateUrl: './home.component.html',
-  styleUrls: ['./home.component.scss']
+  selector: 'app-explorer',
+  templateUrl: './explorer.component.html',
+  styleUrls: ['./explorer.component.scss']
 })
-export class HomeComponent implements OnInit {
+export class ExplorerComponent implements OnInit {
 
   private gtag: Gtag;
   public selectedOptions: object;
@@ -17,6 +17,19 @@ export class HomeComponent implements OnInit {
   private sub: any;
   private params: any = {};
   private utm_campaign: string = "";
+  private explorerOptions =
+    {
+      explorerMonthlyPlan:
+        { price: "29.80", url: "https://hellobible.cratejoy.com/subscribe/3453405312_hellobible-explorer/3453405308_month-to-month" },
+      explorerSixMonthsPlan:
+        { price: "172.80", url: "https://hellobible.cratejoy.com/subscribe/3453405312_hellobible-explorer/3453405310_6-month-prepay" },
+      explorerTwelveMonthsPlan:
+        { price: "321.60", url: "https://hellobible.cratejoy.com/subscribe/3453405312_hellobible-explorer/3453405311_12-month-prepay" }
+    };
+
+  public explorerMonthlyTotal = this.explorerOptions['explorerMonthlyPlan'].price;
+  public explorerSixMonthsTotal = this.explorerOptions['explorerSixMonthsPlan'].price;
+  public explorerTwelveMonthsTotal = this.explorerOptions['explorerTwelveMonthsPlan'].price;
 
   private campaigns = {
     "a56d739d32-GIFT_EMAIL_2018_11_15": "1 Month FREE. 6 months subscription for one child $99. Use code GIFT6.<br/>3 Months FREE. 12 months subscription for one child $178. Use code GIFT12.",
@@ -31,6 +44,11 @@ export class HomeComponent implements OnInit {
   }
 
   ngOnInit() {
+    this.selectedOptions = {
+      monthlyPlan: "1",
+      sixMonthsPlan: "1",
+      twelveMonthsPlan: "1"
+    };
 
     this.sub = this.route.queryParams.subscribe(params => {
       this.utm_campaign = params.utm_campaign;
@@ -41,6 +59,7 @@ export class HomeComponent implements OnInit {
         } else {
           this.message = this.campaigns.default;
         }
+
       } else {
         this.message = this.campaigns.default;
       }
@@ -52,4 +71,31 @@ export class HomeComponent implements OnInit {
   ngOnDestroy() {
     this.sub.unsubscribe();
   }
+
+  addToCartExplorer(plan) {
+
+    var planObject = this.explorerOptions[plan];
+
+    var url = planObject.url;
+    var i = 0;
+    for (var key in this.params) {
+      if (this.params.hasOwnProperty(key)) {
+        var sep = i === 0 ? "?" : "&";
+        url += sep + key + "=" + this.params[key];
+        ++i;
+      }
+
+    }
+
+    if (!isDevMode()) {
+      this.gtag.event('cart', {
+        event_label: 'add ' + planObject.url,
+        value: planObject.price
+      });
+    }
+
+    // redirect
+    window.location.href = url;
+  }
+
 }
