@@ -92,6 +92,12 @@ addToCartJunior(plan) {
       value: planObject.price
     });
   }
+
+  if (document.referrer) {
+    var sep = i === 0 ? "?" : "&";
+    url += sep + "referrer=" + encodeURIComponent(document.referrer);
+  }
+
   // redirect
   window.location.href = url;
 }
