@@ -20,11 +20,11 @@ export class JuniorComponent implements OnInit {
   private juniorOptions =
     {
       juniorMonthlyPlan:
-        { price: "29.80", url: "https://hellobible.cratejoy.com/subscribe/2939044309_hellobible-junior/2939044310_month-to-month" },
+        { price: "32.80", url: "https://hellobible.cratejoy.com/subscribe/2939044309_hellobible-junior/2939044310_month-to-month" },
       juniorSixMonthsPlan:
-        { price: "172.80", url: "https://hellobible.cratejoy.com/subscribe/2939044309_hellobible-junior/2939044312_6-month-prepay" },
+        { price: "190.80", url: "https://hellobible.cratejoy.com/subscribe/2939044309_hellobible-junior/2939044312_6-month-prepay" },
       juniorTwelveMonthsPlan:
-        { price: "321.60", url: "https://hellobible.cratejoy.com/subscribe/2939044309_hellobible-junior/2939044313_12-month-prepay" }
+        { price: "357.60", url: "https://hellobible.cratejoy.com/subscribe/2939044309_hellobible-junior/2939044313_12-month-prepay" }
     };
 
 
