@@ -20,11 +20,11 @@ export class ExplorerComponent implements OnInit {
   private explorerOptions =
     {
       explorerMonthlyPlan:
-        { price: "29.80", url: "https://hellobible.cratejoy.com/subscribe/3453405312_hellobible-explorer/3453405308_month-to-month" },
+        { price: "32.80", url: "https://hellobible.cratejoy.com/subscribe/3453405312_hellobible-explorer/3453405308_month-to-month" },
       explorerSixMonthsPlan:
-        { price: "172.80", url: "https://hellobible.cratejoy.com/subscribe/3453405312_hellobible-explorer/3453405310_6-month-prepay" },
+        { price: "190.80", url: "https://hellobible.cratejoy.com/subscribe/3453405312_hellobible-explorer/3453405310_6-month-prepay" },
       explorerTwelveMonthsPlan:
-        { price: "321.60", url: "https://hellobible.cratejoy.com/subscribe/3453405312_hellobible-explorer/3453405311_12-month-prepay" }
+        { price: "357.60", url: "https://hellobible.cratejoy.com/subscribe/3453405312_hellobible-explorer/3453405311_12-month-prepay" }
     };
 
   public explorerMonthlyTotal = this.explorerOptions['explorerMonthlyPlan'].price;
